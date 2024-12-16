@@ -1,440 +1,484 @@
-
-
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
+<html lang="zh">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《新媒体交互设计》课程期末学生作业展示平台</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-container {
+            display: flex;
+            flex: 1;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+            gap: 20px;
+        }
+        .left-sidebar {
+            width: 250px;
+            flex-shrink: 0;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .content-area {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .datetime-display {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 16px;
+            color: #666;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin: 0;
+        }
+        .class-selection {
+            margin-bottom: 30px;
+        }
+        .class-button {
+            width: 100%;
+            padding: 12px;
+            margin: 5px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .class-button:hover {
+            background-color: #0056b3;
+        }
+        .class-button.active {
+            background-color: #28a745;
+        }
+        .search-box {
+            margin-bottom: 20px;
+        }
+        #searchInput1, #searchInput2 {
+            width: 70%;
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        #searchInput1:focus, #searchInput2:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0,123,255,0.3);
+        }
+        .student-list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+        .student-card {
+            background: rgba(255, 255, 255, 0.664);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+            min-width: 0;
+            text-align: center;
+        }
+        .student-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background-color: #f8f9fa;
+        }
+        .student-id {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .student-name {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .url-input {
+            width: 90%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .enter-button {
+            width: 100%;
+            padding: 8px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .enter-button:hover {
+            background-color: #218838;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 1000;
+        }
+        .modal-content {
+            position: relative;
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 95%;
+            max-width: 1500px;
+            height: 90vh;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+        }
+        .close-button {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+        }
+        .homework-content {
+            margin-top: 20px;
+            flex-grow: 1;
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .homework-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
-  
+        /* 响应式布局样式 */
+        @media screen and (max-width: 1400px) {
+            .student-list {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .main-container {
+                max-width: 1200px;
+            }
+        }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="featon">
-  <meta name="keywords" content="生活, 快乐, 火花">
-  
-    <meta name="description" content="记录生活，分享快乐">
-<meta property="og:type" content="website">
-<meta property="og:title" content="快乐的火花">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="快乐的火花">
-<meta property="og:description" content="记录生活，分享快乐">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="featon">
-<meta property="article:tag" content="生活, 快乐, 火花">
-<meta name="twitter:card" content="summary_large_image">
-  
-  
-  
-  <title>快乐的火花</title>
+        @media screen and (max-width: 1200px) {
+            .student-list {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .main-container {
+                max-width: 1000px;
+            }
+        }
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+        @media screen and (max-width: 992px) {
+            .student-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .main-container {
+                max-width: 800px;
+                flex-direction: column;
+            }
+            .left-sidebar {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .content-area {
+                width: 100%;
+            }
+            .datetime-display {
+                position: static;
+                text-align: center;
+                margin-top: 10px;
+            }
+            #searchInput1, #searchInput2 {
+                width: 100%;
+            }
+            .class-selection {
+                display: flex;
+                gap: 10px;
+            }
+            .class-button {
+                flex: 1;
+            }
+        }
 
+        @media screen and (max-width: 576px) {
+            .student-list {
+                grid-template-columns: 1fr;
+            }
+            .main-container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .modal-content {
+                width: 95%;
+                margin: 10px;
+                padding: 10px;
+            }
+            .class-selection {
+                flex-direction: column;
+            }
+            .footer {
+                font-size: 0.9em;
+                padding: 15px;
+            }
+        }
 
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 7.3.0"></head>
-
-
+        /* 优化打印样式 */
+        @media print {
+            .left-sidebar,
+            .header,
+            .footer,
+            .modal,
+            .enter-button {
+                display: none;
+            }
+            .student-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .student-card {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
 <body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 100vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>快乐的火花</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
-                <i class="iconfont icon-home-fill"></i>
-                <span>首页</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>关于</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
+    <div class="header">
+        <h1>《新媒体交互设计》课程期末学生作业展示平台</h1>
+        <div class="datetime-display" id="datetime"></div>
     </div>
-  </div>
-</nav>
 
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="快乐的火花 分享技术与生活 个人博客"></span>
-          
-        </div>
-
-        
-      </div>
-
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
-      
-    </div>
-  </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      <div class="container nopadding-x-md">
-        <div id="board"
-          style="margin-top: 0">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2024/12/03/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" target="_self">
-          测试文章
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2024/12/03/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" target="_self">
-        <div>
-          这是一篇测试文章
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-12-03 21:17" pubdate>
-              2024-12-03
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Java/" class="category-chain-item">Java</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8E%9F%E5%88%9B/">#原创</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2024/12/03/hello-world/" target="_self">
-          Hello World
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2024/12/03/hello-world/" target="_self">
-        <div>
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2024-12-03 20:30" pubdate>
-              2024-12-03
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-
-
-
-
-              </div>
+    <div class="main-container">
+        <div class="left-sidebar">
+            <!-- 班级选择按钮 -->
+            <div class="class-selection">
+                <button class="class-button active" onclick="showClass('class1')">2022级网络新媒体</button>
+                <button class="class-button" onclick="showClass('class2')">2023级网络新媒体</button>
             </div>
-          </div>
+
+            <!-- 搜索框 -->
+            <div id="search1" class="search-box active">
+                <input type="text" id="searchInput1" placeholder="搜索学号或姓名..." oninput="filterStudents('1')">
+            </div>
+            <div id="search2" class="search-box" style="display: none;">
+                <input type="text" id="searchInput2" placeholder="搜索学号或姓名..." oninput="filterStudents('2')">
+            </div>
         </div>
-      </div>
-    
 
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
+        <div class="content-area">
+            <!-- 班级容器 -->
+            <div id="class1" class="student-container" style="display: block;">
+                <div class="student-list" id="studentList1"></div>
+            </div>
 
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+            <div id="class2" class="student-container" style="display: none;">
+                <div class="student-list" id="studentList2"></div>
+            </div>
         </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
     </div>
-  </div>
-</div>
 
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    <!-- 模态框 -->
+    <div id="studentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div class="homework-content">
+                <iframe id="homeworkFrame" class="homework-iframe" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
+            </div>
+        </div>
     </div>
-  
-  
-  
-</div>
 
-  </footer>
+    <footer class="footer">
+        <p>© 2024 《新媒体交互设计》课程期末作业展示平台 | NWU新闻传播学院 | 网络新媒体系</p>
+    </footer>
 
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+    <!-- 引入班级信息 -->
+    <script src="class_info.js"></script>
+    <script>
+        // 更新日期时间显示
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric', 
+                weekday: 'long',
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit' 
+            };
+            document.getElementById('datetime').textContent = now.toLocaleDateString('zh-CN', options);
+        }
 
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
+        // 每秒更新一次时间
+        setInterval(updateDateTime, 1000);
+        updateDateTime(); // 初始化显示
 
+        // 初始化页面时生成学生卡片
+        function generateStudentCards() {
+            for (let classKey in classInfo) {
+                const studentList = document.getElementById(`studentList${classKey.slice(-1)}`);
+                const students = classInfo[classKey].students;
+                
+                students.forEach(student => {
+                    const card = document.createElement('div');
+                    card.className = 'student-card';
+                    
+                    card.innerHTML = `
+                        <div class="student-id">${student.id}</div>
+                        <div class="student-name">${student.name}</div>
+                        <input type="text" class="url-input" placeholder="输入作业URL地址" value="${student.url || ''}" 
+                               onchange="updateStudentUrl('${student.id}', this.value)">
+                        <button class="enter-button" onclick="showStudentWork('${student.id}')">进入作业</button>
+                    `;
+                    
+                    studentList.appendChild(card);
+                });
+            }
+        }
 
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+        // 更新学生URL
+        function updateStudentUrl(studentId, newUrl) {
+            // 更新 classInfo 中的 URL
+            for (let classKey in classInfo) {
+                const student = classInfo[classKey].students.find(s => s.id === studentId);
+                if (student) {
+                    student.url = newUrl;
+                    break;
+                }
+            }
+        }
 
+        // 显示学生作业
+        function showStudentWork(studentId) {
+            let student;
+            // 查找学生信息
+            for (let classKey in classInfo) {
+                student = classInfo[classKey].students.find(s => s.id === studentId);
+                if (student) break;
+            }
+            
+            if (!student) return;
 
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
+            const modal = document.getElementById('studentModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const homeworkFrame = document.getElementById('homeworkFrame');
+            
+            modalTitle.textContent = `${student.name} (${student.id}) 的作业`;
+            
+            if (student.url) {
+                homeworkFrame.src = student.url;
+            } else {
+                homeworkFrame.src = 'about:blank';
+                homeworkFrame.contentDocument.write('<p>暂无作业内容</p>');
+            }
+            
+            modal.style.display = 'block';
+        }
 
+        // 显示选中的班级
+        function showClass(classId) {
+            // 隐藏所有班级容器和搜索框
+            document.querySelectorAll('.student-container').forEach(container => {
+                container.style.display = 'none';
+            });
+            document.querySelectorAll('.search-box').forEach(searchBox => {
+                searchBox.style.display = 'none';
+            });
+            
+            // 显示选中的班级容器和对应的搜索框
+            document.getElementById(classId).style.display = 'block';
+            document.getElementById('search' + classId.slice(-1)).style.display = 'block';
+            
+            // 更新按钮状态
+            document.querySelectorAll('.class-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
 
+        // 搜索功能
+        function filterStudents(classNum) {
+            const searchText = document.getElementById(`searchInput${classNum}`).value.toLowerCase();
+            const cards = document.getElementById(`studentList${classNum}`).getElementsByClassName('student-card');
+            
+            for (let card of cards) {
+                const id = card.querySelector('.student-id').textContent.toLowerCase();
+                const name = card.querySelector('.student-name').textContent.toLowerCase();
+                
+                if (id.includes(searchText) || name.includes(searchText)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            }
+        }
 
+        // 关闭模态框
+        function closeModal() {
+            const modal = document.getElementById('studentModal');
+            const homeworkFrame = document.getElementById('homeworkFrame');
+            homeworkFrame.src = 'about:blank';
+            modal.style.display = 'none';
+        }
 
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
+        // 点击模态框外部关闭
+        window.onclick = function(event) {
+            const modal = document.getElementById('studentModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
 
-
-
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
+        // 页面加载完成后生成学生卡片
+        document.addEventListener('DOMContentLoaded', generateStudentCards);
+    </script>
 </body>
-</html>
+</html> 

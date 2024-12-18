@@ -660,40 +660,13 @@
             }
         }
 
-        // 更新学生URL并保存到文件
+        // 更新学生URL
         function updateStudentUrl(studentId, newUrl) {
-            // 更新内存中的数据
+            // 更新 classInfo 中的 URL
             for (let classKey in classInfo) {
                 const student = classInfo[classKey].students.find(s => s.id === studentId);
                 if (student) {
                     student.url = newUrl;
-                    
-                    // 生成更新后的文件内容
-                    let fileContent = '// 班级信息\nconst classInfo = ' + 
-                        JSON.stringify(classInfo, null, 4) + ';';
-                    
-                    // 使用 fetch 发送到服务器保存
-                    fetch('/save-class-info', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({
-                            content: fileContent
-                        })
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.success) {
-                            console.log('URL已更新并保存');
-                        } else {
-                            console.error('保存失败:', data.error);
-                        }
-                    })
-                    .catch(error => {
-                        console.error('保存出错:', error);
-                    });
-                    
                     break;
                 }
             }

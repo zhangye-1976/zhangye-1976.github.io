@@ -20,7 +20,6 @@ const classInfo = {
             { id: '2022106033', name: '王昕怡', url: 'https://username.github.io' },
             { id: '2022106038', name: '段劢谦', url: 'https://username.github.io' },
             { id: '2022106040', name: '陈小琴', url: 'https://username.github.io' },
-            { id: '2022106042', name: '汉纹菲', url: 'https://username.github.io' },
             { id: '2022106043', name: '牛瀚玉', url: 'https://username.github.io' },
             { id: '2022106045', name: '向思潞', url: 'https://username.github.io' },
             { id: '2022106046', name: '刘懿', url: 'https://username.github.io' },
@@ -60,6 +59,7 @@ const classInfo = {
     class2: {
         name: "2023级网络新媒体",
         students: [
+            { id: '2022106042', name: '汉纹菲', url: 'https://username.github.io' },
             { id: '2023105001', name: '闫逸轩', url: 'https://username.github.io' },
             { id: '2023106012', name: '张乐轩', url: 'https://username.github.io' },
             { id: '2023106014', name: '刘大美', url: 'https://username.github.io' },

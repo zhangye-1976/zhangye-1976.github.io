@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>大数据中心可视化平台</title>
+    <script src="https://registry.npmmirror.com/jquery/3.7.1/files/dist/jquery.min.js"></script>
+    <script src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/echarts.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #041454;
+            color: #fff;
+        }
+        .header {
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            font-size: 24px;
+            background: url('header-bg.png') no-repeat center;
+            background-size: 100% 100%;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            height: calc(100vh - 80px);
+        }
+        .left-panel, .right-panel {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .center-panel {
+            flex: 1;
+            margin: 0 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .panel {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+            height: 300px;
+        }
+        .bottom-panel {
+            height: 200px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 15px;
+        }
+        #map-container {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+            min-height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">大数据中心可视化平台</div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="panel" id="pie1"></div>
+            <div class="panel" id="pie2"></div>
+        </div>
+        <div class="center-panel">
+            <div id="map-container"></div>
+            <div class="bottom-panel" id="bar-chart"></div>
+        </div>
+        <div class="right-panel">
+            <div class="panel" id="bar"></div>
+            <div class="panel" id="line"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化所有图表
+            const pie1 = echarts.init(document.getElementById('pie1'));
+            const pie2 = echarts.init(document.getElementById('pie2'));
+            const map = echarts.init(document.getElementById('map-container'));
+            const bar = echarts.init(document.getElementById('bar'));
+            const line = echarts.init(document.getElementById('line'));
+            const barChart = echarts.init(document.getElementById('bar-chart'));
+
+            // 第一个饼图配置
+            const pie1Option = {
+                title: {
+                    text: '学科分布',
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                tooltip: {
+                    trigger: 'item'
+                },
+                legend: {
+                    orient: 'vertical',
+                    left: 'left',
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                series: [{
+                    type: 'pie',
+                    radius: '50%',
+                    data: [
+                        { value: 25, name: '语文' },
+                        { value: 20, name: '数学' },
+                        { value: 15, name: '英语' },
+                        { value: 25, name: '物理' },
+                        { value: 15, name: '化学' }
+                    ],
+                    emphasis: {
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }]
+            };
+
+            // 第二个饼图配置
+            const pie2Option = {
+                title: {
+                    text: '学科资源占比',
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                tooltip: {
+                    trigger: 'item'
+                },
+                legend: {
+                    orient: 'vertical',
+                    left: 'left',
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                series: [{
+                    type: 'pie',
+                    radius: '50%',
+                    data: [
+                        { value: 30, name: '语文' },
+                        { value: 25, name: '数学' },
+                        { value: 15, name: '英语' },
+                        { value: 20, name: '物理' },
+                        { value: 10, name: '化学' }
+                    ],
+                    emphasis: {
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }]
+            };
+
+            // 右侧柱状图配置
+            const barOption = {
+                title: {
+                    text: '各学科统计',
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['语文', '数学', '英语', '物理', '化学', '生物', '历史'],
+                    axisLabel: {
+                        color: '#fff'
+                    }
+                },
+                yAxis: {
+                    type: 'value',
+                    axisLabel: {
+                        color: '#fff'
+                    }
+                },
+                series: [{
+                    data: [120, 200, 150, 80, 70, 110, 130],
+                    type: 'bar'
+                }]
+            };
+
+            // 右侧折线图配置
+            const lineOption = {
+                title: {
+                    text: '趋势分析',
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['2015-1', '2015-4', '2015-7', '2015-10', '2016-1', '2016-4', '2016-7', '2016-10'],
+                    axisLabel: {
+                        color: '#fff'
+                    }
+                },
+                yAxis: {
+                    type: 'value',
+                    axisLabel: {
+                        color: '#fff'
+                    }
+                },
+                series: [{
+                    data: [10, 30, 50, 120, 180, 220, 180, 120],
+                    type: 'line',
+                    smooth: true
+                }]
+            };
+
+            // 底部横向柱状图配置
+            const barChartOption = {
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'value',
+                    axisLabel: {
+                        color: '#fff'
+                    }
+                },
+                yAxis: {
+                    type: 'category',
+                    data: ['测试1', '测试2', '测试3', '测试4', '测试5', '测试6', '测试7'],
+                    axisLabel: {
+                        color: '#fff'
+                    }
+                },
+                series: [{
+                    type: 'bar',
+                    data: [18, 16, 14, 12, 10, 8, 6],
+                    itemStyle: {
+                        color: function(params) {
+                            const colors = ['#FF4B4B', '#FF9F40', '#4B7BE5', '#4BABE5', '#4BE5B5', '#96E54B', '#E5DD4B'];
+                            return colors[params.dataIndex];
+                        }
+                    }
+                }]
+            };
+
+            // 设置图表配置
+            pie1.setOption(pie1Option);
+            pie2.setOption(pie2Option);
+            bar.setOption(barOption);
+            line.setOption(lineOption);
+            barChart.setOption(barChartOption);
+
+            // 加载地图数据
+            Promise.all([
+                fetch('https://geo.datav.aliyun.com/areas/bound/geojson?code=100000_full').then(response => response.json()),
+                fetch('chinagdp.json').then(response => response.json())
+            ]).then(([geoJson, gdpData]) => {
+                console.log('地图数据加载成功:', geoJson);
+                console.log('GDP数据加载成功:', gdpData);
+                
+                echarts.registerMap('china', geoJson);
+                
+                const mapOption = {
+                    backgroundColor: '#041454',
+                    title: {
+                        text: '中华人民共和国地图',
+                        left: 'center',
+                        top: 20,
+                        textStyle: {
+                            color: '#fff',
+                            fontSize: 16
+                        }
+                    },
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: '{b}<br/>GDP：{c}'
+                    },
+                    visualMap: {
+                        min: 0,
+                        max: Math.max(...gdpData.map(item => item.value)),
+                        left: 'right',
+                        top: 'center',
+                        text: ['高', '低'],
+                        calculable: true,
+                        inRange: {
+                            color: ['#0c1746', '#1d3485', '#3269d8']
+                        },
+                        textStyle: {
+                            color: '#fff'
+                        }
+                    },
+                    series: [
+                        {
+                            name: 'GDP',
+                            type: 'map',
+                            map: 'china',
+                            roam: true,
+                            emphasis: {
+                                label: {
+                                    show: true,
+                                    color: '#fff'
+                                }
+                            },
+                            itemStyle: {
+                                normal: {
+                                    borderColor: '#1eb6fe',
+                                    borderWidth: 1,
+                                    areaColor: {
+                                        type: 'linear',
+                                        x: 0,
+                                        y: 0,
+                                        x2: 0,
+                                        y2: 1,
+                                        colorStops: [{
+                                            offset: 0, color: '#0c1746'
+                                        }, {
+                                            offset: 1, color: '#3269d8'
+                                        }]
+                                    }
+                                },
+                                emphasis: {
+                                    areaColor: '#3269d8',
+                                    borderWidth: 2
+                                }
+                            },
+                            data: gdpData
+                        }
+                    ]
+                };
+                
+                map.setOption(mapOption);
+                map.resize();
+
+                // 在地图初始化后立即添加
+                console.log('地图容器尺寸:', {
+                    width: document.getElementById('map-container').offsetWidth,
+                    height: document.getElementById('map-container').offsetHeight
+                });
+
+                // 在设置选项后添加
+                map.on('rendered', function() {
+                    console.log('地图渲染完成');
+                });
+            }).catch(error => {
+                console.error('数据加载失败:', error);
+                alert('地图数据加载失败，请检查网络连接和数据文件');
+            });
+
+            // 响应式调整
+            window.addEventListener('resize', function() {
+                pie1.resize();
+                pie2.resize();
+                map.resize();
+                bar.resize();
+                line.resize();
+                barChart.resize();
+            });
+        });
+    </script>
+</body>
+</html> 

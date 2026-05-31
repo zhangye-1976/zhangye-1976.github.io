@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 580">
+  <defs>
+    <style>
+      .box { fill:#E1F5EE; stroke:#00796b; stroke-width:1.5; rx:8; }
+      .box2 { fill:#E8F5E9; stroke:#388E3C; stroke-width:1.5; rx:6; }
+      .box3 { fill:#FFF9C4; stroke:#F9A825; stroke-width:1.5; rx:6; }
+      .boxt { fill:#B2DFDB; stroke:#00796b; stroke-width:2; rx:8; }
+      .tit { font:bold 15px sans-serif; fill:#00796b; }
+      .nm { font:13px sans-serif; fill:#1a1a1a; }
+      .sm { font:11px sans-serif; fill:#333; }
+      .red { font:11px sans-serif; fill:#c0392b; }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="160" y="8" width="360" height="34" class="boxt"/>
+  <text x="340" y="31" text-anchor="middle" class="tit">第4章 指数函数与对数函数</text>
+
+  <!-- 指数运算 -->
+  <rect x="20" y="52" width="200" height="28" class="box"/>
+  <text x="120" y="70" text-anchor="middle" class="nm">指数与指数幂运算</text>
+  <rect x="20" y="88" width="200" height="110" class="box"/>
+  <text x="120" y="108" text-anchor="middle" class="sm">a⁰=1（a≠0）</text>
+  <text x="120" y="126" text-anchor="middle" class="sm">a⁻ⁿ=1/aⁿ（a≠0）</text>
+  <text x="120" y="144" text-anchor="middle" class="sm">a^(m/n)=ⁿ√(a^m)（a&gt;0）</text>
+  <text x="120" y="162" text-anchor="middle" class="sm">a^r·a^s=a^(r+s)</text>
+  <text x="120" y="180" text-anchor="middle" class="sm">(a^r)^s=a^(rs)</text>
+  <text x="120" y="198" text-anchor="middle" class="sm">(ab)^r=a^r·b^r</text>
+
+  <!-- 指数函数 -->
+  <rect x="240" y="52" width="200" height="28" class="box"/>
+  <text x="340" y="70" text-anchor="middle" class="nm">指数函数 y=a^x</text>
+  <rect x="240" y="88" width="200" height="130" class="box2"/>
+  <text x="340" y="110" text-anchor="middle" class="sm">定义域：R</text>
+  <text x="340" y="128" text-anchor="middle" class="sm">值域：(0,+∞)</text>
+  <text x="340" y="146" text-anchor="middle" class="sm">定点：(0,1)</text>
+  <text x="340" y="164" text-anchor="middle" class="sm">a&gt;1：递增，x→−∞时y→0</text>
+  <text x="340" y="182" text-anchor="middle" class="sm">0&lt;a&lt;1：递减，x→+∞时y→0</text>
+  <text x="340" y="200" text-anchor="middle" class="red">⚠ 图象恒在x轴上方！</text>
+  <text x="340" y="218" text-anchor="middle" class="sm">a&gt;1时增长越来越快</text>
+
+  <!-- 对数运算 -->
+  <rect x="460" y="52" width="200" height="28" class="box"/>
+  <text x="560" y="70" text-anchor="middle" class="nm">对数与对数运算</text>
+  <rect x="460" y="88" width="200" height="130" class="box"/>
+  <text x="560" y="108" text-anchor="middle" class="sm">定义：a^b=N ⇔ b=log_a N</text>
+  <text x="560" y="126" text-anchor="middle" class="sm">log_a(MN)=log_a M+log_a N</text>
+  <text x="560" y="144" text-anchor="middle" class="sm">log_a(M/N)=log_a M−log_a N</text>
+  <text x="560" y="162" text-anchor="middle" class="sm">log_a(M^n)=n·log_a M</text>
+  <text x="560" y="180" text-anchor="middle" class="sm">换底公式：log_a b=ln b/ln a</text>
+  <text x="560" y="198" text-anchor="middle" class="sm">lg=以10为底；ln=以e为底</text>
+  <text x="560" y="216" text-anchor="middle" class="red">口诀：积变和，商变差</text>
+
+  <!-- 对数函数 -->
+  <rect x="20" y="236" width="200" height="28" class="box"/>
+  <text x="120" y="254" text-anchor="middle" class="nm">对数函数 y=log_a x</text>
+  <rect x="20" y="272" width="200" height="118" class="box2"/>
+  <text x="120" y="294" text-anchor="middle" class="sm">定义域：(0,+∞)</text>
+  <text x="120" y="312" text-anchor="middle" class="sm">值域：R</text>
+  <text x="120" y="330" text-anchor="middle" class="sm">定点：(1,0)</text>
+  <text x="120" y="348" text-anchor="middle" class="sm">a&gt;1：递增</text>
+  <text x="120" y="366" text-anchor="middle" class="sm">0&lt;a&lt;1：递减</text>
+  <text x="120" y="384" text-anchor="middle" class="sm">图象在y轴右侧</text>
+
+  <!-- 反函数关系 -->
+  <rect x="240" y="236" width="220" height="28" class="box"/>
+  <text x="350" y="254" text-anchor="middle" class="nm">反函数关系</text>
+  <rect x="240" y="272" width="220" height="118" class="box3"/>
+  <text x="350" y="294" text-anchor="middle" class="sm">y=a^x 的反函数是 y=log_a x</text>
+  <text x="350" y="312" text-anchor="middle" class="sm">图象关于 y=x 对称</text>
+  <text x="350" y="330" text-anchor="middle" class="sm">f(f⁻¹(x))=x（在定义域内）</text>
+  <text x="350" y="348" text-anchor="middle" class="sm">应用：已知指数式求值→取对数</text>
+  <text x="350" y="366" text-anchor="middle" class="sm">已知对数式求值→化指数</text>
+  <text x="350" y="384" text-anchor="middle" class="red">互为反函数→单调性相同！</text>
+
+  <!-- 指数/对数方程不等式 -->
+  <rect x="480" y="236" width="180" height="28" class="box"/>
+  <text x="570" y="254" text-anchor="middle" class="nm">方程与不等式</text>
+  <rect x="480" y="272" width="180" height="118" class="box"/>
+  <text x="570" y="294" text-anchor="middle" class="sm">同底法：化同底再比较</text>
+  <text x="570" y="312" text-anchor="middle" class="sm">取对数法：两边取对数</text>
+  <text x="570" y="330" text-anchor="middle" class="sm">单调性法：利用单调比较</text>
+  <text x="570" y="348" text-anchor="middle" class="sm">a&gt;1：增，不等号方向不变</text>
+  <text x="570" y="366" text-anchor="middle" class="sm">0&lt;a&lt;1：减，不等号反转</text>
+  <text x="570" y="384" text-anchor="middle" class="red">先判断底数大小！</text>
+
+  <!-- 函数模型应用 -->
+  <rect x="20" y="404" width="320" height="28" class="box"/>
+  <text x="180" y="422" text-anchor="middle" class="nm">函数模型应用（实际问题）</text>
+  <rect x="20" y="440" width="320" height="110" class="box3"/>
+  <text x="30" y="462" class="sm">① 审题：弄清变量关系，确定自变量和因变量</text>
+  <text x="30" y="480" class="sm">② 建模：根据题意列出函数解析式</text>
+  <text x="30" y="498" class="sm">③ 求解：利用函数性质（单调、最值）求解</text>
+  <text x="30" y="516" class="sm">④ 检验：检验解是否符合实际意义</text>
+  <text x="30" y="534" class="sm">常见模型：指数增长（a&gt;1）、对数增长（慢）、幂函数增长</text>
+  <text x="30" y="552" class="red">增长率问题：记住公式 A=A₀(1+r)^t</text>
+
+  <!-- 经典题型 -->
+  <rect x="360" y="404" width="300" height="28" class="box"/>
+  <text x="510" y="422" text-anchor="middle" class="nm">经典题型解题模板</text>
+  <rect x="360" y="440" width="300" height="110" class="box"/>
+  <text x="370" y="462" class="sm">【比较大小】：化同底→利用单调性</text>
+  <text x="370" y="480" class="sm">【定义域】：列不等式组，求交集</text>
+  <text x="370" y="498" class="sm">【值域】：利用单调性/基本不等式/配方法</text>
+  <text x="370" y="516" class="sm">【零点】：f(a)·f(b)&lt;0→二分法</text>
+  <text x="370" y="534" class="sm">【实际应用】：读题→设变量→建函数→求解</text>
+  <text x="370" y="552" class="red">易错：对数真数&gt;0！指数函数值&gt;0！</text>
+</svg>

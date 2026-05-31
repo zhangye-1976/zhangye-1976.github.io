@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 720">
+  <defs>
+    <style>
+      .box { fill:#E1F5EE; stroke:#00796b; stroke-width:1.5; rx:8; }
+      .box2 { fill:#E8F5E9; stroke:#388E3C; stroke-width:1.5; rx:6; }
+      .box3 { fill:#FFF9C4; stroke:#F9A825; stroke-width:1.5; rx:6; }
+      .boxt { fill:#B2DFDB; stroke:#00796b; stroke-width:2; rx:8; }
+      .tit { font:bold 15px sans-serif; fill:#00796b; }
+      .nm { font:13px sans-serif; fill:#1a1a1a; }
+      .sm { font:11px sans-serif; fill:#333; }
+      .red { font:11px sans-serif; fill:#c0392b; }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="180" y="8" width="320" height="34" class="boxt"/>
+  <text x="340" y="31" text-anchor="middle" class="tit">第3章 圆锥曲线的方程</text>
+
+  <!-- 椭圆 -->
+  <rect x="20" y="52" width="200" height="28" class="box"/>
+  <text x="120" y="70" text-anchor="middle" class="nm">椭圆（e&lt;1）</text>
+  <rect x="20" y="88" width="200" height="130" class="box"/>
+  <text x="30" y="112" class="sm">定义：|PF₁|+|PF₂|=2a（&gt;2c）</text>
+  <text x="30" y="130" class="sm">标准式（x轴）：x²/a²+y²/b²=1</text>
+  <text x="30" y="148" class="sm">a²=b²+c²（注意是减！）</text>
+  <text x="30" y="166" class="sm">离心率 e=c/a（0&lt;e&lt;1）</text>
+  <text x="30" y="184" class="sm">范围：|x|≤a，|y|≤b</text>
+  <text x="30" y="202" class="sm">顶点：(±a,0),(0,±b)</text>
+  <text x="30" y="218" class="red">⚠ 椭圆a²=b²+c²（减）</text>
+
+  <!-- 双曲线 -->
+  <rect x="240" y="52" width="200" height="28" class="box"/>
+  <text x="340" y="70" text-anchor="middle" class="nm">双曲线（e&gt;1）</text>
+  <rect x="240" y="88" width="200" height="150" class="box2"/>
+  <text x="250" y="112" class="sm">定义：||PF₁|−|PF₂||=2a（&lt;2c）</text>
+  <text x="250" y="130" class="sm">标准式（x轴）：x²/a²−y²/b²=1</text>
+  <text x="250" y="148" class="sm">c²=a²+b²（注意是加！）</text>
+  <text x="250" y="166" class="sm">离心率 e=c/a（e&gt;1）</text>
+  <text x="250" y="184" class="sm">渐近线：y=±(b/a)x</text>
+  <text x="250" y="202" class="sm">范围：|x|≥a（x轴双曲线）</text>
+  <text x="250" y="220" class="sm">顶点：(±a,0)</text>
+  <text x="250" y="238" class="red">⚠ 双曲线c²=a²+b²（加）</text>
+
+  <!-- 抛物线 -->
+  <rect x="460" y="52" width="200" height="28" class="box"/>
+  <text x="560" y="70" text-anchor="middle" class="nm">抛物线（e=1）</text>
+  <rect x="460" y="88" width="200" height="150" class="box3"/>
+  <text x="470" y="112" class="sm">定义：|PF|=d（P到F距离=到准线距）</text>
+  <text x="470" y="130" class="sm">y²=2px（p&gt;0，开口右）</text>
+  <text x="470" y="148" class="sm">焦点：(p/2,0)，准线：x=−p/2</text>
+  <text x="470" y="166" class="sm">y²=−2px（开口左）</text>
+  <text x="470" y="184" class="sm">x²=2py（开口上）</text>
+  <text x="470" y="202" class="sm">x²=−2py（开口下）</text>
+  <text x="470" y="220" class="sm">离心率 e=1（所有抛物线相同）</text>
+  <text x="470" y="238" class="red">⚠ 先判断开口方向！</text>
+
+  <!-- 圆锥曲线统整 -->
+  <rect x="20" y="258" width="640" height="34" class="boxt"/>
+  <text x="340" y="280" text-anchor="middle" class="tit">圆锥曲线核心公式对比</text>
+  <rect x="20" y="300" width="640" height="100" class="box"/>
+  <text x="30" y="324" class="sm">椭圆：a最大，c²=a²−b²，e=c/a∈(0,1)，e越大越扁</text>
+  <text x="30" y="344" class="sm">双曲线：c最大，c²=a²+b²，e=c/a∈(1,+∞)，e越大开口越大</text>
+  <text x="30" y="364" class="sm">抛物线：p&gt;0决定开口方向，焦点到准线距离=p</text>
+  <text x="30" y="382" class="sm">通径（过焦点垂直对称轴的弦）：椭圆=2b²/a；双曲线=2b²/a；抛物线=2p</text>
+  <text x="30" y="400" class="sm">焦点三角形面积（椭圆）：S=b²·tan(θ/2)（θ=∠F₁PF₂）</text>
+
+  <!-- 直线与圆锥曲线联立 -->
+  <rect x="20" y="410" width="300" height="34" class="boxt"/>
+  <text x="170" y="432" text-anchor="middle" class="tit">联立方程法（必考大题！）</text>
+  <rect x="20" y="452" width="300" height="130" class="box2"/>
+  <text x="30" y="476" class="sm">步骤①：设直线（注意k不存在情况！）</text>
+  <text x="30" y="494" class="sm">步骤②：联立，消元得一元二次方程</text>
+  <text x="30" y="512" class="sm">步骤③：Δ&gt;0（相交条件）</text>
+  <text x="30" y="530" class="sm">步骤④：韦达定理 x₁+x₂，x₁x₂</text>
+  <text x="30" y="548" class="sm">步骤⑤：弦长=|AB|=√(1+k²)·√[(x₁+x₂)²−4x₁x₂]</text>
+  <text x="30" y="566" class="sm">面积/向量/定点/定值问题→用韦达定理整体代入</text>
+  <text x="30" y="584" class="red">⚠ 设直线先讨论k不存在！</text>
+
+  <!-- 弦长/面积/向量综合 -->
+  <rect x="340" y="410" width="320" height="34" class="boxt"/>
+  <text x="500" y="432" text-anchor="middle" class="tit">圆锥曲线综合问题</text>
+  <rect x="340" y="452" width="320" height="130" class="box3"/>
+  <text x="350" y="476" class="sm">【弦长问题】联立→韦达→弦长公式</text>
+  <text x="350" y="494" class="sm">【面积问题】S=½|AB|·d 或 S=½|x₁y₂−x₂y₁|</text>
+  <text x="350" y="512" class="sm">【向量问题】PF₁·PF₂，或PF₁=λPF₂</text>
+  <text x="350" y="530" class="sm">【定点问题】设直线方程，证明与参数无关</text>
+  <text x="350" y="548" class="sm">【定值问题】证明某量为常数（与动点无关）</text>
+  <text x="350" y="566" class="sm">【中点弦】点差法：k·k₀=−b²/a²（椭圆）</text>
+  <text x="350" y="584" class="red">⚠ 联立后先写Δ&gt;0（保证相交）</text>
+
+  <!-- 解题模板 -->
+  <rect x="20" y="600" width="640" height="28" class="box"/>
+  <text x="340" y="618" text-anchor="middle" class="nm">高考圆锥曲线大题解题模板（12~14分）</text>
+  <rect x="20" y="636" width="640" height="80" class="box"/>
+  <text x="30" y="660" class="sm">第(1)问：求圆锥曲线方程 → 待定系数法（已知a,b,c,e中两个量）</text>
+  <text x="30" y="678" class="sm">第(2)问：直线与圆锥曲线相交 → 联立+韦达+弦长/面积/向量</text>
+  <text x="30" y="696" class="sm">第(3)问（若有）：定点/定值/存在性 → 设方程，推导，说明与参数无关</text>
+  <text x="30" y="714" class="sm">时间分配：第(1)问3分钟；第(2)问8分钟；计算要仔细！</text>
+</svg>

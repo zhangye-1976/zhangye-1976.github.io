@@ -1,0 +1,221 @@
+<style>
+.quiz-wrap{font-family:var(--font-sans);max-width:660px;margin:0 auto}
+.q-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.25rem;margin-bottom:12px}
+.q-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.badge{font-size:11px;font-weight:500;padding:2px 8px;border-radius:20px;white-space:nowrap}
+.b-easy{background:#EAF3DE;color:#3B6D11}
+.b-mid{background:#FAEDDA;color:#854F0B}
+.b-hard{background:#FCEBEB;color:#A32D2D}
+.q-num{font-size:14px;font-weight:500;color:var(--color-text-primary)}
+.q-body{font-size:13px;color:var(--color-text-primary);line-height:1.7;margin-bottom:10px}
+.q-chain{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:10px 0;padding:10px;background:var(--color-background-secondary);border-radius:8px}
+.box-node{background:var(--color-background-primary);border:0.5px solid var(--color-border-secondary);border-radius:6px;padding:4px 12px;font-size:13px;font-weight:500;color:var(--color-text-primary)}
+.unknown{background:#EEEDFE;border:0.5px solid #534AB7;border-radius:6px;padding:4px 12px;font-size:13px;font-weight:500;color:#3C3489;min-width:32px;text-align:center}
+.arrow-txt{font-size:12px;color:var(--color-text-secondary)}
+.ans-btn{font-size:12px;padding:4px 14px;border-radius:6px;cursor:pointer;margin-right:8px;margin-top:6px}
+.ans-box{display:none;margin-top:10px;padding:10px 12px;background:#EAF3DE;border:0.5px solid #9FE1CB;border-radius:8px;font-size:13px;color:#085041;line-height:1.7}
+.ans-box.shown{display:block}
+.eq{font-family:var(--font-mono);font-size:12px;background:var(--color-background-secondary);padding:2px 6px;border-radius:4px;display:inline-block;margin:2px 0}
+.sep{width:100%;height:0.5px;background:var(--color-border-tertiary);margin:4px 0}
+.hint{font-size:12px;color:var(--color-text-secondary);margin-top:6px}
+.progress{font-size:12px;color:var(--color-text-secondary);text-align:right;margin-bottom:8px}
+#prog-bar{height:4px;background:var(--color-border-tertiary);border-radius:2px;margin-bottom:14px}
+#prog-fill{height:100%;background:#1D9E75;border-radius:2px;transition:width 0.4s;width:0%}
+</style>
+<div class="quiz-wrap">
+<h2 class="sr-only">化学必修二 · 物质转化推断题互动练习，共6题，点击显示答案</h2>
+<div id="prog-bar"><div id="prog-fill"></div></div>
+<div class="progress" id="prog-text">已揭示：0 / 6</div>
+
+<div class="q-card">
+  <div class="q-head">
+    <span class="q-num">第 1 题</span>
+    <span class="badge b-easy">基础</span>
+  </div>
+  <div class="q-body">A、B、C、D 是含硫物质。A 是黄色固体单质，B 是 A 燃烧的产物，C 是 B 与 H₂O 反应的产物，D 是 C 与 O₂ 催化氧化的产物。</div>
+  <div class="q-chain">
+    <span class="box-node">A（黄色固体）</span>
+    <span class="arrow-txt">+O₂→</span>
+    <span class="unknown">B</span>
+    <span class="arrow-txt">+H₂O→</span>
+    <span class="unknown">C</span>
+    <span class="arrow-txt">+O₂催化→</span>
+    <span class="unknown">D</span>
+  </div>
+  <div class="hint">提示：硫在纯氧中燃烧产生蓝紫色火焰</div>
+  <button class="ans-btn" onclick="reveal(0,this)">显示答案 ↓</button>
+  <div class="ans-box" id="ans0">
+    <b>A=S，B=SO₂，C=H₂SO₃，D=H₂SO₄</b><br>
+    <div class="sep"></div>
+    <span class="eq">S + O₂ →(点燃) SO₂（蓝紫色火焰）</span><br>
+    <span class="eq">SO₂ + H₂O ⇌ H₂SO₃（可逆，酸性氧化物）</span><br>
+    <span class="eq">2SO₂ + O₂ ⇌(催化剂,△) 2SO₃，SO₃ + H₂O = H₂SO₄</span><br>
+    <b>关键：</b>SO₂是+4价硫，既有氧化性又有还原性；H₂SO₄(浓)有强氧化性、吸水性、脱水性。
+  </div>
+</div>
+
+<div class="q-card">
+  <div class="q-head">
+    <span class="q-num">第 2 题</span>
+    <span class="badge b-easy">基础</span>
+  </div>
+  <div class="q-body">A 是空气中最多的气体单质，B 是 A 与 H₂ 在高温高压催化剂下合成的物质，B 与 O₂ 催化氧化得到 C，C 与 O₂ 反应得到 D，D 与 H₂O 反应得到 E（硝酸）。</div>
+  <div class="q-chain">
+    <span class="box-node">A（N₂）</span>
+    <span class="arrow-txt">+H₂→</span>
+    <span class="unknown">B</span>
+    <span class="arrow-txt">+O₂催化→</span>
+    <span class="unknown">C</span>
+    <span class="arrow-txt">+O₂→</span>
+    <span class="unknown">D</span>
+    <span class="arrow-txt">+H₂O→</span>
+    <span class="unknown">E</span>
+  </div>
+  <div class="hint">提示：这是工业制硝酸的完整流程</div>
+  <button class="ans-btn" onclick="reveal(1,this)">显示答案 ↓</button>
+  <div class="ans-box" id="ans1">
+    <b>B=NH₃，C=NO，D=NO₂，E=HNO₃</b><br>
+    <div class="sep"></div>
+    <span class="eq">N₂ + 3H₂ ⇌(高温高压,催化剂) 2NH₃（合成氨，可逆）</span><br>
+    <span class="eq">4NH₃ + 5O₂ →(催化剂,△) 4NO + 6H₂O（工业制硝酸第一步）</span><br>
+    <span class="eq">2NO + O₂ = 2NO₂（无色→红棕色）</span><br>
+    <span class="eq">3NO₂ + H₂O = 2HNO₃ + NO（歧化反应，通入空气使NO循环）</span><br>
+    <b>记忆口诀：</b>「一氧二氮三水酸，循环氧化产率高」
+  </div>
+</div>
+
+<div class="q-card">
+  <div class="q-head">
+    <span class="q-num">第 3 题</span>
+    <span class="badge b-mid">中等</span>
+  </div>
+  <div class="q-body">A 是最简单的有机化合物（CH₄），在光照下与 Cl₂ 发生取代反应，第一步产物为 B（气体），最终完全取代产物为 C（液体，灭火剂型）。A 不完全燃烧生成 D（黑色固体）和 E（气体）。</div>
+  <div class="q-chain">
+    <span class="box-node">A（CH₄）</span>
+    <span class="arrow-txt">+Cl₂光照→</span>
+    <span class="unknown">B</span>
+    <span class="arrow-txt">完全取代→</span>
+    <span class="unknown">C</span>
+    <br>
+    <span class="box-node">A（CH₄）</span>
+    <span class="arrow-txt">不完全燃烧→</span>
+    <span class="unknown">D+E</span>
+  </div>
+  <div class="hint">提示：取代反应逐步进行，产物是混合物</div>
+  <button class="ans-btn" onclick="reveal(2,this)">显示答案 ↓</button>
+  <div class="ans-box" id="ans2">
+    <b>B=CH₃Cl（一氯甲烷，气体），C=CCl₄（四氯化碳，液体），D=C（炭黑），E=CO</b><br>
+    <div class="sep"></div>
+    <span class="eq">CH₄ + Cl₂ →(光) CH₃Cl + HCl（一氯甲烷，气体）</span><br>
+    <span class="eq">CH₃Cl + Cl₂ →(光) CH₂Cl₂ + HCl（二氯甲烷，液体）</span><br>
+    <span class="eq">最终：CHCl₃（氯仿），CCl₄（四氯化碳）</span><br>
+    <span class="eq">2CH₄ + 3O₂ →(不完全燃烧) 2CO + 4H₂O</span><br>
+    <b>易错点：</b>甲烷取代产物是混合物，不是单一产物；CCl₄可作灭火剂（不支持燃烧）。
+  </div>
+</div>
+
+<div class="q-card">
+  <div class="q-head">
+    <span class="q-num">第 4 题</span>
+    <span class="badge b-mid">中等</span>
+  </div>
+  <div class="q-body">A 是平面形分子，含 C=C 双键（所有原子共面），能使溴水褪色并生成 B（1,2-二溴乙烷）。A 在催化剂作用下与 H₂O 加成生成 C（工业制乙醇）。A 还能发生加聚反应生成 D（常用塑料）。</div>
+  <div class="q-chain">
+    <span class="box-node">A（C₂H₄）</span>
+    <span class="arrow-txt">+Br₂→</span>
+    <span class="unknown">B</span>
+    <span class="arrow-txt">+H₂O加成→</span>
+    <span class="unknown">C</span>
+    <span class="arrow-txt">加聚→</span>
+    <span class="unknown">D</span>
+  </div>
+  <div class="hint">提示：乙烯使酸性 KMnO₄ 褪色是氧化反应（与溴水原理不同）</div>
+  <button class="ans-btn" onclick="reveal(3,this)">显示答案 ↓</button>
+  <div class="ans-box" id="ans3">
+    <b>B=CH₂Br−CH₂Br，C=CH₃CH₂OH（乙醇），D=−[CH₂−CH₂]−ₙ（聚乙烯）</b><br>
+    <div class="sep"></div>
+    <span class="eq">CH₂=CH₂ + Br₂ → CH₂Br−CH₂Br（加成，溴水褪色）</span><br>
+    <span class="eq">CH₂=CH₂ + H₂O →(催化剂) CH₃CH₂OH（加成，工业制乙醇）</span><br>
+    <span class="eq">nCH₂=CH₂ →(催化剂) −[CH₂−CH₂]−ₙ（加聚，原子利用率100%）</span><br>
+    <b>鉴别：</b>烷烃（CH₄）不能使溴水褪色；烯烃（C₂H₄）可以。乙烯与酸性KMnO₄是氧化反应，与Br₂是加成反应。
+  </div>
+</div>
+
+<div class="q-card">
+  <div class="q-head">
+    <span class="q-num">第 5 题</span>
+    <span class="badge b-hard">较难</span>
+  </div>
+  <div class="q-body">A 是乙醇（CH₃CH₂OH），在 Cu 催化加热条件下被氧化为 B（有刺激性气味的液体），B  further 被氧化为 C（弱酸，能与 A 发生酯化反应生成 D）。D 是有果香味的液体，难溶于水。酯化反应中，浓硫酸的作用是催化剂和吸水剂。</div>
+  <div class="q-chain">
+    <span class="box-node">A（乙醇）</span>
+    <span class="arrow-txt">Cu催化氧化→</span>
+    <span class="unknown">B</span>
+    <span class="arrow-txt">氧化→</span>
+    <span class="unknown">C</span>
+    <span class="arrow-txt">酯化→</span>
+    <span class="unknown">D</span>
+  </div>
+  <div class="hint">提示：酯化反应机理是「酸脱羟基醇脱氢」</div>
+  <button class="ans-btn" onclick="reveal(4,this)">显示答案 ↓</button>
+  <div class="ans-box" id="ans4">
+    <b>B=CH₃CHO（乙醛），C=CH₃COOH（乙酸），D=CH₃COOCH₂CH₃（乙酸乙酯）</b><br>
+    <div class="sep"></div>
+    <span class="eq">2CH₃CH₂OH + O₂ →(Cu,△) 2CH₃CHO + 2H₂O（Cu丝：红→黑→红）</span><br>
+    <span class="eq">2CH₃CHO + O₂ →(催化剂) 2CH₃COOH</span><br>
+    <span class="eq">CH₃COOH + CH₃CH₂OH ⇌(浓H₂SO₄,△) CH₃COOCH₂CH₃ + H₂O</span><br>
+    <b>铜丝现象：</b>红热Cu → 插入乙醇 → 变黑(CuO) → 又变红(Cu)，证明Cu作催化剂。<br>
+    <b>酯化机理：</b>酸脱−OH，醇脱−H，生成H₂O。饱和Na₂CO₃溶液吸收乙醇、中和乙酸、降低酯溶解度。
+  </div>
+</div>
+
+<div class="q-card">
+  <div class="q-head">
+    <span class="q-num">第 6 题</span>
+    <span class="badge b-hard">综合</span>
+  </div>
+  <div class="q-body">A、B、C、D 是含氮物质。A 是+4价氮的氧化物（红棕色），与水反应生成 B（+5价氮的酸）和 C（+2价氮的氧化物）。向 B 溶液中加入 Cu 片（稀溶液），生成 D（无色气体，遇空气变红棕色）。</div>
+  <div class="q-chain">
+    <span class="box-node">A（红棕气）</span>
+    <span class="arrow-txt">+H₂O→</span>
+    <span class="unknown">B</span>
+    <span class="arrow-txt">+</span>
+    <span class="unknown">C</span>
+    <br>
+    <span class="box-node">B（HNO₃稀）</span>
+    <span class="arrow-txt">+Cu→</span>
+    <span class="unknown">D（无色）</span>
+    <span class="arrow-txt">+空气→</span>
+    <span class="box-node">红棕</span>
+  </div>
+  <div class="hint">提示：NO₂与水反应是歧化反应；浓/稀HNO₃与Cu反应的还原产物不同</div>
+  <button class="ans-btn" onclick="reveal(5,this)">显示答案 ↓</button>
+  <div class="ans-box" id="ans5">
+    <b>A=NO₂，B=HNO₃，C=NO，D=NO（稀HNO₃还原产物）</b><br>
+    <div class="sep"></div>
+    <span class="eq">3NO₂ + H₂O = 2HNO₃ + NO（歧化：+4→+5 和 +4→+2）</span><br>
+    <span class="eq">Cu + 4HNO₃(浓) = Cu(NO₃)₂ + 2NO₂↑ + 2H₂O（浓→NO₂）</span><br>
+    <span class="eq">3Cu + 8HNO₃(稀) = 3Cu(NO₃)₂ + 2NO↑ + 4H₂O（稀→NO）</span><br>
+    <span class="eq">2NO + O₂ = 2NO₂（无色NO遇空气立即变红棕色，用于检验NO）</span><br>
+    <b>高考高频：</b>浓HNO₃还原产物是NO₂（红棕）；稀HNO₃还原产物是NO（无色）。NO₂与水歧化生成NO，需通空气使NO重新氧化为NO₂以提高吸收率。
+  </div>
+</div>
+
+</div>
+<script>
+var revealed=0;
+function reveal(n,btn){
+  var box=document.getElementById('ans'+n);
+  if(!box.classList.contains('shown')){
+    box.classList.add('shown');
+    btn.textContent='隐藏答案 ↑';
+    revealed++;
+  } else {
+    box.classList.remove('shown');
+    btn.textContent='显示答案 ↓';
+    revealed--;
+  }
+  document.getElementById('prog-fill').style.width=(revealed/6*100)+'%';
+  document.getElementById('prog-text').textContent='已揭示：'+revealed+' / 6';
+}
+</script>

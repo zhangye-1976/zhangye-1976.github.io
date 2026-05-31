@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500">
+  <defs>
+    <style>
+      .box { fill:#E1F5EE; stroke:#00796b; stroke-width:1.5; rx:8; }
+      .box2 { fill:#E8F5E9; stroke:#388E3C; stroke-width:1.5; rx:6; }
+      .box3 { fill:#FFF9C4; stroke:#F9A825; stroke-width:1.5; rx:6; }
+      .boxt { fill:#B2DFDB; stroke:#00796b; stroke-width:2; rx:8; }
+      .tit { font:bold 15px sans-serif; fill:#00796b; }
+      .nm { font:13px sans-serif; fill:#1a1a1a; }
+      .sm { font:11px sans-serif; fill:#333; }
+      .red { font:11px sans-serif; fill:#c0392b; }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="200" y="8" width="280" height="34" class="boxt"/>
+  <text x="340" y="31" text-anchor="middle" class="tit">第7章 复数</text>
+
+  <!-- 复数概念 -->
+  <rect x="20" y="52" width="180" height="28" class="box"/>
+  <text x="110" y="70" text-anchor="middle" class="nm">复数的概念</text>
+  <rect x="20" y="88" width="180" height="100" class="box"/>
+  <text x="110" y="108" text-anchor="middle" class="sm">形式：z=a+bi</text>
+  <text x="110" y="126" text-anchor="middle" class="sm">实部：a=Re(z)</text>
+  <text x="110" y="144" text-anchor="middle" class="sm">虚部：b=Im(z)（不是bi！）</text>
+  <text x="110" y="162" text-anchor="middle" class="sm">纯虚数：a=0且b≠0</text>
+  <text x="110" y="180" text-anchor="middle" class="red">虚部是b，不是bi！</text>
+
+  <!-- 复平面 -->
+  <rect x="220" y="52" width="180" height="28" class="box"/>
+  <text x="310" y="70" text-anchor="middle" class="nm">复平面</text>
+  <rect x="220" y="88" width="180" height="100" class="box2"/>
+  <text x="310" y="110" text-anchor="middle" class="sm">横轴：实轴（a）</text>
+  <text x="310" y="128" text-anchor="middle" class="sm">纵轴：虚轴（b）</text>
+  <text x="310" y="146" text-anchor="middle" class="sm">z=a+bi 对应点(a,b)</text>
+  <text x="310" y="164" text-anchor="middle" class="sm">模：|z|=√(a²+b²)</text>
+  <text x="310" y="180" text-anchor="middle" class="sm">共轭：z̄=a−bi</text>
+
+  <!-- 复数运算 -->
+  <rect x="420" y="52" width="240" height="28" class="box"/>
+  <text x="540" y="70" text-anchor="middle" class="nm">复数的运算（核心考点）</text>
+  <rect x="420" y="88" width="240" height="140" class="box3"/>
+  <text x="430" y="112" class="sm">加减：(a+bi)±(c+di)=(a±c)+(b±d)i</text>
+  <text x="430" y="130" class="sm">乘法：(a+bi)(c+di)=ac−bd+(ad+bc)i</text>
+  <text x="430" y="148" class="sm">⚠ 注意i²=−1！</text>
+  <text x="430" y="166" class="sm">除法：分母实数化</text>
+  <text x="430" y="184" class="sm">(a+bi)/(c+di)=[(a+bi)(c−di)]/(c²+d²)</text>
+  <text x="430" y="202" class="sm">共轭：z·z̄=|z|²=a²+b²</text>
+  <text x="430" y="220" class="sm">i的周期：i¹=i,i²=−1,i³=−i,i⁴=1</text>
+
+  <!-- 复数方程 -->
+  <rect x="20" y="200" width="300" height="28" class="box"/>
+  <text x="170" y="218" text-anchor="middle" class="nm">复数方程与复数根</text>
+  <rect x="20" y="236" width="300" height="100" class="box2"/>
+  <text x="30" y="260" class="sm">实系数一元二次方程：</text>
+  <text x="30" y="278" class="sm">ax²+bx+c=0（a,b,c∈R）</text>
+  <text x="30" y="296" class="sm">Δ≥0：两实根</text>
+  <text x="30" y="314" class="sm">Δ&lt;0：两共轭虚根</text>
+  <text x="30" y="332" class="sm">根公式：x=[−b±√(b²−4ac)]/(2a)</text>
+  <text x="30" y="350" class="red">虚根成对出现（实系数时）！</text>
+
+  <!-- 复数几何意义 -->
+  <rect x="340" y="200" width="320" height="28" class="box"/>
+  <text x="500" y="218" text-anchor="middle" class="nm">复数的几何意义</text>
+  <rect x="340" y="236" width="320" height="100" class="box3"/>
+  <text x="350" y="260" class="sm">加减法：平行四边形法则（复平面向量）</text>
+  <text x="350" y="278" class="sm">乘法：模相乘，辐角相加（拓展）</text>
+  <text x="350" y="296" class="sm">|z₁±z₂| 的几何意义：两点距离</text>
+  <text x="350" y="314" class="sm">|z−z₀|=r：复平面上以z₀为圆心r为半径的圆</text>
+  <text x="350" y="332" class="sm">|z−z₁|=|z−z₂|：z在线段z₁z₂的中垂线上</text>
+
+  <!-- 解题模板 -->
+  <rect x="20" y="354" width="640" height="28" class="box"/>
+  <text x="340" y="372" text-anchor="middle" class="nm">复数解题模板</text>
+  <rect x="20" y="390" width="640" height="100" class="box"/>
+  <text x="30" y="412" class="sm">【纯虚数判断】设z=a+bi，令a=0,b≠0，解方程</text>
+  <text x="30" y="430" class="sm">【复数相等】a+bi=c+di ⇔ a=c且b=d（实部虚部分别相等）</text>
+  <text x="30" y="448" class="sm">【模的计算】|a+bi|=√(a²+b²)；|z₁z₂|=|z₁||z₂|</text>
+  <text x="30" y="466" class="sm">【分母实数化】分子分母同乘分母的共轭复数</text>
+  <text x="30" y="484" class="sm">【i的幂】按周期4：i⁴ᵏ=1,i⁴ᵏ⁺¹=i,i⁴ᵏ⁺²=−1,i⁴ᵏ⁺³=−i</text>
+  <text x="30" y="502" class="red">易错：虚部是b不是bi；i²=−1不要记错！</text>
+</svg>

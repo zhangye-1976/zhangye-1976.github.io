@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>有机化学基础 互动练习</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; color: #2C2C2A; padding: 20px; }
+.container { max-width: 700px; margin: 0 auto; }
+h2 { font-size: 18px; font-weight: 500; margin-bottom: 16px; color: #0F6E56; }
+.card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.qt { font-size: 14px; font-weight: 500; margin-bottom: 12px; }
+.tag { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 4px; background: #E1F5EE; color: #0F6E56; }
+.opts { display: flex; flex-direction: column; gap: 8px; }
+.opt { padding: 10px 14px; border: 1px solid #D3D1C7; border-radius: 8px; cursor: pointer; font-size: 13px; transition: all 0.2s; display: flex; align-items: center; }
+.opt:hover { border-color: #1D9E75; background: #E1F5EE; }
+.opt.sel { border-color: #1D9E75; background: #E1F5EE; }
+.opt.corr { border-color: #1D9E75; background: #E1F5EE; }
+.opt.wrng { border-color: #A32D2D; background: #FCEBEB; }
+.opt input { margin-right: 10px; }
+.fb { margin-top: 10px; padding: 10px; border-radius: 8px; font-size: 13px; display: none; }
+.fb.ok { display: block; background: #E1F5EE; color: #085041; }
+.fb.err { display: block; background: #FCEBEB; color: #791F1F; }
+.btn { background: #1D9E75; color: white; border: none; padding: 10px 24px; border-radius: 8px; font-size: 14px; cursor: pointer; margin: 10px 0; }
+.btn:hover { background: #0F6E56; }
+.score { text-align: center; font-size: 16px; font-weight: 500; margin: 12px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>化学选必3 · 有机化学基础 练习</h2>
+<p style="font-size:13px;color:#888780;margin-bottom:16px;">共6题：官能团识别/反应条件/转化路线/特征反应/同分异构/有机合成</p>
+<div id="qs"></div>
+<button class="btn" onclick="check()">提交全部</button>
+<div class="score" id="scr"></div>
+</div>
+<script>
+const Q = [
+  {id:1,tag:"官能团",text:"下列物质中，不含羟基(—OH)的是？",opts:["A. 乙醇","B. 苯酚","C. 乙醛","D. 甘油"],ans:2,exp:"乙醛(CH₃CHO)含醛基(—CHO)，不含羟基。乙醇(C₂H₅OH)、苯酚(C₆H₅OH)、甘油(C₃H₅(OH)₃)均含—OH。"},
+  {id:2,tag:"反应条件",text:"由溴乙烷制取乙烯，应使用的试剂和条件是？",opts:["A. NaOH水溶液,△","B. NaOH醇溶液,△","C. 浓H₂SO₄,170°C","D. H₂O,催化剂,△"],ans:1,exp:"溴乙烷→乙烯是消去反应，条件为NaOH醇溶液加热。注意：水解用NaOH水溶液(→乙醇)，消去用NaOH醇溶液(→乙烯)。C是乙醇→乙烯的条件。"},
+  {id:3,tag:"转化路线",text:"下列转化路线合理的是？",opts:["A. CH₃CH₂OH →(浓H₂SO₄,140°C)→ CH₂=CH₂","B. CH₃CHO →(H₂,Ni,△)→ CH₃COOH","C. CH₃CH₂Br →(NaOH水,△)→ CH₃CH₂OH","D. CH₃COOH →(NaOH,△)→ CH₃COOCH₃"],ans:2,exp:"C正确：卤代烃NaOH水溶液加热水解生成醇。A错误：140°C生成乙醚，170°C才生成乙烯。B错误：醛加氢还原为醇，不是氧化为酸。D错误：羧酸+NaOH生成盐，不是酯。"},
+  {id:4,tag:"特征反应",text:"能发生银镜反应的物质是？",opts:["A. 丙酮","B. 乙酸","C. 葡萄糖","D. 乙酸乙酯"],ans:2,exp:"葡萄糖含醛基(多羟基醛)，能发生银镜反应。丙酮是酮，不能被弱氧化剂氧化。乙酸是羧酸，乙酸乙酯是酯，均无醛基。"},
+  {id:5,tag:"同分异构",text:"分子式为C₄H₈O₂且能与Na₂CO₃反应放出CO₂的同分异构体有几种？（不考虑立体异构）",opts:["A. 2种","B. 3种","C. 4种","D. 5种"],ans:0,exp:"能与Na₂CO₃反应放CO₂→含—COOH。C₄H₈O₂含—COOH时剩余—C₃H₇。—C₃H₇有2种结构(正丙基/异丙基)→共2种：CH₃CH₂CH₂COOH和(CH₃)₂CHCOOH。"},
+  {id:6,tag:"有机合成",text:"由乙烯合成乙酸乙酯，以下路线中最合理的是？",opts:["A. 乙烯→乙醇→乙醛→乙酸→乙酸乙酯","B. 乙烯→溴乙烷→乙醇→乙酸乙酯","C. 乙烯→乙醇→乙酸乙酯(直接酯化)","D. 乙烯直接氧化→乙酸乙酯"],ans:0,exp:"最合理路线：乙烯水化→乙醇，乙醇氧化→乙醛，乙醛氧化→乙酸，乙醇+乙酸酯化→乙酸乙酯。每步反应明确、条件可控。B中溴乙烷→乙醇再→乙酸乙酯需先氧化成乙酸，路线绕远。"}
+];
+let ua = new Array(Q.length).fill(-1);
+function r() {
+  document.getElementById('qs').innerHTML = Q.map((q,i) => `
+    <div class="card" id="c${i}">
+      <div><span class="tag">${q.tag}</span></div>
+      <div class="qt">${i+1}. ${q.text}</div>
+      <div class="opts">${q.opts.map((o,j) => `
+        <label class="opt" id="o${i}_${j}" onclick="s(${i},${j})">
+          <input type="radio" name="q${i}" value="${j}"> ${o}
+        </label>`).join('')}</div>
+      <div class="fb" id="f${i}"></div>
+    </div>`).join('');
+}
+function s(qi,oi) { ua[qi]=oi; document.querySelectorAll(`#c${qi} .opt`).forEach(e=>e.classList.remove('sel')); document.getElementById(`o${qi}_${oi}`).classList.add('sel'); }
+function check() {
+  let ok=0;
+  Q.forEach((q,i)=>{
+    let f=document.getElementById('f'+i), os=document.querySelectorAll('#c'+i+' .opt');
+    os.forEach(o=>{o.classList.remove('corr','wrng')});
+    if(ua[i]===-1){f.className='fb err';f.textContent='请选择';f.style.display='block';}
+    else if(ua[i]===q.ans){f.className='fb ok';f.textContent='✓ 正确！'+q.exp;f.style.display='block';document.getElementById('o'+i+'_'+q.ans).classList.add('corr');ok++;}
+    else{f.className='fb err';f.textContent='✗ 错误。'+q.exp;f.style.display='block';document.getElementById('o'+i+'_'+ua[i]).classList.add('wrng');document.getElementById('o'+i+'_'+q.ans).classList.add('corr');}
+  });
+  document.getElementById('scr').innerHTML='得分: '+ok+'/'+Q.length+(ok===Q.length?' 全对！':ok>=4?' 不错！':' 加油！');
+}
+r();
+</script>
+</body>
+</html>

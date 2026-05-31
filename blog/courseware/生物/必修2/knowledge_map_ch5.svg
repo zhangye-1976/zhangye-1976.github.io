@@ -1,0 +1,72 @@
+<svg viewBox="0 0 680 600" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第5章 基因突变及其他变异</title>
+  <desc>基因突变、基因重组、染色体变异、人类遗传病</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="160" y="8" width="360" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">第5章 基因突变及其他变异 ★★★</text>
+
+  <line x1="340" y1="48" x2="340" y2="68" stroke="#00796b" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <!-- Three mutation types comparison -->
+  <text x="340" y="92" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">三种可遗传变异 — 选择题必考区分！</text>
+
+  <!-- Gene mutation -->
+  <rect x="20" y="108" width="200" height="250" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="120" y="130" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">基因突变</text>
+  <text x="120" y="152" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#085041" font-family="system-ui, sans-serif">本质：碱基对替换/增添/缺失</text>
+  <text x="120" y="172" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#085041" font-family="system-ui, sans-serif">发生：DNA复制时（间期）</text>
+  <text x="120" y="194" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56" font-family="system-ui, sans-serif">特点：普遍/随机/不定向/低频</text>
+  <text x="120" y="214" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56" font-family="system-ui, sans-serif">多害少利</text>
+  <text x="120" y="236" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">★ 产生新基因</text>
+  <text x="120" y="256" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">★ 显微镜不可见</text>
+  <text x="120" y="278" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">★ 不一定改变性状</text>
+  <text x="120" y="298" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">（密码子简并性）</text>
+  <text x="120" y="322" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56" font-family="system-ui, sans-serif">实例：镰刀型细胞贫血症</text>
+  <text x="120" y="340" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56" font-family="system-ui, sans-serif">癌变：原癌基因+抑癌基因突变</text>
+
+  <!-- Gene recombination -->
+  <rect x="240" y="108" width="200" height="250" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="130" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">基因重组</text>
+  <text x="340" y="152" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#085041" font-family="system-ui, sans-serif">本质：原有基因重新组合</text>
+  <text x="340" y="172" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#085041" font-family="system-ui, sans-serif">来源①：减I前期交叉互换</text>
+  <text x="340" y="192" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#085041" font-family="system-ui, sans-serif">来源②：减I后期自由组合</text>
+  <text x="340" y="214" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">★ 不产生新基因</text>
+  <text x="340" y="234" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">★ 产生新基因型</text>
+  <text x="340" y="256" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">★ 显微镜不可见</text>
+  <text x="340" y="278" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">★ 杂交育种原理</text>
+  <text x="340" y="300" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56" font-family="system-ui, sans-serif">有性生殖普遍存在</text>
+  <text x="340" y="322" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56" font-family="system-ui, sans-serif">实例："一母生九子各不同"</text>
+
+  <!-- Chromosome variation -->
+  <rect x="460" y="108" width="200" height="250" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="560" y="130" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">染色体变异</text>
+  <text x="560" y="152" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#085041" font-family="system-ui, sans-serif">结构变异：缺/重/倒/易</text>
+  <text x="560" y="172" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#085041" font-family="system-ui, sans-serif">数目变异：整倍/非整倍</text>
+  <text x="560" y="194" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">★ 显微镜可见！</text>
+  <text x="560" y="216" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">★ 易位≠交叉互换！</text>
+  <text x="560" y="236" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">易位：非同源染色体</text>
+  <text x="560" y="258" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">★ 单倍体≠一个染色体组</text>
+  <text x="560" y="280" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">（四倍体的单倍体=2n）</text>
+  <text x="560" y="302" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56" font-family="system-ui, sans-serif">实例：21三体、无子西瓜(3n)</text>
+  <text x="560" y="322" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#0F6E56" font-family="system-ui, sans-serif">猫叫综合征(5p⁻)、多倍体小麦</text>
+
+  <!-- Judgement tips -->
+  <rect x="20" y="376" width="640" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="396" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">一句话快速判断：</text>
+  <text x="340" y="416" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">显微镜可见→染色体变异 | 产生新基因→基因突变 | 不产生新基因且不可见→基因重组</text>
+
+  <!-- Human genetic diseases -->
+  <rect x="20" y="448" width="640" height="75" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="470" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">人类遗传病三类</text>
+  <text x="340" y="492" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">单基因：白化病/红绿色盲/血友病 | 多基因：高血压/冠心病 | 染色体异常：21三体/猫叫综合征</text>
+  <text x="340" y="512" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 遗传咨询 + 产前诊断 + 基因检测 → 预防遗传病</text>
+
+  <rect x="140" y="544" width="400" height="36" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="340" y="566" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">高频：三种变异区分 | 染色体组/二倍体/多倍体/单倍体 | 人类遗传病类型</text>
+</svg>

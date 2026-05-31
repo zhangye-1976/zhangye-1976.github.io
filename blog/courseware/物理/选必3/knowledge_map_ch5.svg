@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480">
+  <rect width="680" height="480" fill="#E1F5EE" rx="12"/>
+  <text x="340" y="35" text-anchor="middle" font-size="20" font-weight="700" fill="#00796b">第5章 原子核 ⭐⭐⭐⭐</text>
+
+  <!-- 核组成与射线 -->
+  <rect x="30" y="55" width="300" height="170" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="55" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="180" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">原子核组成与射线</text>
+  <text x="45" y="105" font-size="11" fill="#555">核符号：ᴬᶻX（A=质量数 Z=质子数）</text>
+  <text x="45" y="130" font-size="12" font-weight="600" fill="#333">三种射线：</text>
+  <text x="45" y="152" font-size="11" fill="#555">α：⁴₂He · 穿透最弱 · 电离最强</text>
+  <text x="45" y="172" font-size="11" fill="#555">β：电子 · 穿透中等 · 电离中等</text>
+  <text x="45" y="192" font-size="11" fill="#555">γ：电磁波 · 穿透最强 · 电离最弱</text>
+  <text x="45" y="215" font-size="11" fill="#72243E">⚠ α射线是氦核，不是氦原子！</text>
+
+  <!-- 衰变与半衰期 -->
+  <rect x="350" y="55" width="300" height="170" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="350" y="55" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="500" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">衰变规律</text>
+  <text x="365" y="105" font-size="11" font-weight="600" fill="#333">α衰变：ᴬᶻX → ᴬ⁻⁴_{Z-2}Y+⁴₂He</text>
+  <text x="365" y="128" font-size="11" font-weight="600" fill="#333">β衰变：ᴬᶻX → ᴬ_{Z+1}Y+⁰₋₁e</text>
+  <text x="365" y="155" font-size="12" font-weight="600" fill="#72243E">衰变定律：N=N₀(1/2)^(t/τ)</text>
+  <text x="365" y="180" font-size="11" fill="#555">半衰期τ：剩下一半所需时间</text>
+  <text x="365" y="205" font-size="11" fill="#72243E">⚠ 半衰期与温度/压强/化学状态无关！</text>
+
+  <!-- 核反应与质能方程 -->
+  <rect x="30" y="245" width="620" height="220" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="245" width="620" height="28" fill="#00796b" rx="8"/>
+  <text x="340" y="264" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">核反应与质能方程 ⭐⭐⭐⭐</text>
+
+  <text x="55" y="298" font-size="12" font-weight="600" fill="#333">核反应类型：人工转变 | 核裂变（链式反应） | 核聚变（热核反应）</text>
+  <text x="55" y="325" font-size="11" fill="#555">核反应方程书写：①质量数守恒 ②电荷数守恒 ③用核符号格式</text>
+
+  <text x="55" y="358" font-size="12" font-weight="600" fill="#72243E">质能方程：E = mc²  →  ΔE = Δm·c²</text>
+  <text x="55" y="385" font-size="11" fill="#555">质量亏损：核子结合成原子核时质量减少量 → 转化为结合能释放</text>
+  <text x="55" y="412" font-size="11" fill="#555">单位换算：1u = 931.5 MeV（原子质量单位的能量当量）</text>
+
+  <text x="55" y="442" font-size="11" fill="#333">比结合能：结合能÷核子数 · Fe-56最大→最稳定 · 轻核聚变和重核裂变都朝Fe方向</text>
+</svg>

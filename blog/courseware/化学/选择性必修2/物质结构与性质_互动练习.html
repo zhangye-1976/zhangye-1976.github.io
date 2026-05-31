@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>物质结构与性质 互动练习</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; color: #2C2C2A; line-height: 1.6; padding: 20px; }
+.container { max-width: 700px; margin: 0 auto; }
+h2 { font-size: 18px; font-weight: 500; margin-bottom: 16px; color: #3C3489; }
+.question-card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.question-text { font-size: 14px; font-weight: 500; margin-bottom: 12px; }
+.options { display: flex; flex-direction: column; gap: 8px; }
+.option { display: flex; align-items: center; padding: 10px 14px; border: 1px solid #D3D1C7; border-radius: 8px; cursor: pointer; transition: all 0.2s; font-size: 13px; }
+.option:hover { border-color: #534AB7; background: #EEEDFE; }
+.option.selected { border-color: #534AB7; background: #EEEDFE; }
+.option.correct { border-color: #1D9E75; background: #E1F5EE; }
+.option.wrong { border-color: #A32D2D; background: #FCEBEB; }
+.option input { margin-right: 10px; }
+.feedback { margin-top: 10px; padding: 10px; border-radius: 8px; font-size: 13px; display: none; }
+.feedback.correct { display: block; background: #E1F5EE; color: #085041; }
+.feedback.wrong { display: block; background: #FCEBEB; color: #791F1F; }
+.btn { background: #534AB7; color: white; border: none; padding: 10px 24px; border-radius: 8px; font-size: 14px; cursor: pointer; margin-top: 10px; }
+.btn:hover { background: #3C3489; }
+.score { text-align: center; font-size: 16px; font-weight: 500; margin: 16px 0; }
+.tag { display: inline-block; background: #EEEDFE; color: #534AB7; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-right: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>化学选必2 · 物质结构与性质 练习</h2>
+<p style="font-size:13px;color:#888780;margin-bottom:20px;">共6题，涵盖电子排布、VSEPR/杂化、分子极性、氢键、晶体类型、晶胞计算</p>
+
+<div id="questions"></div>
+<button class="btn" onclick="checkAll()">提交全部</button>
+<div class="score" id="score"></div>
+</div>
+
+<script>
+const questions = [
+  {
+    id: 1,
+    tag: "电子排布",
+    text: "下列基态原子的电子排布式中，书写正确的是？",
+    options: ["A. Cr: [Ar]3d⁴4s²", "B. Cu: [Ar]3d¹⁰4s¹", "C. Fe: [Ar]3d⁸", "D. N: 1s²2s²2pₓ²2pᵧ¹"],
+    answer: 1,
+    explanation: "Cu的3d轨道全满(d¹⁰)更稳定，正确的排布是[Ar]3d¹⁰4s¹。A中Cr应为[Ar]3d⁵4s¹(半满稳定)。C中Fe应为[Ar]3d⁶4s²。D中N的2p电子应分占三个轨道且自旋平行——这正是洪特规则，写作1s²2s²2p³即可。"
+  },
+  {
+    id: 2,
+    tag: "VSEPR+杂化",
+    text: "SO₂分子的空间构型和中心原子杂化方式分别是？",
+    options: ["A. 直线形, sp", "B. 平面三角形, sp²", "C. V形, sp²", "D. V形, sp³"],
+    answer: 2,
+    explanation: "S的价电子=6，两个O各提供0个电子(作为配位原子)，价层电子对数=(6+0)/2=3。有1对孤电子+2个σ键→V形，杂化轨道数=σ键数+孤对数=2+1=3→sp²。"
+  },
+  {
+    id: 3,
+    tag: "分子极性",
+    text: "下列分子中，属于极性分子的是？",
+    options: ["A. CO₂", "B. CH₄", "C. BF₃", "D. NH₃"],
+    answer: 3,
+    explanation: "NH₃是三角锥形(sp³杂化，1对孤电子)，N-H键的极性不能抵消，为极性分子。CO₂(直线形)、CH₄(正四面体)、BF₃(平面三角形)都是空间对称结构，键的极性相互抵消，为非极性分子。"
+  },
+  {
+    id: 4,
+    tag: "氢键",
+    text: "下列物质中，沸点最高的是？",
+    options: ["A. CH₄", "B. NH₃", "C. H₂O", "D. HF"],
+    answer: 2,
+    explanation: "四种物质中H₂O沸点最高(100°C)。虽然HF也能形成氢键(沸点19.5°C)，但H₂O每个分子可形成4个氢键(两个O-H供氢+两对孤电子受氢)，而HF每个分子平均形成2个氢键，所以H₂O的沸点最高。注意：尽管单个H-F...H氢键比O-H...O氢键强，但H₂O的氢键网络更密集。"
+  },
+  {
+    id: 5,
+    tag: "晶体类型",
+    text: "下列物质中，属于共价晶体的是？",
+    options: ["A. 干冰(CO₂)", "B. 金刚石", "C. 食盐(NaCl)", "D. 冰(H₂O)"],
+    answer: 1,
+    explanation: "金刚石中每个C原子通过sp³杂化与4个C形成共价键，构成三维空间网状结构，是典型的共价晶体。CO₂是分子晶体(CO₂分子间范德华力)；NaCl是离子晶体(Na⁺与Cl⁻离子键)；冰是分子晶体(H₂O分子间氢键)。"
+  },
+  {
+    id: 6,
+    tag: "晶胞计算",
+    text: "NaCl晶胞中，Na⁺和Cl⁻的个数分别为？",
+    options: ["A. Na⁺=1, Cl⁻=1", "B. Na⁺=4, Cl⁻=4", "C. Na⁺=6, Cl⁻=6", "D. Na⁺=8, Cl⁻=8"],
+    answer: 1,
+    explanation: "均摊法计算——Cl⁻: 8个顶角×1/8 + 6个面心×1/2 = 1+3 = 4；Na⁺: 12条棱中点×1/4 + 1个体心 = 3+1 = 4。所以Na⁺:Cl⁻=4:4=1:1，化学式NaCl。"
+  }
+];
+
+let userAnswers = new Array(questions.length).fill(-1);
+
+function renderQuestions() {
+  const container = document.getElementById('questions');
+  container.innerHTML = questions.map((q, i) => `
+    <div class="question-card" id="q${i}">
+      <div><span class="tag">${q.tag}</span></div>
+      <div class="question-text">${i+1}. ${q.text}</div>
+      <div class="options">
+        ${q.options.map((opt, j) => `
+          <label class="option" id="opt${i}_${j}" onclick="selectOption(${i}, ${j})">
+            <input type="radio" name="q${i}" value="${j}"> ${opt}
+          </label>
+        `).join('')}
+      </div>
+      <div class="feedback" id="fb${i}"></div>
+    </div>
+  `).join('');
+}
+
+function selectOption(qIdx, optIdx) {
+  userAnswers[qIdx] = optIdx;
+  document.querySelectorAll(`#q${qIdx} .option`).forEach(el => el.classList.remove('selected'));
+  document.getElementById(`opt${qIdx}_${optIdx}`).classList.add('selected');
+}
+
+function checkAll() {
+  let correct = 0;
+  questions.forEach((q, i) => {
+    const fb = document.getElementById(`fb${i}`);
+    const opts = document.querySelectorAll(`#q${i} .option`);
+    opts.forEach(o => { o.classList.remove('correct', 'wrong'); });
+    
+    if (userAnswers[i] === -1) {
+      fb.className = 'feedback wrong';
+      fb.textContent = '请选择一个选项';
+      fb.style.display = 'block';
+    } else if (userAnswers[i] === q.answer) {
+      fb.className = 'feedback correct';
+      fb.textContent = '✓ 正确！' + q.explanation;
+      fb.style.display = 'block';
+      document.getElementById(`opt${i}_${q.answer}`).classList.add('correct');
+      correct++;
+    } else {
+      fb.className = 'feedback wrong';
+      fb.textContent = '✗ 错误。' + q.explanation;
+      fb.style.display = 'block';
+      document.getElementById(`opt${i}_${userAnswers[i]}`).classList.add('wrong');
+      document.getElementById(`opt${i}_${q.answer}`).classList.add('correct');
+    }
+  });
+  
+  document.getElementById('score').innerHTML = 
+    `得分: ${correct}/${questions.length} ` + 
+    (correct === questions.length ? ' 全部正确！' : correct >= 4 ? ' 不错！' : ' 继续加油！');
+}
+
+renderQuestions();
+</script>
+</body>
+</html>

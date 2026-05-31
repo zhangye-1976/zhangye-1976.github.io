@@ -1,0 +1,63 @@
+<svg viewBox="0 0 680 580" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第2章 群落及其演替</title>
+  <desc>群落结构、种间关系、演替类型</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke"
+        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="180" y="8" width="320" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">第2章 群落及其演替 ★★★</text>
+
+  <rect x="40" y="68" width="600" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="91" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">一、群落的结构</text>
+  <text x="340" y="109" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#085041" font-family="system-ui, sans-serif">物种组成 · 种间关系 · 空间结构（垂直/水平）</text>
+
+  <rect x="40" y="128" width="600" height="130" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+  <text x="340" y="150" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#042C53" font-family="system-ui, sans-serif">种间关系四类型（高考高频考点）</text>
+  <text x="80" y="175" font-size="12" fill="#0C447C" font-family="system-ui, sans-serif">捕食：一种以另一种为食</text>
+  <text x="80" y="197" font-size="12" fill="#0C447C" font-family="system-ui, sans-serif">竞争：争夺资源和空间</text>
+  <text x="80" y="219" font-size="12" fill="#0C447C" font-family="system-ui, sans-serif">互利共生：同生共死，双方受益</text>
+  <text x="80" y="241" font-size="12" fill="#0C447C" font-family="system-ui, sans-serif">寄生：一方受益，一方受害</text>
+  <text x="400" y="175" font-size="11" fill="#D4537E" font-family="system-ui, sans-serif">🔴 捕食曲线：被捕食者数量>捕食者</text>
+  <text x="400" y="197" font-size="11" fill="#D4537E" font-family="system-ui, sans-serif">🔴 竞争曲线：一方占优，另一方受抑制</text>
+  <text x="400" y="219" font-size="11" fill="#D4537E" font-family="system-ui, sans-serif">🔴 共生曲线：数量变化同步（同增同减）</text>
+  <text x="400" y="241" font-size="11" fill="#D4537E" font-family="system-ui, sans-serif">🔴 判别技巧：看曲线变化是否同步</text>
+
+  <rect x="40" y="278" width="290" height="70" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="185" y="300" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">垂直结构（分层现象）</text>
+  <text x="60" y="322" font-size="11" fill="#085041" font-family="system-ui, sans-serif">森林：乔木层→灌木层→草本层</text>
+  <text x="60" y="340" font-size="11" fill="#085041" font-family="system-ui, sans-serif">池塘：挺水→浮水→沉水植物</text>
+  <text x="60" y="358" font-size="11" fill="#D4537E" font-family="system-ui, sans-serif">🔴 提高利用环境资源能力</text>
+
+  <rect x="350" y="278" width="290" height="70" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="495" y="300" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">水平结构（镶嵌分布）</text>
+  <text x="370" y="322" font-size="11" fill="#085041" font-family="system-ui, sans-serif">地形、光照、湿度不同→不同地段分布不同种群</text>
+  <text x="370" y="340" font-size="11" fill="#085041" font-family="system-ui, sans-serif">🔴 高山植被垂直分布 ≠ 群落垂直结构</text>
+  <text x="370" y="358" font-size="11" fill="#D4537E" font-family="system-ui, sans-serif">（是地带性分布，由气候差异导致）</text>
+
+  <rect x="40" y="370" width="600" height="44" rx="8" fill="#FAEBF0" stroke="#D4537E" stroke-width="0.5"/>
+  <text x="340" y="393" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">二、群落的演替 ★★★</text>
+  <text x="340" y="411" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">初生演替（裸岩→森林）· 次生演替（弃耕农田→森林）</text>
+
+  <rect x="40" y="430" width="290" height="120" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+  <text x="185" y="452" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">初生演替（裸岩）</text>
+  <text x="60" y="474" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">起点：无植被，无土壤</text>
+  <text x="60" y="492" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">过程：裸岩→地衣→苔藓→草本</text>
+  <text x="60" y="510" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">        →灌木→森林</text>
+  <text x="60" y="528" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">时间：经历时间长</text>
+  <text x="60" y="546" font-size="11" fill="#D4537E" font-family="system-ui, sans-serif">🔴 地衣是先驱物种</text>
+
+  <rect x="350" y="430" width="290" height="120" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+  <text x="495" y="452" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">次生演替（弃耕农田）</text>
+  <text x="370" y="474" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">起点：土壤条件基本保留</text>
+  <text x="370" y="492" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">过程：草本→灌木→森林</text>
+  <text x="370" y="510" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">      （跳过地衣、苔藓阶段）</text>
+  <text x="370" y="528" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">时间：经历时间短</text>
+  <text x="370" y="546" font-size="11" fill="#D4537E" font-family="system-ui, sans-serif">🔴 人类活动可改变演替速度/方向</text>
+
+  <rect x="40" y="568" width="600" height="0" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="0.5" opacity="0"/>
+</svg>

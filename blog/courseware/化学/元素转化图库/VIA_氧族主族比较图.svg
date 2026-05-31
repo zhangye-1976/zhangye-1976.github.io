@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 700" font-family="SimSun, 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="adO" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#333"/></marker>
+  </defs>
+
+  <rect width="960" height="700" fill="#FAFAFA" rx="8"/>
+  <rect x="0" y="0" width="960" height="56" fill="#01579B" rx="8"/>
+  <rect x="0" y="28" width="960" height="28" fill="#01579B"/>
+  <text x="480" y="37" text-anchor="middle" fill="white" font-size="21" font-weight="bold">氧族(VIA族) 比较 —— 通性与个性</text>
+
+  <!-- Header -->
+  <rect x="40" y="75" width="140" height="30" rx="4" fill="#01579B"/>
+  <text x="110" y="95" text-anchor="middle" fill="white" font-size="13" font-weight="bold">比较内容</text>
+  <rect x="190" y="75" width="280" height="30" rx="4" fill="#E3F2FD"/>
+  <text x="330" y="95" text-anchor="middle" fill="#01579B" font-size="13" font-weight="bold">O（氧）</text>
+  <rect x="480" y="75" width="250" height="30" rx="4" fill="#FFF9C4"/>
+  <text x="605" y="95" text-anchor="middle" fill="#F9A825" font-size="13" font-weight="bold">S（硫）🔴 重点</text>
+  <rect x="740" y="75" width="180" height="30" rx="4" fill="#E8EAF6"/>
+  <text x="830" y="95" text-anchor="middle" fill="#1A237E" font-size="13" font-weight="bold">递变规律</text>
+
+  <!-- Data -->
+  <rect x="40" y="110" width="140" height="34" fill="#F5F5F5" rx="2"/>
+  <text x="110" y="132" text-anchor="middle" fill="#333" font-size="11">原子半径</text>
+  <text x="330" y="132" text-anchor="middle" fill="#333" font-size="12">66 pm</text>
+  <text x="605" y="132" text-anchor="middle" fill="#333" font-size="12">104 pm</text>
+  <text x="830" y="132" text-anchor="middle" fill="#1A237E" font-size="11">↓ 增大</text>
+
+  <rect x="40" y="149" width="140" height="34" fill="#FFF" rx="2"/>
+  <text x="110" y="171" text-anchor="middle" fill="#333" font-size="11">非金属性</text>
+  <text x="330" y="171" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">最强（F除外）</text>
+  <text x="605" y="171" text-anchor="middle" fill="#333" font-size="12">较强</text>
+  <text x="830" y="171" text-anchor="middle" fill="#1A237E" font-size="11">↓ 减弱</text>
+
+  <rect x="40" y="188" width="140" height="34" fill="#F5F5F5" rx="2"/>
+  <text x="110" y="210" text-anchor="middle" fill="#333" font-size="11">电负性</text>
+  <text x="330" y="210" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">3.44 🔴</text>
+  <text x="605" y="210" text-anchor="middle" fill="#333" font-size="12">2.58</text>
+  <text x="830" y="210" text-anchor="middle" fill="#1A237E" font-size="11">↓ 减弱</text>
+
+  <rect x="40" y="227" width="140" height="34" fill="#FFF" rx="2"/>
+  <text x="110" y="249" text-anchor="middle" fill="#333" font-size="11">常见价态</text>
+  <text x="330" y="249" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">-2, -1 (H₂O₂) 🔴</text>
+  <text x="605" y="249" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">-2, +4, +6 🔴</text>
+  <text x="830" y="249" text-anchor="middle" fill="#1A237E" font-size="11">变价增多</text>
+
+  <rect x="40" y="266" width="140" height="34" fill="#F5F5F5" rx="2"/>
+  <text x="110" y="288" text-anchor="middle" fill="#333" font-size="11">氢化物</text>
+  <text x="330" y="288" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">H₂O 🔴</text>
+  <text x="605" y="288" text-anchor="middle" fill="#333" font-size="12">H₂S</text>
+  <text x="830" y="288" text-anchor="middle" fill="#1A237E" font-size="11">稳定性↓</text>
+
+  <rect x="40" y="305" width="140" height="50" fill="#FFF" rx="2"/>
+  <text x="110" y="323" text-anchor="middle" fill="#333" font-size="11">氢化物</text>
+  <text x="110" y="340" text-anchor="middle" fill="#333" font-size="11">水溶液酸性</text>
+  <text x="330" y="334" text-anchor="middle" fill="#333" font-size="12">中性</text>
+  <text x="605" y="334" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">弱酸（氢硫酸）🔴</text>
+  <text x="830" y="334" text-anchor="middle" fill="#1A237E" font-size="11">酸性↑</text>
+
+  <rect x="40" y="360" width="140" height="50" fill="#F5F5F5" rx="2"/>
+  <text x="110" y="378" text-anchor="middle" fill="#333" font-size="11">最高价</text>
+  <text x="110" y="395" text-anchor="middle" fill="#333" font-size="11">含氧酸</text>
+  <text x="330" y="389" text-anchor="middle" fill="#333" font-size="12">无（O无+6）</text>
+  <text x="605" y="389" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">H₂SO₄（强酸）🔴</text>
+  <text x="830" y="389" text-anchor="middle" fill="#1A237E" font-size="11">—</text>
+
+  <rect x="40" y="415" width="140" height="34" fill="#FFF" rx="2"/>
+  <text x="110" y="437" text-anchor="middle" fill="#333" font-size="11">单质氧化性</text>
+  <text x="330" y="437" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">强 🔴</text>
+  <text x="605" y="437" text-anchor="middle" fill="#333" font-size="12">较弱</text>
+  <text x="830" y="437" text-anchor="middle" fill="#1A237E" font-size="11">↓ 减弱</text>
+
+  <!-- Common -->
+  <rect x="40" y="470" width="440" height="115" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5" rx="6"/>
+  <text x="260" y="495" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">通性（共性）</text>
+  <text x="55" y="518" font-size="11" fill="#333">① 最外层均为6电子，常见负价-2（VIA族得2e⁻达稳定结构）</text>
+  <text x="55" y="536" font-size="11" fill="#333">② 氢化物H₂R稳定性：H₂O&gt;H₂S&gt;H₂Se&gt;H₂Te（与电负性一致）</text>
+  <text x="55" y="554" font-size="11" fill="#333">③ S和Se、Te有+4/+6价（O无此高价，因O电负性极大）</text>
+  <text x="55" y="572" font-size="11" fill="#333">④ 非金属性：O&gt;S&gt;Se&gt;Te（Po已具金属性）</text>
+  <text x="55" y="590" font-size="11" fill="#333">⑤ 最高价含氧酸酸性：H₂SO₄&gt;H₂SeO₄&gt;H₂TeO₄</text>
+
+  <!-- Individual -->
+  <rect x="500" y="470" width="440" height="115" fill="#FFEBEE" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="720" y="495" text-anchor="middle" font-size="14" font-weight="bold" fill="#D32F2F">个性（特性）🔴</text>
+  <text x="515" y="518" font-size="11" fill="#D32F2F" font-weight="bold">O的特殊性：</text>
+  <text x="525" y="536" font-size="11" fill="#333">• 电负性仅次于F，无正价（除OF₂外均显-2/-1价）</text>
+  <text x="525" y="554" font-size="11" fill="#333">• H₂O₂既有氧化性又有还原性（O为-1价）</text>
+  <text x="525" y="572" font-size="11" fill="#333">• O₂是无色无味气体，液态氧淡蓝色</text>
+  <text x="515" y="590" font-size="11" fill="#D32F2F" font-weight="bold">S的特殊性：</text>
+  <text x="525" y="608" font-size="11" fill="#333">• 浓H₂SO₄具有吸水性、脱水性、强氧化性三特性</text>
+  <text x="525" y="626" font-size="11" fill="#333">• S单质黄色固体，有多种同素异形体</text>
+
+  <!-- Exam -->
+  <rect x="40" y="600" width="900" height="85" fill="#FFF3E0" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="490" y="623" text-anchor="middle" font-size="13" font-weight="bold" fill="#D32F2F">🔴 高考高频考点</text>
+  <text x="55" y="646" font-size="11" fill="#333">① H₂O₂的性质：氧化性（使KI-淀粉变蓝）、还原性（使KMnO₄褪色）、不稳定性（MnO₂催化分解→H₂O+O₂↑）</text>
+  <text x="55" y="664" font-size="11" fill="#333">② SO₂ vs CO₂鉴别（见S元素图）| ③ 酸雨pH&lt;5.6的原因：SO₂+O₂+H₂O→H₂SO₄ | ④ O₃具有强氧化性、漂白性</text>
+  <text x="55" y="682" font-size="11" fill="#333">⑤ 氧族从上到下气态氢化物稳定性减弱、水溶液酸性增强、非金属性减弱</text>
+
+</svg>

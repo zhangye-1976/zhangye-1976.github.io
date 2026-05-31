@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="100%" role="img">
+  <title>化学必修第二册 全书知识框架</title>
+  <desc>第五章至第八章核心内容总览</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="210" y="16" width="260" height="40" rx="10" fill="#1a237e" stroke="#1a237e" stroke-width="0.5"/>
+  <text x="340" y="36" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="500" dominant-baseline="central">化学必修 第二册</text>
+
+  <polyline points="340,56 340,72" fill="none" stroke="#1a237e" stroke-width="1" marker-end="url(#arr)"/>
+
+  <rect x="160" y="78" width="160" height="44" rx="8" fill="#e8f0fe" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="240" y="100" text-anchor="middle" fill="#1a237e" font-size="13" font-weight="500" dominant-baseline="central">第五章</text>
+  <rect x="360" y="78" width="160" height="44" rx="8" fill="#e8f0fe" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="440" y="100" text-anchor="middle" fill="#1a237e" font-size="13" font-weight="500" dominant-baseline="central">第六章</text>
+
+  <polyline points="240,122 240,140" fill="none" stroke="#1a73e8" stroke-width="0.5" marker-end="url(#arr)"/>
+  <polyline points="440,122 440,140" fill="none" stroke="#1a73e8" stroke-width="0.5" marker-end="url(#arr)"/>
+
+  <rect x="60" y="146" width="200" height="56" rx="8" fill="#d2e3fc" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="160" y="166" text-anchor="middle" fill="#1a237e" font-size="12" font-weight="500" dominant-baseline="central">化工生产中的重要</text>
+  <text x="160" y="186" text-anchor="middle" fill="#1a237e" font-size="12" font-weight="500" dominant-baseline="central">非金属元素</text>
+
+  <rect x="280" y="146" width="200" height="56" rx="8" fill="#d2e3fc" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="380" y="166" text-anchor="middle" fill="#1a237e" font-size="12" font-weight="500" dominant-baseline="central">化学反应</text>
+  <text x="380" y="186" text-anchor="middle" fill="#1a237e" font-size="12" font-weight="500" dominant-baseline="central">与能量</text>
+
+  <polyline points="160,202 160,218" fill="none" stroke="#1a73e8" stroke-width="0.5" marker-end="url(#arr)"/>
+  <polyline points="380,202 380,218" fill="none" stroke="#1a73e8" stroke-width="0.5" marker-end="url(#arr)"/>
+
+  <rect x="42" y="224" width="112" height="40" rx="6" fill="#e8f0fe" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="98" y="244" text-anchor="middle" fill="#185FA5" font-size="11" font-weight="500" dominant-baseline="central">硫及化合物</text>
+  <rect x="162" y="224" width="112" height="40" rx="6" fill="#e8f0fe" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="218" y="244" text-anchor="middle" fill="#185FA5" font-size="11" font-weight="500" dominant-baseline="central">氮及化合物</text>
+  <rect x="282" y="224" width="112" height="40" rx="6" fill="#e8f0fe" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="338" y="244" text-anchor="middle" fill="#185FA5" font-size="11" font-weight="500" dominant-baseline="central">无机非金属材料</text>
+
+  <rect x="280" y="224" width="96" height="40" rx="6" fill="#e8f0fe" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="328" y="244" text-anchor="middle" fill="#185FA5" font-size="11" font-weight="500" dominant-baseline="central">能量变化</text>
+  <rect x="384" y="224" width="112" height="40" rx="6" fill="#e8f0fe" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="440" y="244" text-anchor="middle" fill="#185FA5" font-size="11" font-weight="500" dominant-baseline="central">速率和限度</text>
+
+  <rect x="160" y="280" width="160" height="44" rx="8" fill="#e8f0fe" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="240" y="302" text-anchor="middle" fill="#1a237e" font-size="13" font-weight="500" dominant-baseline="central">第七章</text>
+  <rect x="360" y="280" width="160" height="44" rx="8" fill="#e8f0fe" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="440" y="302" text-anchor="middle" fill="#1a237e" font-size="13" font-weight="500" dominant-baseline="central">第八章</text>
+
+  <polyline points="240,324 240,342" fill="none" stroke="#1a73e8" stroke-width="0.5" marker-end="url(#arr)"/>
+  <polyline points="440,324 440,342" fill="none" stroke="#1a73e8" stroke-width="0.5" marker-end="url(#arr)"/>
+
+  <rect x="60" y="348" width="200" height="40" rx="8" fill="#d2e3fc" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="160" y="368" text-anchor="middle" fill="#1a237e" font-size="12" font-weight="500" dominant-baseline="central">有机化合物</text>
+  <rect x="280" y="348" width="200" height="40" rx="8" fill="#d2e3fc" stroke="#1a73e8" stroke-width="0.5"/>
+  <text x="380" y="368" text-anchor="middle" fill="#1a237e" font-size="12" font-weight="500" dominant-baseline="central">化学与可持续发展</text>
+
+  <rect x="36" y="396" width="108" height="16" rx="4" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="0.3"/>
+  <text x="90" y="408" text-anchor="middle" fill="#7b1fa2" font-size="9" font-weight="400">烷烃·烯烃·醇酸</text>
+  <rect x="152" y="396" width="108" height="16" rx="4" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="0.3"/>
+  <text x="206" y="408" text-anchor="middle" fill="#7b1fa2" font-size="9" font-weight="400">糖·蛋白·油脂</text>
+  <rect x="270" y="396" width="120" height="16" rx="4" fill="#e6f4ea" stroke="#137333" stroke-width="0.3"/>
+  <text x="330" y="408" text-anchor="middle" fill="#137333" font-size="9" font-weight="400">资源·能源·材料</text>
+  <rect x="398" y="396" width="120" height="16" rx="4" fill="#e6f4ea" stroke="#137333" stroke-width="0.3"/>
+  <text x="458" y="408" text-anchor="middle" fill="#137333" font-size="9" font-weight="400">环保·绿色化学</text>
+</svg>

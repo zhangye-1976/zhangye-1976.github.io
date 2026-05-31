@@ -1,0 +1,84 @@
+<svg viewBox="0 0 680 740" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第2章 基因和染色体的关系</title>
+  <desc>减数分裂、基因在染色体上、伴性遗传</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="160" y="8" width="360" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">第2章 基因和染色体的关系 ★★★★★</text>
+
+  <line x1="340" y1="48" x2="340" y2="68" stroke="#00796b" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <!-- 3 sections -->
+  <rect x="30" y="72" width="190" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="125" y="99" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第1节 减数分裂</text>
+
+  <rect x="245" y="72" width="190" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="99" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第2节 基因在染色体上</text>
+
+  <rect x="460" y="72" width="190" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="555" y="99" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第3节 伴性遗传 ★</text>
+
+  <!-- Meiosis I -->
+  <rect x="30" y="140" width="310" height="220" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="185" y="162" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">减数第一次分裂（减I）</text>
+  <text x="185" y="186" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">间期：DNA复制，染色体数不变(2n)</text>
+  <text x="185" y="208" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">前期I：联会→四分体→交叉互换</text>
+  <text x="185" y="230" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">中期I：同源染色体排列赤道板两侧</text>
+  <text x="185" y="252" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 后期I：同源染色体分离</text>
+  <text x="185" y="274" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">非同源染色体自由组合</text>
+  <text x="185" y="296" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">末期I：染色体数减半 2n→n</text>
+  <text x="185" y="320" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">此时已发生：基因重组！</text>
+  <text x="185" y="342" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">来源①交叉互换(前期I)</text>
+  <text x="185" y="358" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">来源②非同源染色体自由组合(后期I)</text>
+
+  <!-- Meiosis II -->
+  <rect x="355" y="140" width="295" height="220" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="502" y="162" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">减数第二次分裂（减II）</text>
+  <text x="502" y="186" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">无同源染色体 | 染色体=n</text>
+  <text x="502" y="210" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">前期II：染色体散乱</text>
+  <text x="502" y="232" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">中期II：着丝粒排列赤道板</text>
+  <text x="502" y="254" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 后期II：着丝粒分裂</text>
+  <text x="502" y="276" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">姐妹染色单体分开→染色体数n→2n</text>
+  <text x="502" y="300" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">结果：1精原细胞→4精子</text>
+  <text x="502" y="320" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">卵细胞：1卵细胞+3极体</text>
+  <text x="502" y="342" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 减II类似于有丝分裂</text>
+  <text x="502" y="358" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 但染色体数是正常的一半！</text>
+
+  <!-- DNA/Chromosome change -->
+  <rect x="30" y="384" width="620" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="404" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">DNA加倍：间期 | 染色体加倍：减II后期 | 染色体减半：减I结束 | DNA减半两次：减I和减II结束</text>
+  <text x="340" y="424" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 口诀："间期复制DNA，减I同源各分家，减II着丝粒分裂，四个细胞各含半"</text>
+
+  <!-- Sex-linked inheritance -->
+  <rect x="30" y="464" width="620" height="175" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="488" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">三种伴性遗传方式对比</text>
+
+  <!-- 3 boxes -->
+  <rect x="45" y="504" width="185" height="55" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="137" y="522" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">伴X隐性</text>
+  <text x="137" y="540" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#085041" font-family="system-ui, sans-serif">男多女少 隔代交叉 女病父必病</text>
+  <text x="137" y="555" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">红绿色盲·血友病</text>
+
+  <rect x="247" y="504" width="185" height="55" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="522" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">伴X显性</text>
+  <text x="340" y="540" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#085041" font-family="system-ui, sans-serif">女多男少 连续遗传 男病母女必病</text>
+  <text x="340" y="555" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">抗维生素D佝偻病</text>
+
+  <rect x="450" y="504" width="185" height="55" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="542" y="522" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">伴Y遗传</text>
+  <text x="542" y="540" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#085041" font-family="system-ui, sans-serif">只有男性 父传子子传孙</text>
+  <text x="542" y="555" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">外耳道多毛症</text>
+
+  <text x="340" y="584" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 系谱图口诀："无中生有隐，有中生无显，隐看女病父正→常隐，显看男病母正→常显"</text>
+  <text x="340" y="604" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 摩尔根果蝇实验：第一个将基因定位到染色体上的实验证据（白眼基因在X染色体）</text>
+  <text x="340" y="622" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">★ 萨顿假说：基因在染色体上（依据：基因和染色体行为平行）</text>
+
+  <!-- Bottom bar -->
+  <rect x="120" y="664" width="440" height="44" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="340" y="690" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">高频：减数分裂染色体/DNA数变化曲线 | 系谱图判断 | 伴性遗传概率计算</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg viewBox="0 0 800 700" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0F6E56"/>
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="200" y="10" width="400" height="38" rx="10" fill="#00796b"/>
+  <text x="400" y="34" text-anchor="middle" fill="white" font-size="15" font-weight="bold">第4章 免疫调节 核心框架</text>
+
+  <!-- 免疫系统组成 -->
+  <rect x="40" y="60" width="720" height="90" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="60" y="82" fill="#04342C" font-size="13" font-weight="bold">免疫系统组成</text>
+  <text x="60" y="100" fill="#085041" font-size="11">免疫器官：骨髓、胸腺、脾、淋巴结、扁桃体</text>
+  <text x="60" y="117" fill="#085041" font-size="11">免疫细胞：T细胞（在胸腺成熟）、B细胞（在骨髓成熟）、吞噬细胞、NK细胞</text>
+  <text x="60" y="134" fill="#085041" font-size="11">免疫活性物质：抗体、细胞因子、溶菌酶（由免疫细胞或其他细胞产生）</text>
+
+  <!-- 特异性免疫：体液免疫 -->
+  <rect x="40" y="165" width="350" height="200" rx="10" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+  <text x="60" y="188" fill="#4B1528" font-size="14" font-weight="bold">体液免疫（B细胞介导）</text>
+  <text x="60" y="208" fill="#72243E" font-size="10">抗原→吞噬细胞摄取处理→传递给T细胞</text>
+  <text x="70" y="223" fill="#72243E" font-size="10">                ↓</text>
+  <text x="70" y="238" fill="#72243E" font-size="10">          T细胞分泌细胞因子</text>
+  <text x="70" y="253" fill="#72243E" font-size="10">                ↓</text>
+  <text x="70" y="268" fill="#72243E" font-size="10">    B细胞受刺激（抗原+细胞因子）→增殖分化</text>
+  <text x="70" y="283" fill="#72243E" font-size="10">                ↓</text>
+  <text x="70" y="298" fill="#72243E" font-size="10">    ┌→ 浆细胞 → 产生抗体（与抗原结合）</text>
+  <text x="70" y="313" fill="#72243E" font-size="10">    └→ 记忆B细胞（二次免疫更快更强）</text>
+  <rect x="60" y="325" width="290" height="1" fill="#D4537E"/>
+  <text x="60" y="342" fill="#4B1528" font-size="11" font-weight="bold">功能：对付细胞外病原体</text>
+  <text x="60" y="357" fill="#72243E" font-size="10">🔴 易错：抗体只由浆细胞产生；T/B/记忆细胞都不能产生抗体</text>
+
+  <!-- 特异性免疫：细胞免疫 -->
+  <rect x="410" y="165" width="350" height="200" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+  <text x="430" y="188" fill="#04342C" font-size="14" font-weight="bold">细胞免疫（T细胞介导）</text>
+  <text x="430" y="208" fill="#085041" font-size="10">抗原→吞噬细胞摄取处理→传递给T细胞</text>
+  <text x="440" y="223" fill="#085041" font-size="10">                ↓</text>
+  <text x="440" y="238" fill="#085041" font-size="10">          T细胞增殖分化</text>
+  <text x="440" y="253" fill="#085041" font-size="10">                ↓</text>
+  <text x="440" y="268" fill="#085041" font-size="10">    ┌→ 细胞毒性T细胞 → 与靶细胞密切接触 → 靶细胞裂解</text>
+  <text x="440" y="283" fill="#085041" font-size="10">    └→ 记忆T细胞</text>
+  <rect x="430" y="295" width="290" height="1" fill="#0F6E56"/>
+  <text x="430" y="312" fill="#04342C" font-size="11" font-weight="bold">功能：对付细胞内病原体（病毒、结核杆菌）、肿瘤细胞</text>
+  <text x="430" y="327" fill="#085041" font-size="10">🔴 易错：靶细胞裂解后，病原体暴露，再由抗体结合→吞噬细胞清除</text>
+
+  <!-- 二次免疫 -->
+  <rect x="40" y="380" width="720" height="60" rx="10" fill="#FFF7E6" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="60" y="402" fill="#92400E" font-size="13" font-weight="bold">二次免疫（更强更快）</text>
+  <text x="60" y="420" fill="#92400E" font-size="11">原因：记忆细胞存在；再次接触相同抗原→记忆细胞迅速增殖分化→浆细胞更快更多→抗体更多更早</text>
+  <text x="60" y="437" fill="#92400E" font-size="11">应用：疫苗原理（灭活/减毒病原体→刺激产生记忆细胞）</text>
+
+  <!-- 免疫失调 -->
+  <rect x="40" y="455" width="720" height="110" rx="10" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+  <text x="60" y="477" fill="#4B1528" font-size="13" font-weight="bold">免疫失调（高考常考）</text>
+  <text x="60" y="495" fill="#72243E" font-size="11">① 过敏反应：免疫过强，再次接触过敏原才发生（第一次只产生IgE抗体，不发病）</text>
+  <text x="60" y="512" fill="#72243E" font-size="11">② 自身免疫病：免疫系统攻击自身组织→类风湿性关节炎、系统性红斑狼疮</text>
+  <text x="60" y="529" fill="#72243E" font-size="11">③ 免疫缺陷病：免疫功能不足→艾滋病（HIV攻击辅助性T细胞）、先天性免疫缺陷</text>
+  <text x="60" y="546" fill="#72243E" font-size="11">🔴 易错：HIV攻击辅助性T细胞（CD4⁺T细胞）→T细胞数量减少→几乎全部免疫功能丧失</text>
+
+  <!-- 高考综合提醒 -->
+  <rect x="40" y="580" width="720" height="105" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+  <text x="60" y="602" fill="#04342C" font-size="14" font-weight="bold">🎯 神经-体液-免疫调节综合题（高考解答题年年考）</text>
+  <text x="60" y="622" fill="#085041" font-size="11">题目：病原体（如病毒、细菌）入侵人体，分析调节过程</text>
+  <text x="70" y="639" fill="#085041" font-size="10">1. 病原体→吞噬细胞摄取处理→传递给T细胞（免疫调节启动）</text>
+  <text x="70" y="654" fill="#085041" font-size="10">2. 病原体毒素→刺激下丘脑→神经调节→甲状腺激素分泌↑（神经-体液）</text>
+  <text x="70" y="669" fill="#085041" font-size="10">3. 发热：下丘脑体温调节中枢→产热↑（甲状腺激素、肾上腺素）→散热↑（出汗）</text>
+  <text x="70" y="684" fill="#085041" font-size="10">4. 抗体产生→浆细胞→与病原体结合→吞噬细胞清除（体液免疫）</text>
+  <text x="70" y="699" fill="#085041" font-size="10">5. 记忆细胞形成→二次免疫更快更强（疫苗原理）</text>
+</svg>

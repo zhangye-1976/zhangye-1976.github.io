@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" width="100%" style="font-family: var(--font-sans, sans-serif);">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<!-- 标题 -->
+<rect x="40" y="20" width="600" height="44" rx="8" fill="#185FA5" stroke="#185FA5" stroke-width="0.5"/>
+<text x="340" y="43" text-anchor="middle" font-size="14" font-weight="500" fill="white">物质转化总图 · 化学反应原理</text>
+<text x="340" y="58" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.8)">能量转化 + 平衡转化 + 离子转化 + 电化学转化</text>
+
+<!-- 板块一：能量转化 -->
+<rect x="40" y="84" width="280" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="180" y="107" text-anchor="middle" font-size="13" font-weight="500" fill="#0C447C">一、能量转化</text>
+<text x="180" y="123" text-anchor="middle" font-size="11" fill="#444441">化学能 ↔ 热能 / 电能</text>
+
+<!-- 板块二：平衡转化 -->
+<rect x="360" y="84" width="280" height="44" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+<text x="500" y="107" text-anchor="middle" font-size="13" font-weight="500" fill="#27500A">二、平衡转化</text>
+<text x="500" y="123" text-anchor="middle" font-size="11" fill="#444441">可逆反应的限度与移动</text>
+
+<!-- 板块三：离子平衡转化 -->
+<rect x="40" y="248" width="280" height="44" rx="8" fill="#FBEAF0" stroke="#993556" stroke-width="0.5"/>
+<text x="180" y="271" text-anchor="middle" font-size="13" font-weight="500" fill="#72243E">三、离子平衡转化</text>
+<text x="180" y="287" text-anchor="middle" font-size="11" fill="#444441">电离 ↔ 水解 ↔ 沉淀溶解</text>
+
+<!-- 板块四：电化学转化 -->
+<rect x="360" y="248" width="280" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="500" y="271" text-anchor="middle" font-size="13" font-weight="500" fill="#085041">四、电化学转化</text>
+<text x="500" y="287" text-anchor="middle" font-size="11" fill="#444441">化学能→电能（原电池）/ 电能→化学能（电解池）</text>
+
+<!-- 能量转化 子内容 -->
+<rect x="50" y="148" width="120" height="36" rx="6" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5" opacity="0.8"/>
+<text x="110" y="168" text-anchor="middle" font-size="11" fill="#0C447C">反应热 ΔH</text>
+<rect x="180" y="148" width="120" height="36" rx="6" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5" opacity="0.8"/>
+<text x="240" y="168" text-anchor="middle" font-size="11" fill="#0C447C">盖斯定律</text>
+<line x1="110" y1="148" x2="110" y2="128" stroke="#185FA5" stroke-width="0.5" stroke-dasharray="3,2"/>
+<line x1="240" y1="148" x2="240" y2="128" stroke="#185FA5" stroke-width="0.5" stroke-dasharray="3,2"/>
+
+<!-- 平衡转化 子内容 -->
+<rect x="370" y="148" width="80" height="36" rx="6" fill="#C0DD97" stroke="#3B6D11" stroke-width="0.5" opacity="0.8"/>
+<text x="410" y="168" text-anchor="middle" font-size="11" fill="#27500A">K 常数</text>
+<rect x="458" y="148" width="80" height="36" rx="6" fill="#C0DD97" stroke="#3B6D11" stroke-width="0.5" opacity="0.8"/>
+<text x="498" y="168" text-anchor="middle" font-size="11" fill="#27500A">Q vs K</text>
+<rect x="546" y="148" width="80" height="36" rx="6" fill="#C0DD97" stroke="#3B6D11" stroke-width="0.5" opacity="0.8"/>
+<text x="586" y="168" text-anchor="middle" font-size="11" fill="#27500A">转化率</text>
+<line x1="410" y1="148" x2="410" y2="128" stroke="#3B6D11" stroke-width="0.5" stroke-dasharray="3,2"/>
+<line x1="498" y1="148" x2="498" y2="128" stroke="#3B6D11" stroke-width="0.5" stroke-dasharray="3,2"/>
+<line x1="586" y1="148" x2="586" y2="128" stroke="#3B6D11" stroke-width="0.5" stroke-dasharray="3,2"/>
+
+<!-- 离子平衡 子内容 -->
+<rect x="50" y="312" width="75" height="36" rx="6" fill="#F4C0D1" stroke="#993556" stroke-width="0.5" opacity="0.8"/>
+<text x="87.5" y="332" text-anchor="middle" font-size="10" fill="#72243E">电离平衡 Ka</text>
+<rect x="133" y="312" width="75" height="36" rx="6" fill="#F4C0D1" stroke="#993556" stroke-width="0.5" opacity="0.8"/>
+<text x="170.5" y="332" text-anchor="middle" font-size="10" fill="#72243E">水解平衡 Kh</text>
+<rect x="216" y="312" width="90" height="36" rx="6" fill="#F4C0D1" stroke="#993556" stroke-width="0.5" opacity="0.8"/>
+<text x="261" y="332" text-anchor="middle" font-size="10" fill="#72243E">沉淀溶解 Ksp</text>
+<line x1="87.5" y1="312" x2="87.5" y2="292" stroke="#993556" stroke-width="0.5" stroke-dasharray="3,2"/>
+<line x1="170.5" y1="312" x2="170.5" y2="292" stroke="#993556" stroke-width="0.5" stroke-dasharray="3,2"/>
+<line x1="261" y1="312" x2="261" y2="292" stroke="#993556" stroke-width="0.5" stroke-dasharray="3,2"/>
+
+<!-- 守恒关系 -->
+<rect x="50" y="368" width="260" height="36" rx="6" fill="#FBEAF0" stroke="#993556" stroke-width="0.5"/>
+<text x="180" y="388" text-anchor="middle" font-size="11" fill="#72243E">三大守恒：电荷守恒 · 物料守恒 · 质子守恒</text>
+<line x1="180" y1="368" x2="180" y2="348" stroke="#993556" stroke-width="0.5" stroke-dasharray="2,2"/>
+
+<!-- 电化学 子内容 -->
+<rect x="370" y="312" width="120" height="36" rx="6" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5" opacity="0.8"/>
+<text x="430" y="332" text-anchor="middle" font-size="11" fill="#085041">原电池（自发）</text>
+<rect x="498" y="312" width="120" height="36" rx="6" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5" opacity="0.8"/>
+<text x="558" y="332" text-anchor="middle" font-size="11" fill="#085041">电解池（非自发）</text>
+<line x1="430" y1="312" x2="430" y2="292" stroke="#0F6E56" stroke-width="0.5" stroke-dasharray="3,2"/>
+<line x1="558" y1="312" x2="558" y2="292" stroke="#0F6E56" stroke-width="0.5" stroke-dasharray="3,2"/>
+
+<!-- 电子守恒 -->
+<rect x="370" y="368" width="260" height="36" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="500" y="388" text-anchor="middle" font-size="11" fill="#085041">电子守恒：Q = I·t = n(e⁻)·F（法拉第常数）</text>
+<line x1="500" y1="368" x2="500" y2="348" stroke="#0F6E56" stroke-width="0.5" stroke-dasharray="2,2"/>
+
+<!-- 跨板块联系箭头 -->
+<!-- 能量 ↔ 平衡 -->
+<path d="M 260 110 L 360 110" stroke="#888780" stroke-width="0.5" stroke-dasharray="4,2" fill="none" marker-end="url(#arrow)"/>
+<text x="310" y="105" text-anchor="middle" font-size="9" fill="#444441">ΔH = -RT ln K</text>
+
+<!-- 平衡 ↔ 离子 -->
+<path d="M 320 220 L 320 248" stroke="#888780" stroke-width="0.5" stroke-dasharray="4,2" fill="none" marker-end="url(#arrow)"/>
+<text x="328" y="240" font-size="9" fill="#444441">水溶液中的平衡</text>
+
+<!-- 电化学 ↔ 能量 -->
+<path d="M 500 248 L 430 220 L 340 220 L 340 128" stroke="#888780" stroke-width="0.5" stroke-dasharray="4,2" fill="none" marker-end="url(#arrow)"/>
+<text x="420" y="235" text-anchor="middle" font-size="9" fill="#444441">化学能↔电能</text>
+
+<!-- 高考预警 -->
+<rect x="40" y="436" width="600" height="60" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.8"/>
+<text x="60" y="458" font-size="12" font-weight="500" fill="#712B13">★ 高考高频考点</text>
+<text x="60" y="476" font-size="11" fill="#712B13">① 盖斯定律计算 ΔH（选择题/填空题） ② 三段式算 K 和转化率（计算题） ③ 离子浓度大小比较（选择题） ④ 电极反应式书写 + 电子守恒计算（工业流程题）</text>
+
+</svg>

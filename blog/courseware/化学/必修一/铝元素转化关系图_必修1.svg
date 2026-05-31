@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 780" font-family="'Microsoft YaHei','SimHei',sans-serif">
+  <defs>
+    <marker id="aRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#D32F2F"/>
+    </marker>
+    <marker id="aBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1565C0"/>
+    </marker>
+    <marker id="aGrn" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2E7D32"/>
+    </marker>
+    <linearGradient id="ahdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#78909C"/>
+      <stop offset="100%" stop-color="#37474F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="780" fill="#F5F5F5" rx="12"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="900" height="48" fill="url(#ahdr)" rx="12"/>
+  <rect x="0" y="36" width="900" height="12" fill="url(#ahdr)"/>
+  <text x="450" y="31" text-anchor="middle" fill="white" font-size="20" font-weight="bold">铝(Al) 元素转化关系图 — 必修1 · 两性氢氧化物</text>
+
+  <!-- Al center -->
+  <rect x="375" y="70" width="150" height="48" rx="24" fill="#FFD54F" stroke="#F57C00" stroke-width="2.5"/>
+  <text x="450" y="100" text-anchor="middle" fill="#E65100" font-size="20" font-weight="bold">Al（单质）</text>
+
+  <!-- Al₂O₃ top-right -->
+  <rect x="640" y="70" width="170" height="48" rx="10" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="725" y="100" text-anchor="middle" fill="#1A237E" font-size="17" font-weight="bold">Al₂O₃（两性氧化物）</text>
+
+  <!-- Al(OH)₃ center-right -->
+  <rect x="660" y="200" width="190" height="48" rx="10" fill="#FFCDD2" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="755" y="230" text-anchor="middle" fill="#B71C1C" font-size="16" font-weight="bold">Al(OH)₃（两性氢氧化物）</text>
+
+  <!-- AlCl₃ bottom-right -->
+  <rect x="640" y="340" width="150" height="48" rx="10" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="715" y="370" text-anchor="middle" fill="#1A237E" font-size="17" font-weight="bold">AlCl₃（铝盐）</text>
+
+  <!-- NaAlO₂ bottom-left -->
+  <rect x="110" y="340" width="170" height="48" rx="10" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="195" y="370" text-anchor="middle" fill="#1A237E" font-size="16" font-weight="bold">NaAlO₂（偏铝酸钠）</text>
+
+  <!-- Al₂(SO₄)₃ top-left -->
+  <rect x="60" y="140" width="170" height="48" rx="10" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="145" y="170" text-anchor="middle" fill="#1A237E" font-size="16" font-weight="bold">Al₂(SO₄)₃</text>
+
+  <!-- KAl(SO₄)₂ left -->
+  <rect x="60" y="240" width="180" height="48" rx="10" fill="#E8EAF6" stroke="#3F51B5" stroke-width="2"/>
+  <text x="150" y="270" text-anchor="middle" fill="#1A237E" font-size="14" font-weight="bold">KAl(SO₄)₂·12H₂O（明矾）</text>
+
+  <!-- Arrows -->
+  <!-- Al → Al₂O₃ -->
+  <line x1="480" y1="94" x2="635" y2="94" stroke="#D32F2F" stroke-width="2.8" marker-end="url(#aRed)"/>
+  <text x="558" y="86" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">+O₂点燃</text>
+
+  <!-- Al → Al₂(SO₄)₃ -->
+  <line x1="375" y1="100" x2="235" y2="155" stroke="#1565C0" stroke-width="2.2" marker-end="url(#aBlue)"/>
+  <text x="280" y="120" text-anchor="middle" fill="#1565C0" font-size="11">+H₂SO₄</text>
+
+  <!-- Al → AlCl₃ -->
+  <line x1="480" y1="118" x2="680" y2="350" stroke="#1565C0" stroke-width="2.2" marker-end="url(#aBlue)"/>
+  <text x="540" y="240" text-anchor="middle" fill="#1565C0" font-size="11">+HCl / +Cl₂△</text>
+
+  <!-- Al → KAl(SO₄)₂ -->
+  <line x1="375" y1="110" x2="245" y2="255" stroke="#1565C0" stroke-width="2.2" marker-end="url(#aBlue)"/>
+  <text x="280" y="180" text-anchor="middle" fill="#1565C0" font-size="11">+KOH+H₂SO₄</text>
+
+  <!-- Al → NaAlO₂ -->
+  <line x1="375" y1="110" x2="285" y2="355" stroke="#1565C0" stroke-width="2.2" marker-end="url(#aBlue)"/>
+  <text x="300" y="230" text-anchor="middle" fill="#1565C0" font-size="11">+NaOH(浓)</text>
+
+  <!-- Al₂O₃ → AlCl₃ -->
+  <line x1="700" y1="118" x2="680" y2="336" stroke="#2E7D32" stroke-width="2" marker-end="url(#aGrn)"/>
+  <text x="665" y="225" text-anchor="middle" fill="#2E7D32" font-size="11">+HCl</text>
+
+  <!-- Al₂O₃ → NaAlO₂ -->
+  <line x1="640" y1="85" x2="275" y2="355" stroke="#2E7D32" stroke-width="2" marker-end="url(#aGrn)"/>
+  <text x="420" y="225" text-anchor="middle" fill="#2E7D32" font-size="11">+NaOH</text>
+
+  <!-- Al₂O₃ → Al(OH)₃ -->
+  <line x1="725" y1="118" x2="745" y2="196" stroke="#2E7D32" stroke-width="2" marker-end="url(#aGrn)"/>
+  <text x="760" y="162" text-anchor="middle" fill="#2E7D32" font-size="11">+H₂O</text>
+
+  <!-- Al(OH)₃ → AlCl₃ -->
+  <line x1="720" y1="248" x2="700" y2="336" stroke="#D32F2F" stroke-width="2.8" marker-end="url(#aRed)"/>
+  <text x="690" y="298" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">+HCl</text>
+
+  <!-- Al(OH)₃ → NaAlO₂ -->
+  <line x1="660" y1="225" x2="285" y2="348" stroke="#D32F2F" stroke-width="2.8" marker-end="url(#aRed)"/>
+  <text x="440" y="305" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">+NaOH</text>
+
+  <!-- AlCl₃ → Al(OH)₃ -->
+  <line x1="715" y1="340" x2="745" y2="253" stroke="#D32F2F" stroke-width="2.8" marker-end="url(#aRed)"/>
+  <text x="755" y="300" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">+NH₃·H₂O</text>
+
+  <!-- NaAlO₂ → Al(OH)₃ -->
+  <line x1="280" y1="355" x2="660" y2="230" stroke="#D32F2F" stroke-width="2.8" marker-end="url(#aRed)"/>
+  <text x="430" y="310" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">+H⁺/CO₂/H₂O</text>
+
+  <!-- KAl(SO₄)₂ → Al(OH)₃ -->
+  <line x1="240" y1="255" x2="655" y2="215" stroke="#2E7D32" stroke-width="1.8" marker-end="url(#aGrn)" stroke-dasharray="5,3"/>
+  <text x="410" y="225" text-anchor="middle" fill="#2E7D32" font-size="10">水解/少量OH⁻</text>
+
+  <!-- Amphoteric highlight -->
+  <rect x="758" y="140" width="125" height="52" rx="6" fill="#FFEBEE" stroke="#D32F2F" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="820" y="158" text-anchor="middle" fill="#B71C1C" font-size="11" font-weight="bold">⚠ 关键！</text>
+  <text x="820" y="174" text-anchor="middle" fill="#B71C1C" font-size="10">既能溶于酸</text>
+  <text x="820" y="188" text-anchor="middle" fill="#B71C1C" font-size="10">又能溶于强碱</text>
+
+  <!-- Equations -->
+  <rect x="20" y="420" width="860" height="340" rx="8" fill="white" stroke="#DDD" stroke-width="1"/>
+  <text x="450" y="445" text-anchor="middle" fill="#333" font-size="14" font-weight="bold">📋 核心化学方程式 &amp; 高考高频考点</text>
+  <line x1="40" y1="455" x2="860" y2="455" stroke="#EEE" stroke-width="1"/>
+
+  <text x="40" y="475" fill="#333" font-size="12">
+    <tspan x="40" dy="0">① 4Al + 3O₂ → 2Al₂O₃（点燃）</tspan>
+    <tspan x="40" dy="17">② 2Al + 6HCl → 2AlCl₃ + 3H₂↑</tspan>
+    <tspan x="40" dy="17">③ 2Al + 2NaOH + 2H₂O → 2NaAlO₂ + 3H₂↑</tspan>
+    <tspan x="470" dy="-34">⑧ AlCl₃ + 3NH₃·H₂O → Al(OH)₃↓ + 3NH₄Cl</tspan>
+    <tspan x="470" dy="17">⑨ NaAlO₂ + CO₂ + 2H₂O → Al(OH)₃↓ + NaHCO₃</tspan>
+  </text>
+
+  <text x="40" y="545" fill="#333" font-size="12">
+    <tspan x="40" dy="0" font-weight="bold" fill="#D32F2F">★ Al(OH)₃ 两性核心反应（必考！）：</tspan>
+    <tspan x="40" dy="18" fill="#D32F2F">④ Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O（作为碱）</tspan>
+    <tspan x="40" dy="18" fill="#D32F2F">⑤ Al(OH)₃ + NaOH → NaAlO₂ + 2H₂O（作为酸）</tspan>
+    <tspan x="40" dy="18" fill="#D32F2F">⑥ 2Al(OH)₃ → Al₂O₃ + 3H₂O（△热分解，工业制铝）</tspan>
+    <tspan x="40" dy="18">⑦ Al₂O₃ + 6HCl → 2AlCl₃ + 3H₂O</tspan>
+  </text>
+
+  <text x="40" y="640" fill="#333" font-size="12">
+    <tspan x="40" dy="0" font-weight="bold" fill="#D32F2F">⚠ 易错提醒：</tspan>
+    <tspan x="40" dy="18" fill="#D32F2F">1. Al(OH)₃ 不溶于氨水！只能用强碱溶解。</tspan>
+    <tspan x="40" dy="18" fill="#D32F2F">2. 从 AlCl₃ 制 Al(OH)₃：用 NH₃·H₂O 而不用 NaOH（否则 Al(OH)₃ 继续溶解）</tspan>
+    <tspan x="40" dy="18" fill="#D32F2F">3. 从 NaAlO₂ 制 Al(OH)₃：通 CO₂ 而不用强酸（否则 Al(OH)₃ 继续溶解）</tspan>
+    <tspan x="40" dy="18" fill="#D32F2F">4. "两性"含义：既能与酸反应又能与强碱反应生成盐和水</tspan>
+    <tspan x="40" dy="18" fill="#909090">5. 明矾 KAl(SO₄)₂·12H₂O 水解产生 Al(OH)₃ 胶体，用于净水</tspan>
+  </text>
+
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 1000" width="100%" height="100%">
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#555"/></marker>
+    <marker id="aR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#C0392B"/></marker>
+  </defs>
+
+  <rect x="0" y="0" width="950" height="52" fill="#1B4F72" rx="0"/>
+  <rect x="320" y="74" width="310" height="44" rx="12" fill="#D6EAF8" stroke="#1B4F72" stroke-width="2.5"/>
+
+  <rect x="30" y="160" width="210" height="52" rx="8" fill="#F8F9FA" stroke="#7F8C8D" stroke-width="1"/>
+  <rect x="290" y="160" width="210" height="52" rx="8" fill="#FDEBD0" stroke="#B9770E" stroke-width="2"/>
+  <rect x="550" y="160" width="210" height="52" rx="8" fill="#FDEDEC" stroke="#C0392B" stroke-width="2.5"/>
+
+  <path d="M400 118 L135 160" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M475 118 L395 160" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M550 118 L655 160" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+
+  <line x1="20" y1="265" x2="930" y2="265" stroke="#E5E7E9" stroke-width="0.5"/>
+
+  <rect x="100" y="288" width="180" height="60" rx="8" fill="#FDEDEC" stroke="#C0392B" stroke-width="2.5"/>
+  <rect x="340" y="288" width="270" height="60" rx="8" fill="#FDEBD0" stroke="#B9770E" stroke-width="2"/>
+  <rect x="670" y="288" width="200" height="60" rx="8" fill="#FDEDEC" stroke="#C0392B" stroke-width="2.5"/>
+
+  <path d="M190 212 L190 288" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+  <path d="M475 212 L475 288" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M655 212 L770 288" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+
+  <line x1="20" y1="400" x2="930" y2="400" stroke="#E5E7E9" stroke-width="0.5"/>
+
+  <rect x="50" y="425" width="300" height="60" rx="8" fill="#FDEDEC" stroke="#C0392B" stroke-width="2.5"/>
+  <rect x="410" y="425" width="280" height="60" rx="8" fill="#F8F9FA" stroke="#7F8C8D" stroke-width="1"/>
+  <rect x="740" y="425" width="170" height="60" rx="8" fill="#FDEBD0" stroke="#B9770E" stroke-width="2"/>
+
+  <path d="M190 348 L200 425" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+  <path d="M475 348 L550 425" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M770 348 L825 425" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+
+  <line x1="20" y1="535" x2="930" y2="535" stroke="#E5E7E9" stroke-width="0.5"/>
+
+  <rect x="30" y="560" width="890" height="28" rx="6" fill="#D5F5E3" stroke="#A9DFBF" stroke-width="1"/>
+
+  <rect x="30" y="615" width="890" height="26" rx="6" fill="#FDEBD0" stroke="#E67E22" stroke-width="1"/>
+
+  <rect x="20" y="665" width="910" height="310" rx="14" fill="#F8F9FA" stroke="#D5D8DC" stroke-width="1"/>
+
+  <text x="475" y="34" text-anchor="middle" fill="white" font-size="17" font-weight="bold" font-family="Microsoft YaHei, SimHei, sans-serif">氟单质（F₂）转化关系图</text>
+
+  <text x="475" y="102" text-anchor="middle" font-size="16" font-weight="bold" fill="#1B4F72" font-family="Microsoft YaHei, SimHei, sans-serif">F₂ 淡黄绿色气体（最活泼的非金属单质）</text>
+
+  <text x="135" y="183" text-anchor="middle" font-size="13" font-weight="bold" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">NaF / CaF₂</text>
+  <text x="135" y="202" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">萤石</text>
+  <text x="395" y="183" text-anchor="middle" font-size="13" font-weight="bold" fill="#B9770E" font-family="Microsoft YaHei, SimHei, sans-serif">HF（氟化氢）</text>
+  <text x="395" y="202" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">剧毒 · 弱酸</text>
+  <text x="655" y="183" text-anchor="middle" font-size="13" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">SiF₄ ★</text>
+  <text x="655" y="202" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">气体 · 刻玻璃产物</text>
+
+  <text x="300" y="140" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">F₂ + 2Na</text>
+  <text x="430" y="140" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">F₂ + H₂ 暗处爆炸</text>
+  <text x="600" y="140" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">SiO₂ + 4HF ★</text>
+
+  <text x="190" y="312" text-anchor="middle" font-size="14" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">F₂ + H₂O → 2HF + O₂ ★</text>
+  <text x="190" y="335" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">（与其他卤素不同！）</text>
+
+  <text x="475" y="312" text-anchor="middle" font-size="14" font-weight="bold" fill="#B9770E" font-family="Microsoft YaHei, SimHei, sans-serif">HF 特性</text>
+  <text x="475" y="335" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">弱酸 · 剧毒 · 腐蚀玻璃</text>
+
+  <text x="770" y="312" text-anchor="middle" font-size="14" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">F⁻ 检验 ★</text>
+  <text x="770" y="335" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">Ca²⁺→CaF₂↓（白）</text>
+
+  <text x="170" y="282" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">氧化H₂O 放出O₂ ★</text>
+  <text x="460" y="282" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">弱酸Ka≈6.6×10⁻⁴</text>
+  <text x="730" y="282" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">AgF可溶！特殊 ★</text>
+
+  <text x="200" y="450" text-anchor="middle" font-size="14" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">HF 刻蚀玻璃 ★</text>
+  <text x="200" y="473" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">SiO₂ + 4HF → SiF₄↑ + 2H₂O</text>
+  <text x="550" y="450" text-anchor="middle" font-size="13" font-weight="bold" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">F⁻ 不能被氧化</text>
+  <text x="550" y="473" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">电解法制F₂（唯一途径）</text>
+  <text x="825" y="450" text-anchor="middle" font-size="14" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">AgF 可溶 ★</text>
+  <text x="825" y="473" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">（AgCl/Br/I均不溶）</text>
+
+  <text x="170" y="420" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">唯一！必考 ★</text>
+  <text x="530" y="420" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">最强氧化剂</text>
+  <text x="800" y="420" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">反常！★</text>
+
+  <text x="475" y="578" text-anchor="middle" font-size="14" font-weight="bold" fill="#1B4F72" font-family="Microsoft YaHei, SimHei, sans-serif">F₂ 是最活泼的非金属单质  氧化性最强  没有含氧酸</text>
+
+  <text x="475" y="634" text-anchor="middle" font-size="12" font-weight="bold" fill="#B9770E" font-family="Microsoft YaHei, SimHei, sans-serif">F₂ 三大反常：与H₂O反应出O₂ · HF是弱酸 · AgF可溶</text>
+
+  <text x="40" y="692" font-size="13" font-weight="bold" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">化学方程式汇总</text>
+
+  <text x="50" y="718" font-size="12" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">F₂ + H₂ → 暗处爆炸→ 2HF（最剧烈，不需光照）★</text>
+  <text x="50" y="740" font-size="12" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">2F₂ + 2H₂O → 4HF + O₂↑（置换水中氧，与其他卤素完全相反！）★高考</text>
+  <text x="50" y="762" font-size="12" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">SiO₂ + 4HF → SiF₄↑ + 2H₂O（氢氟酸刻蚀玻璃）★必考</text>
+  <text x="50" y="784" font-size="12" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">SiO₂ + 6HF → H₂[SiF₆] + 2H₂O（过量HF时）</text>
+  <text x="50" y="806" font-size="12" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">F₂ + 2NaOH(稀) → 2NaF + OF₂↑ + H₂O（与Cl₂不同！）</text>
+  <text x="50" y="828" font-size="12" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">Ca²⁺ + 2F⁻ → CaF₂↓（白色，检验F⁻）</text>
+  <text x="50" y="850" font-size="12" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">AgF 可溶于水！（AgCl白色↓/AgBr淡黄↓/AgI黄色↓/AgF可溶）★必考反常</text>
+
+  <text x="50" y="878" font-size="12" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">易错：HF为弱酸（Ka≈6.6×10⁻⁴），但剧毒；F₂制备只能用电解法（2HF→电解→H₂+F₂）</text>
+  <text x="50" y="900" font-size="12" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">F₂保存：镍或铜制容器（形成致密氟化物保护膜）；F⁻不能被任何化学试剂氧化</text>
+
+  <text x="475" y="940" text-anchor="middle" font-size="11" fill="#999" font-family="Microsoft YaHei, SimHei, sans-serif">● 红色边框/文字 = 高考高频考点  ● 氟的反常性质是高考辨析题热点</text>
+  <text x="475" y="960" text-anchor="middle" font-size="10" fill="#BBB" font-family="Microsoft YaHei, SimHei, sans-serif">高中化学 · 氟单质转化关系图 · 必修一</text>
+</svg>

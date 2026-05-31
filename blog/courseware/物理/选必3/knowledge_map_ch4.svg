@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500">
+  <rect width="680" height="500" fill="#E1F5EE" rx="12"/>
+  <text x="340" y="35" text-anchor="middle" font-size="20" font-weight="700" fill="#00796b">第4章 原子结构和波粒二象性 ⭐⭐⭐⭐⭐</text>
+
+  <!-- 光电效应 -->
+  <rect x="30" y="55" width="300" height="210" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="55" width="300" height="28" fill="#72243E" rx="8"/>
+  <text x="180" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">光电效应（最高频考点）</text>
+  <text x="45" y="108" font-size="13" font-weight="600" fill="#72243E">E_k = hν - W₀</text>
+  <text x="45" y="135" font-size="11" fill="#555">hν：光子能量（ε=hν=h·c/λ）</text>
+  <text x="45" y="155" font-size="11" fill="#555">W₀：逸出功（金属特性）W₀=hν₀</text>
+  <text x="45" y="180" font-size="11" fill="#333">遏止电压：eU_c = E_k = hν - W₀</text>
+  <text x="45" y="205" font-size="11" font-weight="600" fill="#333">三个关键：</text>
+  <text x="45" y="225" font-size="11" fill="#555">① 截止频率ν₀（ν&lt;ν₀无光电子）</text>
+  <text x="45" y="245" font-size="11" fill="#555">② 瞬时性（&lt;10⁻⁹s）</text>
+  <text x="45" y="265" font-size="11" fill="#555">③ 光强决定饱和电流大小</text>
+
+  <!-- 玻尔模型 -->
+  <rect x="350" y="55" width="300" height="210" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="350" y="55" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="500" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">玻尔原子模型</text>
+  <text x="365" y="108" font-size="12" font-weight="600" fill="#333">氢原子能级：E_n = E₁/n²</text>
+  <text x="365" y="130" font-size="11" fill="#555">E₁ = -13.6 eV（基态）</text>
+  <text x="365" y="155" font-size="12" font-weight="600" fill="#333">跃迁：hν = |E_n - E_m|</text>
+  <text x="365" y="178" font-size="11" fill="#555">从n能级向低能级跃迁</text>
+  <text x="365" y="200" font-size="11" fill="#555">最多产生C(n,2)种不同频率光子</text>
+  <text x="365" y="225" font-size="11" font-weight="600" fill="#72243E">电离：吸收能量 ≥ |E_n|</text>
+  <text x="365" y="250" font-size="11" fill="#555">实物粒子撞击激发vs光子激发</text>
+  <text x="365" y="270" font-size="11" fill="#555">光子需恰好等于能级差！</text>
+
+  <!-- 波粒二象性 -->
+  <rect x="30" y="285" width="620" height="105" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="285" width="620" height="28" fill="#00796b" rx="8"/>
+  <text x="340" y="304" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">光的波粒二象性 · 原子结构发展</text>
+
+  <text x="55" y="340" font-size="11" fill="#555">波动性：干涉/衍射/偏振（大量光子） | 粒子性：光电效应/康普顿效应（个别光子） | 光子动量 p=h/λ</text>
+  <text x="55" y="370" font-size="11" fill="#555">汤姆孙（枣糕模型）→ 卢瑟福（核式结构/α散射）→ 玻尔（能级模型/氢原子光谱）</text>
+
+  <!-- 底部考点 -->
+  <rect x="30" y="405" width="620" height="80" fill="#FBEAF0" stroke="#72243E" stroke-width="1.5" rx="8"/>
+  <text x="340" y="428" text-anchor="middle" font-size="13" font-weight="700" fill="#72243E">🔴 U_c-ν图像：斜率=h/e（所有金属相同）· 截距=-W₀/e（不同金属不同）</text>
+  <text x="340" y="455" text-anchor="middle" font-size="11" fill="#555">氢光谱系列：莱曼系(紫外)→n=1 巴耳末系(可见光)→n=2 帕邢系(红外)→n=3</text>
+</svg>

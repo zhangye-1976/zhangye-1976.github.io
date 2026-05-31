@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680">
+  <!-- 物理必修第一册 全书总览 SVG -->
+  <defs>
+    <style>
+      .title { font-weight:bold; font-size:22px; font-family:sans-serif; fill: #00363a; }
+      .subtitle { font-size:13px; font-family:sans-serif; fill: #00796b; }
+      .box-title { font-weight:bold; font-size:14px; font-family:sans-serif; fill: #00363a; }
+      .box-text { font-size:12px; font-family:sans-serif; fill: #2c2c2c; }
+      .highlight { font-weight:bold; font-size:12px; font-family:sans-serif; fill: #b71c1c; }
+      .note { font-size:11px; font-family:sans-serif; fill: #555; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="680" height="680" fill="#E1F5EE" rx="12"/>
+
+  <!-- 标题 -->
+  <rect x="180" y="15" width="320" height="44" fill="#00796B" rx="8"/>
+  <text x="340" y="38" text-anchor="middle" class="title" fill="#ffffff">物理必修第一册 · 全书总览</text>
+  <text x="340" y="56" text-anchor="middle" class="subtitle" fill="#b2dfdb">运动的描述 → 匀变速直线运动 → 力与运动</text>
+
+  <!-- 全书逻辑链 箭头 -->
+  <rect x="40" y="78" width="600" height="38" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <text x="60" y="97" class="box-text" fill="#00796B">📌 逻辑链：</text>
+  <text x="140" y="97" class="box-text">学会描述运动</text><text x="280" y="97" class="box-text" fill="#00796B">→</text>
+  <text x="310" y="97" class="box-text">掌握运动规律</text><text x="450" y="97" class="box-text" fill="#00796B">→</text>
+  <text x="480" y="97" class="box-text">力如何改变运动</text>
+
+  <!-- 第1章 -->
+  <rect x="30" y="135" width="300" height="115" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="2"/>
+  <rect x="30" y="135" width="300" height="30" fill="#00796B" rx="8 8 0 0"/>
+  <text x="180" y="155" text-anchor="middle" class="box-title" fill="#ffffff">第1章 运动的描述</text>
+  <text x="45" y="180" class="box-text">📍 质点、参考系、坐标系</text>
+  <text x="45" y="200" class="box-text">🕐 时间与位移（矢量！）</text>
+  <text x="45" y="220" class="box-text">🚀 速度与平均速度、瞬时速度</text>
+  <text x="45" y="240" class="box-text">⚡ 加速度 a = Δv/Δt</text>
+
+  <!-- 第2章 -->
+  <rect x="350" y="135" width="300" height="115" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="2"/>
+  <rect x="350" y="135" width="300" height="30" fill="#00796B" rx="8 8 0 0"/>
+  <text x="500" y="155" text-anchor="middle" class="box-title" fill="#ffffff">第2章 匀变速直线运动</text>
+  <text x="365" y="180" class="box-text">📐 四大公式（v=v₀+at 等）</text>
+  <text x="365" y="200" class="box-text">📉 自由落体 v²=2gh</text>
+  <text x="365" y="220" class="box-text">🚗 刹车问题（停止后不反向！）</text>
+  <text x="365" y="240" class="box-text">📏 纸带问题（逐差法求a）</text>
+
+  <!-- 第3章 -->
+  <rect x="30" y="270" width="300" height="130" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="2"/>
+  <rect x="30" y="270" width="300" height="30" fill="#00796B" rx="8 8 0 0"/>
+  <text x="180" y="290" text-anchor="middle" class="box-title" fill="#ffffff">第3章 相互作用——力</text>
+  <text x="45" y="318" class="box-text">🏋 重力 G=mg（竖直向下）</text>
+  <text x="45" y="336" class="box-text">🔗 弹力 F=kx（弹簧）、摩擦力 f=μN</text>
+  <text x="45" y="354" class="box-text">📐 力的合成（平行四边形定则）</text>
+  <text x="45" y="372" class="box-text">✂️ 力的分解（正交分解法）</text>
+  <text x="45" y="390" class="box-text">⚖ 共点力平衡 ΣF=0</text>
+
+  <!-- 第4章 -->
+  <rect x="350" y="270" width="300" height="130" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="2"/>
+  <rect x="350" y="270" width="300" height="30" fill="#00796B" rx="8 8 0 0"/>
+  <text x="500" y="290" text-anchor="middle" class="box-title" fill="#ffffff">第4章 运动和力的关系</text>
+  <text x="365" y="318" class="box-text">🏃 牛顿第一定律（惯性只与m有关）</text>
+  <text x="365" y="336" class="box-text">⚙ 牛顿第二定律 F合=ma ← ★★★★</text>
+  <text x="365" y="354" class="box-text">🤝 牛顿第三定律（作用力反作用力）</text>
+  <text x="365" y="372" class="box-text">🛗 超重与失重（看a方向！）</text>
+  <text x="365" y="390" class="box-text">📏 SI单位制（m、kg、s 为基本单位）</text>
+
+  <!-- 高考高频考点 -->
+  <rect x="30" y="425" width="620" height="110" fill="#ffffff" rx="8" stroke="#b71c1c" stroke-width="1.5"/>
+  <rect x="30" y="425" width="620" height="28" fill="#b71c1c" rx="8 8 0 0"/>
+  <text x="340" y="444" text-anchor="middle" class="box-title" fill="#ffffff">⭐ 高考高频考点（全国乙卷）</text>
+  <text x="50" y="472" class="box-text">① v-t 图像斜率 = 加速度（选择题必考）</text>
+  <text x="50" y="490" class="box-text">② 刹车问题（先算停止时间 t₀ = v₀/a）</text>
+  <text x="50" y="508" class="box-text">③ 摩擦力方向判断（与相对运动方向相反）</text>
+  <text x="380" y="472" class="box-text">④ 牛顿第二定律 F合=ma 解题步骤</text>
+  <text x="380" y="490" class="box-text">⑤ 超重失重判断（看加速度方向）</text>
+  <text x="380" y="508" class="box-text">⑥ 作用力反作用力 vs 一对平衡力</text>
+
+  <!-- 超级易错 Top3 -->
+  <rect x="30" y="550" width="620" height="115" fill="#FFF9C4" rx="8" stroke="#F9A825" stroke-width="1.5"/>
+  <rect x="30" y="550" width="620" height="28" fill="#F9A825" rx="8 8 0 0"/>
+  <text x="340" y="569" text-anchor="middle" class="box-title" fill="#ffffff">🔴 超级易错 Top 3</text>
+  <text x="50" y="597" class="highlight">❌ 加速度 a 与速度 v 方向无关！</text><text x="360" y="597" class="box-text">（a与v同向→加速；反向→减速）</text>
+  <text x="50" y="617" class="highlight">❌ 刹车后车不会反向运动！</text><text x="360" y="617" class="box-text">（和竖直上抛不同，刹车停止即止）</text>
+  <text x="50" y="637" class="highlight">❌ 重力方向是"竖直向下"≠"垂直向下"！</text><text x="360" y="637" class="box-text">（竖直向下指向地心；垂直向下看接触面）</text>
+  <text x="50" y="655" class="highlight">❌ 惯性大小只与质量有关！</text><text x="360" y="655" class="box-text">（与速度/受力/运动状态无关）</text>
+
+  <!-- 底部说明 -->
+  <text x="340" y="670" text-anchor="middle" class="note">选必1力学模型专题 → 板块 · 传送带 · 弹簧 · 斜面</text>
+</svg>

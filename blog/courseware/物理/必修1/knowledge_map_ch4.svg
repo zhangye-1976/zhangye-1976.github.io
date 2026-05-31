@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 600">
+  <defs>
+    <style>
+      .title { font-weight:bold; font-size:18px; fill:#ffffff; font-family:sans-serif; }
+      .subtitle { font-size:13px; fill:#b2dfdb; font-family:sans-serif; }
+      .box-title { font-weight:bold; font-size:14px; fill:#ffffff; font-family:sans-serif; }
+      .box-text { font-size:12px; fill:#2c2c2c; font-family:sans-serif; }
+      .highlight { font-weight:bold; font-size:12px; fill:#b71c1c; font-family:sans-serif; }
+      .note { font-size:11px; fill:#555; font-family:sans-serif; }
+      .formula { font-size:13px; fill:#0d47a1; font-weight:bold; font-family:sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="680" height="600" fill="#E1F5EE" rx="12"/>
+
+  <!-- 标题 -->
+  <rect x="140" y="10" width="400" height="38" fill="#00796B" rx="8"/>
+  <text x="340" y="32" text-anchor="middle" class="title">第4章 运动和力的关系</text>
+  <text x="340" y="48" text-anchor="middle" class="subtitle">牛顿三定律 + 超重失重 + 力学单位制</text>
+
+  <!-- 牛顿第一定律 -->
+  <rect x="20" y="60" width="310" height="105" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="60" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="175" y="78" text-anchor="middle" class="box-title">牛顿第一定律（惯性定律）</text>
+  <text x="30" y="103" class="box-text">惯性：物体保持原来运动状态的性质</text>
+  <text x="30" y="123" class="box-text">惯性大小只与质量有关（质量越大惯性越大）</text>
+  <text x="30" y="143" class="highlight">易错：惯性大小与速度/受力无关！</text>
+  <text x="30" y="161" class="box-text">力是改变运动状态的原因（不是维持运动！）</text>
+
+  <!-- 牛顿第二定律 -->
+  <rect x="350" y="60" width="310" height="145" fill="#ffffff" rx="8" stroke="#b71c1c" stroke-width="2"/>
+  <rect x="350" y="60" width="310" height="26" fill="#b71c1c" rx="8 8 0 0"/>
+  <text x="505" y="78" text-anchor="middle" class="box-title">牛顿第二定律 ★★★★★</text>
+  <text x="360" y="103" class="formula">F合 = ma（矢量式）</text>
+  <text x="360" y="123" class="box-text">直角坐标系：ΣFx = max，ΣFy = may</text>
+  <text x="360" y="146" class="box-text">解题标准步骤（必须养成习惯！）：</text>
+  <text x="360" y="166" class="box-text">(1) 选对象（整体法 / 隔离法）</text>
+  <text x="360" y="186" class="box-text">(2) 画受力图（必须先画！）</text>
+  <text x="360" y="206" class="box-text">(3) 建坐标系（让 a 沿 x 轴正方向）</text>
+
+  <!-- 牛顿第二定律 续 -->
+  <rect x="350" y="210" width="310" height="80" fill="#ffffff" rx="8" stroke="#b71c1c" stroke-width="2"/>
+  <text x="360" y="235" class="box-text">(4) 列方程：ΣFx = max，ΣFy = may</text>
+  <text x="360" y="255" class="box-text">(5) 解方程（注意矢量方向）</text>
+  <text x="360" y="275" class="highlight">最高频陷阱：忘记画受力图就写 F=ma！</text>
+
+  <!-- 牛顿第三定律 -->
+  <rect x="20" y="175" width="310" height="115" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="175" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="175" y="193" text-anchor="middle" class="box-title">牛顿第三定律（作用力与反作用力）</text>
+  <text x="30" y="218" class="box-text">与一对平衡力的区别：</text>
+  <text x="30" y="240" class="box-text">作用力与反作用力：</text>
+  <text x="40" y="258" class="box-text">作用在不同物体上，同性质</text>
+  <text x="30" y="278" class="box-text">一对平衡力：</text>
+  <text x="40" y="296" class="box-text">作用在同一物体上，可不同性质</text>
+
+  <!-- 超重与失重 -->
+  <rect x="20" y="300" width="640" height="130" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="300" width="640" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="340" y="318" text-anchor="middle" class="box-title">超重与失重</text>
+  <text x="35" y="348" class="box-text">超重：加速度 a 向上 → N = m(g+a) ＞ mg（视重大于实重）</text>
+  <text x="35" y="368" class="box-text">失重：加速度 a 向下 → N = m(g-a) ＜ mg（视重小于实重）</text>
+  <text x="35" y="388" class="box-text">完全失重：a = g 向下 → N = 0（自由落体/卫星中）</text>
+  <text x="380" y="348" class="highlight">判断依据：加速度方向，不是速度方向！</text>
+  <text x="380" y="368" class="box-text">向上加速 → 超重；向上减速 → 失重</text>
+  <text x="380" y="388" class="box-text">向下加速 → 失重；向下减速 → 超重</text>
+
+  <!-- 力学单位制 -->
+  <rect x="20" y="440" width="640" height="90" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="440" width="640" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="340" y="458" text-anchor="middle" class="box-title">力学单位制</text>
+  <text x="35" y="485" class="box-text">国际单位制（SI）中，力学的三个基本单位：</text>
+  <text x="35" y="505" class="formula">m（米，长度）  ·  kg（千克，质量）  ·  s（秒，时间）</text>
+  <text x="380" y="485" class="box-text">导出单位：</text>
+  <text x="380" y="505" class="box-text">速度 m/s · 加速度 m/s² · 力 N = kg·m/s²</text>
+
+  <!-- 高考高频考点 -->
+  <rect x="20" y="540" width="640" height="50" fill="#FFF9C4" rx="8" stroke="#F9A825" stroke-width="1.5"/>
+  <rect x="20" y="540" width="640" height="24" fill="#F9A825" rx="8 8 0 0"/>
+  <text x="340" y="554" text-anchor="middle" class="box-title">第4章 高考小贴士</text>
+  <text x="35" y="577" class="box-text">牛顿第二定律解题：必须先画受力图！ | 超重失重看加速度方向，不看速度方向</text>
+</svg>

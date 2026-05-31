@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 640">
+  <defs>
+    <linearGradient id="header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#004d40"/>
+      <stop offset="100%" style="stop-color:#00796b"/>
+    </linearGradient>
+  </defs>
+  <rect width="680" height="640" fill="#E1F5EE" rx="8"/>
+  <rect x="0" y="0" width="680" height="52" fill="url(#header)" rx="8"/>
+  <rect x="0" y="44" width="680" height="8" fill="url(#header)"/>
+  <text x="340" y="34" text-anchor="middle" fill="white" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="20" font-weight="bold">第6章 计数原理 — 思维导图</text>
+
+  <!-- 分类加法 -->
+  <rect x="30" y="70" width="190" height="170" fill="white" stroke="#00796b" stroke-width="1.5" rx="6"/>
+  <rect x="30" y="70" width="190" height="32" fill="#00796b" rx="6"/>
+  <rect x="30" y="94" width="190" height="8" fill="#00796b"/>
+  <text x="125" y="92" text-anchor="middle" fill="white" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="14" font-weight="bold">分类加法计数原理</text>
+  <text x="48" y="126" fill="#333" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="12">N = m₁ + m₂ + ... + mₙ</text>
+  <text x="48" y="150" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">关键词：**"或"**</text>
+  <text x="48" y="170" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">各类办法独立完成</text>
+  <text x="48" y="190" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">任选其一即可</text>
+  <text x="48" y="210" fill="#e65100" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">⚠ 各类不能有交集</text>
+
+  <!-- 分步乘法 -->
+  <rect x="245" y="70" width="190" height="170" fill="white" stroke="#00796b" stroke-width="1.5" rx="6"/>
+  <rect x="245" y="70" width="190" height="32" fill="#00796b" rx="6"/>
+  <rect x="245" y="94" width="190" height="8" fill="#00796b"/>
+  <text x="340" y="92" text-anchor="middle" fill="white" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="14" font-weight="bold">分步乘法计数原理</text>
+  <text x="263" y="126" fill="#333" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="12">N = m₁ x m₂ x ... x mₙ</text>
+  <text x="263" y="150" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">关键词：**"且"**</text>
+  <text x="263" y="170" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">各步骤依次完成</text>
+  <text x="263" y="190" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">缺一不可</text>
+  <text x="263" y="210" fill="#e65100" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">⚠ 各步间必须独立</text>
+
+  <!-- 综合策略 -->
+  <rect x="460" y="70" width="190" height="170" fill="white" stroke="#00796b" stroke-width="1.5" rx="6"/>
+  <rect x="460" y="70" width="190" height="32" fill="#00796b" rx="6"/>
+  <rect x="460" y="94" width="190" height="8" fill="#00796b"/>
+  <text x="555" y="92" text-anchor="middle" fill="white" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="14" font-weight="bold">综合应用策略</text>
+  <text x="478" y="126" fill="#333" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="12">先分类, 每类再分步</text>
+  <text x="478" y="150" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">拆成互斥情形</text>
+  <text x="478" y="170" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">类内依次完成</text>
+  <text x="478" y="190" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">结果 = 各类之和</text>
+  <text x="478" y="210" fill="#e65100" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">⚠ 不重不漏原则</text>
+
+  <!-- 排列 -->
+  <rect x="30" y="260" width="300" height="160" fill="white" stroke="#00796b" stroke-width="1.5" rx="6"/>
+  <rect x="30" y="260" width="300" height="32" fill="#00796b" rx="6"/>
+  <rect x="30" y="284" width="300" height="8" fill="#00796b"/>
+  <text x="180" y="282" text-anchor="middle" fill="white" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="14" font-weight="bold">排列 A(n,m) = n!/(n-m)!</text>
+  <text x="48" y="316" fill="#333" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="12" font-weight="bold">常见模型：</text>
+  <text x="48" y="340" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">📦 相邻问题 → 捆绑法</text>
+  <text x="48" y="360" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">📦 不相邻问题 → 插空法</text>
+  <text x="48" y="380" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">📦 定序问题 → 消序法(÷A(k,k))</text>
+  <text x="48" y="400" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">📦 特殊元素/位置 → 优先安排</text>
+
+  <!-- 组合 -->
+  <rect x="350" y="260" width="300" height="160" fill="white" stroke="#00796b" stroke-width="1.5" rx="6"/>
+  <rect x="350" y="260" width="300" height="32" fill="#00796b" rx="6"/>
+  <rect x="350" y="284" width="300" height="8" fill="#00796b"/>
+  <text x="500" y="282" text-anchor="middle" fill="white" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="14" font-weight="bold">组合 C(n,m) = n!/[m!(n-m)!]</text>
+  <text x="368" y="316" fill="#333" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="12" font-weight="bold">核心性质：</text>
+  <text x="368" y="340" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">对称性：C(n,m)=C(n,n-m)</text>
+  <text x="368" y="360" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">递推：C(n,m)=C(n-1,m)+C(n-1,m-1)</text>
+  <text x="368" y="380" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">分组分配：先分组再分配</text>
+  <text x="368" y="400" fill="#e65100" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">⚠ 均匀分组要消序!</text>
+
+  <!-- 二项式定理 -->
+  <rect x="30" y="440" width="620" height="180" fill="white" stroke="#00796b" stroke-width="1.5" rx="6"/>
+  <rect x="30" y="440" width="620" height="32" fill="#00796b" rx="6"/>
+  <rect x="30" y="464" width="620" height="8" fill="#00796b"/>
+  <text x="340" y="462" text-anchor="middle" fill="white" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="14" font-weight="bold">二项式定理 (a+b)ⁿ = ΣC(n,k)·a^(n-k)·b^k</text>
+
+  <text x="48" y="496" fill="#333" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="12" font-weight="bold">通项 T(k+1)=C(n,k)·a^(n-k)·b^k</text>
+
+  <rect x="48" y="510" width="180" height="95" fill="#E8F5E9" stroke="#4caf50" stroke-width="1" rx="4"/>
+  <text x="138" y="530" text-anchor="middle" fill="#2e7d32" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="11" font-weight="bold">求特定项</text>
+  <text x="58" y="550" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="10">令指数 = 目标指数</text>
+  <text x="58" y="568" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="10">解k值,代入通项</text>
+  <text x="58" y="586" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="10">常数项：令指数=0</text>
+
+  <rect x="245" y="510" width="180" height="95" fill="#E8F5E9" stroke="#4caf50" stroke-width="1" rx="4"/>
+  <text x="335" y="530" text-anchor="middle" fill="#2e7d32" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="11" font-weight="bold">最大项</text>
+  <text x="255" y="550" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="10">二项式系数最大：</text>
+  <text x="255" y="568" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="10">n偶→C(n,n/2)</text>
+  <text x="255" y="586" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="10">n奇→C(n,正中间两个)</text>
+
+  <rect x="442" y="510" width="195" height="95" fill="#E8F5E9" stroke="#4caf50" stroke-width="1" rx="4"/>
+  <text x="539" y="530" text-anchor="middle" fill="#2e7d32" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="11" font-weight="bold">赋值法求系数和</text>
+  <text x="452" y="550" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="10">a=b=1 → 所有系数和=2ⁿ</text>
+  <text x="452" y="568" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="10">a=1,b=-1 → 奇偶项差</text>
+  <text x="452" y="586" fill="#555" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="10">灵活赋值求各种和</text>
+
+  <text x="48" y="616" fill="#e65100" font-family="SimSun,Microsoft YaHei,sans-serif" font-size="11">⚠ 二项式系数 ≠ 系数！系数还要乘上a和b本身的系数</text>
+</svg>

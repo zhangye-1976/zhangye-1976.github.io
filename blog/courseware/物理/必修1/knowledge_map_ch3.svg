@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 580">
+  <!-- 物理必修1 第3章 相互作用——力 SVG -->
+  <defs>
+    <style>
+      .title { font-weight:bold; font-size:18px; font-family:sans-serif; fill: #00363a; }
+      .subtitle { font-size:13px; font-family:sans-serif; fill: #00796b; }
+      .box-title { font-weight:bold; font-size:14px; font-family:sans-serif; fill: #00363a; }
+      .box-text { font-size:12px; font-family:sans-serif; fill: #2c2c2c; }
+      .highlight { font-weight:bold; font-size:12px; font-family:sans-serif; fill: #b71c1c; }
+      .note { font-size:11px; font-family:sans-serif; fill: #555; }
+      .formula { font-size:13px; font-family:sans-serif; fill: #0d47a1; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="680" height="580" fill="#E1F5EE" rx="12"/>
+
+  <!-- 标题 -->
+  <rect x="140" y="10" width="400" height="38" fill="#00796B" rx="8"/>
+  <text x="340" y="32" text-anchor="middle" class="title" fill="#ffffff">第3章 相互作用——力</text>
+  <text x="340" y="48" text-anchor="middle" class="subtitle" fill="#b2dfdb">三种常见力 + 力的合成与分解 + 共点力平衡</text>
+
+  <!-- 重力 -->
+  <rect x="20" y="60" width="310" height="100" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="60" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="175" y="78" text-anchor="middle" class="box-title" fill="#ffffff">🏋️ 重力 G</text>
+  <text x="30" y="105" class="box-text">产生：地球吸引</text>
+  <text x="30" y="125" class="box-text">方向：竖直向下（≠ 垂直向下！）</text>
+  <text x="30" y="145" class="formula">大小：G = mg</text>
+  <text x="30" y="165" class="box-text">g = 9.8 m/s²（计算常取 10）</text>
+
+  <!-- 弹力 -->
+  <rect x="350" y="60" width="310" height="130" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="350" y="60" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="505" y="78" text-anchor="middle" class="box-title" fill="#ffffff">📎 弹力 F</text>
+  <text x="360" y="105" class="box-text">产生条件：接触 + 弹性形变</text>
+  <text x="360" y="125" class="box-text">方向：垂直接触面指向受力物体</text>
+  <text x="360" y="148" class="box-text">弹簧弹力（胡克定律）：</text>
+  <text x="360" y="168" class="formula">F = kx（k：劲度系数）</text>
+  <text x="360" y="188" class="box-text">📌 弹簧串联/并联公式见知识图谱</text>
+
+  <!-- 摩擦力 -->
+  <rect x="20" y="170" width="640" height="120" fill="#ffffff" rx="8" stroke="#b71c1c" stroke-width="1.5"/>
+  <rect x="20" y="170" width="640" height="26" fill="#b71c1c" rx="8 8 0 0"/>
+  <text x="340" y="188" text-anchor="middle" class="box-title" fill="#ffffff">🔗 摩擦力 f（超级易错！）</text>
+  <text x="35" y="215" class="box-text">产生条件：接触 + 挤压 + 粗糙 + 相对运动/趋势</text>
+  <text x="35" y="235" class="box-text">方向：与相对运动/趋势方向</text>
+  <text x="35" y="255" class="highlight">🔴 易错：摩擦力方向与"运动方向"无关！</text>
+  <text x="380" y="215" class="box-text">滑动摩擦力：</text>
+  <text x="380" y="235" class="formula">f = μN</text>
+  <text x="380" y="255" class="box-text">（N 是正压力，不是重力！）</text>
+  <text x="380" y="275" class="box-text">静摩擦力：0 ≤ f ≤ fmax（由平衡求）</text>
+
+  <!-- 力的合成与分解 -->
+  <rect x="20" y="300" width="640" height="120" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="300" width="640" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="340" y="318" text-anchor="middle" class="box-title" fill="#ffffff">📐 力的合成与分解（平行四边形定则）</text>
+  <text x="35" y="348" class="box-text">合成（已知两分力 → 求合力）：</text>
+  <text x="35" y="368" class="box-text">合力范围：|F₁ - F₂| ≤ F合 ≤ F₁ + F₂</text>
+  <text x="35" y="388" class="box-text">分解（已知一个力 → 求分力）：按"效果"分解</text>
+  <text x="380" y="348" class="box-text">正交分解法（最常用）：</text>
+  <text x="380" y="368" class="formula">Fx = Fcosθ，Fy = Fsinθ</text>
+  <text x="380" y="388" class="box-text">平衡时：ΣFx = 0，ΣFy = 0</text>
+  <text x="380" y="408" class="box-text">（适用于多力平衡，比合成法更通用）</text>
+
+  <!-- 共点力平衡 -->
+  <rect x="20" y="430" width="640" height="130" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="430" width="640" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="340" y="448" text-anchor="middle" class="box-title" fill="#ffffff">⚖️ 共点力平衡（静态平衡）</text>
+  <text x="35" y="478" class="box-text">平衡条件：物体静止或匀速直线运动 → 合力 = 0</text>
+  <text x="35" y="498" class="box-text">解题三步走：</text>
+  <text x="35" y="518" class="box-text">① 选对象（整体法 or 隔离法）</text>
+  <text x="35" y="538" class="box-text">② 画受力图（重力一定有；弹力看接触；摩擦力看趋势）</text>
+  <text x="380" y="478" class="box-text">③ 列方程：</text>
+  <text x="380" y="498" class="box-text">→ 合成法：F合 = 0（三力平衡用）</text>
+  <text x="380" y="518" class="box-text">→ 正交分解法：ΣFx = 0，ΣFy = 0（多力平衡用）</text>
+  <text x="380" y="538" class="box-text">🔑 口诀："求外力用整体，求内力用隔离"</text>
+
+  <!-- 页码 -->
+  <text x="650" y="570" class="note">P3/4</text>
+</svg>

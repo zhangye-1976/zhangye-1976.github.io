@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 700">
+  <defs>
+    <style>
+      .box { fill:#E1F5EE; stroke:#00796b; stroke-width:1.5; rx:8; }
+      .box2 { fill:#E8F5E9; stroke:#388E3C; stroke-width:1.5; rx:6; }
+      .box3 { fill:#FFF9C4; stroke:#F9A825; stroke-width:1.5; rx:6; }
+      .boxt { fill:#B2DFDB; stroke:#00796b; stroke-width:2; rx:8; }
+      .tit { font:bold 15px sans-serif; fill:#00796b; }
+      .nm { font:13px sans-serif; fill:#1a1a1a; }
+      .sm { font:11px sans-serif; fill:#333; }
+      .red { font:11px sans-serif; fill:#c0392b; }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="180" y="8" width="320" height="34" class="boxt"/>
+  <text x="340" y="31" text-anchor="middle" class="tit">第4章 数列（核心！）</text>
+
+  <!-- 数列概念 -->
+  <rect x="20" y="52" width="180" height="28" class="box"/>
+  <text x="110" y="70" text-anchor="middle" class="nm">数列的概念</text>
+  <rect x="20" y="88" width="180" height="80" class="box"/>
+  <text x="30" y="110" class="sm">数列：一列有序的数</text>
+  <text x="30" y="128" class="sm">通项：aₙ=f(n)</text>
+  <text x="30" y="146" class="sm">前n项和：Sₙ</text>
+  <text x="30" y="162" class-="sm">关系：aₙ=Sₙ−Sₙ₋₁(n≥2)</text>
+  <text x="30" y="180" class="red">⚠ a₁=S₁！</text>
+
+  <!-- 等差数列 -->
+  <rect x="220" y="52" width="200" height="28" class="box"/>
+  <text x="320" y="70" text-anchor="middle" class="nm">等差数列</text>
+  <rect x="220" y="88" width="200" height="120" class="box2"/>
+  <text x="230" y="112" class="sm">定义：aₙ₊₁−aₙ=d（常数）</text>
+  <text x="230" y="130" class="sm">通项：aₙ=a₁+(n−1)d</text>
+  <text x="230" y="148" class="sm">求和：Sₙ=n(a₁+aₙ)/2</text>
+  <text x="230" y="166" class="sm"> =na₁+n(n−1)d/2</text>
+  <text x="230" y="184" class="sm">中项：2b=a+c</text>
+  <text x="230" y="202" class="sm">性质：m+n=p+q→aₘ+aₙ=aₚ+aₛ</text>
+
+  <!-- 等比数列 -->
+  <rect x="440" y="52" width="220" height="28" class="box"/>
+  <text x="550" y="70" text-anchor="middle" class="nm">等比数列</text>
+  <rect x="440" y="88" width="220" height="140" class="box3"/>
+  <text x="450" y="112" class="sm">定义：aₙ₊₁/aₙ=q（q≠0）</text>
+  <text x="450" y="130" class="sm">通项：aₙ=a₁·qⁿ⁻¹</text>
+  <text x="450" y="148" class="sm">求和（q≠1）：</text>
+  <text x="450" y="166" class="sm"> Sₙ=a₁(1−qⁿ)/(1−q)</text>
+  <text x="450" y="184" class="sm">中项：b²=ac</text>
+  <text x="450" y="202" class="sm">性质：m+n=p+q→aₘ·aₙ=aₚ·aₛ</text>
+  <text x="450" y="220" class="sm">⚠ q=1时Sₙ=na₁！</text>
+
+  <!-- 数列求和 -->
+  <rect x="20" y="244" width="320" height="34" class="boxt"/>
+  <text x="180" y="266" text-anchor="middle" class="tit">数列求和四大方法（必考！）</text>
+  <rect x="20" y="286" width="320" height="140" class="box2"/>
+  <text x="30" y="310" class="sm">【公式法】等差/等比直接用求和公式</text>
+  <text x="30" y="328" class="sm">【裂项相消】1/[n(n+1)]=1/n−1/(n+1)</text>
+  <text x="30" y="346" class="sm"> 适用：分式型，前后项相消</text>
+  <text x="30" y="364" class="sm">【错位相减】等差×等比型（如n·2ⁿ）</text>
+  <text x="30" y="382" class="sm"> 步骤：乘q→错位→相减→化简</text>
+  <text x="30" y="400" class="sm">【分组求和】数列可拆成几部分</text>
+  <text x="30" y="418" class="sm"> 如aₙ=2ⁿ+n → 分别求和</text>
+
+  <!-- 数学归纳法 -->
+  <rect x="360" y="244" width="300" height="34" class="boxt"/>
+  <text x="510" y="266" text-anchor="middle" class="tit">数学归纳法（证明数列通项）</text>
+  <rect x="360" y="286" width="300" height="140" class="box3"/>
+  <text x="370" y="310" class="sm">步骤①：奠基——验证n=1时成立</text>
+  <text x="370" y="328" class="sm">步骤②：归纳——假设n=k成立</text>
+  <text x="370" y="346" class="sm"> 证明n=k+1时也成立</text>
+  <text x="370" y="364" class="sm">步骤③：结论——对任意n≥1成立</text>
+  <text x="370" y="382" class="sm">⚠ 必须用上归纳假设！</text>
+  <text x="370" y="400" class="sm">应用：证明数列通项、不等式</text>
+  <text x="370" y="418" class="sm">高考选考（有的卷考，有的不考）</text>
+
+  <!-- 经典题型 -->
+  <rect x="20" y="444" width="640" height="28" class="box"/>
+  <text x="340" y="462" text-anchor="middle" class="nm">数列经典题型解题模板</text>
+  <rect x="20" y="480" width="640" height="200" class="box"/>
+  <text x="30" y="504" class="sm">【求通项】已知Sₙ求aₙ：aₙ=Sₙ−Sₙ₋₁(n≥2)，a₁=S₁单独验证</text>
+  <text x="30" y="522" class="sm">【等差/等比判定】计算aₙ₊₁−aₙ或aₙ₊₁/aₙ，看是否为常数</text>
+  <text x="30" y="540" class="sm">【数列求和】先判断类型→选方法（公式/裂项/错位/分组）</text>
+  <text x="30" y="558" class="sm">【错位相减步骤】①写Sₙ ②乘q写qSₙ ③错位相减 ④化简</text>
+  <text x="30" y="576" class="sm">【裂项技巧】1/[(an+b)(an+c)]=[1/(c−b)]·[1/(an+b)−1/(an+c)]</text>
+  <text x="30" y="594" class="sm">【数列与不等式】先求和再放缩，或用数学归纳法证明</text>
+  <text x="30" y="612" class="sm">【实际应用】等差数列→均匀增长（如每年加固定工资）</text>
+  <text x="30" y="630" class="sm"> 等比数列→比例增长（如每年涨5%）</text>
+  <text x="30" y="648" class="red">⚠ 求通项时切记n=1要单独验证！错位相减计算量大要仔细！</text>
+</svg>

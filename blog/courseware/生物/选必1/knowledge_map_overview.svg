@@ -1,0 +1,66 @@
+<svg viewBox="0 0 900 520" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0F6E56"/>
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="250" y="10" width="400" height="40" rx="10" fill="#00796b"/>
+  <text x="450" y="35" text-anchor="middle" fill="white" font-size="16" font-weight="bold">选必1 稳态与调节 · 全书总览</text>
+
+  <!-- 核心概念 -->
+  <rect x="320" y="60" width="260" height="36" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+  <text x="450" y="83" text-anchor="middle" fill="#4B1528" font-size="14" font-weight="bold">稳态 — 核心概念</text>
+
+  <line x1="450" y1="96" x2="450" y2="120" stroke="#0F6E56" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- 五大章节 -->
+  <rect x="30" y="125" width="140" height="40" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="100" y="150" text-anchor="middle" fill="#04342C" font-size="13" font-weight="bold">第1章 内环境稳态</text>
+
+  <rect x="200" y="125" width="140" height="40" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="270" y="150" text-anchor="middle" fill="#04342C" font-size="13" font-weight="bold">第2章 神经调节 ★</text>
+
+  <rect x="370" y="125" width="140" height="40" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="440" y="150" text-anchor="middle" fill="#04342C" font-size="13" font-weight="bold">第3章 体液调节 ★</text>
+
+  <rect x="540" y="125" width="140" height="40" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="610" y="150" text-anchor="middle" fill="#04342C" font-size="13" font-weight="bold">第4章 免疫调节 ★</text>
+
+  <rect x="710" y="125" width="140" height="40" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="780" y="150" text-anchor="middle" fill="#04342C" font-size="13" font-weight="bold">第5章 植物调节</text>
+
+  <line x1="100" y1="165" x2="100" y2="195" stroke="#0F6E56" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="270" y1="165" x2="270" y2="195" stroke="#0F6E56" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="440" y1="165" x2="440" y2="195" stroke="#0F6E56" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="610" y1="165" x2="610" y2="195" stroke="#0F6E56" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="780" y1="165" x2="780" y2="195" stroke="#0F6E56" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- 核心内容框 -->
+  <rect x="30" y="200" width="820" height="120" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="50" y="222" fill="#04342C" font-size="13" font-weight="bold">第2章 神经调节（最核心）</text>
+  <text x="50" y="242" fill="#085041" font-size="12">• 反射弧五部分：感受器→传入神经→神经中枢→传出神经→效应器（缺一不可）</text>
+  <text x="50" y="260" fill="#085041" font-size="12">• 神经纤维：静息电位（外正内负）→动作电位（外负内正）→Na⁺内流→局部电流</text>
+  <text x="50" y="278" fill="#085041" font-size="12">• 突触传递：单向传递（突触前膜→突触后膜）、神经递质不进入后膜、作用后被分解</text>
+  <text x="50" y="296" fill="#085041" font-size="12">• 大脑皮层言语区：W（写）V（读）S（说）H（听）— S区损伤最常见（运动性失语）</text>
+
+  <text x="50" y="322" fill="#04342C" font-size="13" font-weight="bold">第3章 体液调节（与神经调节综合）</text>
+  <text x="50" y="342" fill="#085041" font-size="12">• 血糖调节：胰岛素（↓）唯一降血糖；胰高血糖素、肾上腺素（↑）</text>
+  <text x="50" y="360" fill="#085041" font-size="12">• 甲状腺激素分级调节：下丘脑→TRH→垂体→TSH→甲状腺→甲状腺激素→负反馈</text>
+  <text x="50" y="378" fill="#085041" font-size="12">• 水盐调节：下丘脑合成ADH→垂体释放→促进肾小管重吸收水</text>
+
+  <!-- 综合题提醒 -->
+  <rect x="30" y="340" width="820" height="80" rx="10" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+  <text x="50" y="362" fill="#4B1528" font-size="13" font-weight="bold">🎯 高考综合题必考：神经-体液-免疫调节综合</text>
+  <text x="50" y="382" fill="#72243E" font-size="12">• 病原体入侵→吞噬细胞→T细胞→B细胞/细胞毒性T细胞→抗体/靶细胞裂解</text>
+  <text x="50" y="400" fill="#72243E" font-size="12">• 发热机制：下丘脑体温调节中枢→甲状腺激素↑→产热↑；出汗→散热↑</text>
+
+  <!-- 易错提醒 -->
+  <rect x="30" y="435" width="820" height="65" rx="10" fill="#FFF7E6" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="50" y="457" fill="#92400E" font-size="13" font-weight="bold">🔴 全书易错Top 5</text>
+  <text x="50" y="475" fill="#92400E" font-size="11">1. 神经递质不进入突触后神经元（只与受体结合，作用后被分解或回收）</text>
+  <text x="50" y="490" fill="#92400E" font-size="11">2. 胰岛素是唯一降低血糖的激素；糖尿病=胰岛素分泌不足 or 受体不敏感</text>
+  <text x="50" y="505" fill="#92400E" font-size="11">3. 抗体只由浆细胞产生；T/B/记忆细胞都不能产生抗体</text>
+  <text x="50" y="520" fill="#92400E" font-size="11">4. 生长素两重性：低促高抑；根的向地性=近地侧高浓度抑制；茎的背地性=近地侧高浓度促进更强</text>
+</svg>

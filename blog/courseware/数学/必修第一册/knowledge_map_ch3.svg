@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560">
+  <defs>
+    <style>
+      .box { fill:#E1F5EE; stroke:#00796b; stroke-width:1.5; rx:8; }
+      .box2 { fill:#E8F5E9; stroke:#388E3C; stroke-width:1.5; rx:6; }
+      .box3 { fill:#FFF9C4; stroke:#F9A825; stroke-width:1.5; rx:6; }
+      .boxt { fill:#B2DFDB; stroke:#00796b; stroke-width:2; rx:8; }
+      .tit { font:bold 15px sans-serif; fill:#00796b; }
+      .nm { font:13px sans-serif; fill:#1a1a1a; }
+      .sm { font:11px sans-serif; fill:#333; }
+      .red { font:11px sans-serif; fill:#c0392b; }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="180" y="8" width="320" height="34" class="boxt"/>
+  <text x="340" y="31" text-anchor="middle" class="tit">第3章 函数的概念与性质</text>
+
+  <!-- 函数概念 -->
+  <rect x="20" y="52" width="180" height="28" class="box"/>
+  <text x="110" y="70" text-anchor="middle" class="nm">函数的概念（三要素）</text>
+  <rect x="20" y="88" width="180" height="100" class="box"/>
+  <text x="110" y="108" text-anchor="middle" class="sm">定义域：x的取值范围</text>
+  <text x="110" y="126" text-anchor="middle" class="sm">值域：f(x)的取值范围</text>
+  <text x="110" y="144" text-anchor="middle" class="sm">对应关系：映射法则</text>
+  <text x="110" y="162" text-anchor="middle" class="red">两函数相等⇔三要素全同</text>
+
+  <!-- 定义域限制 -->
+  <rect x="220" y="52" width="180" height="28" class="box"/>
+  <text x="310" y="70" text-anchor="middle" class="nm">定义域常见限制</text>
+  <rect x="220" y="88" width="180" height="100" class="box"/>
+  <text x="310" y="108" text-anchor="middle" class="sm">分母 ≠ 0</text>
+  <text x="310" y="126" text-anchor="middle" class="sm">偶次根号 ≥ 0</text>
+  <text x="310" y="144" text-anchor="middle" class="sm">对数真数 &gt; 0</text>
+  <text x="310" y="162" text-anchor="middle" class="sm">零次幂底数 ≠ 0</text>
+
+  <!-- 表示法 -->
+  <rect x="420" y="52" width="240" height="28" class="box"/>
+  <text x="540" y="70" text-anchor="middle" class="nm">函数的表示法</text>
+  <rect x="420" y="88" width="240" height="100" class="box"/>
+  <text x="540" y="108" text-anchor="middle" class="sm">解析法：用数学式子表示</text>
+  <text x="540" y="126" text-anchor="middle" class="sm">图象法：用图象表示</text>
+  <text x="540" y="144" text-anchor="middle" class="sm">列表法：用表格表示</text>
+  <text x="540" y="162" text-anchor="middle" class="sm">分段函数：各段值域取并集</text>
+
+  <!-- 单调性 -->
+  <rect x="20" y="200" width="200" height="28" class="box"/>
+  <text x="120" y="218" text-anchor="middle" class="nm">单调性（核心考点）</text>
+  <rect x="20" y="236" width="200" height="110" class="box2"/>
+  <text x="120" y="258" text-anchor="middle" class="sm">增函数：x₁&lt;x₂ ⇒ f(x₁)&lt;f(x₂)</text>
+  <text x="120" y="276" text-anchor="middle" class="sm">减函数：x₁&lt;x₂ ⇒ f(x₁)&gt;f(x₂)</text>
+  <text x="120" y="294" text-anchor="middle" class="sm">判断：定义法 / 图象法</text>
+  <text x="120" y="312" text-anchor="middle" class="sm">复合函数：同增异减</text>
+  <text x="120" y="330" text-anchor="middle" class="red">同增异减：内外同增→复合增</text>
+  <text x="120" y="348" text-anchor="middle" class="sm">最值：先判单调，再求端点</text>
+
+  <!-- 奇偶性 -->
+  <rect x="240" y="200" width="200" height="28" class="box"/>
+  <text x="340" y="218" text-anchor="middle" class="nm">奇偶性（对称性质）</text>
+  <rect x="240" y="236" width="200" height="110" class="box2"/>
+  <text x="340" y="258" text-anchor="middle" class="sm">偶函数：f(−x)=f(x)</text>
+  <text x="340" y="276" text-anchor="middle" class="sm">奇函数：f(−x)=−f(x)</text>
+  <text x="340" y="294" text-anchor="middle" class="sm">偶→关于y轴对称</text>
+  <text x="340" y="312" text-anchor="middle" class="sm">奇→关于原点对称</text>
+  <text x="340" y="330" text-anchor="middle" class="red">奇函数+定义域含0→f(0)=0</text>
+
+  <!-- 幂函数 -->
+  <rect x="460" y="200" width="200" height="28" class="box"/>
+  <text x="560" y="218" text-anchor="middle" class="nm">幂函数 y=x^α</text>
+  <rect x="460" y="236" width="200" height="110" class="box2"/>
+  <text x="560" y="258" text-anchor="middle" class="sm">α=1：直线，奇函数</text>
+  <text x="560" y="276" text-anchor="middle" class="sm">α=2：抛物线，偶函数</text>
+  <text x="560" y="294" text-anchor="middle" class="sm">α=3：立方抛物线，奇</text>
+  <text x="560" y="312" text-anchor="middle" class="sm">α=1/2：根号曲线</text>
+  <text x="560" y="330" text-anchor="middle" class="sm">公共点：(1,1)；α&gt;0过(0,0)</text>
+
+  <!-- 函数求值/分段 -->
+  <rect x="20" y="360" width="320" height="28" class="box"/>
+  <text x="180" y="378" text-anchor="middle" class="nm">分段函数与抽象函数</text>
+  <rect x="20" y="396" width="320" height="90" class="box3"/>
+  <text x="30" y="418" class="sm">分段函数：先判断x在哪段，再代入对应解析式</text>
+  <text x="30" y="436" class="sm">抽象函数：利用奇偶性/周期性转化</text>
+  <text x="30" y="454" class="sm">典型：f(x)+f(−x)=0（奇）；f(x)=f(x+T)（周）</text>
+  <text x="30" y="472" class="red">易错：分段点处左右分别代入！</text>
+
+  <!-- 函数应用 -->
+  <rect x="360" y="360" width="300" height="28" class="box"/>
+  <text x="510" y="378" text-anchor="middle" class="nm">函数零点与方程求根</text>
+  <rect x="360" y="396" width="300" height="90" class="box3"/>
+  <text x="370" y="418" class="sm">零点：f(x)=0的x值（图象与x轴交点）</text>
+  <text x="370" y="436" class="sm">零点存在定理：f(a)·f(b)&lt;0→(a,b)内至少一个零点</text>
+  <text x="370" y="454" class="sm">二分法：取中点，缩小区间，逼近零点</text>
+  <text x="370" y="472" class="sm">零点个数=图象与x轴交点个数</text>
+
+  <!-- 知识关联 -->
+  <rect x="20" y="502" width="640" height="48" class="box"/>
+  <text x="340" y="524" text-anchor="middle" class="nm">本章关联：函数概念→单调性/奇偶性→具体函数(第4/5章)</text>
+  <text x="340" y="542" text-anchor="middle" class="sm">单调性证明模板：设x₁&lt;x₂∈定义域，作差f(x₁)−f(x₂)，定号，下结论</text>
+</svg>

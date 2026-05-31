@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>物理选必1 互动练习</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Microsoft YaHei','PingFang SC',sans-serif; background:#E8EAF6; min-height:100vh; display:flex; justify-content:center; align-items:center; padding:20px; }
+  .container { max-width:720px; width:100%; background:#fff; border-radius:16px; box-shadow:0 4px 20px rgba(0,0,0,0.1); overflow:hidden; }
+  .header { background:linear-gradient(135deg,#283593,#3949AB); padding:24px 32px; text-align:center; color:#fff; }
+  .header h1 { font-size:22px; margin-bottom:6px; }
+  .header p { font-size:13px; opacity:0.85; }
+  .quiz-area { padding:24px 32px; }
+  .question { margin-bottom:24px; padding:16px; background:#f5f7ff; border-radius:10px; border-left:4px solid #3949AB; }
+  .question h4 { font-size:15px; color:#283593; margin-bottom:10px; }
+  .question p { font-size:14px; color:#333; margin-bottom:12px; line-height:1.6; }
+  .options { display:flex; flex-direction:column; gap:6px; }
+  .option { display:flex; align-items:center; padding:8px 12px; border-radius:6px; cursor:pointer; transition:background 0.2s; font-size:13px; color:#444; }
+  .option:hover { background:#E8EAF6; }
+  .option input { margin-right:10px; accent-color:#3949AB; }
+  .btn-submit { display:block; width:100%; max-width:200px; margin:20px auto; padding:12px; background:linear-gradient(135deg,#283593,#3949AB); color:#fff; border:none; border-radius:8px; font-size:16px; cursor:pointer; }
+  .btn-submit:hover { transform:scale(1.03); }
+  .result { display:none; padding:20px 32px; background:#E8EAF6; border-top:2px solid #3949AB; }
+  .result h3 { text-align:center; color:#283593; margin-bottom:12px; font-size:18px; }
+  .result .score { text-align:center; font-size:32px; font-weight:700; color:#3949AB; margin-bottom:16px; }
+  .result .detail { font-size:13px; color:#555; line-height:1.8; }
+  .correct { color:#2E7D32; font-weight:600; }
+  .wrong { color:#C62828; font-weight:600; }
+  .explanation { background:#fff; padding:8px 12px; border-radius:6px; margin:4px 0; font-size:12px; border-left:3px solid #FF8F00; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>物理选必1 · 互动练习</h1>
+    <p>8题（基础×3 + 进阶×3 + 综合×2）| 动量/振动/波/光</p>
+  </div>
+
+  <div class="quiz-area" id="quizArea">
+    <div class="question">
+      <h4>Q1 · 基础</h4>
+      <p>质量为 m 的子弹以速度 v 射入质量为 M 的木块并留在其中。碰撞后系统的速度大小为：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q1" value="A"> A. mv/M</label>
+        <label class="option"><input type="radio" name="q1" value="B"> B. mv/(m+M)</label>
+        <label class="option"><input type="radio" name="q1" value="C"> C. Mv/(m+M)</label>
+        <label class="option"><input type="radio" name="q1" value="D"> D. (m+M)v/m</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h4>Q2 · 基础</h4>
+      <p>关于单摆的周期，下列说法正确的是：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q2" value="A"> A. 摆球质量越大，周期越大</label>
+        <label class="option"><input type="radio" name="q2" value="B"> B. 振幅越大，周期越大</label>
+        <label class="option"><input type="radio" name="q2" value="C"> C. 摆长越长，周期越大</label>
+        <label class="option"><input type="radio" name="q2" value="D"> D. 在月球上周期比地球上小</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h4>Q3 · 基础</h4>
+      <p>一列波从空气进入水中时，不变的物理量是：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q3" value="A"> A. 波速</label>
+        <label class="option"><input type="radio" name="q3" value="B"> B. 波长</label>
+        <label class="option"><input type="radio" name="q3" value="C"> C. 频率</label>
+        <label class="option"><input type="radio" name="q3" value="D"> D. 振幅</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h4>Q4 · 进阶</h4>
+      <p>光滑水平面上，A球(m,2v)与静止的B球(2m)发生弹性正碰。碰后A球的速度为：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q4" value="A"> A. -v/3，向左运动</label>
+        <label class="option"><input type="radio" name="q4" value="B"> B. v/3，向右运动</label>
+        <label class="option"><input type="radio" name="q4" value="C"> C. 0</label>
+        <label class="option"><input type="radio" name="q4" value="D"> D. -2v/3，向左运动</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h4>Q5 · 进阶</h4>
+      <p>关于 y-t（振动图）和 y-x（波形图），下列说法正确的是：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q5" value="A"> A. y-t图可以直接读出波长</label>
+        <label class="option"><input type="radio" name="q5" value="B"> B. y-x图可以直接读出周期</label>
+        <label class="option"><input type="radio" name="q5" value="C"> C. y-t图是某个质点位移随时间变化</label>
+        <label class="option"><input type="radio" name="q5" value="D"> D. y-x图是某个质点随位置变化</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h4>Q6 · 进阶</h4>
+      <p>在杨氏双缝干涉实验中，若将入射光由红光换成紫光，则干涉条纹间距将：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q6" value="A"> A. 增大</label>
+        <label class="option"><input type="radio" name="q6" value="B"> B. 减小</label>
+        <label class="option"><input type="radio" name="q6" value="C"> C. 不变</label>
+        <label class="option"><input type="radio" name="q6" value="D"> D. 无法确定</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h4>Q7 · 综合</h4>
+      <p>光从折射率为 n=√2 的介质射向空气，临界角 C 为：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q7" value="A"> A. 30°</label>
+        <label class="option"><input type="radio" name="q7" value="B"> B. 45°</label>
+        <label class="option"><input type="radio" name="q7" value="C"> C. 60°</label>
+        <label class="option"><input type="radio" name="q7" value="D"> D. 90°</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <h4>Q8 · 综合</h4>
+      <p>两列频率相同的波在空间某点相遇，若该点到两波源的波程差 Δr=3λ/2，则该点是：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q8" value="A"> A. 振动加强点</label>
+        <label class="option"><input type="radio" name="q8" value="B"> B. 振动减弱点</label>
+        <label class="option"><input type="radio" name="q8" value="C"> C. 时强时弱点</label>
+        <label class="option"><input type="radio" name="q8" value="D"> D. 无法确定</label>
+      </div>
+    </div>
+
+    <button class="btn-submit" onclick="checkAnswers()">提交答案</button>
+  </div>
+
+  <div class="result" id="resultArea"></div>
+</div>
+
+<script>
+function checkAnswers() {
+  const answers = { q1:'B', q2:'C', q3:'C', q4:'D', q5:'C', q6:'B', q7:'B', q8:'B' };
+  let score=0, total=8, details='';
+  for(let q in answers) {
+    const selected = document.querySelector(`input[name="${q}"]:checked`);
+    if(!selected){ details+=`<div class="explanation"><b>${q.toUpperCase()}</b>：未作答 → 正确答案 <span class="correct">${answers[q]}</span></div>`; continue; }
+    const userAns = selected.value;
+    if(userAns===answers[q]){ score++; details+=`<div class="explanation"><b>${q.toUpperCase()}</b>：<span class="correct">✅ ${userAns}</span> 正确！</div>`; }
+    else { details+=`<div class="explanation"><b>${q.toUpperCase()}</b>：<span class="wrong">❌ 你选${userAns}</span> → 正确答案 <span class="correct">${answers[q]}</span></div>`; }
+  }
+  const tips = {
+    q1:'完全非弹性碰撞，动量守恒 mv=(m+M)v\' → v\'=mv/(m+M)',
+    q2:'T=2π√(L/g)，T只与L和g有关。质量/振幅不影响周期！月球g小→T大。',
+    q3:'波源决定频率→f不变！介质决定波速→v变。v=λf，f不变v变→λ变。',
+    q4:'弹性碰撞公式：v₁\'=[(m₁-m₂)v₁+2m₂v₂]/(m₁+m₂)=[(m-2m)·2v+0]/(3m)=-2v/3',
+    q5:'y-t是振动图→一个质点位移随时间变化。y-x是波形图→所有质点某时刻位移分布。',
+    q6:'Δx=Lλ/d，紫光λ小于红光→Δx减小。红光条纹最宽，紫光最窄。',
+    q7:'sinC=1/n=1/√2=√2/2 → C=45°',
+    q8:'Δr=(2n+1)λ/2时振动减弱。3λ/2即n=1时的减弱条件。加强条件Δr=nλ。'
+  };
+  for(let q in tips){
+    const sel = document.querySelector(`input[name="${q}"]:checked`);
+    if(!sel || sel.value!==answers[q]) details+=`<div class="explanation">💡 ${tips[q]}</div>`;
+  }
+  const pct = Math.round(score/total*100);
+  const msg = pct>=80?'优秀！选必1掌握扎实！🎉':pct>=60?'不错！多练动量碰撞和双缝干涉 💪':'加油！重点攻克动量守恒和光学公式 📚';
+  document.getElementById('resultArea').innerHTML = `<h3>${msg}</h3><div class="score">${score}/${total} (${pct}%)</div><div class="detail">${details}</div>`;
+  document.getElementById('resultArea').style.display = 'block';
+  document.getElementById('resultArea').scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>

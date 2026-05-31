@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 600">
+  <!-- 物理必修2 第6章 万有引力与航天 SVG -->
+  <defs>
+    <style>
+      .title { font-weight:bold; font-size:18px; font-family:sans-serif; fill: #00363a; }
+      .subtitle { font-size:13px; font-family:sans-serif; fill: #00796b; }
+      .box-title { font-weight:bold; font-size:14px; font-family:sans-serif; fill: #00363a; }
+      .box-text { font-size:12px; font-family:sans-serif; fill: #2c2c2c; }
+      .highlight { font-weight:bold; font-size:12px; font-family:sans-serif; fill: #b71c1c; }
+      .note { font-size:11px; font-family:sans-serif; fill: #555; }
+      .formula { font-size:13px; font-family:sans-serif; fill: #0d47a1; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="680" height="600" fill="#E1F5EE" rx="12"/>
+
+  <!-- 标题 -->
+  <rect x="140" y="10" width="400" height="38" fill="#00796B" rx="8"/>
+  <text x="340" y="32" text-anchor="middle" class="title" fill="#ffffff">第6章 万有引力与航天</text>
+  <text x="340" y="48" text-anchor="middle" class="subtitle" fill="#b2dfdb">开普勒定律 + 万有引力 + 人造卫星 + 宇宙速度</text>
+
+  <!-- 开普勒三定律 -->
+  <rect x="20" y="60" width="640" height="95" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="60" width="640" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="340" y="78" text-anchor="middle" class="box-title" fill="#ffffff">🪐 开普勒三定律</text>
+  <text x="35" y="105" class="box-text">第一定律（轨道定律）：行星轨道是椭圆，太阳在一个焦点上</text>
+  <text x="35" y="125" class="box-text">第二定律（面积定律）：行星与太阳连线相同时间内扫过相同面积</text>
+  <text x="35" y="148" class="box-text">  → 近日点速度 v近 > 远日点速度 v远</text>
+  <text x="380" y="105" class="box-text">第三定律（周期定律）：</text>
+  <text x="380" y="128" class="formula">R³/T² = k（k与中心天体有关）</text>
+  <text x="380" y="148" class="box-text">→ 同一中心天体，k 相同</text>
+
+  <!-- 万有引力定律 -->
+  <rect x="20" y="165" width="310" height="130" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="165" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="175" y="183" text-anchor="middle" class="box-title" fill="#ffffff">🌍 万有引力定律</text>
+  <text x="30" y="210" class="formula">F = G·Mm/r²</text>
+  <text x="30" y="230" class="box-text">G = 6.67×10⁻¹¹ N·m²/kg²</text>
+  <text x="30" y="252" class="box-text">地面上：mg ≈ GMm/R²</text>
+  <text x="30" y="274" class="formula">→ GM = gR²  （黄金代换式！）</text>
+  <text x="30" y="294" class="highlight">🔴 超高频：不知道M时，用GM=gR²替换</text>
+
+  <!-- 人造卫星 -->
+  <rect x="350" y="165" width="310" height="155" fill="#ffffff" rx="8" stroke="#b71c1c" stroke-width="2"/>
+  <rect x="350" y="165" width="310" height="26" fill="#b71c1c" rx="8 8 0 0"/>
+  <text x="505" y="183" text-anchor="middle" class="box-title" fill="#ffffff">🛰️ 人造卫星（选择题必考）</text>
+  <text x="360" y="210" class="box-text">万有引力提供向心力：</text>
+  <text x="360" y="232" class="formula">v = √(GM/r)  （r越大，v越小）</text>
+  <text x="360" y="254" class="formula">T = 2π√(r³/GM)（r越大，T越大）</text>
+  <text x="360" y="276" class="formula">a = GM/r²     （r越大，a越小）</text>
+  <text x="360" y="298" class="highlight">🔑 口诀：高轨低速长周期</text>
+  <text x="360" y="320" class="box-text">（r大 → v小、ω小、T大、a小）</text>
+
+  <!-- 宇宙速度 -->
+  <rect x="20" y="310" width="310" height="120" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="310" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="175" y="328" text-anchor="middle" class="box-title" fill="#ffffff">🚀 宇宙速度</text>
+  <text x="30" y="355" class="box-text">第一宇宙速度 v₁ = 7.9 km/s</text>
+  <text x="30" y="375" class="box-text">  → 最小发射速度，最大环绕速度</text>
+  <text x="30" y="397" class="box-text">第二宇宙速度 v₂ = 11.2 km/s（脱离地球）</text>
+  <text x="30" y="419" class="box-text">第三宇宙速度 v₃ = 16.7 km/s（脱离太阳）</text>
+
+  <!-- 天体质量/密度计算 -->
+  <rect x="350" y="330" width="310" height="115" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="350" y="330" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="505" y="348" text-anchor="middle" class="box-title" fill="#ffffff">🧮 天体质量/密度计算</text>
+  <text x="360" y="375" class="box-text">已知卫星周期T和轨道r：</text>
+  <text x="360" y="397" class="formula">M = 4π²r³/(GT²)</text>
+  <text x="360" y="419" class="box-text">已知地表g和R：</text>
+  <text x="360" y="441" class="formula">M = gR²/G，  ρ = 3g/(4πGR)</text>
+
+  <!-- 高考易错提醒 -->
+  <rect x="20" y="455" width="640" height="130" fill="#FFF9C4" rx="8" stroke="#F9A825" stroke-width="1.5"/>
+  <rect x="20" y="455" width="640" height="24" fill="#F9A825" rx="8 8 0 0"/>
+  <text x="340" y="471" text-anchor="middle" class="box-title" fill="#ffffff">🔴 高考易错 Top 4（全国乙卷）</text>
+  <text x="35" y="498" class="highlight">❌ 第一宇宙速度是"最小发射速度"不是"最大"！</text>
+  <text x="35" y="520" class="box-text">   （正确：最小发射，最大环绕）</text>
+  <text x="35" y="542" class="highlight">❌ 万有引力定律适用于两个质点，不规则天体要用球壳定理</text>
+  <text x="380" y="498" class="highlight">❌ 卫星变轨：从低轨到高轨需要加速（两次加速）！</text>
+  <text x="380" y="520" class="box-text">   （低轨v大，但需要加速才能升轨 → 反直觉）</text>
+  <text x="380" y="542" class="highlight">❌ r 是球心距，不是表面高度！h是高度，r=R+h</text>
+
+  <!-- 页码 -->
+  <text x="650" y="590" class="note">P2/3</text>
+</svg>

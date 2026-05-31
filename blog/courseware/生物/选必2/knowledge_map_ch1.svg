@@ -1,0 +1,76 @@
+<svg viewBox="0 0 680 620" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第1章 种群及其动态</title>
+  <desc>种群特征、种群密度调查方法、J/S型增长曲线、K值应用</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke"
+        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="180" y="8" width="320" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">第1章 种群及其动态 ★★★</text>
+
+  <!-- 种群特征 -->
+  <rect x="40" y="68" width="600" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="91" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">一、种群的数量特征</text>
+  <text x="340" y="109" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#085041" font-family="system-ui, sans-serif">种群密度（最基本）· 出生率/死亡率 · 迁入率/迁出率 · 年龄结构 · 性别比例</text>
+
+  <!-- 四大特征详解 -->
+  <rect x="40" y="128" width="600" height="110" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+  <text x="340" y="150" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#042C53" font-family="system-ui, sans-serif">四大数量特征关系</text>
+  <text x="60" y="172" font-size="11" fill="#0C447C" font-family="system-ui, sans-serif">• 直接决定种群密度：出生率/死亡率、迁入率/迁出率</text>
+  <text x="60" y="192" font-size="11" fill="#0C447C" font-family="system-ui, sans-serif">• 预测种群数量变化：年龄结构（增长型/稳定型/衰退型）</text>
+  <text x="60" y="212" font-size="11" fill="#0C447C" font-family="system-ui, sans-serif">• 影响出生率：性别比例</text>
+  <text x="60" y="232" font-size="11" fill="#0C447C" font-family="system-ui, sans-serif">• 种群密度是最基本特征，但不直接决定种群数量变化</text>
+
+  <!-- 年龄结构图示 -->
+  <rect x="380" y="162" width="140" height="72" rx="6" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="450" y="180" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">年龄结构三类型</text>
+  <text x="450" y="200" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#085041" font-family="system-ui, sans-serif">增长型：幼体多 → 数量将增长</text>
+  <text x="450" y="218" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#085041" font-family="system-ui, sans-serif">稳定型：比例适中 → 数量稳定</text>
+  <text x="450" y="236" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#085041" font-family="system-ui, sans-serif">衰退型：老年多 → 数量将衰退</text>
+
+  <!-- 种群密度调查方法 -->
+  <rect x="40" y="254" width="600" height="44" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+  <text x="340" y="277" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">二、种群密度的调查方法</text>
+  <text x="340" y="295" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">样方法（植物、弱活动力动物）· 标记重捕法（强活动力动物）</text>
+
+  <!-- 两种方法对比 -->
+  <rect x="40" y="314" width="290" height="90" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="185" y="336" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">样方法</text>
+  <text x="60" y="358" font-size="11" fill="#085041" font-family="system-ui, sans-serif">适用：植物、蚜虫等</text>
+  <text x="60" y="376" font-size="11" fill="#085041" font-family="system-ui, sans-serif">关键：随机取样、样方大小适中</text>
+  <text x="60" y="394" font-size="11" fill="#D4537E" font-family="system-ui, sans-serif">🔴 计数：样方内+相邻两边</text>
+
+  <rect x="350" y="314" width="290" height="90" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="495" y="336" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">标记重捕法</text>
+  <text x="370" y="358" font-size="11" fill="#085041" font-family="system-ui, sans-serif">公式：N = M×n/m</text>
+  <text x="370" y="376" font-size="11" fill="#085041" font-family="system-ui, sans-serif">前提：标记不影响活动、无大量死亡</text>
+  <text x="370" y="394" font-size="11" fill="#D4537E" font-family="system-ui, sans-serif">🔴 标记个体需均匀分布</text>
+
+  <!-- J型 vs S型增长 -->
+  <rect x="40" y="420" width="600" height="44" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+  <text x="340" y="443" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#4B1B0C" font-family="system-ui, sans-serif">三、种群增长曲线 ★★★（高考计算题高频）</text>
+  <text x="340" y="461" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#712B13" font-family="system-ui, sans-serif">J型（理想条件）· S型（自然条件，有K值）</text>
+
+  <!-- J型 vs S型对比 -->
+  <rect x="40" y="480" width="290" height="110" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+  <text x="185" y="502" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">J型曲线（理想条件）</text>
+  <text x="60" y="524" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">模型：Nt = N0×λ^t</text>
+  <text x="60" y="542" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">增长率（λ-1）：不变</text>
+  <text x="60" y="560" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">增长速率：持续增大</text>
+  <text x="60" y="578" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">实例：外来物种入侵初期</text>
+
+  <rect x="350" y="480" width="290" height="110" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+  <text x="495" y="502" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">S型曲线（自然条件）</text>
+  <text x="370" y="524" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">K值：环境容纳量</text>
+  <text x="370" y="542" font-size="11" fill="#D4537E" font-family="system-ui, sans-serif">🔴 K/2时：增长速率最大</text>
+  <text x="370" y="560" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">应用：渔业捕捞后剩余K/2</text>
+  <text x="370" y="578" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">保护野生动物：改善环境提高K值</text>
+
+  <!-- K值应用 -->
+  <rect x="40" y="606" width="600" height="0" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="0.5" opacity="0"/>
+</svg>

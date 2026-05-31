@@ -1,0 +1,56 @@
+<svg viewBox="0 0 680 460" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第二章 化学反应速率与化学平衡</title>
+  <desc>速率表示、影响因素、活化能、化学平衡、K、勒夏特列原理、ΔG判据、合成氨调控</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <style>
+    .t { font-family: system-ui,sans-serif; font-size: 14px; fill: #27500A; font-weight: 500; }
+    .ts { font-family: system-ui,sans-serif; font-size: 12px; fill: #444441; font-weight: 400; }
+    .tw { font-family: system-ui,sans-serif; font-size: 13px; fill: #FFFFFF; font-weight: 500; }
+    .tm { font-family: system-ui,sans-serif; font-size: 13px; fill: #3B6D11; font-weight: 500; }
+  </style>
+
+  <rect x="190" y="20" width="300" height="40" rx="20" fill="#3B6D11" stroke="#27500A" stroke-width="0.5"/>
+  <text class="tw" x="340" y="40" text-anchor="middle" dominant-baseline="central">第二章 化学反应速率与化学平衡</text>
+
+  <rect x="80" y="75" width="520" height="36" rx="8" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
+  <text class="tm" x="340" y="93" text-anchor="middle" dominant-baseline="central">四问：多快（速率）→ 到哪（限度）→ 往哪（方向）→ 如何用（调控）</text>
+
+  <line x1="170" y1="111" x2="150" y2="145" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+  <line x1="340" y1="111" x2="340" y2="145" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+  <line x1="510" y1="111" x2="530" y2="145" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <rect x="60" y="150" width="180" height="95" rx="9" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
+  <text class="t" x="150" y="172" text-anchor="middle" dominant-baseline="central">第一节 速率</text>
+  <text class="ts" x="150" y="192" text-anchor="middle" dominant-baseline="central">v = Δc/Δt</text>
+  <text class="ts" x="150" y="210" text-anchor="middle" dominant-baseline="central">v₁:v₂ = 计量数比</text>
+  <text class="ts" x="150" y="228" text-anchor="middle" dominant-baseline="central">影响因素：C、T、P、催化剂</text>
+
+  <rect x="260" y="150" width="160" height="95" rx="9" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
+  <text class="t" x="340" y="172" text-anchor="middle" dominant-baseline="central">活化能</text>
+  <text class="ts" x="340" y="192" text-anchor="middle" dominant-baseline="central">Ea = E活化 - E平均</text>
+  <text class="ts" x="340" y="210" text-anchor="middle" dominant-baseline="central">催化剂↓Ea</text>
+  <text class="ts" x="340" y="228" text-anchor="middle" dominant-baseline="central">ΔH不变★</text>
+
+  <rect x="440" y="150" width="180" height="95" rx="9" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
+  <text class="t" x="530" y="172" text-anchor="middle" dominant-baseline="central">第二三节 平衡/方向</text>
+  <text class="ts" x="530" y="192" text-anchor="middle" dominant-baseline="central">K = [C]ᵖ[D]ᵠ/[A]ᵐ[B]ⁿ</text>
+  <text class="ts" x="530" y="210" text-anchor="middle" dominant-baseline="central">勒夏特列原理</text>
+  <text class="ts" x="530" y="228" text-anchor="middle" dominant-baseline="central">ΔG = ΔH - TΔS</text>
+
+  <line x1="340" y1="245" x2="340" y2="280" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <rect x="150" y="285" width="380" height="70" rx="9" fill="#C0DD97" stroke="#639922" stroke-width="0.5"/>
+  <text class="t" x="340" y="310" text-anchor="middle" dominant-baseline="central">第四节 化学反应的调控——合成氨</text>
+  <text class="ts" x="340" y="330" text-anchor="middle" dominant-baseline="central">N₂ + 3H₂ ⇌ 2NH₃ ΔH = -92.4 kJ/mol</text>
+  <text class="ts" x="340" y="347" text-anchor="middle" dominant-baseline="central">10~30MPa | 400~500℃ | 铁触媒 | 循环利用</text>
+
+  <line x1="340" y1="355" x2="340" y2="385" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <rect x="100" y="390" width="480" height="55" rx="8" fill="#EAF3DE" stroke="#27500A" stroke-width="0.5"/>
+  <text class="ts" x="340" y="410" text-anchor="middle" dominant-baseline="central">★ 催化剂不改变平衡！恒容充稀有气体平衡不移动！</text>
+  <text class="ts" x="340" y="428" text-anchor="middle" dominant-baseline="central">★ K只与温度有关 · ΔG＜0自发 · 工业条件=速率与平衡综合优化</text>
+</svg>

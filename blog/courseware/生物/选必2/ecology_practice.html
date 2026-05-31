@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选必2 生物与环境 互动练习</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, sans-serif; background: #FAFE; color: #333; padding: 20px; }
+  h1 { font-size: 18px; color: #00796b; margin-bottom: 16px; }
+  .card { background: #fff; border-radius: 10px; padding: 20px; margin-bottom: 16px;
+          box-shadow: 0 1px 4px rgb(0 0 0 / 0.08); }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 12px;
+           font-size: 12px; margin-bottom: 10px; }
+  .badge-basic { background: #E1F5EE; color: #085041; }
+  .badge-advanced { background: #E6F1FB; color: #0C447C; }
+  .badge-comprehensive { background: #FBEAF0; color: #72243E; }
+  .question { font-size: 15px; font-weight: 500; margin-bottom: 12px; line-height: 1.6; }
+  .opts { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+  .opt { padding: 9px 14px; border: 1.5px solid #d0d0d0; border-radius: 8px;
+            cursor: pointer; font-size: 14px; transition: background .15s; }
+  .opt:hover { background: #f5f5f5; }
+  .opt.selected { border-color: #00796b; background: #E1F5EE; }
+  .opt.correct { border-color: #0F6E56; background: #9FE1CB; }
+  .opt.wrong { border-color: #D4537E; background: #FBEAF0; }
+  .btn { padding: 8px 22px; border: none; border-radius: 8px; font-size: 14px;
+           cursor: pointer; margin-top: 6px; }
+  .btn-check { background: #00796b; color: #fff; }
+  .btn-check:disabled { opacity: .4; cursor: default; }
+  .btn-next { background: #0F6E56; color: #fff; display: none; }
+  .explanation { background: #f8f9fa; border-left: 3px solid #00796b;
+                 padding: 10px 14px; font-size: 13px; line-height: 1.7;
+                 display: none; margin-top: 10px; border-radius: 0 8px 8px 0; }
+  .progress { font-size: 12px; color: #888; margin-bottom: 12px; }
+  .score-bar { height: 6px; background: #e8e8e8; border-radius: 3px; margin-top: 6px; }
+  .score-fill { height: 100%; background: #0F6E56; border-radius: 3px; transition: width .3s; }
+</style>
+</head>
+<body>
+
+<h1>🧬 选必2《生物与环境》互动练习</h1>
+<div class="progress" id="progress"></div>
+<div class="score-bar"><div class="score-fill" id="scoreFill"></div></div>
+
+<div id="quiz"></div>
+
+<script>
+const questions = [
+  {
+    type: "basic",
+    q: "下列哪项不是种群的数量特征？",
+    opts: ["种群密度", "年龄结构", "性别比例", "种群增长曲线"],
+    answer: 3,
+    explain: "种群的数量特征包括：种群密度、出生率/死亡率、迁入率/迁出率、年龄结构、性别比例。种群增长曲线（J型/S型）是描述种群数量随时间变化的模型，不是数量特征。"
+  },
+  {
+    type: "basic",
+    q: "标记重捕法中，若标记个体在重捕前大量死亡，则估算的种群数量会如何变化？",
+    opts: ["偏大", "偏小", "无影响", "无法确定"],
+    answer: 0,
+    explain: "公式 N = M×n/m。若标记个体大量死亡，则重捕中标记数 m 偏小 → 估算值 N 偏大。这是标记重捕法的主要误差来源之一。"
+  },
+  {
+    type: "advanced",
+    q: "在试管中培养酵母菌，其种群数量变化最符合下列哪种曲线？",
+    opts: ["J型曲线（理想条件）", "S型曲线（资源有限）", "先J型后S型", "无法确定"],
+    answer: 1,
+    explain: "试管中资源有限、空间有限，存在环境阻力，酵母菌种群数量呈S型增长（逻辑斯蒂增长）。只有当资源极其充足时才接近J型。"
+  },
+  {
+    type: "advanced",
+    q: "某食物网有4条食物链，鹰同时占据第三、第四、第五营养级。若鹰体重增加1kg，至少需要多少kg生产者（按20%传递效率）？",
+    opts: ["25 kg", "125 kg", "625 kg", "3125 kg"],
+    answer: 1,
+    explain: "鹰最低营养级为第3营养级，按最短食物链（3次传递）计算：1 ÷ (20%)^3 = 1 ÷ 0.008 = 125kg。题目问'至少'需要，取最短食物链计算。"
+  },
+  {
+    type: "advanced",
+    q: "关于碳循环的叙述，下列哪项是错误的？",
+    opts: [
+      "碳在生物群落中以含碳有机物形式存在",
+      "碳从非生物环境进入生物群落的主要途径是光合作用",
+      "碳从生物群落回到非生物环境的主要途径是呼吸作用",
+      "化石燃料的燃烧是碳循环中唯一的额外来源"
+    ],
+    answer: 3,
+    explain: "化石燃料燃烧是人为活动导致碳循环失衡的主要原因，但不是碳循环中'唯一的额外来源'。火山喷发等自然过程也会向大气释放CO₂。另外，水泥生产等工业过程也释放CO₂。"
+  },
+  {
+    type: "comprehensive",
+    q: "某种鼠的种群数量在年初为100只，当年出生率为30%，死亡率为20%，迁入率为10%，迁出率为5%。年末该种群数量为多少？",
+    opts: ["105只", "110只", "115只", "120只"],
+    answer: 2,
+    explain: "种群数量变化 = 初始数量 + 出生数 - 死亡数 + 迁入数 - 迁出数。出生数 = 100×30% = 30；死亡数 = 100×20% = 20；迁入数 = 100×10% = 10；迁出数 = 100×5% = 5。年末数量 = 100 + 30 - 20 + 10 - 5 = 115只。"
+  },
+  {
+    type: "comprehensive",
+    q: "某草原生态系统中，生产者固定太阳能总量为10000 kJ。若能量传递效率按10%计算，第三营养级获得的能量最多为多少kJ？",
+    opts: ["10 kJ", "100 kJ", "1000 kJ", "10000 kJ"],
+    answer: 1,
+    explain: "生产者（第1营养级）固定10000kJ → 初级消费者（第2营养级）获得 10000×10% = 1000kJ → 次级消费者（第3营养级）获得 1000×10% = 100kJ。注意：题目问'最多'，按最大传递效率20%计算才是200kJ，但题干说'按10%计算'，所以按10%：10000×10%×10% = 100kJ。"
+  },
+  {
+    type: "comprehensive",
+    q: "关于生态系统稳定性的叙述，下列哪项是正确的？",
+    opts: [
+      "生态系统成分越复杂，抵抗力稳定性越低",
+      "生态系统成分越简单，恢复力稳定性越低",
+      "北极苔原生态系统，抵抗力稳定性和恢复力稳定性都很低",
+      "抵抗力稳定性高的生态系统，恢复力稳定性一定很低"
+    ],
+    answer: 2,
+    explain: "A错：成分越复杂，抵抗力稳定性越高。B错：成分越简单，恢复力稳定性一般越高（如草原比森林恢复快）。C对：北极苔原环境恶劣，抵抗力稳定性低（物种少，易受干扰），恢复力稳定性也低（环境恶劣，恢复困难）。D错：两者一般负相关，但北极苔原是例外，两者都低。"
+  }
+];
+
+let current = 0, score = 0;
+
+function render() {
+  const q = questions[current];
+  const typeMap = { basic: ["基础", "badge-basic"], advanced: ["进阶", "badge-advanced"], comprehensive: ["综合", "badge-comprehensive"] };
+  const [label, cls] = typeMap[q.type];
+  document.getElementById("progress").textContent = `第 ${current + 1} / ${questions.length} 题 · 正确 ${score} 题`;
+  document.getElementById("scoreFill").style.width = (score / questions.length * 100) + "%";
+  document.getElementById("quiz").innerHTML = `
+    <div class="card">
+      <div class="badge ${cls}">${label}</div>
+      <div class="question">${q.q}</div>
+      <div class="opts">
+        ${q.opts.map((o,i) => `<div class="opt" onclick="select(this,${i})">${String.fromCharCode(65+i)}. ${o}</div>`).join("")}
+      </div>
+      <button class="btn btn-check" id="checkBtn" onclick="check()" disabled>确认答案</button>
+      <button class="btn btn-next" id="nextBtn" onclick="next()">下一题 →</button>
+      <div class="explanation" id="expl"></div>
+    </div>`;
+}
+window.select = function(el, idx) {
+  document.querySelectorAll(".opt").forEach(o => o.classList.remove("selected"));
+  el.classList.add("selected");
+  el.dataset.idx = idx;
+  document.getElementById("checkBtn").disabled = false;
+};
+window.check = function() {
+  const selected = document.querySelector(".opt.selected");
+  if (!selected) return;
+  const idx = parseInt(selected.dataset.idx);
+  const q = questions[current];
+  document.querySelectorAll(".opt").forEach((o, i) => {
+    if (i === q.answer) o.classList.add("correct");
+    if (i === idx && i !== q.answer) o.classList.add("wrong");
+  });
+  if (idx === q.answer) score++;
+  document.getElementById("scoreFill").style.width = (score / questions.length * 100) + "%";
+  document.getElementById("expl").style.display = "block";
+  document.getElementById("expl").textContent = "📝 解析：" + q.explain;
+  document.getElementById("checkBtn").style.display = "none";
+  document.getElementById("nextBtn").style.display = "inline-block";
+};
+window.next = function() {
+  current++;
+  if (current >= questions.length) {
+    const pct = Math.round(score / questions.length * 100);
+    document.getElementById("quiz").innerHTML = `
+      <div class="card" style="text-align:center;padding:40px;">
+        <div style="font-size:48px;margin-bottom:16px;">${pct >= 80 ? "🎉" : pct >= 60 ? "💪" : "📚"}</div>
+        <div style="font-size:18px;font-weight:500;margin-bottom:10px;">练习完成！</div>
+        <div style="font-size:15px;color:#555;">正确 ${score} / ${questions.length} 题（${pct}分）</div>
+        <div style="margin-top:18px;">
+          <button class="btn btn-check" onclick="location.reload()">重新练习</button>
+        </div>
+      </div>`;
+    return;
+  }
+  render();
+};
+render();
+</script>
+</body>
+</html>

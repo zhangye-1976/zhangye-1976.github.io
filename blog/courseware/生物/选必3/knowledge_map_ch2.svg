@@ -1,0 +1,77 @@
+<svg viewBox="0 0 900 780" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6" fill="#00796b"/>
+    </marker>
+  </defs>
+  <!-- 标题 -->
+  <rect x="250" y="10" width="400" height="44" rx="10" fill="#00796b"/>
+  <text x="450" y="38" text-anchor="middle" fill="#fff" font-size="16" font-weight="600" font-family="system-ui, sans-serif">第2章 细胞工程 思维导图</text>
+  
+  <!-- 两大板块 -->
+  <rect x="60" y="70" width="340" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+  <text x="230" y="97" text-anchor="middle" fill="#04342C" font-size="14" font-weight="500" font-family="system-ui, sans-serif">一、植物细胞工程</text>
+  <rect x="500" y="70" width="340" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+  <text x="670" y="97" text-anchor="middle" fill="#04342C" font-size="14" font-weight="500" font-family="system-ui, sans-serif">二、动物细胞工程 ★</text>
+  
+  <!-- 植物组织培养 -->
+  <rect x="60" y="140" width="340" height="60" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.2"/>
+  <text x="230" y="165" text-anchor="middle" fill="#4B1528" font-size="13" font-weight="500" font-family="system-ui, sans-serif">植物组织培养技术 ★</text>
+  <text x="230" y="185" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">原理：植物细胞的全能性</text>
+  <text x="230" y="203" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">外植体→脱分化→愈伤组织→再分化→完整植株</text>
+  
+  <!-- 激素比例 -->
+  <rect x="60" y="220" width="340" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="230" y="245" text-anchor="middle" fill="#04342C" font-size="12" font-weight="500" font-family="system-ui, sans-serif">激素比例控制分化方向</text>
+  <text x="230" y="263" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">高BA:低NAA → 生芽；低BA:高NAA → 生根</text>
+  <text x="230" y="281" text-anchor="middle" fill="#72243E" font-size="10" font-family="system-ui, sans-serif">脱分化：已分化细胞→未分化愈伤组织</text>
+  
+  <!-- 植物细胞工程应用 -->
+  <rect x="60" y="300" width="340" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="230" y="325" text-anchor="middle" fill="#04342C" font-size="12" font-weight="500" font-family="system-ui, sans-serif">植物细胞工程应用</text>
+  <text x="230" y="343" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">快速繁殖（微型繁殖）、作物脱毒（茎尖）</text>
+  <text x="230" y="361" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">人工种子（胚状体+人工种皮）</text>
+  
+  <!-- 动物细胞培养 -->
+  <rect x="500" y="140" width="340" height="60" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.2"/>
+  <text x="670" y="165" text-anchor="middle" fill="#4B1528" font-size="13" font-weight="500" font-family="system-ui, sans-serif">动物细胞培养 ★</text>
+  <text x="670" y="185" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">流程：组织→胰蛋白酶分散→原代培养→传代培养</text>
+  <text x="670" y="203" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">条件：无菌、95%空气+5%CO₂、动物血清</text>
+  
+  <!-- 单克隆抗体（最重要！） -->
+  <rect x="500" y="230" width="340" height="80" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+  <text x="670" y="255" text-anchor="middle" fill="#4B1528" font-size="13" font-weight="500" font-family="system-ui, sans-serif">单克隆抗体制备 ★★★★★（高考必考！）</text>
+  <text x="670" y="275" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">免疫小鼠→B淋巴细胞+骨髓瘤细胞融合</text>
+  <text x="670" y="293" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">选择培养基→杂交瘤细胞→克隆化培养</text>
+  <text x="670" y="311" text-anchor="middle" fill="#72243E" font-size="10" font-family="system-ui, sans-serif">口诀：免疫→融合→选择→检测→生产</text>
+  
+  <!-- 杂交瘤细胞优势 -->
+  <rect x="500" y="330" width="340" height="60" rx="8" fill="#FFF8E1" stroke="#FFC107" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="670" y="355" text-anchor="middle" fill="#F57C00" font-size="12" font-weight="500" font-family="system-ui, sans-serif">杂交瘤细胞的优势</text>
+  <text x="670" y="373" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">B淋巴细胞：能产生抗体，但不能无限增殖</text>
+  <text x="670" y="391" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">骨髓瘤细胞：能无限增殖，但不能产生抗体</text>
+  <text x="670" y="409" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">杂交瘤细胞：既能无限增殖，又能产生特异性抗体</text>
+  
+  <!-- 动物体细胞核移植 -->
+  <rect x="500" y="450" width="340" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="670" y="475" text-anchor="middle" fill="#04342C" font-size="12" font-weight="500" font-family="system-ui, sans-serif">动物体细胞核移植</text>
+  <text x="670" y="493" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">供体细胞核+去核卵母细胞→重组胚→克隆动物</text>
+  <text x="670" y="511" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">克隆羊多莉：核基因来自供核个体，质基因来自卵母细胞</text>
+  
+  <!-- 胚胎工程 -->
+  <rect x="60" y="390" width="340" height="60" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="1"/>
+  <text x="230" y="415" text-anchor="middle" fill="#042C53" font-size="12" font-weight="500" font-family="system-ui, sans-serif">胚胎工程</text>
+  <text x="230" y="433" text-anchor="middle" fill="#042C53" font-size="11" font-family="system-ui, sans-serif">体外受精、胚胎移植、胚胎分割（同卵双胎）</text>
+  <text x="230" y="451" text-anchor="middle" fill="#042C53" font-size="11" font-family="system-ui, sans-serif">胚胎干细胞（ES细胞）：来自囊胚内细胞团，具全能性</text>
+  
+  <!-- 易错提醒 -->
+  <rect x="100" y="540" width="700" height="70" rx="8" fill="#FFF8E1" stroke="#FFC107" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="450" y="562" text-anchor="middle" fill="#F57C00" font-size="12" font-weight="500" font-family="system-ui, sans-serif">🔴 易错提醒（必看！）</text>
+  <text x="450" y="582" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">单克隆抗体：B淋巴细胞不能无限增殖，骨髓瘤细胞不能产生抗体</text>
+  <text x="450" y="600" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">CO₂作用：维持培养液pH（不是提供碳源！）；10代以内遗传物质不变</text>
+  <text x="450" y="618" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">植物组织培养全程无菌操作；脱分化vs再分化方向由激素比例控制</text>
+  
+  <!-- 底部 -->
+  <rect x="200" y="640" width="500" height="40" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="1"/>
+  <text x="450" y="665" text-anchor="middle" fill="#042C53" font-size="12" font-weight="500" font-family="system-ui, sans-serif">细胞工程是高考解答题高频考点，单克隆抗体几乎每年都考</text>
+</svg>

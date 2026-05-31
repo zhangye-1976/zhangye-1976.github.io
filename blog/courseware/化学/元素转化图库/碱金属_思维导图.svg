@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1050" font-family="'Microsoft YaHei','SimHei',sans-serif">
+  <defs>
+    <marker id="arrO" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#FF6F00"/></marker>
+    <marker id="arrR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#D32F2F"/></marker>
+    <marker id="arrG" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#2E7D32"/></marker>
+    <marker id="arrB" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#1565C0"/></marker>
+    <marker id="arrV" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#7B1FA2"/></marker>
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1050" fill="#FFFDF7"/>
+
+  <!-- ==================== CENTRAL NODE ==================== -->
+  <circle cx="600" cy="220" r="72" fill="#FF6F00" filter="url(#shadow)"/>
+  <circle cx="600" cy="220" r="66" fill="none" stroke="#FFE0B2" stroke-width="3"/>
+  <text x="600" y="208" text-anchor="middle" fill="white" font-size="22" font-weight="bold">碱金属</text>
+  <text x="600" y="234" text-anchor="middle" fill="#FFE0B2" font-size="14">IA族 · Li Na K Rb Cs</text>
+
+  <!-- ==================== BRANCH 1: 原子结构 (Top-Left) ==================== -->
+  <line x1="560" y1="160" x2="200" y2="80" stroke="#FF6F00" stroke-width="3" marker-end="url(#arrO)"/>
+  <rect x="60" y="38" width="220" height="38" rx="19" fill="#FFF3E0" stroke="#FF6F00" stroke-width="2" filter="url(#shadow)"/>
+  <text x="170" y="62" text-anchor="middle" fill="#E65100" font-size="14" font-weight="bold">① 原子结构特征</text>
+
+  <!-- Sub items -->
+  <rect x="40" y="90" width="260" height="28" rx="4" fill="#FFF8E1"/>
+  <text x="170" y="109" text-anchor="middle" fill="#333" font-size="12">最外层均为 <tspan fill="#D32F2F" font-weight="bold">1 个电子</tspan></text>
+
+  <rect x="40" y="124" width="260" height="28" rx="4" fill="#FFF8E1"/>
+  <text x="170" y="143" text-anchor="middle" fill="#333" font-size="12">易失 1e⁻ → <tspan fill="#D32F2F" font-weight="bold">+1 价</tspan></text>
+
+  <rect x="40" y="158" width="260" height="28" rx="4" fill="#FFF8E1"/>
+  <text x="170" y="177" text-anchor="middle" fill="#333" font-size="12">从上到下 电子层数↑ 半径↑</text>
+
+  <rect x="40" y="192" width="260" height="28" rx="4" fill="#FFF8E1"/>
+  <text x="170" y="211" text-anchor="middle" fill="#333" font-size="12">核对外层引力↓ → 金属性 增强</text>
+
+  <!-- ==================== BRANCH 2: 物理性质 (Left) ==================== -->
+  <line x1="540" y1="200" x2="80" y2="280" stroke="#1565C0" stroke-width="3" marker-end="url(#arrB)"/>
+  <rect x="25" y="248" width="140" height="38" rx="19" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" filter="url(#shadow)"/>
+  <text x="95" y="272" text-anchor="middle" fill="#1565C0" font-size="14" font-weight="bold">② 物理性质递变</text>
+
+  <rect x="20" y="298" width="155" height="42" rx="4" fill="#FFF"/>
+  <text x="97" y="316" text-anchor="middle" fill="#333" font-size="11">银白色(铯略带金色)</text>
+  <text x="97" y="332" text-anchor="middle" fill="#333" font-size="11">质软、密度小</text>
+
+  <rect x="20" y="346" width="155" height="42" rx="4" fill="#FFF"/>
+  <text x="97" y="364" text-anchor="middle" fill="#333" font-size="11">熔沸点: Li 180℃→</text>
+  <text x="97" y="380" text-anchor="middle" fill="#1565C0" font-size="11" font-weight="bold">Na 98℃→K 64℃ 递减</text>
+
+  <rect x="20" y="394" width="155" height="42" rx="4" fill="#FFF"/>
+  <text x="97" y="412" text-anchor="middle" fill="#333" font-size="11">密度: Li 0.53→</text>
+  <text x="97" y="428" text-anchor="middle" fill="#D32F2F" font-size="11" font-weight="bold">Na 0.97 &gt; K 0.86❗反常</text>
+
+  <rect x="20" y="442" width="155" height="28" rx="4" fill="#FFF"/>
+  <text x="97" y="461" text-anchor="middle" fill="#333" font-size="11">保存: Li石蜡 / Na,K煤油</text>
+
+  <!-- ==================== BRANCH 3: 化学性质-通性 (Left-Bottom) ==================== -->
+  <line x1="560" y1="260" x2="100" y2="560" stroke="#2E7D32" stroke-width="3" marker-end="url(#arrG)"/>
+  <rect x="25" y="498" width="180" height="38" rx="19" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2" filter="url(#shadow)"/>
+  <text x="115" y="522" text-anchor="middle" fill="#2E7D32" font-size="14" font-weight="bold">③ 化学性质 — 通性</text>
+
+  <!-- Sub box: 与H2O -->
+  <rect x="20" y="548" width="190" height="80" rx="6" fill="white" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="115" y="568" text-anchor="middle" fill="#2E7D32" font-size="12" font-weight="bold">与 H₂O 反应</text>
+  <text x="115" y="588" text-anchor="middle" fill="#D32F2F" font-size="11">2M+2H₂O=2MOH+H₂↑</text>
+  <text x="115" y="606" text-anchor="middle" fill="#333" font-size="10">越往下越剧烈</text>
+  <text x="115" y="622" text-anchor="middle" fill="#D32F2F" font-size="10">Li缓慢 / Na熔化 / K燃烧</text>
+
+  <!-- Sub box: 与O2 -->
+  <rect x="20" y="636" width="190" height="80" rx="6" fill="white" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="115" y="656" text-anchor="middle" fill="#2E7D32" font-size="12" font-weight="bold">与 O₂ 反应</text>
+  <text x="115" y="676" text-anchor="middle" fill="#333" font-size="11">Li→Li₂O (正常氧化物)</text>
+  <text x="115" y="694" text-anchor="middle" fill="#D32F2F" font-size="11">Na→Na₂O₂ (过氧化物)🔴</text>
+  <text x="115" y="710" text-anchor="middle" fill="#333" font-size="10">K→KO₂ (超氧化物)</text>
+
+  <!-- Sub box: 还原性 -->
+  <rect x="20" y="724" width="190" height="42" rx="6" fill="white" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="115" y="744" text-anchor="middle" fill="#2E7D32" font-size="12" font-weight="bold">强还原性 Li&lt;Na&lt;K</text>
+  <text x="115" y="760" text-anchor="middle" fill="#333" font-size="10">与非金属 S/N₂/Cl₂直接化合</text>
+
+  <!-- ==================== BRANCH 4: Na重点化合物 (Right-Top) ==================== -->
+  <line x1="660" y1="170" x2="900" y2="60" stroke="#D32F2F" stroke-width="3" marker-end="url(#arrR)"/>
+  <rect x="880" y="25" width="200" height="38" rx="19" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2" filter="url(#shadow)"/>
+  <text x="980" y="49" text-anchor="middle" fill="#D32F2F" font-size="14" font-weight="bold">④ Na 重点化合物 🔴</text>
+
+  <rect x="870" y="76" width="220" height="22" rx="4" fill="#FFCDD2"/>
+  <text x="980" y="92" text-anchor="middle" fill="#D32F2F" font-size="11" font-weight="bold">Na₂O₂（过氧化钠）🔴核心</text>
+
+  <rect x="870" y="102" width="220" height="52" rx="4" fill="white" stroke="#EF9A9A" stroke-width="1"/>
+  <text x="880" y="118" fill="#333" font-size="10">Na₂O₂+H₂O→NaOH+O₂↑</text>
+  <text x="880" y="134" fill="#333" font-size="10">Na₂O₂+CO₂→Na₂CO₃+O₂↑</text>
+  <text x="880" y="150" fill="#D32F2F" font-size="10">供氧剂 / 漂白剂 / -1价氧</text>
+
+  <rect x="870" y="160" width="220" height="22" rx="4" fill="#FFCDD2"/>
+  <text x="980" y="176" text-anchor="middle" fill="#D32F2F" font-size="11" font-weight="bold">NaOH（烧碱）🔴</text>
+
+  <rect x="870" y="186" width="220" height="36" rx="4" fill="white" stroke="#EF9A9A" stroke-width="1"/>
+  <text x="880" y="202" fill="#333" font-size="10">与CO₂: 少量→Na₂CO₃ 过量→NaHCO₃</text>
+  <text x="880" y="218" fill="#D32F2F" font-size="10">两性金属Al/Zn可溶于NaOH</text>
+
+  <rect x="870" y="228" width="220" height="22" rx="4" fill="#FFCDD2"/>
+  <text x="980" y="244" text-anchor="middle" fill="#D32F2F" font-size="11" font-weight="bold">Na₂CO₃ / NaHCO₃ 对比 🔴</text>
+
+  <rect x="870" y="254" width="220" height="70" rx="4" fill="white" stroke="#EF9A9A" stroke-width="1"/>
+  <text x="880" y="270" fill="#333" font-size="10">溶: Na₂CO₃&gt;NaHCO₃  碱: Na₂CO₃&gt;NaHCO₃</text>
+  <text x="880" y="286" fill="#333" font-size="10">热稳定性: Na₂CO₃ &gt; NaHCO₃</text>
+  <text x="880" y="302" fill="#D32F2F" font-size="10">NaHCO₃ △→ Na₂CO₃+CO₂↑+H₂O</text>
+  <text x="880" y="318" fill="#D32F2F" font-size="10">鉴别: 加热/加CaCl₂/加HCl逐滴</text>
+
+  <!-- ==================== BRANCH 5: Li 对角线规则 (Right) ==================== -->
+  <line x1="640" y1="270" x2="850" y2="400" stroke="#7B1FA2" stroke-width="3" marker-end="url(#arrV)"/>
+  <rect x="840" y="355" width="210" height="38" rx="19" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" filter="url(#shadow)"/>
+  <text x="945" y="379" text-anchor="middle" fill="#7B1FA2" font-size="14" font-weight="bold">⑤ Li 对角线规则 🔴</text>
+
+  <rect x="830" y="405" width="230" height="90" rx="6" fill="white" stroke="#CE93D8" stroke-width="1.5"/>
+  <text x="945" y="424" text-anchor="middle" fill="#7B1FA2" font-size="11" font-weight="bold">Li 更像 Mg（非 Na）</text>
+  <text x="840" y="444" fill="#333" font-size="10">· Li 燃烧 → Li₂O（Na→Na₂O₂）</text>
+  <text x="840" y="460" fill="#333" font-size="10">· LiOH 微溶、碱性弱</text>
+  <text x="840" y="476" fill="#333" font-size="10">· Li₂CO₃ 加热分解（同MgCO₃）</text>
+  <text x="840" y="492" fill="#333" font-size="10">· Li 与 N₂ 反应 → Li₃N</text>
+
+  <!-- ==================== BRANCH 6: K 特性 (Right-Bottom) ==================== -->
+  <rect x="830" y="510" width="230" height="70" rx="6" fill="white" stroke="#CE93D8" stroke-width="1.5"/>
+  <text x="945" y="530" text-anchor="middle" fill="#7B1FA2" font-size="11" font-weight="bold">K 特殊性</text>
+  <text x="840" y="550" fill="#333" font-size="10">· 超氧化物 KO₂</text>
+  <text x="840" y="566" fill="#333" font-size="10">· 焰色紫色（透过钴玻璃观察）</text>
+
+  <!-- ==================== BRANCH 7: 焰色反应 (Right-More) ==================== -->
+  <rect x="955" y="405" width="210" height="175" rx="6" fill="white" stroke="#FF6F00" stroke-width="1.5"/>
+  <text x="1060" y="425" text-anchor="middle" fill="#FF6F00" font-size="12" font-weight="bold">⑥ 焰色反应</text>
+  <rect x="965" y="438" width="20" height="20" rx="3" fill="#D32F2F"/>
+  <text x="992" y="453" fill="#333" font-size="11">Li — 紫红</text>
+  <rect x="965" y="464" width="20" height="20" rx="3" fill="#FFD600"/>
+  <text x="992" y="479" fill="#333" font-size="11">Na — 黄色 🔴</text>
+  <rect x="965" y="490" width="20" height="20" rx="3" fill="#7B1FA2"/>
+  <text x="992" y="505" fill="#333" font-size="11">K — 紫色(钴玻璃)</text>
+  <text x="966" y="530" fill="#D32F2F" font-size="10">元素鉴定方法</text>
+  <text x="966" y="546" fill="#D32F2F" font-size="10">钠黄光干扰钾紫色</text>
+  <text x="966" y="562" fill="#D32F2F" font-size="10">必须用蓝色钴玻璃</text>
+
+  <!-- ==================== BRANCH 8: 工业制取 (Bottom-Center) ==================== -->
+  <line x1="580" y1="290" x2="580" y2="620" stroke="#795548" stroke-width="3" marker-end="url(#arrO)"/>
+  <rect x="490" y="610" width="220" height="38" rx="19" fill="#EFEBE9" stroke="#795548" stroke-width="2" filter="url(#shadow)"/>
+  <text x="600" y="634" text-anchor="middle" fill="#4E342E" font-size="14" font-weight="bold">⑦ 工业制取 &amp; 检验</text>
+
+  <rect x="440" y="662" width="320" height="36" rx="4" fill="white"/>
+  <text x="600" y="676" text-anchor="middle" fill="#333" font-size="11">制取: <tspan fill="#D32F2F" font-weight="bold">电解熔融 NaCl</tspan> — 2NaCl(熔融) 电解 2Na+Cl₂↑</text>
+  <text x="600" y="694" text-anchor="middle" fill="#333" font-size="11">检验：焰色反应 + 蓝色钴玻璃 + 铂丝 / 稀盐酸洗净</text>
+
+  <!-- ==================== 易错提醒大框 (Bottom) ==================== -->
+  <rect x="140" y="750" width="920" height="225" rx="10" fill="white" stroke="#D32F2F" stroke-width="2.5" filter="url(#shadow)"/>
+  <rect x="140" y="750" width="920" height="36" rx="10" fill="#D32F2F"/>
+  <rect x="140" y="770" width="920" height="16" fill="#D32F2F"/>
+  <text x="600" y="774" text-anchor="middle" fill="white" font-size="15" font-weight="bold">⚠️ 碱金属 高考易错点 &amp; 高频陷阱</text>
+
+  <text x="170" y="808" fill="#333" font-size="11">
+    <tspan x="170" dy="0">1. Na₂O₂ 中氧为 -1 价——它既是氧化剂又是还原剂（歧化反应的"逆过程"）</tspan>
+    <tspan x="170" dy="22" fill="#D32F2F" font-weight="bold">2. Na 密度 0.97 &gt; K 密度 0.86 —— 这与"从上到下密度递增"的一般规律相反！</tspan>
+    <tspan x="170" dy="22" fill="#D32F2F" font-weight="bold">3. Li 保存在石蜡（密度 &lt; 煤油），K/Na 保存在煤油——保存方式不同！</tspan>
+    <tspan x="170" dy="22">4. Na₂CO₃ 热稳定性 &gt; NaHCO₃——NaHCO₃ 加热分解，Na₂CO₃ 不分解</tspan>
+    <tspan x="170" dy="22">5. K 的焰色必须用蓝色钴玻璃观察——排除 Na 黄光干扰</tspan>
+    <tspan x="170" dy="22" fill="#D32F2F" font-weight="bold">6. 对角线规则 Li≈Mg 不是 Na——Li₂CO₃ 热分解、LiOH 微溶、Li₃N 生成</tspan>
+    <tspan x="170" dy="22" fill="#D32F2F" font-weight="bold">7. 碱金属都不能从盐溶液中置换出金属——先与水反应生成 MOH+H₂!</tspan>
+  </text>
+
+  <!-- ==================== 底部标题线 ==================== -->
+  <text x="600" y="1008" text-anchor="middle" fill="#999" font-size="10">碱金属(IA族) 高中化学思维导图 · Li/Na/K/Rb/Cs · 陈博士制图</text>
+  <rect x="0" y="1018" width="1200" height="32" fill="#FF6F00"/>
+  <text x="600" y="1040" text-anchor="middle" fill="white" font-size="12">高考核心考点：Na₂O₂供氧剂 | Na₂CO₃/NaHCO₃鉴别 | 焰色反应 | Li对角线规则 | 与水反应递变</text>
+
+</svg>

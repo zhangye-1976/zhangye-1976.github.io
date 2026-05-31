@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 370">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E1F5EE"/>
+      <stop offset="100%" stop-color="#B2DFDB"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="680" height="370" rx="12" fill="url(#bg)"/>
+
+  <rect x="20" y="15" width="640" height="42" rx="8" fill="#00796B"/>
+  <text x="340" y="43" text-anchor="middle" fill="#fff" font-size="19" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">第11章 电路及其应用</text>
+
+  <!-- 电阻定律 -->
+  <rect x="25" y="70" width="310" height="100" rx="6" fill="#fff" stroke="#00796B" stroke-width="1.2"/>
+  <text x="180" y="95" text-anchor="middle" fill="#00796B" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">电流 · 电阻 · 欧姆定律</text>
+  <line x1="40" y1="103" x2="320" y2="103" stroke="#B2DFDB" stroke-width="1"/>
+  <text x="40" y="123" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">I = q/t（方向：正电荷移动方向）</text>
+  <text x="40" y="142" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">R = U/I（定义式） ; R = ρ·l/S（决定式）</text>
+  <text x="40" y="160" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">I-U图像斜率=1/R ⚠ 欧姆定律适用：金属/电解液</text>
+
+  <!-- 串并联 -->
+  <rect x="350" y="70" width="310" height="100" rx="6" fill="#fff" stroke="#E53935" stroke-width="1.5"/>
+  <text x="505" y="95" text-anchor="middle" fill="#E53935" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">串并联电路 ⭐</text>
+  <line x1="365" y1="103" x2="645" y2="103" stroke="#FFCDD2" stroke-width="1"/>
+  <text x="365" y="123" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">串联：I同 U分 R总=ΣR  P∝R</text>
+  <text x="365" y="142" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">并联：U同 I分 1/R总=Σ(1/R)  P∝1/R</text>
+  <text x="365" y="160" fill="#E53935" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">电表改装："压串大，流并小"</text>
+
+  <!-- 电表改装 -->
+  <rect x="25" y="185" width="310" height="85" rx="6" fill="#FFF8E1" stroke="#FF8F00" stroke-width="1.2"/>
+  <text x="180" y="210" text-anchor="middle" fill="#E65100" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">电表改装</text>
+  <text x="40" y="232" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">G表 → 电压表：串联分压电阻 R_s=U_g/I_g − R_g</text>
+  <text x="40" y="252" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">G表 → 电流表：并联分流电阻 R_p=I_gR_g/(I−I_g)</text>
+  <text x="40" y="268" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">欧姆表：闭合电路欧姆定律 R_x=E/I − R_内</text>
+
+  <!-- 伏安法 -->
+  <rect x="350" y="185" width="310" height="85" rx="6" fill="#FFF8E1" stroke="#FF8F00" stroke-width="1.2"/>
+  <text x="505" y="210" text-anchor="middle" fill="#E65100" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">伏安法测电阻（内外接判断）</text>
+  <text x="365" y="232" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">R_x &lt; √(R_A·R_V) → 外接法（R测偏小）</text>
+  <text x="365" y="252" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">R_x &gt; √(R_A·R_V) → 内接法（R测偏大）</text>
+  <text x="365" y="268" fill="#E53935" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">口诀：大内偏大，小外偏小</text>
+
+  <!-- 实验 -->
+  <rect x="25" y="285" width="635" height="40" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="340" y="312" text-anchor="middle" fill="#2E7D32" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">实验：金属丝电阻率测量 ρ=R·S/l · 多用电表的使用</text>
+
+  <text x="340" y="355" text-anchor="middle" fill="#999" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">物理必修第三册 · 第11章 电路及其应用</text>
+</svg>

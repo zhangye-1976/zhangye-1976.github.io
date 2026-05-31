@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 780" font-family="SimSun, 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#D32F2F"/></marker>
+    <marker id="arrowDark" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#333"/></marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#1565C0"/></marker>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FAFAFA"/><stop offset="100%" stop-color="#F0F0F0"/></linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="780" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="960" height="60" fill="#1565C0" rx="8"/>
+  <rect x="0" y="30" width="960" height="30" fill="#1565C0"/>
+  <text x="480" y="40" text-anchor="middle" fill="white" font-size="22" font-weight="bold">Na 钠元素及其化合物转化图</text>
+
+  <!-- Legend -->
+  <rect x="710" y="75" width="230" height="95" fill="white" stroke="#CCC" rx="4"/>
+  <text x="720" y="95" font-size="12" font-weight="bold" fill="#333">图例</text>
+  <rect x="720" y="105" width="18" height="18" rx="3" fill="#E3F2FD" stroke="#1565C0"/>
+  <text x="745" y="119" font-size="11" fill="#333">普通物质节点</text>
+  <rect x="720" y="128" width="18" height="18" rx="3" fill="#FFEBEE" stroke="#D32F2F"/>
+  <text x="745" y="142" font-size="11" fill="#D32F2F">🔴 高频考点</text>
+
+  <!-- ==================== NODES ==================== -->
+
+  <!-- Na (center) -->
+  <rect x="390" y="340" width="100" height="44" rx="8" fill="#FFF9C4" stroke="#F9A825" stroke-width="2.5"/>
+  <text x="440" y="360" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Na</text>
+  <text x="440" y="375" text-anchor="middle" font-size="10" fill="#666">钠单质</text>
+
+  <!-- Na2O (left) -->
+  <rect x="90" y="180" width="110" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="145" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Na₂O</text>
+  <text x="145" y="215" text-anchor="middle" font-size="10" fill="#666">氧化钠</text>
+
+  <!-- Na2O2 (top center) 🔴 HIGH FREQ -->
+  <rect x="370" y="140" width="120" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="430" y="160" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">Na₂O₂</text>
+  <text x="430" y="175" text-anchor="middle" font-size="10" fill="#C62828">过氧化钠 🔴</text>
+
+  <!-- NaOH (right) -->
+  <rect x="700" y="340" width="100" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="750" y="360" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">NaOH</text>
+  <text x="750" y="375" text-anchor="middle" font-size="10" fill="#666">氢氧化钠</text>
+
+  <!-- Na2CO3 (bottom right) -->
+  <rect x="620" y="520" width="120" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="680" y="540" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Na₂CO₃</text>
+  <text x="680" y="555" text-anchor="middle" font-size="10" fill="#666">碳酸钠（纯碱）</text>
+
+  <!-- NaHCO3 (bottom center) 🔴 HIGH FREQ -->
+  <rect x="390" y="600" width="120" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="450" y="620" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">NaHCO₃</text>
+  <text x="450" y="635" text-anchor="middle" font-size="10" fill="#C62828">碳酸氢钠 🔴</text>
+
+  <!-- NaCl (bottom left) -->
+  <rect x="130" y="520" width="100" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="180" y="540" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">NaCl</text>
+  <text x="180" y="555" text-anchor="middle" font-size="10" fill="#666">氯化钠</text>
+
+  <!-- ==================== ARROWS & LABELS ==================== -->
+
+  <!-- Na → Na2O (常温氧化) -->
+  <line x1="390" y1="350" x2="205" y2="210" stroke="#333" stroke-width="2" marker-end="url(#arrowDark)"/>
+  <text x="250" y="260" font-size="11" fill="#333" transform="rotate(-35,250,260)">+O₂(常温)</text>
+
+  <!-- Na → Na2O2 (点燃) 🔴 -->
+  <line x1="440" y1="340" x2="440" y2="190" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <text x="450" y="268" font-size="11" fill="#D32F2F" font-weight="bold">+O₂(点燃) 🔴</text>
+
+  <!-- Na → NaOH -->
+  <line x1="495" y1="362" x2="695" y2="362" stroke="#333" stroke-width="1.5" marker-end="url(#arrowDark)" stroke-dasharray="6,3"/>
+  <text x="595" y="352" font-size="10" fill="#666">+H₂O → NaOH + H₂↑</text>
+
+  <!-- Na → NaCl -->
+  <line x1="390" y1="384" x2="235" y2="540" stroke="#333" stroke-width="2" marker-end="url(#arrowDark)"/>
+  <text x="270" y="465" font-size="11" fill="#333" transform="rotate(38,270,465)">+Cl₂(点燃)</text>
+
+  <!-- Na2O → NaOH -->
+  <line x1="145" y1="228" x2="145" y2="330" stroke="#666" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <line x1="145" y1="330" x2="695" y2="362" stroke="#666" stroke-width="1.5" marker-end="url(#arrowDark)" stroke-dasharray="6,3"/>
+  <text x="420" y="338" font-size="10" fill="#666">+H₂O</text>
+
+  <!-- Na2O2 → NaOH 🔴 HIGH FREQ -->
+  <line x1="490" y1="170" x2="740" y2="330" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <text x="645" y="240" font-size="11" fill="#D32F2F" font-weight="bold">+H₂O → NaOH + O₂↑ 🔴</text>
+
+  <!-- Na2O2 → Na2CO3 🔴 HIGH FREQ -->
+  <line x1="490" y1="184" x2="670" y2="510" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <text x="605" y="340" font-size="11" fill="#D32F2F" font-weight="bold">+CO₂ → Na₂CO₃ + O₂↑ 🔴</text>
+
+  <!-- NaOH → Na2CO3 -->
+  <line x1="720" y1="390" x2="695" y2="515" stroke="#1565C0" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <text x="730" y="460" font-size="11" fill="#1565C0">+CO₂(少量)</text>
+
+  <!-- NaOH → NaCl -->
+  <line x1="700" y1="380" x2="235" y2="530" stroke="#666" stroke-width="1.5" marker-end="url(#arrowDark)" stroke-dasharray="6,3"/>
+  <text x="420" y="455" font-size="10" fill="#666">+HCl</text>
+
+  <!-- Na2CO3 ⇄ NaHCO3 🔴 HIGH FREQ -->
+  <line x1="540" y1="542" x2="510" y2="610" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <text x="555" y="585" font-size="11" fill="#D32F2F" font-weight="bold">+CO₂+H₂O 🔴</text>
+
+  <line x1="480" y1="610" x2="560" y2="555" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <text x="475" y="575" font-size="11" fill="#D32F2F" font-weight="bold">△ 或 +NaOH 🔴</text>
+
+  <!-- Na2CO3 → NaCl -->
+  <line x1="620" y1="542" x2="235" y2="542" stroke="#666" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+  <text x="420" y="535" font-size="10" fill="#666">+HCl / +CaCl₂</text>
+
+  <!-- NaHCO3 → NaCl -->
+  <line x1="390" y1="622" x2="235" y2="555" stroke="#666" stroke-width="1.5" marker-end="url(#arrowDark)"/>
+  <text x="280" y="595" font-size="10" fill="#666">+HCl</text>
+
+  <!-- ==================== EXAM TIPS ==================== -->
+  <rect x="20" y="660" width="920" height="105" fill="white" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="40" y="685" font-size="14" font-weight="bold" fill="#D32F2F">🔴 近十年高考高频考点</text>
+
+  <text x="40" y="710" font-size="11" fill="#333">① Na₂O₂与H₂O/CO₂反应：Na₂O₂中O为-1价，既做氧化剂又做还原剂，均有O₂生成</text>
+  <text x="40" y="728" font-size="11" fill="#333">② Na₂CO₃与NaHCO₃鉴别：加热法（NaHCO₃分解）、加CaCl₂/BaCl₂（Na₂CO₃沉淀）、pH试纸</text>
+  <text x="40" y="746" font-size="11" fill="#333">③ 焰色反应：Na→黄色（物理变化，非化学变化）；侯氏制碱法：NH₃+CO₂+NaCl+H₂O→NaHCO₃↓+NH₄Cl</text>
+
+</svg>

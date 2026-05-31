@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>必修1 分子与细胞 · 互动练习</title>
+<style>
+:root {
+  --bg: #f8fafb;
+  --card: #ffffff;
+  --teal: #00796b;
+  --teal-light: #e0f2f1;
+  --teal-dark: #004d40;
+  --coral: #d4537e;
+  --coral-light: #fbeaf0;
+  --text: #1a1a2e;
+  --text-secondary: #555;
+  --border: #e0e0e0;
+  --correct: #2e7d32;
+  --wrong: #c62828;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 16px;
+}
+.container { max-width: 700px; margin: 0 auto; }
+
+.header {
+  background: var(--teal);
+  color: white;
+  padding: 20px 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.header h1 { font-size: 20px; font-weight: 600; }
+.header p { font-size: 13px; opacity: 0.9; margin-top: 4px; }
+
+.progress-bar {
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--teal);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.tab {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: white;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+  color: var(--text-secondary);
+}
+.tab:hover { border-color: var(--teal); color: var(--teal); }
+.tab.active { background: var(--teal); color: white; border-color: var(--teal); }
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 14px;
+  border: 1px solid var(--border);
+}
+.q-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.q-badge {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+.badge-basic { background: #e8f5e9; color: #2e7d32; }
+.badge-medium { background: #fff3e0; color: #e65100; }
+.badge-hard { background: #fce4ec; color: #c62828; }
+
+.q-text {
+  font-size: 14px;
+  margin-bottom: 14px;
+  line-height: 1.8;
+}
+.options { margin-bottom: 14px; }
+.option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.option:hover:not(.disabled) { border-color: var(--teal); background: var(--teal-light); }
+.option.selected { border-color: var(--teal); background: var(--teal-light); font-weight: 500; }
+.option.correct { border-color: var(--correct); background: #e8f5e9; }
+.option.wrong { border-color: var(--wrong); background: #fce4ec; }
+.option.disabled { pointer-events: none; opacity: 0.7; }
+
+.actions { display: flex; gap: 10px; margin-top: 10px; }
+.btn {
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.btn-submit { background: var(--teal); color: white; }
+.btn-submit:hover { background: var(--teal-dark); }
+.btn-hint { background: #fff; border: 1px solid var(--border); color: var(--text-secondary); }
+.btn-hint:hover { border-color: var(--teal); color: var(--teal); }
+.btn-next { background: var(--teal); color: white; }
+.btn-next:hover { background: var(--teal-dark); }
+
+.explanation {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: var(--teal-light);
+  border-radius: 8px;
+  border-left: 3px solid var(--teal);
+  display: none;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.explanation.show { display: block; }
+.explanation .title { font-weight: 600; color: var(--teal-dark); margin-bottom: 4px; }
+
+.score-section {
+  text-align: center;
+  padding: 30px;
+  background: var(--card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: none;
+}
+.score-section.show { display: block; }
+.score-num { font-size: 48px; font-weight: 700; color: var(--teal); }
+.score-label { font-size: 14px; color: var(--text-secondary); margin: 8px 0; }
+.result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: left;
+  margin-top: 16px;
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🧬 必修1 分子与细胞 · 互动练习</h1>
+    <p>基础 ×2 + 进阶 ×2 + 综合 ×2 · 共 6 题</p>
+  </div>
+
+  <div class="progress-bar"><div class="progress-fill" id="progress" style="width:0%"></div></div>
+
+  <div class="tabs" id="tabs"></div>
+  <div id="quiz-area"></div>
+  <div class="score-section" id="score-section">
+    <div class="score-num" id="final-score">0/6</div>
+    <div class="score-label" id="score-msg"></div>
+  </div>
+</div>
+
+<script>
+const questions = [
+  {
+    id: 1,
+    difficulty: "基础",
+    badge: "badge-basic",
+    chapter: "第1-2章",
+    question: "下列关于原核细胞和真核细胞的叙述，正确的是：",
+    options: [
+      "A. 原核细胞没有细胞核，因此没有遗传物质",
+      "B. 蓝细菌没有叶绿体，因此不能进行光合作用",
+      "C. 原核细胞的唯一细胞器是核糖体",
+      "D. 所有带\"菌\"字的生物都属于原核生物"
+    ],
+    answer: 2,
+    explanation: "<span class='title'>✅ 正确答案：C</span><br>原核细胞没有核膜包被的细胞核，唯一的细胞器是核糖体。A错：原核细胞有环状DNA分子（拟核+质粒）。B错：蓝细菌无叶绿体但含有叶绿素和藻蓝素，能进行光合作用。D错：酵母菌是真菌，属于真核生物。<br><br>📝 <b>易错提醒：</b>\"蓝细菌\"这个名字本身就有误导性——它不是植物也不是真核生物，而是原核生物中能光合作用的特殊类群。"
+  },
+  {
+    id: 2,
+    difficulty: "基础",
+    badge: "badge-basic",
+    chapter: "第2章",
+    question: "某多肽由100个氨基酸形成，含2条肽链，则此多肽含有的肽键数为：",
+    options: [
+      "A. 100个",
+      "B. 99个",
+      "C. 98个",
+      "D. 102个"
+    ],
+    answer: 2,
+    explanation: "<span class='title'>✅ 正确答案：C（98个）</span><br>肽键数 = 氨基酸数 − 肽链数 = 100 − 2 = 98。<br>脱去水分子数 = 肽键数 = 98。<br>若每个氨基酸平均分子量120，则多肽分子量 ≈ 100×120 − 98×18 = 10236。<br><br>📝 <b>公式速记：</b>肽键数 = 脱水数 = 氨基酸数 − 肽链数；至少含氨基数 = 肽链数。"
+  },
+  {
+    id: 3,
+    difficulty: "进阶",
+    badge: "badge-medium",
+    chapter: "第5章",
+    question: "关于有氧呼吸三个阶段，下列说法错误的是：",
+    options: [
+      "A. 第一阶段在细胞质基质中进行，产生少量ATP和[H]",
+      "B. 第二阶段在线粒体基质中进行，H₂O参与反应",
+      "C. 第三阶段在线粒体内膜上进行，是产生ATP最多的阶段",
+      "D. 葡萄糖在线粒体基质中分解为丙酮酸"
+    ],
+    answer: 3,
+    explanation: "<span class='title'>✅ 正确答案：D（错误项）</span><br>D错在有两点：①葡萄糖的分解（糖酵解）发生在细胞质基质，不在线粒体；②葡萄糖先分解为丙酮酸才能进入线粒体。<br>A✓：第一阶段糖酵解。B✓：第二阶段丙酮酸+H₂O→CO₂+[H]。C✓：第三阶段[H]+O₂→H₂O，ATP×34。<br><br>📝 <b>高频陷阱：</b>\"线粒体分解葡萄糖\"是经典错误！线粒体只能分解丙酮酸。"
+  },
+  {
+    id: 4,
+    difficulty: "进阶",
+    badge: "badge-medium",
+    chapter: "第6章",
+    question: "在有丝分裂过程中，DNA含量加倍和染色体数目加倍分别发生在：",
+    options: [
+      "A. 都在分裂间期",
+      "B. DNA在间期加倍，染色体在后期加倍",
+      "C. DNA在前期加倍，染色体在后期加倍",
+      "D. 都在后期"
+    ],
+    answer: 1,
+    explanation: "<span class='title'>✅ 正确答案：B</span><br>DNA复制发生在分裂间期（S期），此时DNA由2n→4n，但染色体数仍为2n（每条染色体含两条姐妹染色单体，共用一个着丝粒）。<br>染色体数目加倍发生在后期——着丝粒分裂，姐妹染色单体分开成为独立染色体，染色体数由2n→4n。<br><br>📝 <b>关键区分：</b>DNA加倍看间期，染色体加倍看后期！"
+  },
+  {
+    id: 5,
+    difficulty: "综合",
+    badge: "badge-hard",
+    chapter: "第5章",
+    question: "用¹⁸O分别标记H₂O和CO₂中的氧原子，进行两组光合作用实验。下列结果正确的是：",
+    options: [
+      "A. 标记H₂O时，释放的O₂含¹⁸O；标记CO₂时，有机物含¹⁸O",
+      "B. 标记H₂O时，有机物含¹⁸O；标记CO₂时，释放的O₂含¹⁸O",
+      "C. 两组实验中释放的O₂都含¹⁸O",
+      "D. 两组实验中有机物都含¹⁸O"
+    ],
+    answer: 0,
+    explanation: "<span class='title'>✅ 正确答案：A</span><br>光合作用中，O₂全部来自H₂O的光解（光反应阶段：2H₂O→4[H]+O₂）。所以标记H₂O→O₂有¹⁸O。<br>CO₂中的O进入有机物（暗反应：CO₂固定→C₃还原→(CH₂O)）。所以标记CO₂→有机物有¹⁸O。<br><br>📝 <b>同位素示踪是高考热点：</b>鲁宾和卡门的实验就是用水和碳酸氢盐分别标记¹⁸O，证明了光合释放的O₂来自水而不是CO₂。"
+  },
+  {
+    id: 6,
+    difficulty: "综合",
+    badge: "badge-hard",
+    chapter: "第5章+第4章",
+    question: "植物细胞在KNO₃溶液中发生质壁分离后会自动复原。以下解释最合理的是：",
+    options: [
+      "A. K⁺和NO₃⁻通过自由扩散进入细胞，使细胞液浓度增大",
+      "B. K⁺和NO₃⁻通过主动运输进入细胞，水分随之通过渗透进入",
+      "C. 细胞壁主动吸水导致复原",
+      "D. 细胞死亡后细胞膜失去选择透过性"
+    ],
+    answer: 1,
+    explanation: "<span class='title'>✅ 正确答案：B</span><br>KNO₃溶液的独特之处：K⁺和NO₃⁻都是植物可吸收的矿质离子。<br>开始时细胞外浓度>细胞内→失水质壁分离。<br>随后K⁺和NO₃⁻通过<b>主动运输</b>进入细胞（需要载体蛋白和ATP）→细胞液浓度增大→水通过渗透进入→质壁分离自动复原。<br><br>📝 <b>与此类似：</b>尿素、甘油等小分子有机物也能自动复原——它们通过自由扩散进入细胞。蔗糖溶液则不会自动复原（蔗糖不能进入细胞）。"
+  }
+];
+
+let currentQ = 0;
+let answers = {};
+let revealed = {};
+let score = 0;
+
+function init() {
+  let tabsHtml = '';
+  questions.forEach((q, i) => {
+    tabsHtml += `<div class="tab" onclick="goTo(${i})" id="tab-${i}">${q.difficulty} · ${q.chapter}</div>`;
+  });
+  document.getElementById('tabs').innerHTML = tabsHtml;
+  renderQuestion(0);
+}
+
+function renderQuestion(idx) {
+  currentQ = idx;
+  const q = questions[idx];
+  document.querySelectorAll('.tab').forEach((t, i) => {
+    t.classList.toggle('active', i === idx);
+  });
+
+  let selected = answers[idx] ?? -1;
+  let isRevealed = revealed[idx] || false;
+
+  let html = `<div class="card">
+    <div class="q-header">
+      <span class="q-badge ${q.badge}">${q.difficulty}</span>
+      <span style="font-size:12px;color:var(--text-secondary)">${q.chapter}</span>
+      <span style="font-size:12px;color:var(--text-secondary);margin-left:auto">${idx+1}/${questions.length}</span>
+    </div>
+    <div class="q-text">${q.question}</div>
+    <div class="options">`;
+
+  q.options.forEach((opt, i) => {
+    let cls = 'option';
+    if (isRevealed) cls += ' disabled';
+    if (selected === i && !isRevealed) cls += ' selected';
+    if (isRevealed && i === q.answer) cls += ' correct';
+    if (isRevealed && i === selected && selected !== q.answer) cls += ' wrong';
+    html += `<div class="${cls}" onclick="${isRevealed ? '' : `select(${idx},${i})`}">${opt}</div>`;
+  });
+
+  html += `</div>
+    <div class="actions">
+      <button class="btn btn-submit" onclick="check(${idx})" ${isRevealed ? 'disabled style="opacity:0.5"' : ''}>提交答案</button>
+      <button class="btn btn-hint" onclick="showHint(${idx})">💡 提示</button>`;
+
+  if (idx < questions.length - 1) {
+    html += `<button class="btn btn-next" style="margin-left:auto" onclick="goTo(${idx+1})">下一题 →</button>`;
+  }
+
+  html += `</div>
+    <div class="explanation${isRevealed ? ' show' : ''}" id="exp-${idx}">
+      ${q.explanation}
+    </div>
+  </div>`;
+
+  document.getElementById('quiz-area').innerHTML = html;
+
+  updateProgress();
+  updateScore();
+}
+
+function select(qIdx, optIdx) {
+  if (revealed[qIdx]) return;
+  answers[qIdx] = optIdx;
+  renderQuestion(qIdx);
+}
+
+function check(idx) {
+  if (answers[idx] === undefined) return;
+  revealed[idx] = true;
+  if (answers[idx] === questions[idx].answer) {
+    score++;
+  }
+  renderQuestion(idx);
+}
+
+function showHint(idx) {
+  const hints = [
+    "提示：想想原核细胞有哪些特有的结构特征？蓝细菌和细菌分别属于哪类？",
+    "提示：肽键数 = 氨基酸数 - 肽链数。这个公式是核心！",
+    "提示：注意葡萄糖是在哪里被分解的？它能直接进入线粒体吗？",
+    "提示：区分清楚：DNA复制和染色体数量变化的时机不同。DNA复制≠染色体加倍。",
+    "提示：回顾鲁宾和卡门的实验——光合作用释放的O₂来自H₂O还是CO₂？",
+    "提示：K⁺和NO₃⁻是离子，能否自由通过细胞膜？它们进入细胞需要什么条件？"
+  ];
+  alert(hints[idx]);
+}
+
+function goTo(idx) {
+  if (!revealed[currentQ] && answers[currentQ] !== undefined) {
+    if (!confirm('当前题目尚未提交，确定跳转吗？（答题记录已保留）')) return;
+  }
+  renderQuestion(idx);
+}
+
+function updateProgress() {
+  const done = Object.keys(revealed).length;
+  const pct = Math.round((done / questions.length) * 100);
+  document.getElementById('progress').style.width = pct + '%';
+}
+
+function updateScore() {
+  if (Object.keys(revealed).length === questions.length) {
+    const section = document.getElementById('score-section');
+    section.classList.add('show');
+    document.getElementById('final-score').textContent = score + '/6';
+    let msg;
+    if (score === 6) msg = '🎉 太棒了！必修1知识点掌握得非常扎实！';
+    else if (score >= 4) msg = '👍 不错！再巩固一下错题就能稳住了。';
+    else if (score >= 2) msg = '📚 还需要加强，建议重新看看知识图谱中对应的章节。';
+    else msg = '💪 别灰心！从基础知识开始，一步一个脚印。';
+    document.getElementById('score-msg').textContent = msg;
+  }
+}
+
+init();
+</script>
+</body>
+</html>

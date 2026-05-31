@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 620" width="100%" role="img">
+  <title>四大平衡判据与水溶液解题框架</title>
+  <desc>化学平衡K、电离平衡Ka/Kb、水解平衡Kh、沉淀溶解平衡Ksp及其与三大守恒的关系</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-dashed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <style>
+    .t { font-family: var(--font-sans,sans-serif); font-size: 13px; fill: #2C2C2A; font-weight: 400; }
+    .ts { font-family: var(--font-sans,sans-serif); font-size: 12px; fill: #5F5E5A; font-weight: 400; }
+    .th { font-family: var(--font-sans,sans-serif); font-size: 14px; fill: #2C2C2A; font-weight: 500; }
+  </style>
+
+  <text x="40" y="38" class="th" font-size="15">四大平衡判据与K值计算</text>
+  <text x="40" y="58" class="ts">化学平衡 K → 电离平衡 Ka/Kb → 水解平衡 Kh → 沉淀溶解平衡 Ksp</text>
+
+  <rect x="40" y="78" width="138" height="56" rx="8" stroke-width="0.5" fill="#EEEDFE" stroke="#534AB7"/>
+  <text x="109" y="98" text-anchor="middle" dominant-baseline="central" class="th">化学平衡 K</text>
+  <text x="109" y="118" text-anchor="middle" dominant-baseline="central" class="ts">任意可逆反应</text>
+
+  <rect x="198" y="78" width="138" height="56" rx="8" stroke-width="0.5" fill="#E1F5EE" stroke="#0F6E56"/>
+  <text x="267" y="98" text-anchor="middle" dominant-baseline="central" class="th">电离平衡 Ka/Kb</text>
+  <text x="267" y="118" text-anchor="middle" dominant-baseline="central" class="ts">弱酸弱碱</text>
+
+  <rect x="356" y="78" width="138" height="56" rx="8" stroke-width="0.5" fill="#FAEEDA" stroke="#854F0B"/>
+  <text x="425" y="98" text-anchor="middle" dominant-baseline="central" class="th">水解平衡 Kh</text>
+  <text x="425" y="118" text-anchor="middle" dominant-baseline="central" class="ts">弱酸盐/弱碱盐</text>
+
+  <rect x="514" y="78" width="138" height="56" rx="8" stroke-width="0.5" fill="#E6F1FB" stroke="#185FA5"/>
+  <text x="583" y="98" text-anchor="middle" dominant-baseline="central" class="th">沉淀溶解 Ksp</text>
+  <text x="583" y="118" text-anchor="middle" dominant-baseline="central" class="ts">难溶电解质</text>
+
+  <line x1="178" y1="106" x2="196" y2="106" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="336" y1="106" x2="354" y2="106" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <line x1="494" y1="106" x2="512" y2="106" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="198" y="150" width="296" height="36" rx="6" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="346" y="172" text-anchor="middle" dominant-baseline="central" class="t">Ka · Kb = Kw = 1.0 × 10⁻¹⁴（共轭酸碱对）</text>
+
+  <line x1="267" y1="134" x2="267" y2="148" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <rect x="356" y="150" width="296" height="36" rx="6" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="504" y="172" text-anchor="middle" dominant-baseline="central" class="t">Kh = Kw / Ka（弱酸强碱盐）</text>
+
+  <line x1="40" y1="210" x2="640" y2="210" stroke="#D3D1C7" stroke-width="0.5"/>
+
+  <text x="40" y="240" class="th" font-size="15">三大守恒 —— 水溶液万能工具</text>
+
+  <rect x="40" y="258" width="188" height="72" rx="8" stroke-width="0.5" fill="#FAECE7" stroke="#993C1D"/>
+  <text x="134" y="280" text-anchor="middle" dominant-baseline="central" class="th">电荷守恒</text>
+  <text x="134" y="300" text-anchor="middle" dominant-baseline="central" class="ts">Σ(阳离子×电荷) = Σ(阴离子×电荷)</text>
+  <text x="134" y="318" text-anchor="middle" dominant-baseline="central" class="ts" font-size="11">Na⁺+H⁺=2CO₃²⁻+HCO₃⁻+OH⁻</text>
+
+  <rect x="246" y="258" width="188" height="72" rx="8" stroke-width="0.5" fill="#EAF3DE" stroke="#3B6D11"/>
+  <text x="340" y="280" text-anchor="middle" dominant-baseline="central" class="th">物料守恒</text>
+  <text x="340" y="300" text-anchor="middle" dominant-baseline="central" class="ts">某元素总量 = 各形态浓度之和</text>
+  <text x="340" y="318" text-anchor="middle" dominant-baseline="central" class="ts" font-size="11">[Na⁺]/2 = [CO₃²⁻]+[HCO₃⁻]+[H₂CO₃]</text>
+
+  <rect x="452" y="258" width="188" height="72" rx="8" stroke-width="0.5" fill="#FBEAF0" stroke="#993556"/>
+  <text x="546" y="280" text-anchor="middle" dominant-baseline="central" class="th">质子守恒</text>
+  <text x="546" y="300" text-anchor="middle" dominant-baseline="central" class="ts">水电离H⁺总量 = OH⁻总量</text>
+  <text x="546" y="318" text-anchor="middle" dominant-baseline="central" class="ts" font-size="11">OH⁻=H⁺+HCO₃⁻+2H₂CO₃</text>
+
+  <line x1="340" y1="258" x2="546" y2="258" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="443" y="252" text-anchor="middle" class="ts" font-size="10">电荷 - 物料 = 质子</text>
+
+  <line x1="40" y1="358" x2="640" y2="358" stroke="#D3D1C7" stroke-width="0.5"/>
+
+  <text x="40" y="388" class="th" font-size="15">四大题型与关键公式</text>
+
+  <rect x="40" y="402" width="138" height="64" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="109" y="424" text-anchor="middle" dominant-baseline="central" class="th">pH 计算</text>
+  <text x="109" y="444" text-anchor="middle" dominant-baseline="central" class="ts" font-size="10">弱酸 [H⁺]=√(Ka·c)</text>
+  <text x="109" y="458" text-anchor="middle" dominant-baseline="central" class="ts" font-size="10">缓冲 pH=pKa+lg(A⁻/HA)</text>
+
+  <rect x="196" y="402" width="138" height="64" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="265" y="424" text-anchor="middle" dominant-baseline="central" class="th">离子浓度排序</text>
+  <text x="265" y="444" text-anchor="middle" dominant-baseline="central" class="ts" font-size="10">不水解 > 水解 > OH⁻/H⁺</text>
+  <text x="265" y="458" text-anchor="middle" dominant-baseline="central" class="ts" font-size="10">列三大守恒比对</text>
+
+  <rect x="352" y="402" width="138" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text x="421" y="424" text-anchor="middle" dominant-baseline="central" class="th">沉淀判断</text>
+  <text x="421" y="444" text-anchor="middle" dominant-baseline="central" class="ts" font-size="10">Qc > Ksp → 沉淀</text>
+  <text x="421" y="458" text-anchor="middle" dominant-baseline="central" class="ts" font-size="10">Qc = Ksp → 饱和</text>
+
+  <rect x="508" y="402" width="138" height="64" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="577" y="424" text-anchor="middle" dominant-baseline="central" class="th">δ-pH 图分析</text>
+  <text x="577" y="444" text-anchor="middle" dominant-baseline="central" class="ts" font-size="10">交点 pH = pKa</text>
+  <text x="577" y="458" text-anchor="middle" dominant-baseline="central" class="ts" font-size="10">最大时 pH=ΣpKa/2</text>
+
+  <rect x="40" y="486" width="606" height="54" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+  <text x="60" y="508" class="th" fill="#791F1F">⚠ 避坑要点</text>
+  <text x="60" y="528" class="ts" fill="#791F1F">K表达式不写固体/纯液体 | Ka·Kb=Kw仅共轭酸碱对 | 沉淀转化同类型才比Ksp | 水解写⇌不是== | 电荷守恒勿忘乘电荷数</text>
+
+  <line x1="40" y1="560" x2="640" y2="560" stroke="#D3D1C7" stroke-width="0.5"/>
+  <rect x="40" y="574" width="606" height="30" rx="6" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text x="343" y="593" text-anchor="middle" dominant-baseline="central" class="ts">化学平衡 K → 电离 Ka/Kb → 水解 Kh = Kw/K → 沉淀 Ksp | 三大守恒贯穿始终</text>
+</svg>

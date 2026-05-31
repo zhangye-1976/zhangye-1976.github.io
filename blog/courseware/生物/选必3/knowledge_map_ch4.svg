@@ -1,0 +1,86 @@
+<svg viewBox="0 0 900 600" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6" fill="#00796b"/>
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="250" y="10" width="400" height="44" rx="10" fill="#00796b"/>
+  <text x="450" y="38" text-anchor="middle" fill="#fff" font-size="16" font-weight="600" font-family="system-ui, sans-serif">第4章 生物技术安全与伦理 思维导图</text>
+
+  <!-- 三大主题 -->
+  <rect x="40" y="70" width="260" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+  <text x="170" y="97" text-anchor="middle" fill="#04342C" font-size="14" font-weight="500" font-family="system-ui, sans-serif">一、转基因产品安全性</text>
+
+  <rect x="320" y="70" width="260" height="50" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+  <text x="450" y="97" text-anchor="middle" fill="#4B1528" font-size="14" font-weight="500" font-family="system-ui, sans-serif">二、禁止生殖性克隆人 ★</text>
+
+  <rect x="600" y="70" width="260" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+  <text x="730" y="97" text-anchor="middle" fill="#04342C" font-size="14" font-weight="500" font-family="system-ui, sans-serif">三、禁止生物武器</text>
+
+  <!-- 连线 -->
+  <line x1="300" y1="95" x2="320" y2="95" stroke="#00796b" stroke-width="0.8" marker-end="url(#arr)"/>
+  <line x1="580" y1="95" x2="600" y2="95" stroke="#00796b" stroke-width="0.8" marker-end="url(#arr)"/>
+
+  <!-- 一、转基因安全性 展开 -->
+  <rect x="40" y="150" width="260" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="170" y="175" text-anchor="middle" fill="#04342C" font-size="13" font-weight="500" font-family="system-ui, sans-serif">转基因产品安全性</text>
+  <text x="170" y="195" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">两个对立观点：安全 vs 不安全</text>
+  <text x="170" y="213" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">我国态度：研究大胆、推广慎重、管理严格</text>
+
+  <!-- 二、生殖性克隆 展开（最重要） -->
+  <rect x="320" y="150" width="260" height="80" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+  <text x="450" y="175" text-anchor="middle" fill="#4B1528" font-size="13" font-weight="500" font-family="system-ui, sans-serif">我国四不原则 ★</text>
+  <text x="450" y="195" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">不赞成、不允许、不支持、不接受</text>
+  <text x="450" y="213" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">任何生殖性克隆人实验</text>
+  <text x="450" y="235" text-anchor="middle" fill="#085041" font-size="10" font-family="system-ui, sans-serif">区分：生殖性克隆 vs 治疗性克隆</text>
+
+  <!-- 三、生物武器 -->
+  <rect x="600" y="150" width="260" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="730" y="175" text-anchor="middle" fill="#04342C" font-size="13" font-weight="500" font-family="system-ui, sans-serif">生物武器危害极大</text>
+  <text x="730" y="195" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">种类：致病菌、病毒、生化毒剂</text>
+  <text x="730" y="213" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">我国立场：支持《禁止生物武器公约》</text>
+
+  <!-- 转基因安全详细 -->
+  <rect x="40" y="240" width="260" height="70" rx="8" fill="#FFF8E1" stroke="#FFC107" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="170" y="265" text-anchor="middle" fill="#F57C00" font-size="12" font-weight="500" font-family="system-ui, sans-serif">🔴 高考答题要点</text>
+  <text x="170" y="285" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">要基于证据和逻辑理性看待</text>
+  <text x="170" y="303" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">不能人云亦云；区分谣言与事实</text>
+
+  <!-- 生殖性克隆 vs 治疗性克隆 对比 -->
+  <rect x="320" y="250" width="260" height="90" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+  <text x="450" y="275" text-anchor="middle" fill="#04342C" font-size="12" font-weight="500" font-family="system-ui, sans-serif">生殖性克隆 VS 治疗性克隆</text>
+  <text x="450" y="295" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">生殖性：产生新个体（禁止！）</text>
+  <text x="450" y="313" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">治疗性：产生细胞/组织/器官（允许研究）</text>
+  <text x="450" y="331" text-anchor="middle" fill="#72243E" font-size="10" font-family="system-ui, sans-serif">我国：禁止生殖性克隆，支持治疗性克隆研究</text>
+
+  <!-- 生物武器历史 -->
+  <rect x="600" y="240" width="260" height="70" rx="8" fill="#FFF8E1" stroke="#FFC107" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="730" y="265" text-anchor="middle" fill="#F57C00" font-size="12" font-weight="500" font-family="system-ui, sans-serif">历史教训</text>
+  <text x="730" y="285" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">侵华日军731部队使用细菌武器</text>
+  <text x="730" y="303" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">美国炭疽杆菌事件（2001年）</text>
+
+  <!-- 设计试管婴儿伦理 -->
+  <rect x="40" y="340" width="520" height="60" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="1"/>
+  <text x="300" y="365" text-anchor="middle" fill="#042C53" font-size="12" font-weight="500" font-family="system-ui, sans-serif">"设计试管婴儿"的伦理讨论</text>
+  <text x="300" y="385" text-anchor="middle" fill="#042C53" font-size="11" font-family="system-ui, sans-serif">与常规试管婴儿区别：植入前遗传学诊断</text>
+  <text x="300" y="403" text-anchor="middle" fill="#042C53" font-size="11" font-family="system-ui, sans-serif">是否支持"设计完美婴儿"？需理性讨论</text>
+
+  <!-- 禁止生物武器公约 -->
+  <rect x="580" y="340" width="280" height="60" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="1"/>
+  <text x="720" y="365" text-anchor="middle" fill="#042C53" font-size="12" font-weight="500" font-family="system-ui, sans-serif">《禁止生物武器公约》</text>
+  <text x="720" y="385" text-anchor="middle" fill="#042C53" font-size="11" font-family="system-ui, sans-serif">1972年签署，1975年生效</text>
+  <text x="720" y="403" text-anchor="middle" fill="#042C53" font-size="11" font-family="system-ui, sans-serif">我国1984年加入，坚决支持公约宗旨</text>
+
+  <!-- 易错提醒 -->
+  <rect x="80" y="440" width="740" height="60" rx="8" fill="#FFF8E1" stroke="#FFC107" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="450" y="462" text-anchor="middle" fill="#F57C00" font-size="12" font-weight="500" font-family="system-ui, sans-serif">🔴 易错提醒（必看！）</text>
+  <text x="450" y="482" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">治疗性克隆不违反伦理，生殖性克隆违反伦理！</text>
+  <text x="450" y="500" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">我国允许治疗性克隆研究，但禁止任何生殖性克隆人实验。</text>
+
+  <!-- 高考综合题 -->
+  <rect x="80" y="530" width="740" height="40" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="1"/>
+  <text x="450" y="555" text-anchor="middle" fill="#4B1528" font-size="12" font-weight="500" font-family="system-ui, sans-serif">高考综合题：生物技术安全与伦理（选择题高频）</text>
+  <text x="450" y="573" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">考查：转基因产品安全性看法、克隆人伦理、生物武器立场</text>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560">
+  <!-- 物理必修1 第2章 匀变速直线运动 SVG -->
+  <defs>
+    <style>
+      .title { font-weight:bold; font-size:18px; font-family:sans-serif; fill: #00363a; }
+      .subtitle { font-size:13px; font-family:sans-serif; fill: #00796b; }
+      .box-title { font-weight:bold; font-size:14px; font-family:sans-serif; fill: #00363a; }
+      .box-text { font-size:12px; font-family:sans-serif; fill: #2c2c2c; }
+      .highlight { font-weight:bold; font-size:12px; font-family:sans-serif; fill: #b71c1c; }
+      .note { font-size:11px; font-family:sans-serif; fill: #555; }
+      .formula { font-size:13px; font-family:sans-serif; fill: #0d47a1; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="680" height="560" fill="#E1F5EE" rx="12"/>
+
+  <!-- 标题 -->
+  <rect x="140" y="10" width="400" height="38" fill="#00796B" rx="8"/>
+  <text x="340" y="32" text-anchor="middle" class="title" fill="#ffffff">第2章 匀变速直线运动</text>
+  <text x="340" y="48" text-anchor="middle" class="subtitle" fill="#b2dfdb">四大公式 + 自由落体 + 刹车问题 + 纸带问题</text>
+
+  <!-- 四大公式 -->
+  <rect x="20" y="60" width="640" height="130" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="2"/>
+  <rect x="20" y="60" width="640" height="28" fill="#00796B" rx="8 8 0 0"/>
+  <text x="340" y="79" text-anchor="middle" class="box-title" fill="#ffffff">📐 四大基本公式（前提：a 恒定！）</text>
+  <text x="35" y="105" class="formula">① v = v₀ + at</text>
+  <text x="35" y="125" class="box-text">（不涉及位移时用）</text>
+  <text x="35" y="148" class="formula">② x = v₀t + ½at²</text>
+  <text x="35" y="168" class="box-text">（涉及时间时用）</text>
+  <text x="380" y="105" class="formula">③ v² - v₀² = 2ax</text>
+  <text x="380" y="125" class="box-text">（不涉及时间时用 ★最高频！）</text>
+  <text x="380" y="148" class="formula">④ v̄ = (v₀+v)/2 = x/t</text>
+  <text x="380" y="168" class="box-text">（仅适用于匀变速！）</text>
+
+  <!-- 自由落体 -->
+  <rect x="20" y="200" width="310" height="110" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="200" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="175" y="218" text-anchor="middle" class="box-title" fill="#ffffff">🪂 自由落体运动</text>
+  <text x="30" y="245" class="box-text">条件：初速 v₀=0，只受重力</text>
+  <text x="30" y="265" class="formula">v = gt</text>
+  <text x="30" y="285" class="formula">h = ½gt²</text>
+  <text x="30" y="305" class="formula">v² = 2gh</text>
+
+  <!-- 刹车问题 -->
+  <rect x="350" y="200" width="310" height="145" fill="#ffffff" rx="8" stroke="#b71c1c" stroke-width="1.5"/>
+  <rect x="350" y="200" width="310" height="26" fill="#b71c1c" rx="8 8 0 0"/>
+  <text x="505" y="218" text-anchor="middle" class="box-title" fill="#ffffff">🛑 刹车问题（超级易错！）</text>
+  <text x="360" y="245" class="box-text">📌 车停止后不会再运动！</text>
+  <text x="360" y="265" class="box-text">① 先算停止时间：t₀ = v₀/a</text>
+  <text x="360" y="285" class="box-text">② 判断题目时间 t 与 t₀：</text>
+  <text x="360" y="305" class="box-text">   → t ≤ t₀：用正常公式</text>
+  <text x="360" y="325" class="box-text">   → t > t₀：位移 = 刹车总距离</text>
+  <text x="360" y="345" class="highlight">与竖直上抛不同！不会反向</text>
+
+  <!-- 纸带问题（实验） -->
+  <rect x="20" y="320" width="640" height="120" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="320" width="640" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="340" y="338" text-anchor="middle" class="box-title" fill="#ffffff">📏 纸带问题（实验题高频）</text>
+  <text x="35" y="360" class="box-text">① 某点瞬时速度：vₙ = (xₙ + xₙ₊₁) / (2T)（中间时刻速度 = 平均速度）</text>
+  <text x="35" y="382" class="box-text">② 加速度（逐差法）：</text>
+  <text x="35" y="404" class="formula">a = [(x₄+x₅+x₆)-(x₁+x₂+x₃)] / (9T²)</text>
+  <text x="380" y="360" class="box-text">📌 T = 打点周期（通常 0.02s 或 0.1s）</text>
+  <text x="380" y="382" class="box-text">📌 逐差法可以减小误差</text>
+  <text x="380" y="404" class="box-text">📌 用 Δx = aT² 也可以求 a</text>
+
+  <!-- 追及问题 -->
+  <rect x="20" y="450" width="640" height="95" fill="#FFF9C4" rx="8" stroke="#F9A825" stroke-width="1.5"/>
+  <rect x="20" y="450" width="640" height="24" fill="#F9A825" rx="8 8 0 0"/>
+  <text x="340" y="466" text-anchor="middle" class="box-title" fill="#ffffff">📝 追及问题解题模板</text>
+  <text x="35" y="492" class="box-text">① 写出两物体的位移-时间函数：x₁(t)，x₂(t)</text>
+  <text x="35" y="512" class="box-text">② 追及时：x₁(t) = x₂(t) + 初始距离</text>
+  <text x="35" y="532" class="box-text">③ 用 v-t 图像验证：两图线之间面积 = 追及/拉开距离</text>
+
+  <!-- 页码 -->
+  <text x="650" y="550" class="note">P2/4</text>
+</svg>

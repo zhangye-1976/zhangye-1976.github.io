@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>物质转化 · 化学反应原理 · 互动练习</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, "Microsoft YaHei", sans-serif; background: #f5f5f5; padding: 20px; }
+    .container { max-width: 760px; margin: 0 auto; }
+    h1 { font-size: 18px; font-weight: 600; color: #185FA5; margin-bottom: 16px; }
+    .card { background: white; border-radius: 12px; border: 0.5px solid #d3d1c7; padding: 20px; margin-bottom: 16px; }
+    .q-num { font-size: 12px; color: #888780; margin-bottom: 4px; }
+    .q-text { font-size: 14px; color: #2C2C2A; line-height: 1.7; margin-bottom: 12px; }
+    .opts { display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
+    .opt { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: #444441; cursor: pointer; padding: 8px 12px; border-radius: 8px; border: 0.5px solid #d3d1c7; background: #fafaf7; }
+    .opt:hover { background: #eef4fe; }
+    .opt input { margin-top: 2px; flex-shrink: 0; }
+    .opt.correct { background: #eaf3de; border-color: #639922; }
+    .opt.wrong { background: #fcebeb; border-color: #e24b4a; }
+    .btn { padding: 7px 18px; border-radius: 8px; font-size: 13px; cursor: pointer; border: 0.5px solid #d3d1c7; background: white; color: #2C2C2A; }
+    .btn-primary { background: #185FA5; color: white; border-color: #185FA5; }
+    .btn-primary:hover { background: #0C447C; }
+    .answer-box { display: none; background: #fafaf7; border-radius: 8px; padding: 14px; margin-top: 12px; font-size: 13px; color: #2C2C2A; line-height: 1.7; border: 0.5px solid #d3d1c7; }
+    .answer-box.show { display: block; }
+    .answer-box strong { color: #3B6D11; }
+    .tag { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-bottom: 8px; }
+    .tag-energy { background: #e6f1fb; color: #0C447C; }
+    .tag-equilibrium { background: #eaf3de; color: #27500A; }
+    .tag-ion { background: #fbeaf0; color: #72243E; }
+    .tag-electro { background: #e1f5ee; color: #085041; }
+    .score-bar { height: 6px; background: #e8e6dd; border-radius: 3px; margin: 12px 0 6px; overflow: hidden; }
+    .score-fill { height: 100%; background: #3B6D11; border-radius: 3px; transition: width 0.4s; }
+    .score-text { font-size: 12px; color: #888780; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>⚗️ 物质转化 · 化学反应原理 · 互动练习</h1>
+
+  <!-- Q1 -->
+  <div class="card" id="q1">
+    <div class="tag tag-energy">能量转化</div>
+    <div class="q-num">第 1 题（基础）</div>
+    <div class="q-text">已知：<br>① C(s) + O₂(g) = CO₂(g)　ΔH₁ = -393.5 kJ/mol<br>② CO(g) + ½O₂(g) = CO₂(g)　ΔH₂ = -283.0 kJ/mol<br>求 C(s) + ½O₂(g) = CO(g) 的 ΔH。</div>
+    <div class="opts">
+      <label class="opt" onclick="check(this, 'A', 'q1')"><input type="radio" name="q1"> A. ΔH = -676.5 kJ/mol</label>
+      <label class="opt" onclick="check(this, 'B', 'q1')"><input type="radio" name="q1"> B. ΔH = -110.5 kJ/mol</label>
+      <label class="opt" onclick="check(this, 'C', 'q1')"><input type="radio" name="q1"> C. ΔH = +110.5 kJ/mol</label>
+      <label class="opt" onclick="check(this, 'D', 'q1')"><input type="radio" name="q1"> D. ΔH = +393.5 kJ/mol</label>
+    </div>
+    <button class="btn btn-primary" onclick="showAnswer('q1')">查看解析</button>
+    <div class="answer-box" id="a-q1">
+      <strong>✅ 正确答案：B</strong><br><br>
+      <strong>解析（盖斯定律）：</strong><br>
+      目标反应 = ① - ②：<br>
+      ΔH = ΔH₁ - ΔH₂ = (-393.5) - (-283.0) = <strong>-110.5 kJ/mol</strong><br><br>
+      <strong>★ 易错点：</strong>记住盖斯定律——反应热只与始态和终态有关，与途径无关。计算时注意符号！
+    </div>
+  </div>
+
+  <!-- Q2 -->
+  <div class="card" id="q2">
+    <div class="tag tag-energy">能量转化</div>
+    <div class="q-num">第 2 题（基础）</div>
+    <div class="q-text">写出 H₂(g) 的燃烧热化学方程式（燃烧热：285.8 kJ/mol，生成液态水）。下列写法正确的是？</div>
+    <div class="opts">
+      <label class="opt" onclick="check(this, 'A', 'q2')"><input type="radio" name="q2"> A. H₂(g) + ½O₂(g) = H₂O(g)　ΔH = -285.8 kJ/mol</label>
+      <label class="opt" onclick="check(this, 'B', 'q2')"><input type="radio" name="q2"> B. H₂(g) + ½O₂(g) = H₂O(l)　ΔH = -285.8 kJ/mol</label>
+      <label class="opt" onclick="check(this, 'C', 'q2')"><input type="radio" name="q2"> C. 2H₂(g) + O₂(g) = 2H₂O(l)　ΔH = -285.8 kJ/mol</label>
+      <label class="opt" onclick="check(this, 'D', 'q2')"><input type="radio" name="q2"> D. H₂(g) + ½O₂(g) = H₂O(l)　ΔH = +285.8 kJ/mol</label>
+    </div>
+    <button class="btn btn-primary" onclick="showAnswer('q2')">查看解析</button>
+    <div class="answer-box" id="a-q2">
+      <strong>✅ 正确答案：B</strong><br><br>
+      <strong>解析：</strong><br>
+      燃烧热定义：<strong>1 mol 纯物质完全燃烧生成稳定氧化物</strong>放出的热量。<br>
+      - "稳定氧化物"：H₂O 必须是 <strong>液态</strong>（不是气态）→ 排除 A<br>
+      - 系数是 1 mol H₂ 反应 → 排除 C<br>
+      - 燃烧是放热反应，ΔH < 0 → 排除 D<br><br>
+      <strong>正确答案：B</strong>
+    </div>
+  </div>
+
+  <!-- Q3 -->
+  <div class="card" id="q3">
+    <div class="tag tag-equilibrium">平衡转化</div>
+    <div class="q-num">第 3 题（中等）</div>
+    <div class="q-text">在一定温度下，反应 CO(g) + H₂O(g) ⇌ CO₂(g) + H₂(g) 的 K = 1.0。<br>起始时 [CO] = 2.0 mol/L，[H₂O] = 10 mol/L，求 CO 转化为 CO₂ 的转化率。</div>
+    <div class="opts">
+      <label class="opt" onclick="check(this, 'A', 'q3')"><input type="radio" name="q3"> A. 50%</label>
+      <label class="opt" onclick="check(this, 'B', 'q3')"><input type="radio" name="q3"> B. 71%</label>
+      <label class="opt" onclick="check(this, 'C', 'q3')"><input type="radio" name="q3"> C. 83%</label>
+      <label class="opt" onclick="check(this, 'D', 'q3')"><input type="radio" name="q3"> D. 100%</label>
+    </div>
+    <button class="btn btn-primary" onclick="showAnswer('q3')">查看解析</button>
+    <div class="answer-box" id="a-q3">
+      <strong>✅ 正确答案：C（83%）</strong><br><br>
+      <strong>解析（三段式）：</strong><br>
+      <table style="font-size:12px; border-collapse: collapse; width: 100%; margin: 8px 0;">
+        <tr style="background:#e6f1fb;"><td style="padding:4px 8px; border:0.5px solid #b5d4f4;"> </td><td style="padding:4px 8px; border:0.5px solid #b5d4f4;">CO</td><td style="padding:4px 8px; border:0.5px solid #b5d4f4;">H₂O</td><td style="padding:4px 8px; border:0.5px solid #b5d4f4;">CO₂</td><td style="padding:4px 8px; border:0.5px solid #b5d4f4;">H₂</td></tr>
+        <tr><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">起始</td><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">2.0</td><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">10</td><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">0</td><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">0</td></tr>
+        <tr><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">变化</td><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">-x</td><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">-x</td><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">+x</td><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">+x</td></tr>
+        <tr><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">平衡</td><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">2.0-x</td><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">10-x</td><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">x</td><td style="padding:4px 8px; border:0.5px solid #d3d1c7;">x</td></tr>
+      </table>
+      K = x² / [(2.0-x)(10-x)] = 1.0<br>
+      → x² = (2.0-x)(10-x) = 20 - 12x + x²<br>
+      → 12x = 20 → <strong>x = 5/3 mol</strong><br>
+      转化率 = (5/3) / 2.0 × 100% = <strong>83%</strong>
+    </div>
+  </div>
+
+  <!-- Q4 -->
+  <div class="card" id="q4">
+    <div class="tag tag-equilibrium">平衡转化</div>
+    <div class="q-num">第 4 题（中等）</div>
+    <div class="q-text">对于可逆反应：N₂(g) + 3H₂(g) ⇌ 2NH₃(g)　ΔH < 0<br>下列说法正确的是？</div>
+    <div class="opts">
+      <label class="opt" onclick="check(this, 'A', 'q4')"><input type="radio" name="q4"> A. 升高温度，K 增大，N₂ 转化率提高</label>
+      <label class="opt" onclick="check(this, 'B', 'q4')"><input type="radio" name="q4"> B. 加入催化剂，平衡正向移动，NH₃ 产率提高</label>
+      <label class="opt" onclick="check(this, 'C', 'q4')"><input type="radio" name="q4"> C. 增大压强（缩小体积），平衡正向移动，N₂ 转化率提高</label>
+      <label class="opt" onclick="check(this, 'D', 'q4')"><input type="radio" name="q4"> D. 增大 H₂ 浓度，平衡正向移动，N₂ 和 H₂ 的转化率均提高</label>
+    </div>
+    <button class="btn btn-primary" onclick="showAnswer('q4')">查看解析</button>
+    <div class="answer-box" id="a-q4">
+      <strong>✅ 正确答案：C</strong><br><br>
+      <strong>解析：</strong><br>
+      A ❌：ΔH < 0（放热），升温平衡<strong>逆向</strong>移动，K <strong>减小</strong>，N₂转化率<strong>降低</strong>。<br>
+      B ❌：催化剂<strong>不改变化学平衡</strong>，只加快达到平衡的时间，NH₃产率不变。<br>
+      C ✅：正反应气体分子数减少（4 → 2），增大压强平衡<strong>正向</strong>移动，N₂转化率提高。<br>
+      D ❌：增大 H₂ 浓度，平衡正向移动，但 H₂ 自身转化率<strong>降低</strong>（另一种反应物转化率才提高）。<br><br>
+      <strong>★ 口诀：</strong>加大廉价反应物浓度，提高另一种反应物的转化率！
+    </div>
+  </div>
+
+  <!-- Q5 -->
+  <div class="card" id="q5">
+    <div class="tag tag-ion">离子平衡转化</div>
+    <div class="q-num">第 5 题（中等）</div>
+    <div class="q-text">常温下，关于 0.1 mol/L Na₂CO₃ 溶液，下列关系正确的是？</div>
+    <div class="opts">
+      <label class="opt" onclick="check(this, 'A', 'q5')"><input type="radio" name="q5"> A. [Na⁺] > [CO₃²⁻] > [OH⁻] > [H⁺]</label>
+      <label class="opt" onclick="check(this, 'B', 'q5')"><input type="radio" name="q5"> B. [Na⁺] = 2[CO₃²⁻] + 2[HCO₃⁻] + 2[H₂CO₃] （物料守恒）</label>
+      <label class="opt" onclick="check(this, 'C', 'q5')"><input type="radio" name="q5"> C. [Na⁺] + [H⁺] = [HCO₃⁻] + [CO₃²⁻] + [OH⁻] （电荷守恒）</label>
+      <label class="opt" onclick="check(this, 'D', 'q5')"><input type="radio" name="q5"> D. [OH⁻] = [H⁺] + [HCO₃⁻] + [H₂CO₃] （质子守恒）</label>
+    </div>
+    <button class="btn btn-primary" onclick="showAnswer('q5')">查看解析</button>
+    <div class="answer-box" id="a-q5">
+      <strong>✅ 正确答案：B、D</strong>（单选题选 <strong>B</strong>）<br><br>
+      <strong>解析（三大守恒）：</strong><br><br>
+      <strong>电荷守恒：</strong>[Na⁺] + [H⁺] = [HCO₃⁻] + 2[CO₃²⁻] + [OH⁻]<br>
+      → C 选项漏了 CO₃²⁻ 的系数 2，❌<br><br>
+      <strong>物料守恒：</strong>[Na⁺] = 2([H₂CO₃] + [HCO₃⁻] + [CO₃²⁻])<br>
+      → B 选项格式正确，✅<br><br>
+      <strong>质子守恒：</strong>[OH⁻] = [H⁺] + [HCO₃⁻] + 2[H₂CO₃]<br>
+      → D 选项 H₂CO₃ 系数应为 2，❌<br><br>
+      <strong>★ 比较大小：</strong>Na₂CO₃ 水解呈碱性，[OH⁻] > [H⁺]，但 CO₃²⁻ 会水解，所以 [Na⁺] > [CO₃²⁻] > [OH⁻] > [HCO₃⁻] > [H⁺]
+    </div>
+  </div>
+
+  <!-- Q6 -->
+  <div class="card" id="q6">
+    <div class="tag tag-ion">离子平衡转化</div>
+    <div class="q-num">第 6 题（中等）</div>
+    <div class="q-text">用 AgNO₃ 标准溶液滴定 Cl⁻ 溶液，以 K₂CrO₄ 为指示剂。<br>下列说法正确的是？</div>
+    <div class="opts">
+      <label class="opt" onclick="check(this, 'A', 'q6')"><input type="radio" name="q6"> A. 滴定前需加入 K₂CrO₄，终点时生成 Ag₂CrO₄ 砖红色沉淀</label>
+      <label class="opt" onclick="check(this, 'B', 'q6')"><input type="radio" name="q6"> B. 当 Cl⁻ 恰好沉淀完全时，溶液中 [Ag⁺] = Ksp(AgCl) / [Cl⁻]</label>
+      <label class="opt" onclick="check(this, 'C', 'q6')"><input type="radio" name="q6"> C. 若 Ksp(AgCl) = 1.8×10⁻¹⁰，Ksp(Ag₂CrO₄) = 2.0×10⁻¹²，则 Cl⁻ 先沉淀</label>
+      <label class="opt" onclick="check(this, 'D', 'q6')"><input type="radio" name="q6"> D. 以上说法都正确</label>
+    </div>
+    <button class="btn btn-primary" onclick="showAnswer('q6')">查看解析</button>
+    <div class="answer-box" id="a-q6">
+      <strong>✅ 正确答案：D（都正确）</strong><br><br>
+      <strong>解析：</strong><br><br>
+      <strong>A ✅</strong>：莫尔法（Mohr method）原理——Ksp(Ag₂CrO₄) > Ksp(AgCl)，Cl⁻ 先沉淀完全后，Ag⁺ 才与 CrO₄²⁻ 生成砖红色 Ag₂CrO₄ 指示终点。<br><br>
+      <strong>B ✅</strong>：沉淀溶解平衡，[Ag⁺] = Ksp(AgCl) / [Cl⁻]，当 [Cl⁻] = 1.0×10⁻⁵ M（沉淀完全）时，可算出血清 [Ag⁺]。<br><br>
+      <strong>C ✅</strong>：计算沉淀所需 [Ag⁺]：<br>
+      - Cl⁻ 沉淀： [Ag⁺] = √(Ksp) = 1.34×10⁻⁵ M<br>
+      - CrO₄²⁻ 沉淀： [Ag⁺] = √(Ksp/[CrO₄²⁻]) ≈ 更大值<br>
+      → Cl⁻ 先沉淀，✅<br><br>
+      <strong>★ 高考题经典！</strong>
+    </div>
+  </div>
+
+  <!-- Q7 -->
+  <div class="card" id="q7">
+    <div class="tag tag-electro">电化学转化</div>
+    <div class="q-num">第 7 题（综合）</div>
+    <div class="q-text">氢氧燃料电池（酸性介质），下列说法正确的是？</div>
+    <div class="opts">
+      <label class="opt" onclick="check(this, 'A', 'q7')"><input type="radio" name="q7"> A. 正极反应：H₂ → 2H⁺ + 2e⁻</label>
+      <label class="opt" onclick="check(this, 'B', 'q7')"><input type="radio" name="q7"> B. 负极反应：O₂ + 4H⁺ + 4e⁻ → 2H₂O</label>
+      <label class="opt" onclick="check(this, 'C', 'q7')"><input type="radio" name="q7"> C. H⁺ 向负极移动，电解质溶液 pH 升高</label>
+      <label class="opt" onclick="check(this, 'D', 'q7')"><input type="radio" name="q7"> D. 负极反应：H₂ → 2H⁺ + 2e⁻；正极反应：O₂ + 4H⁺ + 4e⁻ → 2H₂O</label>
+    </div>
+    <button class="btn btn-primary" onclick="showAnswer('q7')">查看解析</button>
+    <div class="answer-box" id="a-q7">
+      <strong>✅ 正确答案：D</strong><br><br>
+      <strong>解析（电极反应式书写）：</strong><br><br>
+      燃料电池：<strong>燃料在负极氧化，O₂ 在正极还原</strong>。<br><br>
+      <strong>负极（氧化）</strong>：H₂ → 2H⁺ + 2e⁻<br>
+      <strong>正极（还原）</strong>：O₂ + 4H⁺ + 4e⁻ → 2H₂O<br>
+      （酸性介质用 H⁺ 配平）<br><br>
+      <strong>电子流向</strong>：负极 → 外电路 → 正极<br>
+      <strong>离子移动</strong>：H⁺ 向<strong>正极</strong>移动（阳离子→正极；阴离子→负极）<br><br>
+      <strong>★ 陷阱：</strong>别把正负极反应式写反了！口诀：<strong>"燃负氧"</strong>（燃料在负极发生氧化反应）。
+    </div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="card" id="q8">
+    <div class="tag tag-electro">电化学转化</div>
+    <div class="q-num">第 8 题（综合 · 计算）</div>
+    <div class="q-text">用惰性电极电解 CuSO₄ 溶液，电流为 2A，通电 1930 秒。<br>已知法拉第常数 F = 96500 C/mol，Cu 的摩尔质量 = 64 g/mol。<br>求阴极析出 Cu 的质量（单位：g）。</div>
+    <div class="opts">
+      <label class="opt" onclick="check(this, 'A', 'q8')"><input type="radio" name="q8"> A. 0.64 g</label>
+      <label class="opt" onclick="check(this, 'B', 'q8')"><input type="radio" name="q8"> B. 1.28 g</label>
+      <label class="opt" onclick="check(this, 'C', 'q8')"><input type="radio" name="q8"> C. 2.56 g</label>
+      <label class="opt" onclick="check(this, 'D', 'q8')"><input type="radio" name="q8"> D. 需要更多信息才能计算</label>
+    </div>
+    <button class="btn btn-primary" onclick="showAnswer('q8')">查看解析</button>
+    <div class="answer-box" id="a-q8">
+      <strong>✅ 正确答案：B（1.28 g）</strong><br><br>
+      <strong>解析（电子守恒法）：</strong><br><br>
+      1. 算电量：Q = I × t = 2A × 1930s = <strong>3860 C</strong><br>
+      2. 算电子物质的量：n(e⁻) = Q / F = 3860 / 96500 = <strong>0.04 mol</strong><br>
+      3. 电极反应：Cu²⁺ + <strong>2e⁻</strong> → Cu，故 n(Cu) = 0.04 / 2 = <strong>0.02 mol</strong><br>
+      4. 算质量：m(Cu) = 0.02 × 64 = <strong>1.28 g</strong><br><br>
+      <strong>★ 电子守恒法通用步骤：</strong><br>
+      Q = I·t → n(e⁻) = Q/F → 根据电极反应式系数 → 算目标物质量
+    </div>
+  </div>
+
+  <!-- 得分统计 -->
+  <div class="card">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+      <span style="font-size:14px; font-weight:500; color:#2C2C2A;">练习进度</span>
+      <span style="font-size:12px; color:#888780;" id="score-text">已完成 0 / 8 题</span>
+    </div>
+    <div class="score-bar"><div class="score-fill" id="score-fill" style="width:0%"></div></div>
+    <div style="margin-top:10px;">
+      <button class="btn" onclick="resetAll()">重置所有答案</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const answers = { q1:'B', q2:'B', q3:'C', q4:'C', q5:'B', q6:'D', q7:'D', q8:'B' };
+let answered = new Set();
+
+function check(el, val, qid) {
+  const opts = el.closest('.opts').querySelectorAll('.opt');
+  opts.forEach(o => {
+    o.style.pointerEvents = 'none';
+    const input = o.querySelector('input');
+    if (input.value === answers[qid] || o.textContent.includes(answers[qid])) {
+      // 找到正确答案的高亮
+      if (o === el && val === answers[qid]) o.classList.add('correct');
+      else if (o.textContent.charAt(0) === answers[qid]) o.classList.add('correct');
+      else if (o === el) o.classList.add('wrong');
+    }
+  });
+  if (!answered.has(qid)) { answered.add(qid); updateScore(); }
+}
+
+function showAnswer(qid) {
+  const box = document.getElementById('a-' + qid);
+  box.classList.toggle('show');
+}
+
+function updateScore() {
+  const total = Object.keys(answers).length;
+  const pct = Math.round(answered.size / total * 100);
+  document.getElementById('score-fill').style.width = pct + '%';
+  document.getElementById('score-text').textContent = '已完成 ' + answered.size + ' / ' + total + ' 题';
+}
+
+function resetAll() {
+  answered.clear();
+  document.querySelectorAll('.opt').forEach(o => {
+    o.classList.remove('correct', 'wrong');
+    o.style.pointerEvents = '';
+    o.querySelector('input').checked = false;
+  });
+  document.querySelectorAll('.answer-box').forEach(b => b.classList.remove('show'));
+  updateScore();
+}
+</script>
+</body>
+</html>

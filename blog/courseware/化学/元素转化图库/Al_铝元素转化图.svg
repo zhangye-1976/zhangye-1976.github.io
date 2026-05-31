@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 780" font-family="SimSun, 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="r" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#D32F2F"/></marker>
+    <marker id="d" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#333"/></marker>
+    <marker id="b" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#1565C0"/></marker>
+    <marker id="g" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#2E7D32"/></marker>
+  </defs>
+
+  <rect width="960" height="780" fill="#FAFAFA" rx="8"/>
+  <rect x="0" y="0" width="960" height="58" fill="#00838F" rx="8"/>
+  <rect x="0" y="30" width="960" height="28" fill="#00838F"/>
+  <text x="480" y="38" text-anchor="middle" fill="white" font-size="21" font-weight="bold">Al 铝元素及其化合物转化图（两性特征）</text>
+
+  <!-- Legend -->
+  <rect x="730" y="72" width="210" height="115" fill="white" stroke="#CCC" rx="4"/>
+  <text x="740" y="92" font-size="12" font-weight="bold" fill="#333">图例</text>
+  <rect x="740" y="102" width="18" height="18" rx="3" fill="#E3F2FD" stroke="#1565C0"/>
+  <text x="765" y="116" font-size="11" fill="#333">普通节点</text>
+  <rect x="740" y="125" width="18" height="18" rx="3" fill="#FFEBEE" stroke="#D32F2F"/>
+  <text x="765" y="139" font-size="11" fill="#D32F2F">🔴 高频考点</text>
+  <line x1="740" y1="155" x2="765" y2="155" stroke="#2E7D32" stroke-width="2"/>
+  <text x="770" y="159" font-size="11" fill="#2E7D32">酸性方向</text>
+  <line x1="740" y1="170" x2="765" y2="170" stroke="#1565C0" stroke-width="2"/>
+  <text x="770" y="174" font-size="11" fill="#1565C0">碱性方向</text>
+
+  <!-- ==================== NODES ==================== -->
+  <!-- Al (center top) -->
+  <rect x="380" y="90" width="100" height="44" rx="8" fill="#FFF9C4" stroke="#F9A825" stroke-width="2.5"/>
+  <text x="430" y="109" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Al</text>
+  <text x="430" y="126" text-anchor="middle" font-size="10" fill="#666">铝单质</text>
+
+  <!-- Al2O3 (center) 🔴 two-faced -->
+  <rect x="370" y="270" width="120" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="430" y="289" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">Al₂O₃</text>
+  <text x="430" y="306" text-anchor="middle" font-size="10" fill="#C62828">氧化铝（两性）🔴</text>
+
+  <!-- Al(OH)3 (center bottom) 🔴 two-faced -->
+  <rect x="360" y="440" width="140" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="430" y="459" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">Al(OH)₃</text>
+  <text x="430" y="476" text-anchor="middle" font-size="10" fill="#C62828">氢氧化铝（两性）🔴</text>
+
+  <!-- AlCl3 (right) -->
+  <rect x="680" y="270" width="100" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="730" y="289" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">AlCl₃</text>
+  <text x="730" y="306" text-anchor="middle" font-size="10" fill="#666">氯化铝</text>
+
+  <!-- NaAlO2 (left) -->
+  <rect x="80" y="270" width="110" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="135" y="289" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">NaAlO₂</text>
+  <text x="135" y="306" text-anchor="middle" font-size="10" fill="#666">偏铝酸钠</text>
+
+  <!-- KAl(SO4)2 -->
+  <rect x="680" y="440" width="120" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="740" y="459" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">KAl(SO₄)₂</text>
+  <text x="740" y="476" text-anchor="middle" font-size="10" fill="#666">明矾·12H₂O</text>
+
+  <!-- Al2(SO4)3 -->
+  <rect x="80" y="440" width="120" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="140" y="459" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Al₂(SO₄)₃</text>
+  <text x="140" y="476" text-anchor="middle" font-size="10" fill="#666">硫酸铝</text>
+
+  <!-- ==================== ARROWS ==================== -->
+  <!-- Al → Al2O3 -->
+  <line x1="430" y1="138" x2="430" y2="265" stroke="#333" stroke-width="2" marker-end="url(#d)"/>
+  <text x="440" y="205" font-size="11" fill="#333">+O₂(点燃/常温)</text>
+
+  <!-- Al → AlCl3 -->
+  <line x1="480" y1="110" x2="675" y2="260" stroke="#333" stroke-width="2" marker-end="url(#d)"/>
+  <text x="595" y="180" font-size="11" fill="#333">+Cl₂(点燃)/+HCl</text>
+
+  <!-- Al → NaAlO2 🔴 -->
+  <line x1="380" y1="110" x2="145" y2="260" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#r)"/>
+  <text x="220" y="180" font-size="11" fill="#D32F2F" font-weight="bold">+NaOH溶液 → NaAlO₂+H₂↑ 🔴</text>
+
+  <!-- Al2O3 ← → AlCl3 (acid) -->
+  <line x1="495" y1="292" x2="675" y2="292" stroke="#2E7D32" stroke-width="2" marker-end="url(#g)"/>
+  <text x="585" y="282" font-size="11" fill="#2E7D32">+HCl</text>
+
+  <!-- Al2O3 ← → NaAlO2 (base) -->
+  <line x1="365" y1="292" x2="195" y2="292" stroke="#1565C0" stroke-width="2" marker-end="url(#b)"/>
+  <text x="240" y="282" font-size="11" fill="#1565C0">+NaOH溶液</text>
+
+  <!-- Al(OH)3 ← → AlCl3 (acid) 🔴 -->
+  <line x1="505" y1="462" x2="675" y2="462" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#r)"/>
+  <text x="590" y="452" font-size="11" fill="#D32F2F" font-weight="bold">+HCl 🔴</text>
+
+  <!-- Al(OH)3 ← → NaAlO2 (base) 🔴 -->
+  <line x1="355" y1="462" x2="195" y2="462" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#r)"/>
+  <text x="230" y="452" font-size="11" fill="#D32F2F" font-weight="bold">+NaOH 🔴</text>
+
+  <!-- Al2O3 → Al(OH)3 (indirect) -->
+  <path d="M 430,318 L 430,380 Q 430,400 450,420" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#d)" stroke-dasharray="6,3"/>
+  <text x="440" y="375" font-size="10" fill="#666">间接</text>
+
+  <!-- AlCl3 → Al(OH)3 -->
+  <line x1="680" y1="318" x2="455" y2="435" stroke="#1565C0" stroke-width="2" marker-end="url(#b)"/>
+  <text x="530" y="380" font-size="11" fill="#1565C0">+NH₃·H₂O(或少量NaOH)</text>
+
+  <!-- NaAlO2 → Al(OH)3 -->
+  <line x1="195" y1="318" x2="400" y2="435" stroke="#1565C0" stroke-width="2" marker-end="url(#b)"/>
+  <text x="250" y="380" font-size="11" fill="#1565C0">+CO₂+H₂O(或适量HCl)</text>
+
+  <!-- AlCl3 → NaAlO2 (过量NaOH) -->
+  <line x1="660" y1="280" x2="245" y2="305" stroke="#666" stroke-width="1.5" marker-end="url(#d)" stroke-dasharray="6,3"/>
+  <text x="440" y="300" font-size="10" fill="#666">过量NaOH（跳过Al(OH)₃）</text>
+
+  <!-- Al3+ → Al2(SO4)3 -->
+  <path d="M 680,440 L 600,440 L 600,530 L 200,530 L 200,480" stroke="#666" stroke-width="1.5" fill="none" marker-end="url(#d)"/>
+  <text x="400" y="555" font-size="10" fill="#666">+SO₄²⁻</text>
+
+  <!-- Al3+ → KAl(SO4)2 -->
+  <line x1="740" y1="400" x2="740" y2="435" stroke="#666" stroke-width="1.5" marker-end="url(#d)"/>
+  <text x="750" y="422" font-size="10" fill="#666">+K⁺+SO₄²⁻</text>
+
+  <!-- ==================== AMPHOTERIC ARROWS on Al(OH)3 ==================== -->
+  <text x="500" y="500" font-size="12" font-weight="bold" fill="#D32F2F">← 酸式电离 →</text>
+  <text x="200" y="500" font-size="12" font-weight="bold" fill="#D32F2F">← 碱式电离 →</text>
+
+  <!-- ==================== EXAM TIPS ==================== -->
+  <rect x="15" y="600" width="930" height="165" fill="white" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="35" y="625" font-size="14" font-weight="bold" fill="#D32F2F">🔴 近十年高考高频考点</text>
+
+  <text x="35" y="650" font-size="11" fill="#333">① Al、Al₂O₃、Al(OH)₃ 均具有两性：既能与强酸反应，又能与强碱反应（注意：Al不与浓HNO₃/浓H₂SO₄钝化除外）</text>
+  <text x="35" y="668" font-size="11" fill="#333">② Al(OH)₃制备：铝盐溶液+氨水（⚠️不能用NaOH，因Al(OH)₃溶于过量NaOH）</text>
+  <text x="35" y="686" font-size="11" fill="#333">③ 铝热反应：2Al+Fe₂O₃ 高温 2Fe+Al₂O₃（用于焊接钢轨）——铝的还原性</text>
+  <text x="35" y="704" font-size="11" fill="#333">④ Al³⁺与OH⁻ 滴加顺序不同现象不同：Al³⁺→滴NaOH→先沉淀后溶解；NaOH→滴Al³⁺→先无现象后沉淀（可逆反推）</text>
+  <text x="35" y="722" font-size="11" fill="#333">⑤ 电解Al₂O₃制Al：2Al₂O₃(熔融) 通电(冰晶石) 4Al+3O₂↑（冰晶石Na₃AlF₆作助熔剂降低熔点）</text>
+  <text x="35" y="740" font-size="11" fill="#333">⑥ Al(OH)₃的两性电离：酸式 H⁺+AlO₂⁻+H₂O ⇌ Al(OH)₃ ⇌ Al³⁺+3OH⁻ 碱式</text>
+  <text x="35" y="758" font-size="11" fill="#333">⑦ 明矾净水：KAl(SO₄)₂·12H₂O → Al³⁺+3H₂O ⇌ Al(OH)₃(胶体)+3H⁺（吸附水中悬浮杂质）</text>
+
+</svg>

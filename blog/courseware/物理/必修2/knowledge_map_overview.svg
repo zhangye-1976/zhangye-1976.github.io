@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 640">
+  <!-- 物理必修2 全书总览 SVG -->
+  <defs>
+    <style>
+      .title { font-weight:bold; font-size:22px; font-family:sans-serif; fill: #00363a; }
+      .subtitle { font-size:13px; font-family:sans-serif; fill: #00796b; }
+      .box-title { font-weight:bold; font-size:14px; font-family:sans-serif; fill: #00363a; }
+      .box-text { font-size:12px; font-family:sans-serif; fill: #2c2c2c; }
+      .highlight { font-weight:bold; font-size:12px; font-family:sans-serif; fill: #b71c1c; }
+      .note { font-size:11px; font-family:sans-serif; fill: #555; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="680" height="640" fill="#E1F5EE" rx="12"/>
+
+  <!-- 标题 -->
+  <rect x="180" y="15" width="320" height="44" fill="#00796B" rx="8"/>
+  <text x="340" y="38" text-anchor="middle" class="title" fill="#ffffff">物理必修第二册 · 全书总览</text>
+  <text x="340" y="56" text-anchor="middle" class="subtitle" fill="#b2dfdb">曲线运动 → 万有引力（天体）→ 机械能守恒</text>
+
+  <!-- 全书逻辑链 -->
+  <rect x="40" y="72" width="600" height="38" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <text x="60" y="91" class="box-text" fill="#00796B">📌 逻辑链：</text>
+  <text x="140" y="91" class="box-text">直线运动的拓展（曲线）</text><text x="320" y="91" class="box-text" fill="#00796B">→</text>
+  <text x="345" y="91" class="box-text">用牛顿定律研究天体</text><text x="510" y="91" class="box-text" fill="#00796B">→</text>
+  <text x="535" y="91" class="box-text">用能量观点研究运动</text>
+
+  <!-- 第5章 曲线运动 -->
+  <rect x="30" y="128" width="300" height="120" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="2"/>
+  <rect x="30" y="128" width="300" height="30" fill="#00796B" rx="8 8 0 0"/>
+  <text x="180" y="148" text-anchor="middle" class="box-title" fill="#ffffff">第5章 曲线运动</text>
+  <text x="45" y="176" class="box-text">📐 曲线运动条件：F合 与 v 不在同一直线</text>
+  <text x="45" y="196" class="box-text">📝 运动的合成与分解（正交分解法）</text>
+  <text x="45" y="216" class="box-text">🪂 平抛运动（最高频！）：x=v₀t，y=½gt²</text>
+  <text x="45" y="236" class="box-text">🔄 圆周运动：Fₙ=mv²/r（向心力是效果力）</text>
+
+  <!-- 第6章 万有引力 -->
+  <rect x="350" y="128" width="300" height="120" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="2"/>
+  <rect x="350" y="128" width="300" height="30" fill="#00796B" rx="8 8 0 0"/>
+  <text x="500" y="148" text-anchor="middle" class="box-title" fill="#ffffff">第6章 万有引力与航天</text>
+  <text x="365" y="176" class="box-text">🪐 开普勒三定律（面积定律：v近>v远）</text>
+  <text x="365" y="196" class="box-text">🌍 万有引力定律：F=GMm/r²</text>
+  <text x="365" y="216" class="box-text">🛰️ 人造卫星：高轨低速长周期（口诀！）</text>
+  <text x="365" y="236" class="box-text">🔑 黄金代换：GM=gR²（天体计算神器）</text>
+
+  <!-- 第7章 机械能 -->
+  <rect x="30" y="265" width="620" height="130" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="2"/>
+  <rect x="30" y="265" width="620" height="30" fill="#00796B" rx="8 8 0 0"/>
+  <text x="340" y="285" text-anchor="middle" class="box-title" fill="#ffffff">第7章 机械能守恒定律 ★★★★★</text>
+  <text x="45" y="315" class="box-text">🔨 功 W=F·s·cosθ（0°≤θ&lt;90°正功；θ=90°不做功；90°&lt;θ≤180°负功）</text>
+  <text x="45" y="335" class="box-text">⚡ 功率 P=W/t（平均），P=Fvcosθ（瞬时）</text>
+  <text x="45" y="355" class="box-text">💨 动能定理：W合=ΔEk（最重要！变力做功也适用）</text>
+  <text x="45" y="375" class="box-text">⚖️ 机械能守恒：只有重力/弹力做功时，Ek+Ep=常量</text>
+  <text x="380" y="315" class="box-text">📌 汽车启动两模型：</text>
+  <text x="380" y="335" class="box-text">① 恒定功率：P不变，v↑→F↓→a↓</text>
+  <text x="380" y="355" class="box-text">② 恒定加速度：a不变，v↑→P↑</text>
+  <text x="380" y="375" class="box-text">最终都是：F=f时，v=vmax</text>
+
+  <!-- 高考高频考点 -->
+  <rect x="30" y="412" width="620" height="110" fill="#ffffff" rx="8" stroke="#b71c1c" stroke-width="1.5"/>
+  <rect x="30" y="412" width="620" height="28" fill="#b71c1c" rx="8 8 0 0"/>
+  <text x="340" y="431" text-anchor="middle" class="box-title" fill="#ffffff">⭐ 高考高频考点（全国乙卷）</text>
+  <text x="50" y="459" class="box-text">① 平抛运动分解（x/y方向独立，t由h决定）</text>
+  <text x="50" y="477" class="box-text">② 圆周运动向心力分析（绳/杆/拱桥模型）</text>
+  <text x="50" y="495" class="box-text">③ 天体运行：高轨低速长周期 + 黄金代换应用</text>
+  <text x="380" y="459" class="box-text">④ 动能定理 W合=ΔEk（看到"变力"就想起它！）</text>
+  <text x="380" y="477" class="box-text">⑤ 机械能守恒条件判断（有摩擦力→不守恒）</text>
+  <text x="380" y="495" class="box-text">⑥ 汽车启动问题（vmax=P额/f）</text>
+
+  <!-- 超级易错 -->
+  <rect x="30" y="538" width="620" height="90" fill="#FFF9C4" rx="8" stroke="#F9A825" stroke-width="1.5"/>
+  <rect x="30" y="538" width="620" height="28" fill="#F9A825" rx="8 8 0 0"/>
+  <text x="340" y="557" text-anchor="middle" class="box-title" fill="#ffffff">🔴 超级易错 Top 3</text>
+  <text x="50" y="582" class="highlight">❌ 向心力是"效果力"，受力分析时不能画"向心力"！</text>
+  <text x="50" y="602" class="box-text">（正确做法：画重力、弹力、摩擦力，合力指向圆心即为向心力）</text>
+  <text x="50" y="622" class="highlight">❌ 平抛运动时间由高度h决定，与v₀无关！</text>
+
+  <!-- 底部说明 -->
+  <text x="340" y="630" text-anchor="middle" class="note">必修2是力学的延伸，也是能量观点的起点 → 必修3电磁学的基础</text>
+</svg>

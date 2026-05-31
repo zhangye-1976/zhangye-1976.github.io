@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 600" width="100%" role="img">
+  <title>电化学综合：原电池与电解池</title>
+  <desc>原电池（化学能→电能）与电解池（电能→化学能）的对比、电极判断、放电顺序与金属防护</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <style>
+    .t { font-family: var(--font-sans,sans-serif); font-size: 13px; fill: #2C2C2A; font-weight: 400; }
+    .ts { font-family: var(--font-sans,sans-serif); font-size: 12px; fill: #5F5E5A; font-weight: 400; }
+    .th { font-family: var(--font-sans,sans-serif); font-size: 14px; fill: #2C2C2A; font-weight: 500; }
+  </style>
+
+  <text x="40" y="38" class="th" font-size="15">电化学综合体系</text>
+  <text x="40" y="58" class="ts">原电池（自发，化学能→电能）| 电解池（驱动，电能→化学能）| 金属腐蚀与防护</text>
+
+  <rect x="40" y="80" width="296" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="188" y="106" text-anchor="middle" dominant-baseline="central" class="th" font-size="13">原电池 — 化学能 → 电能</text>
+
+  <rect x="40" y="132" width="140" height="36" rx="6" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text x="110" y="154" text-anchor="middle" dominant-baseline="central" class="t">负极：失电子（氧化）</text>
+
+  <rect x="196" y="132" width="140" height="36" rx="6" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text x="266" y="154" text-anchor="middle" dominant-baseline="central" class="t">正极：得电子（还原）</text>
+
+  <line x1="110" y1="168" x2="296" y2="168" stroke="#185FA5" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="203" y="162" text-anchor="middle" class="ts" font-size="10">电子：负极→导线→正极</text>
+
+  <text x="40" y="196" class="th" font-size="12">常见类型</text>
+  <rect x="40" y="204" width="90" height="28" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="85" y="222" text-anchor="middle" dominant-baseline="central" class="ts">锌锰干电池</text>
+  <rect x="140" y="204" width="90" height="28" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="185" y="222" text-anchor="middle" dominant-baseline="central" class="ts">铅蓄电池</text>
+  <rect x="240" y="204" width="96" height="28" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="288" y="222" text-anchor="middle" dominant-baseline="central" class="ts">燃料电池</text>
+
+  <rect x="350" y="80" width="296" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="498" y="106" text-anchor="middle" dominant-baseline="central" class="th" font-size="13">电解池 — 电能 → 化学能</text>
+
+  <rect x="350" y="132" width="140" height="36" rx="6" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text x="420" y="154" text-anchor="middle" dominant-baseline="central" class="t">阴极：得电子（还原）</text>
+
+  <rect x="506" y="132" width="140" height="36" rx="6" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text x="576" y="154" text-anchor="middle" dominant-baseline="central" class="t">阳极：失电子（氧化）</text>
+
+  <line x1="420" y1="168" x2="606" y2="168" stroke="#534AB7" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="513" y="162" text-anchor="middle" class="ts" font-size="10">电子：电源负极→阴极；阳极→电源正极</text>
+
+  <text x="350" y="196" class="th" font-size="12">应用</text>
+  <rect x="350" y="204" width="90" height="28" rx="4" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text x="395" y="222" text-anchor="middle" dominant-baseline="central" class="ts">氯碱工业</text>
+  <rect x="450" y="204" width="90" height="28" rx="4" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text x="495" y="222" text-anchor="middle" dominant-baseline="central" class="ts">电镀</text>
+  <rect x="550" y="204" width="96" height="28" rx="4" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text x="598" y="222" text-anchor="middle" dominant-baseline="central" class="ts">电冶金</text>
+
+  <line x1="40" y1="252" x2="640" y2="252" stroke="#D3D1C7" stroke-width="0.5"/>
+
+  <text x="40" y="282" class="th" font-size="15">电极放电顺序（核心必背）</text>
+
+  <rect x="40" y="298" width="296" height="80" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+  <text x="50" y="320" class="th" fill="#791F1F">阳极（氧化）放电顺序</text>
+  <text x="50" y="340" class="ts" fill="#791F1F">活性电极 > S²⁻ > I⁻ > Br⁻ > Cl⁻ > OH⁻ > 含氧酸根 > F⁻</text>
+  <text x="50" y="358" class="ts" fill="#791F1F" font-size="11">口诀：活性电极先溶解，硫碘溴氯氢氧根，含氧酸根排最后</text>
+
+  <rect x="350" y="298" width="296" height="80" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="360" y="320" class="th" fill="#0C447C">阴极（还原）放电顺序</text>
+  <text x="360" y="340" class="ts" fill="#0C447C">Ag⁺ Fe³⁺ Cu²⁺ H⁺(酸) Pb²⁺ Fe²⁺ Zn²⁺ H⁺(水) Al³⁺...</text>
+  <text x="360" y="358" class="ts" fill="#0C447C" font-size="11">口诀：银铁铜氢铅锡铁，锌水铝镁钠钙钾</text>
+
+  <line x1="40" y1="400" x2="640" y2="400" stroke="#D3D1C7" stroke-width="0.5"/>
+
+  <text x="40" y="430" class="th" font-size="15">金属腐蚀与防护</text>
+
+  <rect x="40" y="446" width="296" height="60" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text x="188" y="468" text-anchor="middle" dominant-baseline="central" class="th">电化学腐蚀</text>
+  <text x="188" y="488" text-anchor="middle" dominant-baseline="central" class="ts" font-size="11">吸氧腐蚀（主）：负极 Fe-2e⁻=Fe²⁺ 正极 O₂+2H₂O+4e⁻=4OH⁻</text>
+  <text x="188" y="500" text-anchor="middle" dominant-baseline="central" class="ts" font-size="11">析氢腐蚀（酸）：负极 Fe-2e⁻=Fe²⁺ 正极 2H⁺+2e⁻=H₂↑</text>
+
+  <rect x="350" y="446" width="296" height="60" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+  <text x="498" y="468" text-anchor="middle" dominant-baseline="central" class="th">防护方法</text>
+  <text x="498" y="488" text-anchor="middle" dominant-baseline="central" class="ts" font-size="11">牺牲阳极法（连Zn）| 外加电流法（接电源负极）</text>
+  <text x="498" y="500" text-anchor="middle" dominant-baseline="central" class="ts" font-size="11">涂层隔绝O₂+H₂O | 制成合金（不锈钢）</text>
+
+  <line x1="40" y1="524" x2="640" y2="524" stroke="#D3D1C7" stroke-width="0.5"/>
+
+  <rect x="40" y="536" width="606" height="44" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text x="50" y="558" class="th">电子守恒计算：</text>
+  <text x="180" y="558" class="t">n(e⁻) = Q/F = I·t/96500</text>
+  <text x="380" y="558" class="t">| 串联电解池：各池 n(e⁻) 相等</text>
+</svg>

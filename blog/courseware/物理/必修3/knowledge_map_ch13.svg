@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E1F5EE"/>
+      <stop offset="100%" stop-color="#B2DFDB"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="680" height="400" rx="12" fill="url(#bg)"/>
+
+  <rect x="20" y="15" width="640" height="42" rx="8" fill="#607D8B"/>
+  <text x="340" y="43" text-anchor="middle" fill="#fff" font-size="19" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">第13章 电磁感应与电磁波初步（电磁学入门）</text>
+
+  <!-- 磁场 -->
+  <rect x="25" y="70" width="310" height="115" rx="6" fill="#fff" stroke="#607D8B" stroke-width="1.2"/>
+  <text x="180" y="95" text-anchor="middle" fill="#455A64" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">磁场 · 磁感线</text>
+  <line x1="40" y1="103" x2="320" y2="103" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="40" y="122" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">磁场方向：小磁针N极受力方向</text>
+  <text x="40" y="140" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">磁感线：闭合曲线（N→外部S→内部N）</text>
+  <text x="40" y="158" fill="#527AA0" font-size="10" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">安培定则（右手螺旋定则）</text>
+  <text x="40" y="176" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">直导线：拇指=I · 四指=磁感线方向</text>
+
+  <!-- 磁感应强度 -->
+  <rect x="350" y="70" width="310" height="115" rx="6" fill="#fff" stroke="#607D8B" stroke-width="1.2"/>
+  <text x="505" y="95" text-anchor="middle" fill="#455A64" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">磁感应强度 · 磁通量</text>
+  <line x1="365" y1="103" x2="645" y2="103" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="365" y="122" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">B = F/(IL)（定义式，B与F/IL无关）</text>
+  <text x="365" y="142" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">Φ = BS·cosθ（标量！有正负）</text>
+  <text x="365" y="162" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">1 T = 1 N/(A·m)  1 Wb = 1 T·m²</text>
+  <text x="365" y="180" fill="#527AA0" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">Φ=0 不一定 B=0（可能 S//B）</text>
+
+  <!-- 电磁感应 -->
+  <rect x="25" y="200" width="310" height="105" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="180" y="225" text-anchor="middle" fill="#2E7D32" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">电磁感应现象（定性）</text>
+  <line x1="40" y1="233" x2="320" y2="233" stroke="#C8E6C9" stroke-width="1"/>
+  <text x="40" y="256" fill="#E53935" font-size="12" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">感应电流条件：回路闭合 + Φ变化</text>
+  <text x="40" y="276" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">❌ Φ大 ≠ 有感应电流</text>
+  <text x="40" y="293" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">两条件缺一不可！</text>
+
+  <!-- 电磁波 -->
+  <rect x="350" y="200" width="310" height="105" rx="6" fill="#E8EAF6" stroke="#7986CB" stroke-width="1.2"/>
+  <text x="505" y="225" text-anchor="middle" fill="#3949AB" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">电磁波</text>
+  <line x1="365" y1="233" x2="645" y2="233" stroke="#C5CAE9" stroke-width="1"/>
+  <text x="365" y="256" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">麦克斯韦：变E→B，变B→E</text>
+  <text x="365" y="275" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">电磁波：横波 · 不需介质 · v=c</text>
+  <text x="365" y="295" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">电磁波谱：无线电→微波→红外→可见→紫外→X→γ</text>
+
+  <!-- 电磁波谱 -->
+  <rect x="25" y="320" width="635" height="65" rx="6" fill="#F3E5F5" stroke="#AB47BC" stroke-width="1"/>
+  <text x="340" y="345" text-anchor="middle" fill="#7B1FA2" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">电磁波谱（按频率升高→波长减小）</text>
+  <text x="40" y="368" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">无线电波(通信) → 微波(雷达/微波炉) → 红外线(热效应) → 可见光 → 紫外线(杀菌/荧光) → X射线(透视) → γ射线(穿透最强)</text>
+  <text x="40" y="382" fill="#E53935" font-size="9" font-family="Microsoft YaHei, SimHei, sans-serif">🔴 红→紫：频率↑ 波长↓ ；X射线与γ射线区别：产生机制不同（内层电子跃迁 vs 核反应）</text>
+
+  <text x="340" y="394" text-anchor="middle" fill="#999" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">物理必修第三册 · 第13章 电磁感应与电磁波初步</text>
+</svg>

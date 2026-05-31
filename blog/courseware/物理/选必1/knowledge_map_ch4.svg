@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 410">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3E0"/>
+      <stop offset="100%" stop-color="#FFE0B2"/>
+    </linearGradient>
+  </defs>
+  <rect width="680" height="410" rx="12" fill="url(#bg)"/>
+  <rect x="20" y="15" width="640" height="42" rx="8" fill="#E65100"/>
+  <text x="340" y="43" text-anchor="middle" fill="#fff" font-size="19" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">第4章 光 ⭐高频考点</text>
+
+  <!-- 折射 + 全反射 -->
+  <rect x="25" y="72" width="310" height="115" rx="6" fill="#fff" stroke="#E65100" stroke-width="1.5"/>
+  <text x="180" y="95" text-anchor="middle" fill="#E65100" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">折射 · 全反射</text>
+  <line x1="40" y1="103" x2="320" y2="103" stroke="#FFE0B2" stroke-width="1"/>
+  <text x="40" y="123" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">n = sinθ_入/sinθ_折 = c/v</text>
+  <text x="40" y="143" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">n只与介质有关（频率越高n越大）</text>
+  <text x="40" y="163" fill="#C62828" font-size="11" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">全反射：sin C = 1/n</text>
+  <text x="40" y="180" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">条件：光密→光疏 + θ≥C</text>
+
+  <!-- 双缝干涉 -->
+  <rect x="350" y="72" width="310" height="115" rx="6" fill="#fff" stroke="#C62828" stroke-width="2"/>
+  <text x="505" y="95" text-anchor="middle" fill="#C62828" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">双缝干涉 ⭐必考</text>
+  <line x1="365" y1="103" x2="645" y2="103" stroke="#FFCDD2" stroke-width="1"/>
+  <text x="365" y="128" fill="#C62828" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">Δx = Lλ/d</text>
+  <text x="365" y="150" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">L：双缝到屏距离</text>
+  <text x="365" y="168" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">d：双缝间距 · λ：波长</text>
+  <text x="365" y="185" fill="#E65100" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">红光 λ大→Δx大 · 紫光 λ小→Δx小</text>
+
+  <!-- 薄膜干涉 -->
+  <rect x="25" y="202" width="310" height="80" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="180" y="225" text-anchor="middle" fill="#2E7D32" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">薄膜干涉</text>
+  <text x="40" y="248" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">上下表面反射光干涉</text>
+  <text x="40" y="268" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">应用：增透膜 · 劈尖干涉 · 牛顿环</text>
+  <text x="40" y="280" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">⚠ 半波损失：光疏→光密反射时发生</text>
+
+  <!-- 衍射+偏振 -->
+  <rect x="350" y="202" width="310" height="80" rx="6" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+  <text x="505" y="225" text-anchor="middle" fill="#3949AB" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">衍射 · 偏振</text>
+  <text x="365" y="248" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">单缝衍射：中央宽亮·两侧窄暗</text>
+  <text x="365" y="268" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">偏振：证明光是横波</text>
+  <text x="365" y="280" fill="#E65100" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">干涉vs衍射：等间距 vs 非等间距</text>
+
+  <!-- 色散 -->
+  <rect x="25" y="297" width="635" height="55" rx="6" fill="#FFF8E1" stroke="#FF8F00" stroke-width="1.2"/>
+  <text x="340" y="320" text-anchor="middle" fill="#E65100" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">光的色散：n_红 &lt; n_橙 &lt; ... &lt; n_紫（频率越高折射率越大）</text>
+  <text x="40" y="343" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">同一介质中：v_红 &gt; v_紫 ｜ 三棱镜色散：紫光偏折最大 ｜ 双缝干涉：红光条纹间距最大</text>
+
+  <!-- 实验 -->
+  <rect x="25" y="362" width="635" height="30" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="340" y="382" text-anchor="middle" fill="#2E7D32" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">实验：测玻璃折射率（插针法）+ 用双缝干涉测光的波长 λ=dΔx/L</text>
+
+  <text x="340" y="405" text-anchor="middle" fill="#999" font-size="9" font-family="Microsoft YaHei, SimHei, sans-serif">物理选必1 · 第4章 光</text>
+</svg>

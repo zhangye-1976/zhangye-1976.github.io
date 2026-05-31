@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 760" font-family="SimSun, 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="rs" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#D32F2F"/></marker>
+    <marker id="ds" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#333"/></marker>
+  </defs>
+
+  <rect width="960" height="760" fill="#FAFAFA" rx="8"/>
+  <rect x="0" y="0" width="960" height="56" fill="#4A148C" rx="8"/>
+  <rect x="0" y="28" width="960" height="28" fill="#4A148C"/>
+  <text x="480" y="37" text-anchor="middle" fill="white" font-size="21" font-weight="bold">Si 硅元素及其化合物转化图</text>
+
+  <!-- Legend -->
+  <rect x="735" y="70" width="210" height="95" fill="white" stroke="#CCC" rx="4"/>
+  <text x="745" y="90" font-size="12" font-weight="bold" fill="#333">图例</text>
+  <rect x="745" y="100" width="18" height="18" rx="3" fill="#E3F2FD" stroke="#1565C0"/>
+  <text x="770" y="114" font-size="11" fill="#333">普通节点</text>
+  <rect x="745" y="123" width="18" height="18" rx="3" fill="#FFEBEE" stroke="#D32F2F"/>
+  <text x="770" y="137" font-size="11" fill="#D32F2F">🔴 高频考点</text>
+  <rect x="745" y="145" width="18" height="18" rx="3" fill="#FFF9C4" stroke="#F9A825"/>
+  <text x="770" y="159" font-size="11" fill="#F9A825">单质</text>
+
+  <!-- ==================== NODES ==================== -->
+  <!-- Si (center top) -->
+  <rect x="380" y="80" width="80" height="42" rx="8" fill="#FFF9C4" stroke="#F9A825" stroke-width="2.5"/>
+  <text x="420" y="98" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Si</text>
+  <text x="420" y="114" text-anchor="middle" font-size="9" fill="#666">硅（半导体）</text>
+
+  <!-- SiO2 (center) 🔴 -->
+  <rect x="360" y="220" width="120" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="420" y="239" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">SiO₂</text>
+  <text x="420" y="256" text-anchor="middle" font-size="10" fill="#C62828">二氧化硅 🔴</text>
+
+  <!-- Na2SiO3 -->
+  <rect x="100" y="380" width="120" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="160" y="398" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Na₂SiO₃</text>
+  <text x="160" y="414" text-anchor="middle" font-size="9" fill="#666">硅酸钠（水玻璃）</text>
+
+  <!-- H2SiO3 -->
+  <rect x="100" y="530" width="110" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="155" y="548" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">H₂SiO₃</text>
+  <text x="155" y="564" text-anchor="middle" font-size="9" fill="#666">硅酸（胶体）</text>
+
+  <!-- SiF4 🔴 -->
+  <rect x="640" y="380" width="100" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="690" y="399" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">SiF₄</text>
+  <text x="690" y="416" text-anchor="middle" font-size="10" fill="#C62828">四氟化硅 🔴</text>
+
+  <!-- SiCl4 -->
+  <rect x="640" y="220" width="90" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="685" y="238" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">SiCl₄</text>
+  <text x="685" y="254" text-anchor="middle" font-size="9" fill="#666">四氯化硅</text>
+
+  <!-- Silicates -->
+  <rect x="380" y="530" width="130" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="445" y="548" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">CaSiO₃</text>
+  <text x="445" y="564" text-anchor="middle" font-size="9" fill="#666">硅酸钙</text>
+
+  <rect x="640" y="530" width="130" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="705" y="548" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Na₂SiO₃</text>
+  <text x="705" y="564" text-anchor="middle" font-size="9" fill="#666">硅酸钠</text>
+
+  <!-- ==================== ARROWS ==================== -->
+  <!-- Si → SiO2 -->
+  <line x1="420" y1="126" x2="420" y2="215" stroke="#333" stroke-width="2" marker-end="url(#ds)"/>
+  <text x="430" y="173" font-size="10" fill="#333">+O₂(△)</text>
+
+  <!-- Si → SiCl4 -->
+  <line x1="460" y1="100" x2="640" y2="235" stroke="#333" stroke-width="2" marker-end="url(#ds)"/>
+  <text x="570" y="160" font-size="10" fill="#333">+Cl₂(△)</text>
+
+  <!-- SiO2 → Si (industrial) 🔴 -->
+  <line x1="400" y1="220" x2="380" y2="130" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#rs)"/>
+  <text x="350" y="175" font-size="10" fill="#D32F2F" font-weight="bold">+C 高温(电炉) 🔴</text>
+
+  <!-- SiO2 → Na2SiO3 🔴 -->
+  <line x1="360" y1="250" x2="170" y2="370" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#rs)"/>
+  <text x="210" y="305" font-size="10" fill="#D32F2F" font-weight="bold">+NaOH(溶液) 🔴</text>
+
+  <!-- SiO2 → SiF4 🔴 unique -->
+  <line x1="485" y1="250" x2="675" y2="370" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#rs)"/>
+  <text x="610" y="305" font-size="10" fill="#D32F2F" font-weight="bold">+HF 🔴 唯一!</text>
+
+  <!-- Na2SiO3 → H2SiO3 -->
+  <line x1="155" y1="426" x2="152" y2="525" stroke="#333" stroke-width="2" marker-end="url(#ds)"/>
+  <text x="135" y="480" font-size="10" fill="#333">+HCl/+CO₂+H₂O</text>
+
+  <!-- H2SiO3 → SiO2 -->
+  <line x1="180" y1="555" x2="360" y2="265" stroke="#666" stroke-width="1.5" marker-end="url(#ds)" stroke-dasharray="6,3"/>
+  <text x="305" y="415" font-size="10" fill="#666">△ 分解</text>
+
+  <!-- SiO2 → CaSiO3 -->
+  <line x1="420" y1="268" x2="430" y2="525" stroke="#333" stroke-width="2" marker-end="url(#ds)"/>
+  <text x="450" y="400" font-size="10" fill="#333">+CaO高温</text>
+
+  <!-- Na2SiO3 (bottom route) -->
+  <line x1="530" y1="530" x2="660" y2="530" stroke="#666" stroke-width="1.5" marker-end="url(#ds)"/>
+  <text x="595" y="522" font-size="10" fill="#666">+NaOH</text>
+
+  <!-- ==================== SPECIAL BOX ==================== -->
+  <rect x="50" y="610" width="390" height="135" fill="#FFF8E1" stroke="#4A148C" stroke-width="1.5" rx="6"/>
+  <text x="245" y="632" text-anchor="middle" font-size="13" font-weight="bold" fill="#4A148C">SiO₂ 的特殊性 &amp; 硅的工业制法</text>
+  <text x="60" y="654" font-size="11" fill="#333">① SiO₂+4HF=SiF₄↑+2H₂O（唯一与HF反应的酸性氧化物）</text>
+  <text x="60" y="672" font-size="11" fill="#333">② SiO₂+2NaOH=Na₂SiO₃+H₂O（不能用玻璃塞→Na₂SiO₃黏合）</text>
+  <text x="60" y="690" font-size="11" fill="#333">③ 粗硅：SiO₂+2C 高温(电炉) Si(粗)+2CO↑</text>
+  <text x="60" y="708" font-size="11" fill="#333">④ 精硅：Si(粗)+2Cl₂ △ SiCl₄→精馏→SiCl₄+2H₂ 高温 Si(纯)+4HCl</text>
+  <text x="60" y="726" font-size="11" fill="#333">⑤ ⚠️ SiO₂不溶于水，不能直接与水反应制H₂SiO₃</text>
+  <text x="60" y="744" font-size="11" fill="#D32F2F">⑥ 硅酸盐表示为氧化物形式（如Na₂SiO₃=Na₂O·SiO₂）</text>
+
+  <!-- ==================== EXAM TIPS ==================== -->
+  <rect x="470" y="610" width="475" height="135" fill="white" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="710" y="632" text-anchor="middle" font-size="14" font-weight="bold" fill="#D32F2F">🔴 高频考点</text>
+  <text x="480" y="654" font-size="11" fill="#333">① SiO₂是酸性氧化物但与一般酸性氧化物不同：不溶于水，与HF反应</text>
+  <text x="480" y="672" font-size="11" fill="#333">② 玻璃主要成分：Na₂SiO₃、CaSiO₃、SiO₂（不是纯净物）</text>
+  <text x="480" y="690" font-size="11" fill="#333">③ 硅酸制备：Na₂SiO₃+HCl→NaCl+H₂SiO₃↓(胶体)；不能用CO₂+H₂O？可以</text>
+  <text x="480" y="708" font-size="11" fill="#333">④ 水玻璃(Na₂SiO₃溶液)：作黏合剂、防火剂、防腐剂</text>
+  <text x="480" y="726" font-size="11" fill="#333">⑤ 硅单质：半导体材料(芯片)；SiO₂：光导纤维(光缆)；硅太阳能电池</text>
+  <text x="480" y="744" font-size="11" fill="#D32F2F">⑥ C与Si比较：CO₂为分子晶体，SiO₂为原子晶体（熔沸点差别巨大）</text>
+
+</svg>

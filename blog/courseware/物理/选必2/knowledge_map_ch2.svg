@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500">
+  <rect width="680" height="500" fill="#E1F5EE" rx="12"/>
+  <text x="340" y="35" text-anchor="middle" font-size="20" font-weight="700" fill="#00796b">第2章 电磁感应 ⭐⭐⭐⭐⭐</text>
+
+  <!-- 楞次定律 -->
+  <rect x="30" y="55" width="300" height="160" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="55" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="180" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">楞次定律（感应电流方向）</text>
+  <text x="45" y="105" font-size="12" font-weight="600" fill="#72243E">口诀：来拒去留 · 增反减同</text>
+  <text x="45" y="130" font-size="11" fill="#555">感应电流的磁场总阻碍原磁通量变化</text>
+  <text x="45" y="155" font-size="11" fill="#555">"阻碍"不是"阻止"——若磁通不变则无感应</text>
+  <text x="45" y="180" font-size="11" fill="#333">右手定则：用于导线切割磁感线（特例）</text>
+  <text x="45" y="200" font-size="11" fill="#72243E">⚠ 磁通量最大↛感应电流最大（看ΔΦ/Δt）</text>
+
+  <!-- 法拉第定律 -->
+  <rect x="350" y="55" width="300" height="160" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="350" y="55" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="500" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">法拉第电磁感应定律</text>
+  <text x="365" y="110" font-size="13" font-weight="600" fill="#72243E">E = n·ΔΦ/Δt</text>
+  <text x="365" y="135" font-size="11" fill="#555">n：线圈匝数 · ΔΦ：磁通量变化量</text>
+  <text x="365" y="160" font-size="11" fill="#333">动生电动势：E = BLv（B⊥v⊥L）</text>
+  <text x="365" y="185" font-size="11" fill="#333">感生电动势：变化的磁场产生</text>
+  <text x="365" y="210" font-size="11" fill="#72243E">⚠ E是平均值，瞬时值取极限</text>
+
+  <!-- 自感与互感 -->
+  <rect x="30" y="235" width="300" height="100" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="235" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="180" y="254" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">自感与互感</text>
+  <text x="45" y="285" font-size="11" fill="#555">自感 E = L·ΔI/Δt（L：自感系数）</text>
+  <text x="45" y="305" font-size="11" fill="#555">通断电现象：灯泡"延迟亮/延迟灭"</text>
+  <text x="45" y="325" font-size="11" fill="#72243E">⚠ 自感线圈在直流中相当于导线</text>
+
+  <!-- 涡流 -->
+  <rect x="350" y="235" width="300" height="100" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="350" y="235" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="500" y="254" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">涡流与电磁阻尼</text>
+  <text x="365" y="285" font-size="11" fill="#555">块状金属在变化磁场中产生涡旋电流</text>
+  <text x="365" y="305" font-size="11" fill="#555">应用：电磁炉 / 金属探测器</text>
+  <text x="365" y="325" font-size="11" fill="#555">电磁阻尼：涡流阻碍相对运动</text>
+
+  <!-- 综合大题套路 -->
+  <rect x="30" y="355" width="620" height="125" fill="#FBEAF0" stroke="#72243E" stroke-width="1.5" rx="8"/>
+  <text x="340" y="378" text-anchor="middle" font-size="14" font-weight="700" fill="#72243E">🔴 电磁感应综合大题标准套路</text>
+  <text x="55" y="405" font-size="11" fill="#555">① 分析磁通量变化 → 判定感应电流方向（楞次/右手） → ② 用法拉第定律求E → ③ I = E/(R+r)</text>
+  <text x="55" y="425" font-size="11" fill="#555">④ 安培力 F=BIL → ⑤ 动力学分析（牛顿第二定律/能量守恒） → ⑥ 焦耳热 Q=I²Rt</text>
+  <text x="55" y="455" font-size="12" font-weight="600" fill="#72243E">关键：能量守恒 → 外力做功 = 焦耳热 + 动能增量（导体棒问题最常见）</text>
+</svg>

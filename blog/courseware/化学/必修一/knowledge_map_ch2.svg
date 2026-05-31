@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680" width="100%" role="img">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .t { font-family: var(--font-sans, sans-serif); font-size: 14px; fill: var(--color-text-primary, #18191C); }
+      .ts { font-family: var(--font-sans, sans-serif); font-size: 12px; fill: var(--color-text-secondary, #5F5E5A); }
+      .th { font-family: var(--font-sans, sans-serif); font-size: 13px; font-weight: 500; fill: var(--color-text-primary, #18191C); }
+      .tm { font-family: var(--font-sans, sans-serif); font-size: 12px; fill: var(--color-text-primary, #18191C); }
+      .tc { font-family: var(--font-sans, sans-serif); font-size: 11px; fill: var(--color-text-secondary, #5F5E5A); }
+      .node:hover rect { stroke-width: 1.5px; }
+    </style>
+  </defs>
+
+  <title>第二章 海水中的重要元素——钠和氯 - 详细知识导图</title>
+  <desc>涵盖钠及其化合物、氯及其化合物、物质的量三大节</desc>
+
+  <rect x="230" y="10" width="220" height="44" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+  <text class="th" x="340" y="32" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">第二章 海水中的重要元素——钠和氯</text>
+
+  <!-- 三节标题 -->
+  <rect x="20" y="72" width="195" height="34" rx="7" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text class="th" x="117" y="89" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">第一节 钠及其化合物</text>
+
+  <rect x="242" y="72" width="195" height="34" rx="7" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text class="th" x="340" y="89" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">第二节 氯及其化合物</text>
+
+  <rect x="464" y="72" width="195" height="34" rx="7" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text class="th" x="561" y="89" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">第三节 物质的量</text>
+
+  <!-- ==================== 第一节：钠 ==================== -->
+  <!-- 钠单质 -->
+  <rect x="20" y="118" width="195" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="117" y="133" text-anchor="middle" dominant-baseline="central">钠 Na（银白色，质软）</text>
+  <text class="tc" x="117" y="148" text-anchor="middle" dominant-baseline="central">4Na + O₂ = 2Na₂O（常温，变暗）</text>
+  <text class="tc" x="117" y="160" text-anchor="middle" dominant-baseline="central">2Na + O₂ --点燃→ Na₂O₂（黄色火焰）</text>
+  <text class="tc" x="117" y="172" text-anchor="middle" dominant-baseline="central">2Na + 2H₂O = 2NaOH + H₂↑ 浮熔游响红</text>
+
+  <!-- Na₂O₂ -->
+  <rect x="20" y="184" width="195" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="117" y="199" text-anchor="middle" dominant-baseline="central">过氧化钠 Na₂O₂（淡黄色）</text>
+  <text class="tc" x="117" y="214" text-anchor="middle" dominant-baseline="central">2Na₂O₂ + 2H₂O = 4NaOH + O₂↑</text>
+  <text class="tc" x="117" y="226" text-anchor="middle" dominant-baseline="central">2Na₂O₂ + 2CO₂ = 2Na₂CO₃ + O₂</text>
+  <text class="tc" x="117" y="238" text-anchor="middle" dominant-baseline="central">用途：供氧剂 · 漂白剂</text>
+
+  <!-- Na₂CO₃ vs NaHCO₃ -->
+  <rect x="20" y="252" width="195" height="100" rx="5" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text class="tm" x="117" y="267" text-anchor="middle" dominant-baseline="central">Na₂CO₃ vs NaHCO₃</text>
+  <line x1="117" y1="275" x2="117" y2="348" stroke="#9FE1CB" stroke-width="0.5"/>
+  <text class="tm" x="60" y="290" text-anchor="middle" dominant-baseline="central">Na₂CO₃（纯碱/苏打）</text>
+  <text class="tc" x="60" y="304" text-anchor="middle" dominant-baseline="central">白色粉末，稳定</text>
+  <text class="tc" x="60" y="316" text-anchor="middle" dominant-baseline="central">溶液碱性强，不分解</text>
+  <text class="tc" x="60" y="328" text-anchor="middle" dominant-baseline="central">2NaHCO₃ --加热→ Na₂CO₃+H₂O+CO₂</text>
+  <text class="tm" x="180" y="290" text-anchor="middle" dominant-baseline="central">NaHCO₃（小苏打）</text>
+  <text class="tc" x="180" y="304" text-anchor="middle" dominant-baseline="central">白色细小晶体，受热分解</text>
+  <text class="tc" x="180" y="316" text-anchor="middle" dominant-baseline="central">溶液碱性弱</text>
+  <text class="tc" x="180" y="328" text-anchor="middle" dominant-baseline="central">与酸反应更剧烈</text>
+  <text class="tc" x="117" y="345" text-anchor="middle" dominant-baseline="central">鉴别：加热 · 加CaCl₂ · 加盐酸速率</text>
+
+  <!-- 焰色试验 -->
+  <rect x="20" y="364" width="195" height="44" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="117" y="378" text-anchor="middle" dominant-baseline="central">焰色试验（物理变化！）</text>
+  <text class="tc" x="117" y="392" text-anchor="middle" dominant-baseline="central">Na → 黄色（隔着钴玻璃）</text>
+  <text class="tc" x="117" y="404" text-anchor="middle" dominant-baseline="central">K → 紫色（需透过蓝色钴玻璃）</text>
+
+  <!-- ==================== 第二节：氯 ==================== -->
+  <rect x="242" y="118" width="195" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="340" y="133" text-anchor="middle" dominant-baseline="central">氯气 Cl₂（黄绿色气体，有毒）</text>
+  <text class="tc" x="340" y="148" text-anchor="middle" dominant-baseline="central">制法：MnO₂ + 4HCl(浓) --加热→</text>
+  <text class="tc" x="340" y="160" text-anchor="middle" dominant-baseline="central">MnCl₂ + Cl₂↑ + 2H₂O</text>
+  <text class="tc" x="340" y="172" text-anchor="middle" dominant-baseline="central">收集：向上排空气/排饱和食盐水</text>
+
+  <!-- 氯气与金属 -->
+  <rect x="242" y="186" width="195" height="44" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="340" y="200" text-anchor="middle" dominant-baseline="central">Cl₂ 与金属反应</text>
+  <text class="tc" x="340" y="214" text-anchor="middle" dominant-baseline="central">2Na + Cl₂ --点燃→ 2NaCl</text>
+  <text class="tc" x="340" y="226" text-anchor="middle" dominant-baseline="central">2Fe + 3Cl₂ --点燃→ 2FeCl₃（棕褐烟）</text>
+
+  <!-- 氯气与非金属 -->
+  <rect x="242" y="242" width="195" height="30" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="340" y="257" text-anchor="middle" dominant-baseline="central">H₂ + Cl₂ --点燃→ 2HCl（苍白色火焰）</text>
+
+  <!-- 氯气与水 -->
+  <rect x="242" y="284" width="195" height="56" rx="5" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text class="tm" x="340" y="298" text-anchor="middle" dominant-baseline="central">氯水成分（Cl₂ + H₂O）</text>
+  <text class="tc" x="340" y="312" text-anchor="middle" dominant-baseline="central">Cl₂ + H₂O ⇌ HCl + HClO</text>
+  <text class="tc" x="340" y="324" text-anchor="middle" dominant-baseline="central">HClO 具有漂白性（氧化漂白）</text>
+  <text class="tc" x="340" y="336" text-anchor="middle" dominant-baseline="central">氯水：H⁺, Cl⁻, ClO⁻, HClO, Cl₂</text>
+
+  <!-- 漂白粉 -->
+  <rect x="242" y="352" width="195" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="340" y="366" text-anchor="middle" dominant-baseline="central">漂白粉（漂白精）</text>
+  <text class="tc" x="340" y="380" text-anchor="middle" dominant-baseline="central">2Cl₂+2Ca(OH)₂=Ca(ClO)₂+CaCl₂+2H₂O</text>
+  <text class="tc" x="340" y="392" text-anchor="middle" dominant-baseline="central">有效成分：Ca(ClO)₂</text>
+  <text class="tc" x="340" y="404" text-anchor="middle" dominant-baseline="central">Ca(ClO)₂+CO₂+H₂O=CaCO₃+2HClO</text>
+
+  <!-- HCl -->
+  <rect x="242" y="420" width="195" height="30" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="340" y="435" text-anchor="middle" dominant-baseline="central">HCl → 盐酸：挥发性强酸</text>
+
+  <!-- Cl⁻检验 -->
+  <rect x="242" y="462" width="195" height="30" rx="5" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text class="tm" x="340" y="477" text-anchor="middle" dominant-baseline="central">Cl⁻检验：AgNO₃ + HNO₃ → AgCl↓白</text>
+
+  <!-- ==================== 第三节：物质的量 ==================== -->
+  <rect x="464" y="118" width="195" height="100" rx="5" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text class="tm" x="561" y="133" text-anchor="middle" dominant-baseline="central">物质的量 n（mol）</text>
+  <text class="tc" x="561" y="148" text-anchor="middle" dominant-baseline="central">n（物质的量，mol）</text>
+  <text class="tc" x="561" y="163" text-anchor="middle" dominant-baseline="central">= m（质量）/ M（摩尔质量）</text>
+  <text class="tc" x="561" y="178" text-anchor="middle" dominant-baseline="central">= N（粒子数）/ Nₐ（阿伏伽德罗常数）</text>
+  <text class="tc" x="561" y="193" text-anchor="middle" dominant-baseline="central">= V（气体体积）/ Vₘ（摩尔体积）</text>
+  <text class="tc" x="561" y="208" text-anchor="middle" dominant-baseline="central">= c（浓度）× V（溶液体积）</text>
+  <text class="tc" x="561" y="223" text-anchor="middle" dominant-baseline="central">** Nₐ ≈ 6.02×10²³ mol⁻¹</text>
+
+  <!-- 核心公式 -->
+  <rect x="464" y="230" width="195" height="100" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="561" y="245" text-anchor="middle" dominant-baseline="central">核心换算关系</text>
+  <text class="tc" x="561" y="262" text-anchor="middle" dominant-baseline="central">m (g) --÷M--> n (mol) --×Nₐ--> N</text>
+  <text class="tc" x="561" y="277" text-anchor="middle" dominant-baseline="central">V气体(L,标况) --÷22.4--> n (mol)</text>
+  <text class="tc" x="561" y="292" text-anchor="middle" dominant-baseline="central">c (mol/L) × V溶液(L) = n (mol)</text>
+  <text class="tc" x="561" y="307" text-anchor="middle" dominant-baseline="central">阿伏伽德罗定律：同T同P，V₁/V₂=n₁/n₂</text>
+  <text class="tc" x="561" y="322" text-anchor="middle" dominant-baseline="central">标况：0°C / 101kPa，Vₘ=22.4 L/mol</text>
+
+  <!-- 溶液配制 -->
+  <rect x="464" y="346" width="195" height="56" rx="5" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text class="tm" x="561" y="360" text-anchor="middle" dominant-baseline="central">一定物质的量浓度溶液配制</text>
+  <text class="tc" x="561" y="375" text-anchor="middle" dominant-baseline="central">仪器：容量瓶 · 天平 · 烧杯 · 玻璃棒 · 胶头滴管</text>
+  <text class="tc" x="561" y="390" text-anchor="middle" dominant-baseline="central">步骤：计算→称量→溶解→冷却→转移</text>
+  <text class="tc" x="561" y="402" text-anchor="middle" dominant-baseline="central">→洗涤→定容→摇匀→装瓶贴签</text>
+
+  <!-- 误差分析 -->
+  <rect x="464" y="416" width="195" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="561" y="430" text-anchor="middle" dominant-baseline="central">常见误差（c = n / V）</text>
+  <text class="tc" x="561" y="445" text-anchor="middle" dominant-baseline="central">俯视定容 → V偏小 → c偏高</text>
+  <text class="tc" x="561" y="457" text-anchor="middle" dominant-baseline="central">仰视定容 → V偏大 → c偏低</text>
+  <text class="tc" x="561" y="469" text-anchor="middle" dominant-baseline="central">未冷却转移 → V偏小 → c偏高</text>
+
+  <!-- 稀释 -->
+  <rect x="464" y="486" width="195" height="30" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="561" y="501" text-anchor="middle" dominant-baseline="central">稀释定律：c₁V₁ = c₂V₂</text>
+
+  <!-- 连接线 -->
+  <line x1="117" y1="106" x2="117" y2="118" stroke="#9FE1CB" stroke-width="0.5"/>
+  <line x1="340" y1="106" x2="340" y2="118" stroke="#9FE1CB" stroke-width="0.5"/>
+  <line x1="561" y1="106" x2="561" y2="118" stroke="#9FE1CB" stroke-width="0.5"/>
+
+  <!-- 底部重点提示 -->
+  <rect x="120" y="530" width="440" height="48" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text class="th" x="340" y="548" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">⚗ 第二章学习方法核心</text>
+  <text class="tc" x="340" y="565" text-anchor="middle" dominant-baseline="central">元素化合物「结构→性质→制法→用途」学习范式 | 物质的量贯穿全册计算</text>
+
+  <!-- 综合对比 -->
+  <rect x="80" y="596" width="520" height="36" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tc" x="340" y="614" text-anchor="middle" dominant-baseline="central">Na（活泼金属，还原性强）→ 与水剧烈反应 | Cl₂（活泼非金属，氧化性强）→ 与金属/非金属/水/碱反应</text>
+
+  <text class="ts" x="340" y="662" text-anchor="middle" dominant-baseline="central">★ 物质的量是高中化学计算基石，四组换算关系必须熟练掌握</text>
+</svg>

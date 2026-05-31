@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFEBEE"/>
+      <stop offset="100%" stop-color="#FCE4EC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="680" height="480" rx="12" fill="url(#bg)"/>
+
+  <rect x="20" y="15" width="640" height="42" rx="8" fill="#C62828"/>
+  <text x="340" y="43" text-anchor="middle" fill="#fff" font-size="19" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">第12章 电能 能量守恒定律 ⭐必修3最重要！</text>
+
+  <!-- 电功电功率 -->
+  <rect x="25" y="70" width="310" height="115" rx="6" fill="#fff" stroke="#C62828" stroke-width="1.5"/>
+  <text x="180" y="95" text-anchor="middle" fill="#C62828" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">电功 &amp; 电功率</text>
+  <line x1="40" y1="103" x2="320" y2="103" stroke="#FFCDD2" stroke-width="1"/>
+  <text x="40" y="122" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">W = UIt, P = UI</text>
+  <text x="40" y="142" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">焦耳定律 Q = I²Rt</text>
+  <text x="40" y="162" fill="#E53935" font-size="10" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">⚠ 纯电阻：W=Q, P=UI=I²R=U²/R</text>
+  <text x="40" y="180" fill="#E53935" font-size="10" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">⚠ 非纯电阻：W&gt;Q, P_出=UI−I²R</text>
+
+  <!-- 闭合电路 -->
+  <rect x="350" y="70" width="310" height="115" rx="6" fill="#fff" stroke="#C62828" stroke-width="2"/>
+  <text x="505" y="95" text-anchor="middle" fill="#C62828" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">闭合电路欧姆定律 ⭐⭐⭐⭐⭐</text>
+  <line x1="365" y1="103" x2="645" y2="103" stroke="#FFCDD2" stroke-width="1"/>
+  <text x="365" y="125" fill="#333" font-size="12" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">I = E / (R + r)</text>
+  <text x="365" y="146" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">U_路端 = E − Ir</text>
+  <text x="365" y="166" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">断路(R→∞): U=E ; 短路(R→0): U=0</text>
+  <text x="365" y="182" fill="#E53935" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">U-I 图像：截距=E · 斜率=−r</text>
+
+  <!-- 电源功率 -->
+  <rect x="25" y="200" width="310" height="110" rx="6" fill="#FFF8E1" stroke="#FF8F00" stroke-width="1.2"/>
+  <text x="180" y="225" text-anchor="middle" fill="#E65100" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">电源功率与效率</text>
+  <line x1="40" y1="233" x2="320" y2="233" stroke="#FFECB3" stroke-width="1"/>
+  <text x="40" y="253" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">P_总 = EI（电源总功率）</text>
+  <text x="40" y="272" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">P_出 = UI = I²R（输出功率）</text>
+  <text x="40" y="291" fill="#E53935" font-size="11" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">当 R=r 时：P_出最大 = E²/(4r)</text>
+  <text x="40" y="307" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">η = P_出/P_总 = R/(R+r)</text>
+
+  <!-- 实验 -->
+  <rect x="350" y="200" width="310" height="110" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.2"/>
+  <text x="505" y="225" text-anchor="middle" fill="#2E7D32" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">实验：测电池 E 和 r</text>
+  <line x1="365" y1="233" x2="645" y2="233" stroke="#C8E6C9" stroke-width="1"/>
+  <text x="365" y="253" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">伏安法：U = E − Ir</text>
+  <text x="365" y="272" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">U-I图：纵截距=E，斜率绝对值=r</text>
+  <text x="365" y="292" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">安阻法：1/I = R/E + r/E</text>
+  <text x="365" y="307" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">伏阻法：1/U = 1/E + r/(ER)</text>
+
+  <!-- 电动机问题 -->
+  <rect x="25" y="325" width="635" height="65" rx="6" fill="#FFF8E1" stroke="#FF8F00" stroke-width="1.5"/>
+  <text x="340" y="350" text-anchor="middle" fill="#E65100" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">🔥 电动机问题（非纯电阻必考题型）—— 三步求解法</text>
+  <text x="40" y="373" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">① P_入=UI  ② P_热=I²R  ③ P_出=P_入−P_热 → η=P_出/P_入</text>
+  <text x="40" y="390" fill="#E53935" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">⚠ 绝对不能用 P=U²/R 或 P=I²R 直接算电动机总功率！电动机不是纯电阻！</text>
+
+  <!-- 能源 -->
+  <rect x="25" y="400" width="635" height="35" rx="6" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+  <text x="340" y="423" text-anchor="middle" fill="#3949AB" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">能量守恒定律 ｜ 能量耗散（品质降低，非消失）｜ 能源与可持续发展</text>
+
+  <text x="340" y="465" text-anchor="middle" fill="#999" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">物理必修第三册 · 第12章 电能 能量守恒定律</text>
+</svg>

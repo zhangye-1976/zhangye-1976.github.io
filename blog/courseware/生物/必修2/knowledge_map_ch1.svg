@@ -1,0 +1,68 @@
+<svg viewBox="0 0 680 680" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第1章 遗传因子的发现</title>
+  <desc>分离定律与自由组合定律</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="160" y="8" width="360" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">第1章 遗传因子的发现 ★★★★★</text>
+
+  <line x1="340" y1="48" x2="340" y2="68" stroke="#00796b" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <!-- Section 1 -->
+  <rect x="40" y="72" width="290" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="185" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第1节 分离定律</text>
+
+  <rect x="350" y="72" width="290" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="495" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第2节 自由组合定律</text>
+
+  <!-- Section 1 detail: Monohybrid cross -->
+  <rect x="40" y="136" width="290" height="180" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="185" y="158" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">一对相对性状杂交实验</text>
+  <text x="185" y="182" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">P: DD(高) × dd(矮)</text>
+  <text x="185" y="202" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">F₁: 全部高茎(Dd) ⊗自交</text>
+  <text x="185" y="224" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">F₂: 高:矮=3:1</text>
+  <text x="185" y="244" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">基因型比 DD:Dd:dd = 1:2:1</text>
+  <text x="185" y="268" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 实质：减I后期等位基因随</text>
+  <text x="185" y="288" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">同源染色体分开而分离</text>
+  <text x="185" y="308" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 验证：测交（与隐性纯合子）</text>
+
+  <!-- Section 2 detail: Dihybrid cross -->
+  <rect x="350" y="136" width="290" height="180" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="495" y="158" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">两对相对性状杂交实验</text>
+  <text x="495" y="182" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">P: YYRR(黄圆) × yyrr(绿皱)</text>
+  <text x="495" y="202" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">F₁: 全部黄圆(YyRr)</text>
+  <text x="495" y="224" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">F₂: 黄圆:黄皱:绿圆:绿皱=9:3:3:1</text>
+  <text x="495" y="244" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">F₁配子YR:Yr:yR:yr = 1:1:1:1</text>
+  <text x="495" y="268" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 实质：非同源染色体上</text>
+  <text x="495" y="288" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">非等位基因自由组合</text>
+  <text x="495" y="308" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 前提：两对基因位于</text>
+  <text x="495" y="326" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">两对同源染色体上</text>
+
+  <!-- Section 3: Problem solving -->
+  <rect x="40" y="340" width="600" height="90" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="362" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">解题三步法</text>
+  <text x="340" y="384" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">Step1: 每对基因独立分析（分离定律）| Step2: 按题目要求组合（乘法/加法）</text>
+  <text x="340" y="404" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">Step3: 注意"且"→乘，"或"→加 | 配子种类=2ⁿ (n=杂合基因对数)</text>
+  <text x="340" y="422" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ AaBbCc自交 → 配子8种 | 后代基因型27种 | 表现型8种</text>
+
+  <!-- Section 4: 9:3:3:1 variations -->
+  <rect x="40" y="458" width="600" height="90" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="480" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">9:3:3:1 变式（基因互作）——高考大题常客！</text>
+  <text x="340" y="502" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">9:7(双显→一种, 其余→另一种) | 9:3:4(隐性上位) | 12:3:1(显性上位)</text>
+  <text x="340" y="522" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">15:1(只要有显性就同型) | 13:3(抑制基因) | 1:4:6:4:1(数量性状/不完全显性)</text>
+  <text x="340" y="542" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 关键思路：所有变式都是9:3:3:1重新合并分类，先合并再逆向求基因型！</text>
+
+  <!-- Key concepts -->
+  <rect x="40" y="576" width="290" height="48" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="185" y="598" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#04342C" font-family="system-ui, sans-serif">纯合子/杂合子/等位基因/性状分离</text>
+  <text x="185" y="618" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 杂合子自交n代纯合=1-(1/2)ⁿ</text>
+
+  <rect x="350" y="576" width="290" height="48" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="495" y="598" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#4B1528" font-family="system-ui, sans-serif">高频：概率计算/基因型推断/9:3:3:1变式</text>
+  <text x="495" y="618" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">测交验证/杂交实验设计</text>
+</svg>

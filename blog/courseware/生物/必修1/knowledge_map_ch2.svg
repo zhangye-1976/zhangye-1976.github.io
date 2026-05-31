@@ -1,0 +1,81 @@
+<svg viewBox="0 0 680 660" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第2章 细胞的分子组成</title>
+  <desc>水、无机盐、糖类、脂质、蛋白质、核酸</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="180" y="8" width="320" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">第2章 细胞的分子组成</text>
+
+  <line x1="340" y1="48" x2="340" y2="68" stroke="#00796b" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="72" width="110" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="95" y="99" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">水+无机盐</text>
+
+  <rect x="170" y="72" width="130" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="235" y="99" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">糖类</text>
+
+  <rect x="320" y="72" width="120" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="380" y="99" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">脂质</text>
+
+  <rect x="460" y="72" width="100" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="510" y="99" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">蛋白质 ★</text>
+
+  <rect x="570" y="72" width="70" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="605" y="99" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">核酸</text>
+
+  <rect x="40" y="148" width="300" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="190" y="168" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">水：自由水（溶剂/运输）vs 结合水（结构成分）</text>
+  <text x="190" y="190" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">自由水/结合水比值↑ → 代谢旺盛 | 比值↓ → 抗逆性强</text>
+  <text x="190" y="212" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 萌发种子自由水↑，越冬植物结合水↑</text>
+
+  <rect x="360" y="148" width="280" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="500" y="168" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">无机盐：离子形式存在（含量少但必需）</text>
+  <text x="500" y="190" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">Mg²⁺→叶绿素 | Fe²⁺→血红蛋白 | Ca²⁺→骨骼+抽搐</text>
+  <text x="500" y="212" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ I⁻→甲状腺激素 | 缺Fe→缺铁性贫血</text>
+
+  <rect x="40" y="256" width="190" height="164" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="135" y="278" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">糖类分类</text>
+  <text x="135" y="302" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">单糖：葡萄糖、果糖、半乳糖</text>
+  <text x="135" y="320" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">二糖：蔗糖（葡+果）</text>
+  <text x="135" y="338" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">麦芽糖（葡+葡）、乳糖</text>
+  <text x="135" y="358" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">多糖：淀粉、纤维素（植物）</text>
+  <text x="135" y="376" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">糖原（动物：肝糖原+肌糖原）</text>
+  <text x="135" y="398" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 还原糖：斐林试剂→砖红色</text>
+  <text x="135" y="416" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 淀粉遇碘变蓝</text>
+
+  <rect x="250" y="256" width="180" height="164" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="278" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">脂质分类</text>
+  <text x="340" y="302" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">脂肪：储能（C/H比例高，耗氧多）</text>
+  <text x="340" y="322" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">磷脂：细胞膜基本骨架</text>
+  <text x="340" y="342" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">固醇：胆固醇→动物细胞膜</text>
+  <text x="340" y="360" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">性激素→生殖器官发育</text>
+  <text x="340" y="378" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">维生素D→促进Ca/P吸收</text>
+  <text x="340" y="398" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 脂肪鉴定：苏丹III→橘黄</text>
+  <text x="340" y="416" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 磷脂+固醇≠储能物质</text>
+
+  <rect x="450" y="256" width="190" height="164" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="545" y="278" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">蛋白质</text>
+  <text x="545" y="302" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">元素：C、H、O、N（有的含S）</text>
+  <text x="545" y="322" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">基本单位：20种氨基酸</text>
+  <text x="545" y="342" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">8种必需氨基酸（人体不能合成）</text>
+  <text x="545" y="362" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">结构层次：aa→多肽→蛋白质</text>
+  <text x="545" y="382" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 肽键数=氨基酸数-肽链数</text>
+  <text x="545" y="402" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 蛋白质多样性原因：aa种类/</text>
+  <text x="545" y="418" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">数目/排列顺序+空间结构千差万别</text>
+
+  <rect x="40" y="448" width="600" height="100" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="470" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">核酸：DNA vs RNA 对比</text>
+  <text x="340" y="494" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">DNA：脱氧核糖 + 磷酸 + A/T/G/C（双链，主要在细胞核）</text>
+  <text x="340" y="514" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">RNA：核糖 + 磷酸 + A/U/G/C（单链，主要在细胞质）</text>
+  <text x="340" y="536" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ DNA含T不含U，RNA含U不含T | 甲基绿+吡罗红染色：DNA绿、RNA红</text>
+
+  <rect x="100" y="568" width="480" height="72" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="340" y="590" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">本章高频考点</text>
+  <text x="340" y="610" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">1. 肽键数计算 | 2. 有机物的元素组成对比 | 3. 四大有机物鉴定实验 | 4. DNA vs RNA</text>
+  <text x="340" y="630" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">5. 自由水/结合水 | 6. 还原糖/脂肪/蛋白质的颜色反应</text>
+</svg>

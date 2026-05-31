@@ -1,0 +1,70 @@
+<svg viewBox="0 0 680 680" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第1章 走近细胞</title>
+  <desc>细胞学说、生命系统层次、原核vs真核、病毒、显微镜</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="180" y="8" width="320" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">第1章 走近细胞</text>
+
+  <line x1="340" y1="48" x2="340" y2="68" stroke="#00796b" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="72" width="140" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="110" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">细胞学说</text>
+
+  <rect x="220" y="72" width="140" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="290" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">生命系统层次</text>
+
+  <rect x="400" y="72" width="140" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="470" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">原核vs真核 ★</text>
+
+  <rect x="500" y="72" width="140" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="570" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">病毒</text>
+
+  <rect x="40" y="148" width="600" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="168" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">施莱登+施旺：一切动植物都由细胞构成，细胞是生命活动的基本单位</text>
+  <text x="340" y="188" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">魏尔肖补充：细胞通过分裂产生新细胞 | 揭示了细胞的统一性和生物体结构的统一性</text>
+
+  <rect x="40" y="220" width="600" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="240" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">细胞→组织→器官→系统→个体→种群→群落→生态系统→生物圈</text>
+  <text x="340" y="260" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 细胞是最基本的生命系统 | 植物没有"系统"层次 | 单细胞生物没有组织/器官/系统</text>
+
+  <rect x="40" y="300" width="290" height="200" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="185" y="322" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">原核细胞</text>
+  <text x="185" y="346" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">无核膜包被的细胞核（拟核）</text>
+  <text x="185" y="366" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">只有核糖体一种细胞器</text>
+  <text x="185" y="386" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">细胞壁成分：肽聚糖（细菌）</text>
+  <text x="185" y="410" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">代表：细菌、蓝藻（蓝细菌）、</text>
+  <text x="185" y="428" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">放线菌、支原体（最小细胞）</text>
+  <text x="185" y="452" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 蓝藻有叶绿素和藻蓝素</text>
+  <text x="185" y="472" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">无叶绿体但能光合作用</text>
+  <text x="185" y="492" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 支原体无细胞壁</text>
+
+  <rect x="350" y="300" width="290" height="200" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="495" y="322" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">真核细胞</text>
+  <text x="495" y="346" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">有核膜包被的细胞核</text>
+  <text x="495" y="366" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">有多种具膜细胞器</text>
+  <text x="495" y="386" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">细胞壁成分：纤维素+果胶（植物）</text>
+  <text x="495" y="410" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">代表：动物、植物、真菌</text>
+  <text x="495" y="428" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">（酵母菌、霉菌、蘑菇）</text>
+  <text x="495" y="452" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 真菌是异养真核生物</text>
+  <text x="495" y="472" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">不是植物！</text>
+  <text x="495" y="492" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 原生动物（草履虫）也是真核</text>
+
+  <text x="340" y="520" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">共性：都有细胞膜、细胞质、核糖体、遗传物质DNA</text>
+
+  <rect x="40" y="548" width="290" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="185" y="568" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">病毒：非细胞结构</text>
+  <text x="185" y="588" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 只有一种核酸（DNA或RNA）| 营寄生生活</text>
+
+  <rect x="350" y="548" width="290" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="495" y="568" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">显微镜：物像放大=目镜×物镜</text>
+  <text x="495" y="588" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 放大的是长度/宽度，不是面积和体积！</text>
+
+  <rect x="120" y="620" width="440" height="40" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="340" y="644" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">高频：原核vs真核对比 | 病毒归属判断 | 显微镜放大倍数</text>
+</svg>

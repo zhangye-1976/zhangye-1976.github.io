@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 760" font-family="SimSun, 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="rc" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#D32F2F"/></marker>
+    <marker id="dc" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#333"/></marker>
+  </defs>
+
+  <rect width="960" height="760" fill="#FAFAFA" rx="8"/>
+  <rect x="0" y="0" width="960" height="56" fill="#37474F" rx="8"/>
+  <rect x="0" y="28" width="960" height="28" fill="#37474F"/>
+  <text x="480" y="37" text-anchor="middle" fill="white" font-size="21" font-weight="bold">C 碳元素及其化合物转化图</text>
+
+  <!-- Legend -->
+  <rect x="735" y="70" width="210" height="95" fill="white" stroke="#CCC" rx="4"/>
+  <text x="745" y="90" font-size="12" font-weight="bold" fill="#333">图例</text>
+  <rect x="745" y="100" width="18" height="18" rx="3" fill="#E3F2FD" stroke="#1565C0"/>
+  <text x="770" y="114" font-size="11" fill="#333">普通节点</text>
+  <rect x="745" y="123" width="18" height="18" rx="3" fill="#FFEBEE" stroke="#D32F2F"/>
+  <text x="770" y="137" font-size="11" fill="#D32F2F">🔴 高频考点</text>
+  <rect x="745" y="145" width="18" height="18" rx="3" fill="#FFF9C4" stroke="#F9A825"/>
+  <text x="770" y="159" font-size="11" fill="#F9A825">单质</text>
+
+  <!-- ==================== NODES ==================== -->
+  <!-- C (top center) -->
+  <rect x="400" y="80" width="80" height="42" rx="8" fill="#FFF9C4" stroke="#F9A825" stroke-width="2.5"/>
+  <text x="440" y="98" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">C</text>
+  <text x="440" y="114" text-anchor="middle" font-size="9" fill="#666">碳</text>
+
+  <!-- CO -->
+  <rect x="160" y="180" width="80" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="200" y="198" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">CO</text>
+  <text x="200" y="214" text-anchor="middle" font-size="9" fill="#666">一氧化碳</text>
+
+  <!-- CO2 🔴 -->
+  <rect x="380" y="240" width="110" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="435" y="259" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">CO₂</text>
+  <text x="435" y="276" text-anchor="middle" font-size="10" fill="#C62828">二氧化碳 🔴</text>
+
+  <!-- H2CO3 -->
+  <rect x="380" y="400" width="110" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="435" y="418" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">H₂CO₃</text>
+  <text x="435" y="434" text-anchor="middle" font-size="9" fill="#666">碳酸</text>
+
+  <!-- Na2CO3 🔴 -->
+  <rect x="80" y="420" width="110" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="135" y="439" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">Na₂CO₃</text>
+  <text x="135" y="456" text-anchor="middle" font-size="10" fill="#C62828">碳酸钠 🔴</text>
+
+  <!-- NaHCO3 🔴 -->
+  <rect x="80" y="560" width="110" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="135" y="579" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">NaHCO₃</text>
+  <text x="135" y="596" text-anchor="middle" font-size="10" fill="#C62828">碳酸氢钠 🔴</text>
+
+  <!-- CaCO3 -->
+  <rect x="600" y="400" width="110" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="655" y="418" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">CaCO₃</text>
+  <text x="655" y="434" text-anchor="middle" font-size="9" fill="#666">碳酸钙</text>
+
+  <!-- Ca(HCO3)2 -->
+  <rect x="600" y="560" width="130" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="665" y="578" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Ca(HCO₃)₂</text>
+  <text x="665" y="594" text-anchor="middle" font-size="9" fill="#666">碳酸氢钙</text>
+
+  <!-- BaCO3 -->
+  <rect x="400" y="560" width="110" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="455" y="578" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">BaCO₃</text>
+  <text x="455" y="594" text-anchor="middle" font-size="9" fill="#666">碳酸钡</text>
+
+  <!-- ==================== ARROWS ==================== -->
+  <!-- C → CO -->
+  <line x1="400" y1="100" x2="200" y2="195" stroke="#333" stroke-width="2" marker-end="url(#dc)"/>
+  <text x="260" y="140" font-size="10" fill="#333">+O₂(不足)</text>
+
+  <!-- C → CO2 -->
+  <line x1="440" y1="126" x2="440" y2="235" stroke="#333" stroke-width="2" marker-end="url(#dc)"/>
+  <text x="450" y="183" font-size="10" fill="#333">+O₂(充足，点燃)</text>
+
+  <!-- CO → CO2 -->
+  <line x1="240" y1="200" x2="375" y2="255" stroke="#333" stroke-width="2" marker-end="url(#dc)"/>
+  <text x="310" y="222" font-size="10" fill="#333">+O₂(点燃)</text>
+
+  <!-- CO2 → H2CO3 -->
+  <line x1="435" y1="288" x2="435" y2="395" stroke="#333" stroke-width="2" marker-end="url(#dc)"/>
+  <text x="445" y="345" font-size="10" fill="#333">+H₂O</text>
+
+  <!-- H2CO3 → CO2 -->
+  <line x1="425" y1="400" x2="420" y2="300" stroke="#666" stroke-width="1.5" marker-end="url(#dc)" stroke-dasharray="6,3"/>
+  <text x="415" y="355" font-size="10" fill="#666">△ 分解</text>
+
+  <!-- CO2 → Na2CO3 -->
+  <line x1="380" y1="270" x2="145" y2="415" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#rc)"/>
+  <text x="210" y="340" font-size="10" fill="#D32F2F" font-weight="bold">+NaOH(过量) 🔴</text>
+
+  <!-- CO2 → NaHCO3 -->
+  <line x1="380" y1="275" x2="150" y2="570" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#rc)"/>
+  <text x="250" y="430" font-size="10" fill="#D32F2F" font-weight="bold">+NaOH(少量) 🔴</text>
+
+  <!-- Na2CO3 ⇄ NaHCO3 🔴 -->
+  <line x1="160" y1="465" x2="140" y2="555" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#rc)"/>
+  <text x="175" y="515" font-size="10" fill="#D32F2F" font-weight="bold">+CO₂+H₂O ↓ 🔴</text>
+  <line x1="120" y1="560" x2="125" y2="468" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#rc)"/>
+  <text x="95" y="515" font-size="10" fill="#D32F2F" font-weight="bold">△/NaOH ↑ 🔴</text>
+
+  <!-- H2CO3 → CaCO3 -->
+  <line x1="495" y1="420" x2="595" y2="420" stroke="#333" stroke-width="2" marker-end="url(#dc)"/>
+  <text x="545" y="412" font-size="10" fill="#333">+Ca(OH)₂</text>
+
+  <!-- CaCO3 ⇄ Ca(HCO3)2 -->
+  <line x1="655" y1="446" x2="655" y2="555" stroke="#333" stroke-width="2" marker-end="url(#dc)"/>
+  <text x="665" y="505" font-size="10" fill="#333">+CO₂+H₂O</text>
+  <line x1="645" y1="560" x2="645" y2="450" stroke="#666" stroke-width="1.5" marker-end="url(#dc)" stroke-dasharray="6,3"/>
+  <text x="630" y="505" font-size="10" fill="#666">△</text>
+
+  <!-- CO2 → BaCO3 -->
+  <line x1="480" y1="270" x2="470" y2="555" stroke="#666" stroke-width="1.5" marker-end="url(#dc)"/>
+  <text x="493" y="415" font-size="10" fill="#666">+Ba(OH)₂</text>
+
+  <!-- ==================== EXAM TIPS ==================== -->
+  <rect x="15" y="630" width="930" height="115" fill="white" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="35" y="655" font-size="14" font-weight="bold" fill="#D32F2F">🔴 近十年高考高频考点</text>
+  <text x="35" y="678" font-size="11" fill="#333">① CO₂检验：通入澄清石灰水→变浑浊（CaCO₃↓）；持续通入→浑浊消失（生成Ca(HCO₃)₂）</text>
+  <text x="35" y="696" font-size="11" fill="#333">② Na₂CO₃与NaHCO₃比较：溶解度Na₂CO₃&gt;NaHCO₃；热稳定性Na₂CO₃&gt;NaHCO₃；与酸反应NaHCO₃更快</text>
+  <text x="35" y="714" font-size="11" fill="#333">③ CO₂中混SO₂除杂：饱和NaHCO₃溶液（SO₂+2NaHCO₃=Na₂SO₃+CO₂↑+H₂O）</text>
+  <text x="35" y="732" font-size="11" fill="#333">④ CO还原性：CO+CuO △ Cu+CO₂（冶金）；CO有毒，与血红蛋白结合</text>
+  <text x="35" y="750" font-size="11" fill="#333">⑤ 碳酸盐沉淀规律：CaCO₃/BaCO₃溶于酸，MgCO₃溶于酸，碱金属碳酸盐均溶于水（除Li₂CO₃微溶）</text>
+
+</svg>

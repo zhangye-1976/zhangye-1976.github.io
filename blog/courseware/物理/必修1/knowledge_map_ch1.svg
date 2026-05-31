@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520">
+  <!-- 物理必修1 第1章 运动的描述 SVG -->
+  <defs>
+    <style>
+      .title { font-weight:bold; font-size:18px; font-family:sans-serif; fill: #00363a; }
+      .subtitle { font-size:13px; font-family:sans-serif; fill: #00796b; }
+      .box-title { font-weight:bold; font-size:14px; font-family:sans-serif; fill: #00363a; }
+      .box-text { font-size:12px; font-family:sans-serif; fill: #2c2c2c; }
+      .highlight { font-weight:bold; font-size:12px; font-family:sans-serif; fill: #b71c1c; }
+      .note { font-size:11px; font-family:sans-serif; fill: #555; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="680" height="520" fill="#E1F5EE" rx="12"/>
+
+  <!-- 标题 -->
+  <rect x="140" y="10" width="400" height="38" fill="#00796B" rx="8"/>
+  <text x="340" y="32" text-anchor="middle" class="title" fill="#ffffff">第1章 运动的描述</text>
+  <text x="340" y="48" text-anchor="middle" class="subtitle" fill="#b2dfdb">建立运动学的语言：参考系 · 位移 · 速度 · 加速度</text>
+
+  <!-- 质点与参考系 -->
+  <rect x="20" y="65" width="310" height="100" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="65" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="175" y="83" text-anchor="middle" class="box-title" fill="#ffffff">⚙️ 质点与参考系</text>
+  <text x="30" y="108" class="box-text">📌 质点：有质量、无大小形状的点（理想化模型）</text>
+  <text x="30" y="128" class="box-text">📌 参考系：描述运动时选作"静止"的参照物</text>
+  <text x="30" y="148" class="box-text">✅ 可看成质点：大小≪运动范围（地球绕太阳）</text>
+
+  <!-- 时间与位移 -->
+  <rect x="350" y="65" width="310" height="130" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="350" y="65" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="505" y="83" text-anchor="middle" class="box-title" fill="#ffffff">⏱️ 时间与位移</text>
+  <text x="360" y="108" class="box-text">📌 时间 t：时间轴上的"间隔"（时间段）</text>
+  <text x="360" y="128" class="box-text">📌 位移 Δx：初→末位置有向线段（矢量！）</text>
+  <text x="360" y="148" class="box-text">📌 路程：实际轨迹长度（标量）</text>
+  <text x="360" y="168" class="box-text">🔴 易错：位移大小 ≤ 路程（单向直线时相等）</text>
+
+  <!-- 速度与加速度 -->
+  <rect x="20" y="180" width="640" height="130" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="180" width="640" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="340" y="198" text-anchor="middle" class="box-title" fill="#ffffff">🚀 速度与加速度（核心概念）</text>
+  <text x="30" y="225" class="box-text">平均速度 v̄ = Δx/Δt（矢量，位移/时间）</text>
+  <text x="30" y="245" class="box-text">瞬时速度 v：Δt→0 时的平均速度（矢量）</text>
+  <text x="30" y="265" class="box-text">加速度 a = Δv/Δt（速度变化率，矢量）</text>
+  <text x="30" y="285" class="box-text">🔴 超级易错：a 与 v 方向无关！a与v同向→加速；反向→减速</text>
+  <text x="380" y="225" class="box-text">📊 对比表：</text>
+  <text x="380" y="248" class="box-text">v-t 图像斜率 = 加速度 a</text>
+  <text x="380" y="270" class="box-text">x-t 图像斜率 = 速度 v</text>
+  <text x="380" y="292" class="highlight">v-t 图像面积 = 位移 x（净面积）</text>
+
+  <!-- 两种图像对比 -->
+  <rect x="20" y="325" width="640" height="90" fill="#ffffff" rx="8" stroke="#b71c1c" stroke-width="1.5"/>
+  <rect x="20" y="325" width="640" height="26" fill="#b71c1c" rx="8 8 0 0"/>
+  <text x="340" y="343" text-anchor="middle" class="box-title" fill="#ffffff">🔴 高考必考：x-t 与 v-t 图像对比</text>
+  <text x="40" y="370" class="box-text">① x-t 图像：斜率 = 速度；切线斜率 = 瞬时速度；面积无意义</text>
+  <text x="40" y="390" class="box-text">② v-t 图像：斜率 = 加速度；切线斜率 = 瞬时加速度；面积 = 位移</text>
+  <text x="40" y="410" class="box-text">③ 匀变速直线运动的 v-t 图像是一条倾斜直线（a 恒定）</text>
+
+  <!-- 底部说明 -->
+  <rect x="20" y="425" width="640" height="80" fill="#FFF9C4" rx="8" stroke="#F9A825" stroke-width="1.5"/>
+  <rect x="20" y="425" width="640" height="24" fill="#F9A825" rx="8 8 0 0"/>
+  <text x="340" y="441" text-anchor="middle" class="box-title" fill="#ffffff">📝 第1章 高考小贴士</text>
+  <text x="35" y="466" class="box-text">• 选择题常考："下列说法正确的是"—注意位移是矢量，有方向！</text>
+  <text x="35" y="486" class="box-text">• 图像题：先看轴是什么（x-t 还是 v-t），再判断斜率/面积含义</text>
+
+  <!-- 页码 -->
+  <text x="650" y="510" class="note">P1/4</text>
+</svg>

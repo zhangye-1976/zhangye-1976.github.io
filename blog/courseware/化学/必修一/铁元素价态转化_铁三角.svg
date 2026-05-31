@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="100%" role="img">
+<title>铁元素价态转化关系——铁三角</title>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <style>
+    .t { font: 14px var(--font-sans, sans-serif); fill: var(--color-text-primary, #222); }
+    .ts { font: 12px var(--font-sans, sans-serif); fill: var(--color-text-secondary, #555); }
+    .th { font: 500 14px var(--font-sans, sans-serif); fill: var(--color-text-primary, #222); }
+  </style>
+</defs>
+
+<text x="340" y="26" class="th" text-anchor="middle" font-size="15">铁元素价态转化关系（教材第三章）</text>
+<text x="340" y="44" class="ts" text-anchor="middle">从物质类别 + 元素价态双视角认识物质转化</text>
+
+<!-- Fe 单质 — 顶部 -->
+<rect x="278" y="70" width="124" height="52" rx="10" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="340" y="94" class="th" text-anchor="middle" dominant-baseline="central">Fe  单质</text>
+<text x="340" y="112" class="ts" text-anchor="middle">0价</text>
+
+<!-- Fe²⁺ — 左下 -->
+<rect x="90" y="240" width="150" height="52" rx="10" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<text x="165" y="264" class="th" text-anchor="middle" dominant-baseline="central">Fe²⁺  亚铁盐</text>
+<text x="165" y="282" class="ts" text-anchor="middle">+2价  浅绿色</text>
+
+<!-- Fe³⁺ — 右下 -->
+<rect x="440" y="240" width="150" height="52" rx="10" fill="#FCEBEB" stroke="#A32D2D" stroke-width="1"/>
+<text x="515" y="264" class="th" text-anchor="middle" dominant-baseline="central">Fe³⁺  铁盐</text>
+<text x="515" y="282" class="ts" text-anchor="middle">+3价  棕黄色</text>
+
+<!-- Fe → Fe²⁺ (左下箭头) -->
+<polyline points="300,122 210,238" fill="none" stroke="#3B6D11" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="216" y="178" class="ts" fill="#3B6D11">H⁺ / Cu²⁺</text>
+<text x="220" y="192" class="ts" fill="#3B6D11">（弱氧化剂）</text>
+
+<!-- Fe²⁺ → Fe (反向虚线) -->
+<polyline points="205,238 292,124" fill="none" stroke="#888780" stroke-width="0.8" stroke-dasharray="4 2" marker-end="url(#arrow)"/>
+
+<!-- Fe → Fe³⁺ (右下箭头) -->
+<polyline points="380,122 470,238" fill="none" stroke="#A32D2D" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="445" y="178" class="ts" fill="#A32D2D">Cl₂ / HNO₃ / H₂O₂</text>
+<text x="445" y="192" class="ts" fill="#A32D2D">（强氧化剂）</text>
+
+<!-- Fe²⁺ ← → Fe³⁺ (水平双箭头) -->
+<polyline points="242,270 438,270" fill="none" stroke="#A32D2D" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="310" y="258" class="ts" fill="#A32D2D">Cl₂ / KMnO₄ 氧化</text>
+
+<polyline points="438,282 242,282" fill="none" stroke="#3B6D11" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="310" y="298" class="ts" fill="#3B6D11">Fe / Cu / KI 还原</text>
+
+<!-- 离子方程式区域 -->
+<rect x="48" y="320" width="584" height="64" rx="8" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+<text x="340" y="340" class="th" text-anchor="middle">关键离子方程式</text>
+<text x="64" y="358" class="ts">• Fe²⁺ → Fe³⁺：2Fe²⁺ + Cl₂ = 2Fe³⁺ + 2Cl⁻</text>
+<text x="64" y="374" class="ts">• Fe³⁺ → Fe²⁺：2Fe³⁺ + Fe = 3Fe²⁺  ；  2Fe³⁺ + Cu = 2Fe²⁺ + Cu²⁺</text>
+</svg>

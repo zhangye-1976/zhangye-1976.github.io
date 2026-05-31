@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 580">
+  <!-- 物理必修2 第5章 曲线运动 SVG -->
+  <defs>
+    <style>
+      .title { font-weight:bold; font-size:18px; font-family:sans-serif; fill: #00363a; }
+      .subtitle { font-size:13px; font-family:sans-serif; fill: #00796b; }
+      .box-title { font-weight:bold; font-size:14px; font-family:sans-serif; fill: #00363a; }
+      .box-text { font-size:12px; font-family:sans-serif; fill: #2c2c2c; }
+      .highlight { font-weight:bold; font-size:12px; font-family:sans-serif; fill: #b71c1c; }
+      .note { font-size:11px; font-family:sans-serif; fill: #555; }
+      .formula { font-size:13px; font-family:sans-serif; fill: #0d47a1; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="680" height="580" fill="#E1F5EE" rx="12"/>
+
+  <!-- 标题 -->
+  <rect x="140" y="10" width="400" height="38" fill="#00796B" rx="8"/>
+  <text x="340" y="32" text-anchor="middle" class="title" fill="#ffffff">第5章 曲线运动</text>
+  <text x="340" y="48" text-anchor="middle" class="subtitle" fill="#b2dfdb">平抛运动 + 圆周运动 + 生活中的圆周</text>
+
+  <!-- 曲线运动条件 -->
+  <rect x="20" y="60" width="310" height="100" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="60" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="175" y="78" text-anchor="middle" class="box-title" fill="#ffffff">🌀 曲线运动的条件</text>
+  <text x="30" y="105" class="box-text">条件：合外力（加速度）与速度方向</text>
+  <text x="30" y="125" class="box-text">不在同一直线上</text>
+  <text x="30" y="148" class="box-text">📌 速度方向 = 轨迹切线方向（时刻改变）</text>
+  <text x="30" y="168" class="highlight">🔴 易错：曲线运动中 a 可以恒定（如平抛）！</text>
+
+  <!-- 运动的合成与分解 -->
+  <rect x="350" y="60" width="310" height="130" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="350" y="60" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="505" y="78" text-anchor="middle" class="box-title" fill="#ffffff">🔀 运动的合成与分解</text>
+  <text x="360" y="105" class="box-text">独立性原理：两个方向运动互不影响</text>
+  <text x="360" y="125" class="box-text">等效原理：分运动合效果 = 实际运动</text>
+  <text x="360" y="148" class="box-text">分解方法：沿 v 方向和垂直 v 方向</text>
+  <text x="360" y="168" class="box-text">🔑 口诀："看得见的是实际运动，</text>
+  <text x="360" y="188" class="box-text">看不见的是分运动"</text>
+
+  <!-- 平抛运动（最重要！） -->
+  <rect x="20" y="175" width="640" height="155" fill="#ffffff" rx="8" stroke="#b71c1c" stroke-width="2"/>
+  <rect x="20" y="175" width="640" height="26" fill="#b71c1c" rx="8 8 0 0"/>
+  <text x="340" y="193" text-anchor="middle" class="box-title" fill="#ffffff">🪂 平抛运动（高考解答题超级高频！）★★★★★</text>
+  <text x="35" y="220" class="box-text">水平方向（x）：匀速直线运动</text>
+  <text x="35" y="240" class="formula">vx = v₀，  x = v₀t</text>
+  <text x="35" y="262" class="box-text">竖直方向（y）：自由落体运动</text>
+  <text x="35" y="284" class="formula">vy = gt，  y = ½gt²</text>
+  <text x="380" y="220" class="box-text">三个重要推论（可直接用！）：</text>
+  <text x="380" y="242" class="formula">① t = √(2h/g)  （只与h有关！）</text>
+  <text x="380" y="264" class="formula">② x = v₀√(2h/g)</text>
+  <text x="380" y="286" class="formula">③ tanθ = 2tanα  （θ速度角，α位移角）</text>
+  <text x="380" y="308" class="highlight">🔴 超级易错：平抛时间只由高度h决定，与v₀无关！</text>
+
+  <!-- 圆周运动基础 -->
+  <rect x="20" y="345" width="640" height="120" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="345" width="640" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="340" y="363" text-anchor="middle" class="box-title" fill="#ffffff">🔄 圆周运动基础公式</text>
+  <text x="35" y="390" class="box-text">线速度 v = Δs/Δt = 2πr/T</text>
+  <text x="35" y="412" class="box-text">角速度 ω = Δθ/Δt = 2π/T</text>
+  <text x="35" y="434" class="box-text">关系：v = ωr</text>
+  <text x="380" y="390" class="formula">向心加速度：an = v²/r = ω²r</text>
+  <text x="380" y="412" class="box-text">🔴 易错：an 只改变速度方向，不改变大小！</text>
+  <text x="380" y="434" class="box-text">向心力 Fn = mv²/r = mω²r（效果力，不是受到的力！）</text>
+
+  <!-- 生活中的圆周运动 -->
+  <rect x="20" y="480" width="640" height="85" fill="#FFF9C4" rx="8" stroke="#F9A825" stroke-width="1.5"/>
+  <rect x="20" y="480" width="640" height="24" fill="#F9A825" rx="8 8 0 0"/>
+  <text x="340" y="496" text-anchor="middle" class="box-title" fill="#ffffff">🎢 生活中的圆周运动（模型判断）</text>
+  <text x="35" y="523" class="box-text">绳/轨道模型（最高点）：v ≥ √(gr)，临界v=√(gr)</text>
+  <text x="35" y="545" class="box-text">杆/管模型（最高点）：v 可以为0（有支撑力）</text>
+  <text x="380" y="523" class="box-text">拱桥（最高点）：失重，N &lt; mg</text>
+  <text x="380" y="545" class="box-text">凹桥（最低点）：超重，N &gt; mg</text>
+
+  <!-- 页码 -->
+  <text x="650" y="570" class="note">P1/3</text>
+</svg>

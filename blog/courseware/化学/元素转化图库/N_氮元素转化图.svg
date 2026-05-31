@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 820" font-family="SimSun, 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="rN" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#D32F2F"/></marker>
+    <marker id="dN" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#333"/></marker>
+    <marker id="bN" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#1565C0"/></marker>
+  </defs>
+
+  <rect width="960" height="820" fill="#FAFAFA" rx="8"/>
+  <rect x="0" y="0" width="960" height="56" fill="#1A237E" rx="8"/>
+  <rect x="0" y="28" width="960" height="28" fill="#1A237E"/>
+  <text x="480" y="37" text-anchor="middle" fill="white" font-size="21" font-weight="bold">N 氮元素及其化合物转化图</text>
+
+  <!-- Legend -->
+  <rect x="735" y="70" width="210" height="115" fill="white" stroke="#CCC" rx="4"/>
+  <text x="745" y="90" font-size="12" font-weight="bold" fill="#333">图例</text>
+  <rect x="745" y="100" width="18" height="18" rx="3" fill="#E3F2FD" stroke="#1565C0"/>
+  <text x="770" y="114" font-size="11" fill="#333">普通节点</text>
+  <rect x="745" y="123" width="18" height="18" rx="3" fill="#FFEBEE" stroke="#D32F2F"/>
+  <text x="770" y="137" font-size="11" fill="#D32F2F">🔴 高频考点</text>
+  <rect x="745" y="145" width="18" height="18" rx="3" fill="#FFF9C4" stroke="#F9A825"/>
+  <text x="770" y="159" font-size="11" fill="#F9A825">单质</text>
+  <line x1="745" y1="170" x2="770" y2="170" stroke="#2E7D32" stroke-width="2"/>
+  <text x="775" y="174" font-size="11" fill="#2E7D32">氮循环链</text>
+
+  <!-- ==================== MAIN CHAIN: N2 → NH3 → NO → NO2 → HNO3 ==================== -->
+  <!-- N2 -->
+  <rect x="50" y="110" width="80" height="42" rx="8" fill="#FFF9C4" stroke="#F9A825" stroke-width="2.5"/>
+  <text x="90" y="128" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">N₂</text>
+  <text x="90" y="144" text-anchor="middle" font-size="9" fill="#666">氮气</text>
+
+  <!-- NH3 🔴 -->
+  <rect x="210" y="110" width="90" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="255" y="129" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">NH₃</text>
+  <text x="255" y="146" text-anchor="middle" font-size="10" fill="#C62828">氨 🔴</text>
+
+  <!-- NO -->
+  <rect x="390" y="110" width="80" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="430" y="128" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">NO</text>
+  <text x="430" y="144" text-anchor="middle" font-size="9" fill="#666">一氧化氮</text>
+
+  <!-- NO2 🔴 -->
+  <rect x="560" y="110" width="90" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="605" y="129" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">NO₂</text>
+  <text x="605" y="146" text-anchor="middle" font-size="10" fill="#C62828">二氧化氮 🔴</text>
+
+  <!-- HNO3 🔴 -->
+  <rect x="740" y="110" width="110" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="795" y="129" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">HNO₃</text>
+  <text x="795" y="146" text-anchor="middle" font-size="10" fill="#C62828">硝酸 🔴</text>
+
+  <!-- ==================== MAIN CHAIN ARROWS ==================== -->
+  <!-- N2 → NH3 -->
+  <line x1="135" y1="131" x2="205" y2="131" stroke="#333" stroke-width="2" marker-end="url(#dN)"/>
+  <text x="170" y="123" font-size="10" fill="#333">+H₂ 高温高压 催化剂</text>
+
+  <!-- NH3 → NO 🔴 CATALYTIC OXIDATION -->
+  <line x1="305" y1="131" x2="385" y2="131" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#rN)"/>
+  <text x="345" y="121" font-size="10" fill="#D32F2F" font-weight="bold">+O₂ Pt/Rh △ 🔴</text>
+
+  <!-- NO → NO2 -->
+  <line x1="475" y1="131" x2="555" y2="131" stroke="#333" stroke-width="2" marker-end="url(#dN)"/>
+  <text x="515" y="123" font-size="10" fill="#333">+O₂(常温)</text>
+
+  <!-- NO2 → HNO3 -->
+  <line x1="655" y1="131" x2="735" y2="131" stroke="#333" stroke-width="2" marker-end="url(#dN)"/>
+  <text x="695" y="123" font-size="10" fill="#333">+H₂O → HNO₃+NO</text>
+
+  <!-- ==================== DOWNWARD BRANCHES ==================== -->
+  <!-- NH4Cl -->
+  <rect x="210" y="260" width="90" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="255" y="278" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">NH₄Cl</text>
+  <text x="255" y="294" text-anchor="middle" font-size="9" fill="#666">氯化铵</text>
+
+  <!-- NH4HCO3 -->
+  <rect x="130" y="380" width="100" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="180" y="398" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">NH₄HCO₃</text>
+  <text x="180" y="414" text-anchor="middle" font-size="9" fill="#666">碳酸氢铵</text>
+
+  <!-- (NH4)2SO4 -->
+  <rect x="300" y="380" width="110" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="355" y="398" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">(NH₄)₂SO₄</text>
+  <text x="355" y="414" text-anchor="middle" font-size="9" fill="#666">硫酸铵</text>
+
+  <!-- NH4NO3 🔴 -->
+  <rect x="490" y="260" width="110" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="545" y="279" text-anchor="middle" font-size="14" font-weight="bold" fill="#D32F2F">NH₄NO₃</text>
+  <text x="545" y="296" text-anchor="middle" font-size="10" fill="#C62828">硝酸铵 🔴</text>
+
+  <!-- Nitrates -->
+  <rect x="660" y="260" width="110" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="715" y="278" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Cu(NO₃)₂</text>
+  <text x="715" y="294" text-anchor="middle" font-size="9" fill="#666">硝酸铜</text>
+
+  <rect x="660" y="380" width="110" height="42" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="715" y="398" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">AgNO₃</text>
+  <text x="715" y="414" text-anchor="middle" font-size="9" fill="#666">硝酸银</text>
+
+  <!-- ==================== DOWN ARROWS ==================== -->
+  <!-- NH3 → NH4Cl -->
+  <line x1="255" y1="158" x2="255" y2="255" stroke="#333" stroke-width="2" marker-end="url(#dN)"/>
+  <text x="265" y="210" font-size="10" fill="#333">+HCl</text>
+
+  <!-- NH3 → NH4HCO3 -->
+  <line x1="225" y1="158" x2="175" y2="375" stroke="#666" stroke-width="1.5" marker-end="url(#dN)"/>
+  <text x="175" y="270" font-size="10" fill="#666">+CO₂+H₂O</text>
+
+  <!-- NH3 → (NH4)2SO4 -->
+  <line x1="280" y1="158" x2="340" y2="375" stroke="#666" stroke-width="1.5" marker-end="url(#dN)"/>
+  <text x="330" y="270" font-size="10" fill="#666">+H₂SO₄</text>
+
+  <!-- HNO3 → NH4NO3 -->
+  <line x1="760" y1="158" x2="560" y2="255" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#rN)"/>
+  <text x="660" y="200" font-size="10" fill="#D32F2F" font-weight="bold">+NH₃ 🔴</text>
+
+  <!-- HNO3 → Cu(NO3)2 -->
+  <line x1="770" y1="158" x2="710" y2="255" stroke="#333" stroke-width="2" marker-end="url(#dN)"/>
+  <text x="765" y="210" font-size="10" fill="#333">+Cu</text>
+
+  <!-- HNO3 → AgNO3 -->
+  <line x1="780" y1="158" x2="715" y2="375" stroke="#666" stroke-width="1.5" marker-end="url(#dN)"/>
+  <text x="770" y="270" font-size="10" fill="#666">+Ag</text>
+
+  <!-- HNO3 → NO2 (decomposition) -->
+  <line x1="795" y1="158" x2="625" y2="115" stroke="#D32F2F" stroke-width="2" marker-end="url(#rN)" stroke-dasharray="6,3"/>
+  <text x="710" y="115" font-size="10" fill="#D32F2F" font-weight="bold">光照/△ 分解</text>
+
+  <!-- NH4Cl → NH3 (reverse) -->
+  <line x1="255" y1="260" x2="255" y2="182" stroke="#666" stroke-width="1.5" marker-end="url(#dN)" stroke-dasharray="6,3"/>
+  <text x="267" y="225" font-size="10" fill="#666">+NaOH △</text>
+
+  <!-- ==================== SPECIAL BOX: Nitrogen Oxide Cycle ==================== -->
+  <rect x="50" y="470" width="370" height="125" fill="#E8EAF6" stroke="#1A237E" stroke-width="1.5" rx="6"/>
+  <text x="235" y="492" text-anchor="middle" font-size="13" font-weight="bold" fill="#1A237E">🔴 NO/NO₂ 循环与尾气处理（高频）</text>
+  <text x="60" y="514" font-size="11" fill="#333">3NO₂ + H₂O = 2HNO₃ + NO（雷雨发庄稼）</text>
+  <text x="60" y="532" font-size="11" fill="#333">4NO + 3O₂ + 2H₂O = 4HNO₃</text>
+  <text x="60" y="550" font-size="11" fill="#333">4NO₂ + O₂ + 2H₂O = 4HNO₃</text>
+  <text x="60" y="568" font-size="11" fill="#333">尾气处理：NO+NO₂+2NaOH=2NaNO₂+H₂O</text>
+  <text x="60" y="586" font-size="11" fill="#D32F2F">⚠️ NO₂不是酸酐（N₂O₅才是HNO₃真正的酸酐）</text>
+
+  <!-- ==================== SPECIAL BOX 2: HNO3 reactions ==================== -->
+  <rect x="470" y="470" width="470" height="125" fill="#FFEBEE" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="705" y="492" text-anchor="middle" font-size="13" font-weight="bold" fill="#D32F2F">🔴 HNO₃与金属反应规律</text>
+  <text x="480" y="514" font-size="11" fill="#333">Cu+4HNO₃(浓)=Cu(NO₃)₂+2NO₂↑+2H₂O</text>
+  <text x="480" y="532" font-size="11" fill="#333">3Cu+8HNO₃(稀)=3Cu(NO₃)₂+2NO↑+4H₂O</text>
+  <text x="480" y="550" font-size="11" fill="#333">Fe/Al常温遇浓HNO₃钝化；浓HNO₃+非金属(C/S/P)→NO₂</text>
+  <text x="480" y="568" font-size="11" fill="#333">王水：浓HNO₃:浓HCl=1:3（溶解Pt/Au）</text>
+  <text x="480" y="586" font-size="11" fill="#D32F2F">⚠️ HNO₃浓度越小，还原产物N的价态越低（浓→NO₂，稀→NO，更稀→N₂O/N₂/NH₄⁺）</text>
+
+  <!-- ==================== EXAM TIPS ==================== -->
+  <rect x="15" y="620" width="930" height="185" fill="white" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="35" y="645" font-size="14" font-weight="bold" fill="#D32F2F">🔴 近十年高考高频考点</text>
+  <text x="35" y="670" font-size="11" fill="#333">① NH₃催化氧化（工业制HNO₃第一步）：4NH₃+5O₂ —Pt/Rh△→ 4NO+6H₂O（氨的催化氧化是放热反应）</text>
+  <text x="35" y="688" font-size="11" fill="#333">② NH₃实验室制法：2NH₄Cl+Ca(OH)₂ △ CaCl₂+2NH₃↑+2H₂O（向下排空气法收集，湿润红色石蕊试纸验满）</text>
+  <text x="35" y="706" font-size="11" fill="#333">③ NH₃检验：(1)湿润红色石蕊试纸变蓝；(2)蘸浓盐酸玻璃棒靠近→白烟(NH₄Cl)</text>
+  <text x="35" y="724" font-size="11" fill="#333">④ 喷泉实验：NH₃极易溶于水(1:700)+酚酞→红色喷泉（证明NH₃水溶液呈碱性）</text>
+  <text x="35" y="742" font-size="11" fill="#333">⑤ 铵盐检验：加NaOH △→产生使湿润红色石蕊试纸变蓝的气体（NH₃）</text>
+  <text x="35" y="760" font-size="11" fill="#333">⑥ 浓HNO₃保存在棕色瓶中（避光），因4HNO₃ 光照/△ 4NO₂↑+O₂↑+2H₂O</text>
+  <text x="35" y="778" font-size="11" fill="#333">⑦ NO₂与N₂O₄平衡：2NO₂(红棕色) ⇌ N₂O₄(无色) △H&lt;0（降温颜色变浅、加压颜色先深后浅）</text>
+  <text x="35" y="796" font-size="11" fill="#333">⑧ 氮肥含氮量：尿素CO(NH₂)₂(46.7%)&gt;NH₄NO₃(35%)&gt;(NH₄)₂SO₄(21.2%)&gt;NH₄HCO₃(17.7%)</text>
+
+</svg>

@@ -1,0 +1,62 @@
+<svg viewBox="0 0 680 560" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第6章 生物的进化</title>
+  <desc>自然选择、基因频率、物种形成、协同进化</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="180" y="8" width="320" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">第6章 生物的进化 ★★★</text>
+
+  <line x1="340" y1="48" x2="340" y2="68" stroke="#00796b" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <!-- 4 sections -->
+  <rect x="20" y="72" width="145" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="92" y="99" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">共同祖先证据</text>
+
+  <rect x="180" y="72" width="145" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="252" y="99" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">自然选择学说</text>
+
+  <rect x="340" y="72" width="160" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="420" y="99" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">基因频率与物种形成 ★</text>
+
+  <rect x="515" y="72" width="145" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="587" y="99" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">协同进化</text>
+
+  <!-- Evidence -->
+  <rect x="20" y="140" width="640" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="160" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">进化证据：化石(直接)+比较解剖(同源器官)+胚胎(早期相似)+细胞分子(共用遗传密码)</text>
+  <text x="340" y="180" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 拉马克：用进废退+获得性遗传 | 达尔文：自然选择学说（过度繁殖→生存斗争→适者生存）</text>
+
+  <!-- Modern Evolution Theory Core -->
+  <rect x="20" y="216" width="640" height="130" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="238" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">现代生物进化理论核心</text>
+
+  <text x="340" y="266" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">基本单位：种群（不是个体！）| 原材料：突变+基因重组 | 方向：自然选择（定向的）</text>
+  <text x="340" y="288" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">实质：种群基因频率的定向改变 | 必要条件：隔离 → 物种形成标志：生殖隔离</text>
+  <text x="340" y="310" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 物种形成一般过程：地理隔离→阻断基因交流→自然选择方向分化→基因库差异→生殖隔离</text>
+  <text x="340" y="332" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 突变和重组：不定向 | 自然选择：定向 | 进化：定向（朝向适应环境的方向）</text>
+
+  <!-- Gene frequency calculation -->
+  <rect x="20" y="370" width="310" height="120" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="175" y="392" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">基因频率计算★</text>
+  <text x="175" y="416" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">公式法：p=(2×AA+Aa)/(2N)</text>
+  <text x="175" y="438" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">哈代-温伯格：(p+q)²=p²+2pq+q²</text>
+  <text x="175" y="460" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 适用条件：种群极大/随机交配/</text>
+  <text x="175" y="478" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">无突变/无迁移/无自然选择</text>
+
+  <!-- Species formation -->
+  <rect x="350" y="370" width="310" height="120" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="505" y="392" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">物种形成与隔离</text>
+  <text x="505" y="416" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">地理隔离→不能基因交流</text>
+  <text x="505" y="438" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">→基因频率变化→生殖隔离</text>
+  <text x="505" y="460" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 物种标志：生殖隔离（交配不能/</text>
+  <text x="505" y="478" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">后代不育如骡）</text>
+
+  <!-- Coevolution & biodiversity -->
+  <rect x="20" y="500" width="640" height="36" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="522" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">协同进化：物种间+生物与环境相互影响进化 | 生物多样性：基因→物种→生态系统三个层次</text>
+</svg>

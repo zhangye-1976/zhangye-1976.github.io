@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1600" width="100%" height="100%">
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#555"/></marker>
+    <marker id="aR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#C0392B"/></marker>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="54" fill="#7B241C" rx="0"/>
+  <rect x="330" y="76" width="340" height="46" rx="12" fill="#FDEDEC" stroke="#C0392B" stroke-width="2.5"/>
+
+  <rect x="40" y="165" width="210" height="52" rx="8" fill="#F8F9FA" stroke="#7F8C8D" stroke-width="1"/>
+  <rect x="290" y="165" width="210" height="52" rx="8" fill="#FDEBD0" stroke="#B9770E" stroke-width="2"/>
+  <rect x="540" y="165" width="210" height="52" rx="8" fill="#F8F9FA" stroke="#7F8C8D" stroke-width="1"/>
+
+  <path d="M450 122 L145 165" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M500 122 L500 165" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+  <path d="M550 122 L645 165" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+
+  <rect x="40" y="270" width="210" height="52" rx="8" fill="#FDEBD0" stroke="#B9770E" stroke-width="2"/>
+  <rect x="290" y="270" width="210" height="52" rx="8" fill="#F8F9FA" stroke="#7F8C8D" stroke-width="1"/>
+  <rect x="540" y="270" width="210" height="52" rx="8" fill="#FDEBD0" stroke="#B9770E" stroke-width="2"/>
+
+  <path d="M145 217 L145 270" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M395 217 L395 270" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+  <path d="M645 217 L645 270" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+
+  <line x1="30" y1="365" x2="970" y2="365" stroke="#E5E7E9" stroke-width="0.5"/>
+
+  <rect x="60" y="388" width="180" height="60" rx="8" fill="#FDEDEC" stroke="#C0392B" stroke-width="2.5"/>
+  <rect x="280" y="388" width="180" height="60" rx="8" fill="#F8F9FA" stroke="#7F8C8D" stroke-width="1"/>
+  <rect x="500" y="388" width="220" height="60" rx="8" fill="#FDEDEC" stroke="#C0392B" stroke-width="2.5"/>
+  <rect x="760" y="388" width="180" height="60" rx="8" fill="#F8F9FA" stroke="#7F8C8D" stroke-width="1"/>
+
+  <path d="M145 322 L150 388" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M395 322 L370 388" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M500 322 L610 388" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+  <path d="M645 322 L810 388" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+
+  <path d="M240 418 L280 418" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+  <path d="M460 418 L500 418" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M720 418 L760 418" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+
+  <line x1="30" y1="510" x2="970" y2="510" stroke="#E5E7E9" stroke-width="0.5"/>
+
+  <rect x="60" y="535" width="180" height="60" rx="8" fill="#F8F9FA" stroke="#7F8C8D" stroke-width="1"/>
+  <rect x="280" y="535" width="220" height="60" rx="8" fill="#FDEBD0" stroke="#B9770E" stroke-width="2"/>
+  <rect x="540" y="535" width="220" height="60" rx="8" fill="#FDEDEC" stroke="#C0392B" stroke-width="2.5"/>
+  <rect x="800" y="535" width="160" height="60" rx="8" fill="#FDEDEC" stroke="#C0392B" stroke-width="2.5"/>
+
+  <path d="M150 448 L150 535" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M390 448 L390 535" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+  <path d="M610 448 L610 535" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+  <path d="M850 448 L880 535" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+
+  <path d="M390 595 L540 565" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+
+  <line x1="30" y1="650" x2="970" y2="650" stroke="#E5E7E9" stroke-width="0.5"/>
+
+  <rect x="100" y="678" width="200" height="70" rx="10" fill="#FDEDEC" stroke="#C0392B" stroke-width="2.5"/>
+  <rect x="400" y="678" width="200" height="70" rx="10" fill="#FDEDEC" stroke="#C0392B" stroke-width="2.5"/>
+  <rect x="700" y="678" width="200" height="70" rx="10" fill="#F8F9FA" stroke="#7F8C8D" stroke-width="1"/>
+
+  <path d="M150 595 L200 678" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#a)"/>
+  <path d="M500 535 L500 678" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+  <path d="M650 595 L800 678" stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#aR)"/>
+
+  <line x1="30" y1="800" x2="970" y2="800" stroke="#E5E7E9" stroke-width="0.5"/>
+
+  <rect x="60" y="825" width="880" height="32" rx="6" fill="#D5F5E3" stroke="#A9DFBF" stroke-width="1"/>
+
+  <rect x="60" y="882" width="880" height="28" rx="6" fill="#FDEBD0" stroke="#E67E22" stroke-width="1"/>
+
+  <rect x="40" y="940" width="920" height="630" rx="14" fill="#F8F9FA" stroke="#D5D8DC" stroke-width="1"/>
+
+  <text x="500" y="34" text-anchor="middle" fill="white" font-size="17" font-weight="bold" font-family="Microsoft YaHei, SimHei, sans-serif">铁元素（Fe）转化关系图</text>
+
+  <text x="300" y="140" text-anchor="middle" font-size="10" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">Fe + O₂(不足) △</text>
+  <text x="520" y="140" text-anchor="middle" font-size="10" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">3Fe + 2O₂ 点燃 ★</text>
+  <text x="660" y="140" text-anchor="middle" font-size="10" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">4Fe + 3O₂ + nH₂O</text>
+
+  <text x="145" y="252" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">Fe²⁺ + 2OH⁻</text>
+  <text x="410" y="252" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">+ 稀酸 ★</text>
+  <text x="630" y="252" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">+NaOH</text>
+
+  <text x="100" y="380" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">FeO + 2HCl</text>
+  <text x="340" y="380" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">Fe + 2HCl</text>
+  <text x="570" y="380" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">氧化性酸 ★</text>
+  <text x="780" y="380" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">浓H₂SO₄ △</text>
+
+  <text x="208" y="410" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">+Cl₂ ★</text>
+  <text x="475" y="410" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">Cl₂ →</text>
+  <text x="735" y="410" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">+Fe / +Cu ★</text>
+
+  <text x="120" y="528" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">Fe²⁺ + 2NaOH</text>
+  <text x="380" y="550" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">+ 氧化剂 ★</text>
+  <text x="590" y="528" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">Fe³⁺ + 3NaOH</text>
+  <text x="830" y="528" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">Fe³⁺ + 3OH⁻</text>
+
+  <text x="720" y="550" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">+ 还原剂 ★</text>
+
+  <text x="252" y="670" text-anchor="middle" font-size="9" fill="#555" font-family="Microsoft YaHei, SimHei, sans-serif">+ NaOH</text>
+  <text x="488" y="620" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">+ Cl₂ / HNO₃ ★</text>
+  <text x="752" y="670" text-anchor="middle" font-size="9" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">+ Fe / Cu / I⁻ ★</text>
+
+  <text x="500" y="105" text-anchor="middle" font-size="16" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe 单质铁（0价）</text>
+
+  <text x="145" y="188" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">FeO</text>
+  <text x="145" y="207" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">黑色 · 不稳定</text>
+
+  <text x="395" y="188" text-anchor="middle" font-size="14" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe₃O₄</text>
+  <text x="395" y="207" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">黑色 · 有磁性</text>
+
+  <text x="645" y="188" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">Fe₂O₃</text>
+  <text x="645" y="207" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">红棕色 · 铁锈</text>
+
+  <text x="145" y="296" text-anchor="middle" font-size="14" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe(OH)₂</text>
+  <text x="145" y="315" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">白色沉淀</text>
+
+  <text x="395" y="296" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">Fe</text>
+  <text x="395" y="315" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">酸溶·置换·还原</text>
+
+  <text x="645" y="296" text-anchor="middle" font-size="14" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe(OH)₃</text>
+  <text x="645" y="315" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">红褐色沉淀</text>
+
+  <text x="150" y="414" text-anchor="middle" font-size="13" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">FeCl₂ · FeSO₄</text>
+  <text x="150" y="435" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">Fe²⁺ 浅绿色</text>
+
+  <text x="370" y="414" text-anchor="middle" font-size="13" font-weight="bold" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">Fe</text>
+  <text x="370" y="435" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">非氧化性酸</text>
+
+  <text x="610" y="414" text-anchor="middle" font-size="13" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">FeCl₃</text>
+  <text x="610" y="435" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">Fe³⁺ 黄色</text>
+
+  <text x="850" y="414" text-anchor="middle" font-size="13" font-weight="bold" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">Fe₂(SO₄)₃</text>
+  <text x="850" y="435" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">浓H₂SO₄</text>
+
+  <text x="150" y="561" text-anchor="middle" font-size="13" font-weight="bold" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">Fe(OH)₂ 白色</text>
+  <text x="150" y="582" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">→ 灰绿 → Fe(OH)₃</text>
+
+  <text x="390" y="561" text-anchor="middle" font-size="13" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe²⁺</text>
+  <text x="390" y="582" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">浅绿色</text>
+
+  <text x="650" y="561" text-anchor="middle" font-size="13" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe³⁺</text>
+  <text x="650" y="582" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">黄色</text>
+
+  <text x="880" y="561" text-anchor="middle" font-size="13" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe(OH)₃</text>
+  <text x="880" y="582" text-anchor="middle" font-size="10" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">红褐色</text>
+
+  <text x="200" y="710" text-anchor="middle" font-size="15" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe²⁺ 检验</text>
+  <text x="200" y="733" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">NaOH: 白→灰绿→红褐</text>
+
+  <text x="500" y="710" text-anchor="middle" font-size="15" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe³⁺ 检验</text>
+  <text x="500" y="733" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">KSCN: 血红色</text>
+
+  <text x="800" y="710" text-anchor="middle" font-size="15" font-weight="bold" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">铁的钝化</text>
+  <text x="800" y="733" text-anchor="middle" font-size="11" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">浓HNO₃/浓H₂SO₄</text>
+
+  <text x="500" y="846" text-anchor="middle" font-size="14" font-weight="bold" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">铁三角 核心转化：Fe ⇄ Fe²⁺ ⇄ Fe³⁺</text>
+
+  <text x="500" y="902" text-anchor="middle" font-size="12" font-weight="bold" fill="#B9770E" font-family="Microsoft YaHei, SimHei, sans-serif">箭头方向 = 加氧化剂 → 右下 | 加还原剂 ← 左下</text>
+
+  <text x="60" y="962" font-size="13" font-weight="bold" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">全部化学方程式汇总</text>
+
+  <text x="70" y="990" font-size="12" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">Fe + O₂(不足) →△→ FeO</text>
+  <text x="70" y="1012" font-size="12" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">3Fe + 2O₂ →点燃→ Fe₃O₄ ★高考</text>
+  <text x="70" y="1034" font-size="12" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">4Fe + 3O₂ + n H₂O → 2Fe₂O₃·nH₂O（铁锈）</text>
+  <text x="70" y="1056" font-size="12" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">3Fe + 4H₂O(g) →高温→ Fe₃O₄ + 4H₂</text>
+
+  <text x="70" y="1084" font-size="12" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe + 2H⁺ → Fe²⁺ + H₂↑ （稀HCl / 稀H₂SO₄) ★高考</text>
+  <text x="70" y="1106" font-size="12" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe + 4HNO₃(稀) → Fe(NO₃)₃ + NO↑ + 2H₂O ★高考</text>
+  <text x="70" y="1128" font-size="12" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">2Fe + 6H₂SO₄(浓) →△→ Fe₂(SO₄)₃ + 3SO₂↑ + 6H₂O</text>
+
+  <text x="70" y="1156" font-size="12" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe → Fe²⁺ + 2e⁻ （弱氧化剂: H⁺, Cu²⁺, S, I₂）</text>
+  <text x="70" y="1178" font-size="12" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe → Fe³⁺ + 3e⁻ （强氧化剂: Cl₂, Br₂, HNO₃, 浓H₂SO₄）</text>
+  <text x="70" y="1200" font-size="12" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe²⁺ → Fe³⁺ + e⁻ （氧化剂: Cl₂, Br₂, H₂O₂, HNO₃, KMnO₄/H⁺）</text>
+  <text x="70" y="1222" font-size="12" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe³⁺ + e⁻ → Fe²⁺ （还原剂: Fe, Cu, I⁻, S²⁻, SO₂）</text>
+
+  <text x="70" y="1250" font-size="12" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">Fe²⁺ + 2OH⁻ → Fe(OH)₂↓（白色）</text>
+  <text x="70" y="1272" font-size="12" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">4Fe(OH)₂ + O₂ + 2H₂O → 4Fe(OH)₃↓（白→灰绿→红褐）★高考</text>
+  <text x="70" y="1294" font-size="12" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">Fe³⁺ + 3OH⁻ → Fe(OH)₃↓（红褐色）</text>
+  <text x="70" y="1316" font-size="12" fill="#2C3E50" font-family="Microsoft YaHei, SimHei, sans-serif">Fe(OH)₃ + 3H⁺ → Fe³⁺ + 3H₂O</text>
+
+  <text x="70" y="1344" font-size="12" fill="#922B21" font-family="Microsoft YaHei, SimHei, sans-serif">Fe³⁺ + 3SCN⁻ → Fe(SCN)₃（血红色）★必考  Fe²⁺ + SCN⁻ → 不显色</text>
+  <text x="70" y="1366" font-size="12" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">2Fe²⁺ + Cl₂ → 2Fe³⁺ + 2Cl⁻（除FeCl₃中的FeCl₂）</text>
+  <text x="70" y="1388" font-size="12" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">2Fe³⁺ + Fe → 3Fe²⁺（除FeCl₂中的FeCl₃）</text>
+  <text x="70" y="1410" font-size="12" fill="#7F8C8D" font-family="Microsoft YaHei, SimHei, sans-serif">2Fe³⁺ + Cu → 2Fe²⁺ + Cu²⁺（腐蚀电路板）</text>
+
+  <text x="70" y="1438" font-size="12" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">易错：Fe与Cl₂点燃→FeCl₃而非FeCl₂；Fe与S加热→FeS（+2价）而非Fe₂S₃</text>
+  <text x="70" y="1460" font-size="12" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">常温下Fe/Al在浓HNO₃/浓H₂SO₄中钝化，加热才反应</text>
+  <text x="70" y="1482" font-size="12" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">Fe²⁺浅绿、Fe³⁺黄色（均指水合离子颜色），FeO·Fe₂O₃=Fe₃O₄</text>
+  <text x="70" y="1504" font-size="12" fill="#C0392B" font-family="Microsoft YaHei, SimHei, sans-serif">Fe(OH)₂→Fe(OH)₃：现象是白沉淀→迅速变灰绿→最终红褐</text>
+
+  <text x="500" y="1530" text-anchor="middle" font-size="11" fill="#999" font-family="Microsoft YaHei, SimHei, sans-serif">● 橙色/红色边框 = 高考高频考点  ● 反应条件标注在箭头上方</text>
+  <text x="500" y="1550" text-anchor="middle" font-size="10" fill="#BBB" font-family="Microsoft YaHei, SimHei, sans-serif">高中化学 · 铁元素转化关系图 · 必修一</text>
+</svg>

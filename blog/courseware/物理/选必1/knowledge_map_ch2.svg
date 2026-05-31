@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 390">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E1F5EE"/>
+      <stop offset="100%" stop-color="#B2DFDB"/>
+    </linearGradient>
+  </defs>
+  <rect width="680" height="390" rx="12" fill="url(#bg)"/>
+  <rect x="20" y="15" width="640" height="42" rx="8" fill="#00796B"/>
+  <text x="340" y="43" text-anchor="middle" fill="#fff" font-size="19" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">第2章 机械振动</text>
+
+  <!-- 简谐运动 -->
+  <rect x="25" y="70" width="310" height="110" rx="6" fill="#fff" stroke="#00796B" stroke-width="1.2"/>
+  <text x="180" y="95" text-anchor="middle" fill="#00796B" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">简谐运动</text>
+  <line x1="40" y1="103" x2="320" y2="103" stroke="#B2DFDB" stroke-width="1"/>
+  <text x="40" y="122" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">回复力 F = −kx</text>
+  <text x="40" y="142" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">位移方程 x = A·sin(ωt+φ₀)</text>
+  <text x="40" y="160" fill="#E53935" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">判断：F∝−x 就是简谐运动！</text>
+  <text x="40" y="178" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">弹簧振子 T = 2π√(m/k)</text>
+
+  <!-- 单摆 -->
+  <rect x="350" y="70" width="310" height="110" rx="6" fill="#fff" stroke="#E53935" stroke-width="1.5"/>
+  <text x="505" y="95" text-anchor="middle" fill="#E53935" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">单摆 ⭐必考</text>
+  <line x1="365" y1="103" x2="645" y2="103" stroke="#FFCDD2" stroke-width="1"/>
+  <text x="365" y="125" fill="#C62828" font-size="12" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">T = 2π√(L/g)</text>
+  <text x="365" y="145" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">条件：θ&lt;5°（小角度）</text>
+  <text x="365" y="163" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">T与振幅、摆球质量无关！</text>
+  <text x="365" y="178" fill="#E53935" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">等效g：升降机/斜面中 g'≠g</text>
+
+  <!-- 能量变化 -->
+  <rect x="25" y="195" width="310" height="90" rx="6" fill="#FFF8E1" stroke="#FF8F00" stroke-width="1.2"/>
+  <text x="180" y="218" text-anchor="middle" fill="#E65100" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">简谐运动能量变化</text>
+  <text x="40" y="242" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">平衡位置：E_k最大 · v最大 · F回=0</text>
+  <text x="40" y="262" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">最大位移处：E_k=0 · v=0 · F回最大</text>
+  <text x="40" y="280" fill="#E65100" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">E_k+E_p=恒量（机械能守恒）</text>
+
+  <!-- 受迫振动与共振 -->
+  <rect x="350" y="195" width="310" height="90" rx="6" fill="#E8EAF6" stroke="#7986CB" stroke-width="1.2"/>
+  <text x="505" y="218" text-anchor="middle" fill="#3949AB" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">受迫振动 · 共振</text>
+  <text x="365" y="242" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">受迫振动频率 = 驱动力频率</text>
+  <text x="365" y="262" fill="#C62828" font-size="11" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">共振：f_驱 = f_固 → 振幅最大</text>
+  <text x="365" y="280" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">固有频率由系统本身决定</text>
+
+  <!-- 实验 -->
+  <rect x="25" y="298" width="635" height="45" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="340" y="318" text-anchor="middle" fill="#2E7D32" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">实验：用单摆测重力加速度 g = 4π²L/T²（测L和T，多次测量取平均）</text>
+  <text x="340" y="336" text-anchor="middle" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">⚠ 摆长L=线长+球半径 · 测T需累计30-50次取平均</text>
+
+  <text x="340" y="375" text-anchor="middle" fill="#999" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">物理选必1 · 第2章 机械振动</text>
+</svg>

@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 820" font-family="'Microsoft YaHei','SimHei',sans-serif">
+  <defs>
+    <marker id="halRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#D32F2F"/>
+    </marker>
+    <linearGradient id="halHdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="920" height="820" fill="#F1F8E9" rx="12"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="920" height="48" fill="url(#halHdr)" rx="12"/>
+  <rect x="0" y="36" width="920" height="12" fill="url(#halHdr)"/>
+  <text x="460" y="31" text-anchor="middle" fill="white" font-size="20" font-weight="bold">VIIA族 卤素元素比较图 — 通性与个性（F₂ / Cl₂ / Br₂ / I₂）</text>
+
+  <!-- Table -->
+  <rect x="20" y="65" width="880" height="370" rx="8" fill="white" stroke="#81C784" stroke-width="1.5"/>
+  <text x="460" y="88" text-anchor="middle" fill="#1B5E20" font-size="16" font-weight="bold">📋 卤素元素性质递变规律</text>
+
+  <!-- Headers -->
+  <rect x="35" y="100" width="90" height="28" rx="3" fill="#C8E6C9"/>
+  <text x="80" y="119" text-anchor="middle" fill="#1B5E20" font-size="12" font-weight="bold">性质</text>
+
+  <rect x="130" y="100" width="120" height="28" rx="3" fill="#E8F5E9"/>
+  <text x="190" y="119" text-anchor="middle" fill="#2E7D32" font-size="12" font-weight="bold">F₂（氟）</text>
+
+  <rect x="255" y="100" width="130" height="28" rx="3" fill="#C8E6C9"/>
+  <text x="320" y="119" text-anchor="middle" fill="#1B5E20" font-size="12" font-weight="bold">Cl₂（氯）</text>
+
+  <rect x="390" y="100" width="130" height="28" rx="3" fill="#A5D6A7"/>
+  <text x="455" y="119" text-anchor="middle" fill="#2E7D32" font-size="12" font-weight="bold">Br₂（溴）</text>
+
+  <rect x="525" y="100" width="130" height="28" rx="3" fill="#81C784"/>
+  <text x="590" y="119" text-anchor="middle" fill="#1B5E20" font-size="12" font-weight="bold">I₂（碘）</text>
+
+  <rect x="660" y="100" width="235" height="28" rx="3" fill="#E8F5E9"/>
+  <text x="777" y="119" text-anchor="middle" fill="#1B5E20" font-size="12" font-weight="bold">递变方向（上→下 F→I）</text>
+
+  <!-- Row 1: 原子半径 -->
+  <rect x="35" y="132" width="860" height="1" fill="#EEE"/>
+  <text x="80" y="155" text-anchor="middle" fill="#333" font-size="11">原子半径</text>
+  <text x="190" y="155" text-anchor="middle" fill="#333" font-size="11">71pm</text>
+  <text x="320" y="155" text-anchor="middle" fill="#333" font-size="11">99pm</text>
+  <text x="455" y="155" text-anchor="middle" fill="#333" font-size="11">114pm</text>
+  <text x="590" y="155" text-anchor="middle" fill="#333" font-size="11">133pm</text>
+  <text x="777" y="155" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">递增 ↑</text>
+
+  <rect x="35" y="167" width="860" height="1" fill="#EEE"/>
+
+  <text x="80" y="190" text-anchor="middle" fill="#333" font-size="11">最外层电子</text>
+  <text x="190" y="190" text-anchor="middle" fill="#1565C0" font-size="12" font-weight="bold">7e⁻</text>
+  <text x="320" y="190" text-anchor="middle" fill="#1565C0" font-size="12" font-weight="bold">7e⁻</text>
+  <text x="455" y="190" text-anchor="middle" fill="#1565C0" font-size="12" font-weight="bold">7e⁻</text>
+  <text x="590" y="190" text-anchor="middle" fill="#1565C0" font-size="12" font-weight="bold">7e⁻</text>
+  <text x="777" y="190" text-anchor="middle" fill="#1565C0" font-size="12" font-weight="bold">通性：均为7 → -1价</text>
+
+  <rect x="35" y="202" width="860" height="1" fill="#EEE"/>
+
+  <text x="80" y="225" text-anchor="middle" fill="#333" font-size="11">颜色&状态</text>
+  <text x="190" y="225" text-anchor="middle" fill="#333" font-size="11">淡黄绿 气体</text>
+  <text x="320" y="225" text-anchor="middle" fill="#333" font-size="11">黄绿 气体</text>
+  <text x="455" y="225" text-anchor="middle" fill="#333" font-size="11">深红棕 液体</text>
+  <text x="590" y="225" text-anchor="middle" fill="#333" font-size="11">紫黑 固体(升华)</text>
+  <text x="777" y="225" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">颜色加深,熔沸点↑</text>
+
+  <rect x="35" y="237" width="860" height="1" fill="#EEE"/>
+
+  <text x="80" y="260" text-anchor="middle" fill="#333" font-size="11">氧化性</text>
+  <text x="190" y="260" text-anchor="middle" fill="#333" font-size="11">最强</text>
+  <text x="320" y="260" text-anchor="middle" fill="#333" font-size="11">强</text>
+  <text x="455" y="260" text-anchor="middle" fill="#333" font-size="11">较弱</text>
+  <text x="590" y="260" text-anchor="middle" fill="#333" font-size="11">弱</text>
+  <text x="777" y="260" text-anchor="middle" fill="#D32F2F" font-size="13" font-weight="bold">递减 ↓ F₂&gt;Cl₂&gt;Br₂&gt;I₂</text>
+
+  <rect x="35" y="272" width="860" height="1" fill="#EEE"/>
+
+  <text x="80" y="295" text-anchor="middle" fill="#333" font-size="11">与H₂反应</text>
+  <text x="190" y="295" text-anchor="middle" fill="#333" font-size="11">暗处爆炸</text>
+  <text x="320" y="295" text-anchor="middle" fill="#333" font-size="11">光照爆炸</text>
+  <text x="455" y="295" text-anchor="middle" fill="#333" font-size="11">加热缓慢</text>
+  <text x="590" y="295" text-anchor="middle" fill="#333" font-size="11">持续加热→可逆</text>
+  <text x="777" y="295" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">越来越难</text>
+
+  <rect x="35" y="307" width="860" height="1" fill="#EEE"/>
+
+  <text x="80" y="330" text-anchor="middle" fill="#333" font-size="11">HX稳定性</text>
+  <text x="190" y="330" text-anchor="middle" fill="#333" font-size="11">HF 极稳定</text>
+  <text x="320" y="330" text-anchor="middle" fill="#333" font-size="11">HCl 稳定</text>
+  <text x="455" y="330" text-anchor="middle" fill="#333" font-size="11">HBr 较不稳定</text>
+  <text x="590" y="330" text-anchor="middle" fill="#333" font-size="11">HI 不稳定(分解)</text>
+  <text x="777" y="330" text-anchor="middle" fill="#D32F2F" font-size="13" font-weight="bold">递减 ↓ HF&gt;HCl&gt;HBr&gt;HI</text>
+
+  <rect x="35" y="342" width="860" height="1" fill="#EEE"/>
+
+  <text x="80" y="365" text-anchor="middle" fill="#333" font-size="11">HX酸性</text>
+  <text x="190" y="365" text-anchor="middle" fill="#333" font-size="11">HF 弱酸</text>
+  <text x="320" y="365" text-anchor="middle" fill="#333" font-size="11">HCl 强酸</text>
+  <text x="455" y="365" text-anchor="middle" fill="#333" font-size="11">HBr 强酸</text>
+  <text x="590" y="365" text-anchor="middle" fill="#333" font-size="11">HI 最强酸</text>
+  <text x="777" y="365" text-anchor="middle" fill="#D32F2F" font-size="13" font-weight="bold">递增 ↑ HF&lt;HCl&lt;HBr&lt;HI</text>
+
+  <rect x="35" y="377" width="860" height="1" fill="#EEE"/>
+
+  <text x="80" y="400" text-anchor="middle" fill="#333" font-size="11">置换反应</text>
+  <text x="190" y="400" text-anchor="middle" fill="#333" font-size="11">置换一切</text>
+  <text x="320" y="400" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">置换Br⁻/I⁻</text>
+  <text x="455" y="400" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">仅置换I⁻</text>
+  <text x="590" y="400" text-anchor="middle" fill="#333" font-size="11">不能置换</text>
+  <text x="777" y="400" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">Cl₂&gt;Br₂&gt;I₂</text>
+
+  <rect x="35" y="412" width="860" height="1" fill="#EEE"/>
+
+  <text x="80" y="430" text-anchor="middle" fill="#333" font-size="11">F⁻/Cl⁻/Br⁻/I⁻</text>
+  <text x="190" y="430" text-anchor="middle" fill="#333" font-size="11">无还原性</text>
+  <text x="320" y="430" text-anchor="middle" fill="#333" font-size="11">极弱</text>
+  <text x="455" y="430" text-anchor="middle" fill="#333" font-size="11">弱</text>
+  <text x="590" y="430" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">较强(I⁻被氧化)</text>
+  <text x="777" y="430" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">还原性递增 ↑</text>
+
+  <!-- Reactions -->
+  <rect x="20" y="450" width="880" height="120" rx="8" fill="white" stroke="#81C784" stroke-width="1.5"/>
+  <text x="460" y="473" text-anchor="middle" fill="#1B5E20" font-size="15" font-weight="bold">🔬 置换反应（高考高频考点）</text>
+  <line x1="40" y1="483" x2="900" y2="483" stroke="#EEE" stroke-width="1"/>
+
+  <text x="40" y="503" fill="#333" font-size="12">
+    <tspan x="40" dy="0" fill="#D32F2F">Cl₂ + 2NaBr → 2NaCl + Br₂（置换出溴）</tspan>
+    <tspan x="480" dy="0" fill="#D32F2F">Cl₂ + 2KI → 2KCl + I₂（置换出碘）</tspan>
+  </text>
+
+  <text x="40" y="525" fill="#333" font-size="12">
+    <tspan x="40" dy="0" fill="#D32F2F">Br₂ + 2KI → 2KBr + I₂（溴置换碘）</tspan>
+    <tspan x="480" dy="0" fill="#1565C0">通式：强氧化性卤素 + 弱氧化性卤素盐 → 置换</tspan>
+  </text>
+
+  <!-- General/Individual -->
+  <rect x="20" y="587" width="430" height="220" rx="8" fill="white" stroke="#1565C0" stroke-width="2"/>
+  <text x="235" y="610" text-anchor="middle" fill="#1565C0" font-size="14" font-weight="bold">🔵 通性（相似原因）</text>
+  <line x1="35" y1="620" x2="435" y2="620" stroke="#EEE" stroke-width="1"/>
+
+  <text x="35" y="642" fill="#333" font-size="12">
+    <tspan x="35" dy="0">· 最外层均为 7e⁻ → 易得1e⁻ → -1价</tspan>
+    <tspan x="35" dy="20">· 均为非金属 → 强氧化剂</tspan>
+    <tspan x="35" dy="20">· 都能与金属化合生成卤化物</tspan>
+    <tspan x="35" dy="20">· 都能与H₂化合生成HX（卤化氢）</tspan>
+    <tspan x="35" dy="20">· 最高正价均为+7（F除外）</tspan>
+  </text>
+
+  <rect x="470" y="587" width="430" height="220" rx="8" fill="white" stroke="#D32F2F" stroke-width="2"/>
+  <text x="685" y="610" text-anchor="middle" fill="#D32F2F" font-size="14" font-weight="bold">🔴 个性（差异原因：电子层数不同）</text>
+  <line x1="485" y1="620" x2="885" y2="620" stroke="#EEE" stroke-width="1"/>
+
+  <text x="485" y="642" fill="#333" font-size="12">
+    <tspan x="485" dy="0" fill="#D32F2F">· 从上到下：氧化性↓ 还原性(F⁻→I⁻)↑</tspan>
+    <tspan x="485" dy="20" fill="#D32F2F">· 单质颜色加深，熔沸点升高</tspan>
+    <tspan x="485" dy="20" fill="#D32F2F">· 与H₂反应越来越难</tspan>
+    <tspan x="485" dy="20" fill="#D32F2F">· HX稳定性递减，酸性递增</tspan>
+  </text>
+
+  <text x="485" y="730" fill="#333" font-size="12">
+    <tspan x="485" dy="0" fill="#D32F2F">⚠ F₂ 的特殊性（极强）：</tspan>
+    <tspan x="485" dy="18">· F⁻ 无法被化学试剂氧化（只能电解）</tspan>
+    <tspan x="485" dy="18">· HF 为弱酸（氢键强），腐蚀玻璃</tspan>
+    <tspan x="485" dy="18">· F₂ 能与水反应：2F₂+2H₂O→4HF+O₂</tspan>
+  </text>
+
+</svg>

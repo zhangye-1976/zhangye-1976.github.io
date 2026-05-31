@@ -1,0 +1,71 @@
+<svg viewBox="0 0 680 620" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>有机官能团转化高速公路</title>
+  <desc>烷烃→卤代烃→醇→醛→羧酸→酯完整转化链</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <style>
+    .ts { font-family: sans-serif; font-size: 12px; fill: #5F5E5A; font-weight: 400; }
+    .th { font-family: sans-serif; font-size: 14px; fill: #2C2C2A; font-weight: 500; }
+    .tc { font-family: sans-serif; font-size: 11px; fill: #888780; font-weight: 400; }
+    .tc2 { font-family: sans-serif; font-size: 10px; fill: #5F5E5A; font-weight: 400; }
+    .arr { fill: none; stroke: #888780; stroke-width: 1.5; marker-end: url(#arrow); }
+    .arr-g { fill: none; stroke: #0F6E56; stroke-width: 1.5; marker-end: url(#arrow); }
+  </style>
+  <rect x="0" y="0" width="680" height="620" fill="white" rx="4"/>
+  <text class="th" x="340" y="26" text-anchor="middle">有机官能团转化高速公路</text>
+  <text class="ts" x="340" y="44" text-anchor="middle">核心主线：烷烃→卤代烃→醇→醛→羧酸→酯 | 两侧：烯烃支线 + 芳香烃支线</text>
+  <rect x="260" y="60" width="160" height="40" rx="10" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text class="th" x="340" y="84" text-anchor="middle" fill="#2C2C2A">烷烃 R-H</text>
+  <line x1="295" y1="100" x2="235" y2="140" class="arr"/>
+  <text class="tc2" x="250" y="118" fill="#A32D2D">取代(光X2)</text>
+  <line x1="385" y1="100" x2="445" y2="140" class="arr"/>
+  <text class="tc2" x="430" y="118" fill="#A32D2D">裂解</text>
+  <rect x="130" y="145" width="160" height="44" rx="10" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+  <text class="th" x="210" y="164" text-anchor="middle" fill="#0C447C">卤代烃 R-X</text>
+  <text class="tc2" x="210" y="180" text-anchor="middle" fill="#378ADD">水解/消去</text>
+  <rect x="390" y="145" width="160" height="44" rx="10" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+  <text class="th" x="470" y="164" text-anchor="middle" fill="#0C447C">烯烃 C=C</text>
+  <text class="tc2" x="470" y="180" text-anchor="middle" fill="#378ADD">加成/加聚</text>
+  <line x1="290" y1="167" x2="390" y2="167" class="arr-g"/>
+  <text class="tc2" x="340" y="160" text-anchor="middle" fill="#0F6E56">消去(NaOH醇)</text>
+  <line x1="390" y1="155" x2="290" y2="155" class="arr"/>
+  <text class="tc2" x="340" y="148" text-anchor="middle">加成(HX)</text>
+  <line x1="210" y1="189" x2="210" y2="225" class="arr"/>
+  <text class="tc2" x="218" y="210" fill="#A32D2D">水解(NaOH水)</text>
+  <line x1="470" y1="189" x2="470" y2="225" class="arr"/>
+  <text class="tc2" x="478" y="210" fill="#A32D2D">加成(H2O)</text>
+  <rect x="160" y="230" width="360" height="48" rx="10" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text class="th" x="340" y="252" text-anchor="middle" fill="#3C3489">醇 R-OH</text>
+  <text class="tc2" x="340" y="270" text-anchor="middle" fill="#7F77DD">酯化/消去/氧化/置换(Na)</text>
+  <path d="M 470 254 L 510 254 L 510 167 L 550 167" class="arr" fill="none"/>
+  <text class="tc2" x="516" y="210" fill="#5F5E5A">消去(浓H2SO4 170)</text>
+  <line x1="340" y1="278" x2="340" y2="310" class="arr"/>
+  <text class="tc2" x="348" y="298" fill="#A32D2D">氧化(Cu O2)</text>
+  <rect x="260" y="314" width="160" height="40" rx="10" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+  <text class="th" x="340" y="336" text-anchor="middle" fill="#085041">醛 R-CHO</text>
+  <text class="tc2" x="340" y="350" text-anchor="middle" fill="#1D9E75">银镜/斐林 还原</text>
+  <line x1="340" y1="354" x2="340" y2="386" class="arr"/>
+  <text class="tc2" x="348" y="374" fill="#A32D2D">氧化</text>
+  <rect x="240" y="390" width="200" height="40" rx="10" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
+  <text class="th" x="340" y="412" text-anchor="middle" fill="#633806">羧酸 R-COOH</text>
+  <text class="tc2" x="340" y="426" text-anchor="middle" fill="#BA7517">酸性 酯化</text>
+  <line x1="340" y1="430" x2="340" y2="458" class="arr"/>
+  <text class="tc2" x="348" y="448" fill="#A32D2D">酯化(浓H2SO4)</text>
+  <rect x="240" y="462" width="200" height="40" rx="10" fill="#FBEAF0" stroke="#ED93B1" stroke-width="0.5"/>
+  <text class="th" x="340" y="484" text-anchor="middle" fill="#72243E">酯 R-COOR'</text>
+  <text class="tc2" x="340" y="498" text-anchor="middle" fill="#D4537E">水解(酸/碱性)</text>
+  <path d="M 240 482 L 130 482 L 130 254 L 160 254" class="arr-g" fill="none"/>
+  <text class="tc2" x="120" y="368" fill="#0F6E56">水解(H+/OH-)</text>
+  <rect x="40" y="540" width="160" height="40" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text class="ts" x="120" y="556" text-anchor="middle" fill="#5F5E5A">苯 卤苯 苯酚</text>
+  <text class="tc2" x="120" y="572" text-anchor="middle" fill="#888780">卤代(FeX3)/水解</text>
+  <rect x="240" y="540" width="200" height="40" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text class="ts" x="340" y="556" text-anchor="middle" fill="#5F5E5A">加聚: nCH2=CHX [CH2-CHX]n</text>
+  <text class="tc2" x="340" y="572" text-anchor="middle" fill="#888780">缩聚: 二元酸+二元醇 聚酯</text>
+  <rect x="480" y="540" width="160" height="40" rx="8" fill="#FCEBEB" stroke="#F09595" stroke-width="0.5"/>
+  <text class="ts" x="560" y="556" text-anchor="middle" fill="#791F1F">高考核心</text>
+  <text class="tc2" x="560" y="572" text-anchor="middle" fill="#A32D2D">逆合成分析法</text>
+</svg>

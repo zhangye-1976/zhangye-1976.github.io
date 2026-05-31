@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480">
+  <defs>
+    <style>
+      .box { fill:#E1F5EE; stroke:#00796b; stroke-width:1.5; rx:8; }
+      .box2 { fill:#E8F5E9; stroke:#388E3C; stroke-width:1.5; rx:6; }
+      .box3 { fill:#FFF9C4; stroke:#F9A825; stroke-width:1.5; rx:6; }
+      .boxt { fill:#B2DFDB; stroke:#00796b; stroke-width:2; rx:8; }
+      .line { stroke:#00796b; stroke-width:1.2; fill:none; }
+      .tit { font:bold 15px sans-serif; fill:#00796b; }
+      .nm { font:13px sans-serif; fill:#1a1a1a; }
+      .sm { font:11px sans-serif; fill:#333; }
+      .red { font:11px sans-serif; fill:#c0392b; }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="200" y="8" width="280" height="34" class="boxt"/>
+  <text x="340" y="31" text-anchor="middle" class="tit">第2章 一元二次函数、方程和不等式</text>
+
+  <!-- 等式性质 -->
+  <rect x="20" y="52" width="160" height="28" class="box"/>
+  <text x="100" y="70" text-anchor="middle" class="nm">等式的性质</text>
+  <rect x="20" y="88" width="160" height="60" class="box"/>
+  <text x="100" y="108" text-anchor="middle" class="sm">传递性：a=b,b=c → a=c</text>
+  <text x="100" y="126" text-anchor="middle" class="sm">加减法：a=b → a+c=b+c</text>
+  <text x="100" y="144" text-anchor="middle" class="sm">乘法：a=b → ac=bc</text>
+
+  <!-- 不等式性质 -->
+  <rect x="200" y="52" width="180" height="28" class="box"/>
+  <text x="290" y="70" text-anchor="middle" class="nm">不等式的性质</text>
+  <rect x="200" y="88" width="180" height="100" class="box"/>
+  <text x="290" y="108" text-anchor="middle" class="sm">同向可加：a&gt;b,c&gt;d→a+c&gt;b+d</text>
+  <text x="290" y="126" text-anchor="middle" class="sm">正数可乘：a&gt;b,c&gt;0→ac&gt;bc</text>
+  <text x="290" y="144" text-anchor="middle" class="red">负数反转！a&gt;b,c&lt;0→ac&lt;bc</text>
+  <text x="290" y="162" text-anchor="middle" class="sm">倒数：a&gt;b&gt;0 → 1/a &lt; 1/b</text>
+
+  <!-- 二次函数 -->
+  <rect x="410" y="52" width="250" height="28" class="box"/>
+  <text x="535" y="70" text-anchor="middle" class="nm">二次函数 y=ax²+bx+c (a≠0)</text>
+  <rect x="410" y="88" width="250" height="132" class="box"/>
+  <text x="535" y="110" text-anchor="middle" class="sm">对称轴：x = −b/(2a)</text>
+  <text x="535" y="128" text-anchor="middle" class="sm">顶点：(−b/2a, (4ac−b²)/4a)</text>
+  <text x="535" y="146" text-anchor="middle" class="sm">开口方向：a&gt;0向上；a&lt;0向下</text>
+  <text x="535" y="164" text-anchor="middle" class="sm">判别式 Δ=b²−4ac</text>
+  <text x="535" y="182" text-anchor="middle" class="sm">Δ&gt;0：两不等实根；Δ=0：相等实根</text>
+  <text x="535" y="200" text-anchor="middle" class="sm">Δ&lt;0：无实根（开口向上则y恒正）</text>
+
+  <!-- 基本不等式 -->
+  <rect x="20" y="208" width="300" height="34" class="boxt"/>
+  <text x="170" y="230" text-anchor="middle" class="tit">基本不等式 (a,b&gt;0)</text>
+
+  <rect x="20" y="250" width="300" height="120" class="box3"/>
+  <text x="170" y="272" text-anchor="middle" class="nm">使用条件：一正二定三相等</text>
+  <text x="30" y="294" class="sm">① 一正：a&gt;0, b&gt;0（同号正数）</text>
+  <text x="30" y="312" class="sm">② 二定：和定积最大，积定和最小</text>
+  <text x="30" y="330" class="sm">③ 三相等：验证 a=b 是否能取到</text>
+  <text x="30" y="348" class="sm">公式：(a+b)/2 ≥ √(ab)，等号当且仅当 a=b</text>
+  <text x="30" y="364" class="red">⚠ 常见错误：忽略等号成立条件！</text>
+
+  <!-- 不等式解法 -->
+  <rect x="350" y="208" width="310" height="34" class="boxt"/>
+  <text x="505" y="230" text-anchor="middle" class="tit">一元二次不等式解法</text>
+
+  <rect x="350" y="250" width="310" height="120" class="box2"/>
+  <text x="505" y="272" text-anchor="middle" class="sm">步骤：① 化正(a&gt;0)</text>
+  <text x="505" y="290" text-anchor="middle" class="sm">② 求根(Δ&gt;0两解, =0一解, &lt;0无解)</text>
+  <text x="505" y="308" text-anchor="middle" class="sm">③ 大于取两边，小于取中间</text>
+  <text x="505" y="326" text-anchor="middle" class="sm">a&lt;0时：两边乘−1，方向反转</text>
+  <text x="505" y="344" text-anchor="middle" class="red">⚠ 含参不等式：讨论Δ和开口方向！</text>
+
+  <!-- 配方法 -->
+  <rect x="20" y="390" width="640" height="76" class="box"/>
+  <text x="340" y="412" text-anchor="middle" class="nm">配方法解题模板（二次函数/最值问题）</text>
+  <text x="30" y="434" class="sm">y=ax²+bx+c = a(x + b/2a)² + (4ac−b²)/4a</text>
+  <text x="30" y="452" class="sm">最值：a&gt;0时，当x=−b/2a取最小值；a&lt;0时取最大值</text>
+  <text x="30" y="470" class="sm">实际应用：面积最大、利润最大——先列函数，再配方求最值</text>
+</svg>

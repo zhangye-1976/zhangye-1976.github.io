@@ -1,0 +1,60 @@
+<svg viewBox="0 0 680 520" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第4章 细胞的物质输入和输出</title>
+  <desc>被动运输、主动运输、胞吞胞吐、质壁分离</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="180" y="8" width="320" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">第4章 细胞的物质输入和输出</text>
+
+  <line x1="340" y1="48" x2="340" y2="68" stroke="#00796b" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="72" width="290" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="185" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">被动运输 ★</text>
+
+  <rect x="350" y="72" width="140" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="420" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">主动运输 ★</text>
+
+  <rect x="510" y="72" width="130" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="575" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">胞吞胞吐</text>
+
+  <rect x="40" y="148" width="290" height="200" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="185" y="170" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">自由扩散（简单扩散）</text>
+  <text x="185" y="194" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">顺浓度梯度：高→低</text>
+  <text x="185" y="214" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">不需要载体蛋白</text>
+  <text x="185" y="234" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">不消耗能量</text>
+  <text x="185" y="258" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">举例：H₂O、O₂、CO₂、乙醇、</text>
+  <text x="185" y="278" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">甘油、苯、脂溶性小分子</text>
+  <text x="185" y="302" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 水以自由扩散为主</text>
+  <text x="185" y="322" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">也有水通道蛋白（协助扩散）</text>
+  <text x="185" y="340" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">取决于浓度差（渗透压）</text>
+
+  <rect x="350" y="148" width="290" height="200" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="495" y="170" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">协助扩散</text>
+  <text x="495" y="194" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">顺浓度梯度：高→低</text>
+  <text x="495" y="214" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">需要转运蛋白</text>
+  <text x="495" y="234" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">不消耗能量</text>
+  <text x="495" y="258" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">载体蛋白：葡萄糖进红细胞</text>
+  <text x="495" y="278" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">通道蛋白：Na⁺、K⁺、Ca²⁺</text>
+  <text x="495" y="302" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 载体蛋白有饱和现象</text>
+  <text x="495" y="322" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">通道蛋白转运速率更高</text>
+  <text x="495" y="340" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 水通道蛋白发现获诺奖</text>
+
+  <rect x="40" y="376" width="290" height="64" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="185" y="396" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">主动运输</text>
+  <text x="185" y="418" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">逆浓度梯度：低→高 | 需要载体蛋白 | 消耗ATP</text>
+  <text x="185" y="434" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 小肠吸收葡萄糖/氨基酸 | 根吸收矿质离子</text>
+
+  <rect x="350" y="376" width="290" height="64" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="495" y="396" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">胞吞与胞吐</text>
+  <text x="495" y="418" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">大分子/颗粒进出细胞（如分泌蛋白、吞噬细菌）</text>
+  <text x="495" y="434" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 消耗能量，依赖膜的流动性</text>
+
+  <rect x="40" y="468" width="600" height="36" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="340" y="470" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">高频：运输方式判断（顺/逆浓度？需要载体？消耗ATP？）</text>
+  <text x="340" y="488" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">质壁分离与复原（植物）| 半透膜≠选择透过性膜 | 胞吞/胞吐依赖膜的流动性</text>
+</svg>

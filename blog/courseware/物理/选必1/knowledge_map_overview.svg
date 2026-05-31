@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8EAF6"/>
+      <stop offset="100%" stop-color="#C5CAE9"/>
+    </linearGradient>
+  </defs>
+  <rect width="680" height="480" rx="12" fill="url(#bg)"/>
+  <rect x="20" y="18" width="640" height="44" rx="8" fill="#283593"/>
+  <text x="340" y="48" text-anchor="middle" fill="#fff" font-size="20" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">物理选择性必修第一册 · 全书总览（4章）</text>
+
+  <!-- 第1章 动量 -->
+  <rect x="30" y="80" width="300" height="130" rx="8" fill="#fff" stroke="#C62828" stroke-width="2"/>
+  <rect x="30" y="80" width="300" height="28" rx="8" fill="#C62828"/>
+  <rect x="30" y="97" width="300" height="11" fill="#C62828"/>
+  <text x="180" y="99" text-anchor="middle" fill="#fff" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">第1章 动量守恒定律 ⭐</text>
+  <text x="50" y="132" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">动量 p=mv · 冲量 I=Ft</text>
+  <text x="50" y="152" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">动量定理 Ft=Δp</text>
+  <text x="50" y="172" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">动量守恒 m₁v₁+m₂v₂=m₁v₁'+m₂v₂'</text>
+  <text x="50" y="192" fill="#C62828" font-size="11" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">弹性/非弹性碰撞 · 反冲 · 火箭</text>
+  <text x="50" y="207" fill="#C62828" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">🔥 力学压轴题核心工具！</text>
+
+  <!-- 第2章 振动 -->
+  <rect x="350" y="80" width="300" height="130" rx="8" fill="#fff" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="350" y="80" width="300" height="28" rx="8" fill="#00796B"/>
+  <rect x="350" y="97" width="300" height="11" fill="#00796B"/>
+  <text x="500" y="99" text-anchor="middle" fill="#fff" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">第2章 机械振动</text>
+  <text x="370" y="132" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">回复力 F=-kx</text>
+  <text x="370" y="152" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">弹簧振子 T=2π√(m/k)</text>
+  <text x="370" y="172" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">单摆 T=2π√(L/g)</text>
+  <text x="370" y="192" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">共振条件：f_驱 = f_固</text>
+
+  <!-- 第3章 波 -->
+  <rect x="30" y="225" width="300" height="120" rx="8" fill="#fff" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="30" y="225" width="300" height="28" rx="8" fill="#00796B"/>
+  <rect x="30" y="242" width="300" height="11" fill="#00796B"/>
+  <text x="180" y="244" text-anchor="middle" fill="#fff" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">第3章 机械波</text>
+  <text x="50" y="272" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">v=λf（波源定f，介质定v）</text>
+  <text x="50" y="292" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">干涉：Δr=nλ加强 (n+1/2)λ减弱</text>
+  <text x="50" y="312" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">衍射 · 多普勒效应</text>
+  <text x="50" y="332" fill="#00796B" font-size="10" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">⚠ y-t图 vs y-x图 对比必考</text>
+
+  <!-- 第4章 光 -->
+  <rect x="350" y="225" width="300" height="120" rx="8" fill="#fff" stroke="#E53935" stroke-width="1.5"/>
+  <rect x="350" y="225" width="300" height="28" rx="8" fill="#E53935"/>
+  <rect x="350" y="242" width="300" height="11" fill="#E53935"/>
+  <text x="500" y="244" text-anchor="middle" fill="#fff" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">第4章 光 ⭐</text>
+  <text x="370" y="272" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">折射 n=sinθ₁/sinθ₂=c/v</text>
+  <text x="370" y="292" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">全反射 sinC=1/n</text>
+  <text x="370" y="312" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">双缝干涉 Δx=Lλ/d</text>
+  <text x="370" y="330" fill="#333" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">偏振证明光是横波</text>
+
+  <!-- 学习路径 -->
+  <rect x="30" y="360" width="620" height="50" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="340" y="380" text-anchor="middle" fill="#2E7D32" font-size="12" font-family="Microsoft YaHei, SimHei, sans-serif">学习路径：第1章(动量→碰撞模型) → 第2章(简谐运动→单摆) → 第3章(波动描述→干涉衍射) → 第4章(折射全反射→干涉偏振)</text>
+  <text x="340" y="400" text-anchor="middle" fill="#C62828" font-size="11" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">🔴 第1章是力学压轴核心！第4章光学实验题和计算题频率高！</text>
+
+  <!-- 底部 -->
+  <text x="340" y="440" text-anchor="middle" fill="#777" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">全国乙卷 · 人教版2019版 · 选必1选择题约12% + 实验题约8% + 计算题约15%</text>
+  <text x="340" y="462" text-anchor="middle" fill="#999" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">物理选择性必修第一册 · 全书总览</text>
+</svg>

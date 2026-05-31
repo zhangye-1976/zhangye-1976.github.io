@@ -1,0 +1,63 @@
+<svg viewBox="0 0 900 600" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6" fill="#00796b"/>
+    </marker>
+  </defs>
+  <!-- 标题 -->
+  <rect x="250" y="10" width="400" height="44" rx="10" fill="#00796b"/>
+  <text x="450" y="38" text-anchor="middle" fill="#fff" font-size="16" font-weight="600" font-family="system-ui, sans-serif">第1章 发酵工程 思维导图</text>
+  
+  <!-- 基本流程 -->
+  <rect x="300" y="70" width="300" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+  <text x="450" y="97" text-anchor="middle" fill="#04342C" font-size="14" font-weight="500" font-family="system-ui, sans-serif">发酵工程基本流程</text>
+  
+  <!-- 四步 -->
+  <rect x="30" y="150" width="180" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="120" y="177" text-anchor="middle" fill="#04342C" font-size="12" font-weight="500" font-family="system-ui, sans-serif">① 菌种选育</text>
+  <rect x="240" y="150" width="180" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="330" y="177" text-anchor="middle" fill="#04342C" font-size="12" font-weight="500" font-family="system-ui, sans-serif">② 培养基配制</text>
+  <rect x="450" y="150" width="180" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="540" y="177" text-anchor="middle" fill="#04342C" font-size="12" font-weight="500" font-family="system-ui, sans-serif">③ 灭菌</text>
+  <rect x="660" y="150" width="180" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="750" y="177" text-anchor="middle" fill="#04342C" font-size="12" font-weight="500" font-family="system-ui, sans-serif">④ 接种发酵</text>
+  <line x1="210" y1="172" x2="240" y2="172" stroke="#00796b" stroke-width="0.8" marker-end="url(#arr)"/>
+  <line x1="420" y1="172" x2="450" y2="172" stroke="#00796b" stroke-width="0.8" marker-end="url(#arr)"/>
+  <line x1="630" y1="172" x2="660" y2="172" stroke="#00796b" stroke-width="0.8" marker-end="url(#arr)"/>
+  
+  <!-- 无菌技术 -->
+  <rect x="60" y="230" width="780" height="50" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="1"/>
+  <text x="450" y="255" text-anchor="middle" fill="#4B1528" font-size="13" font-weight="500" font-family="system-ui, sans-serif">核心：无菌技术 ★</text>
+  <text x="450" y="275" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">灼烧灭菌 | 干热灭菌 | 高压蒸汽灭菌(121℃) | 过滤除菌</text>
+  
+  <!-- 培养基成分 -->
+  <rect x="60" y="310" width="340" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="230" y="335" text-anchor="middle" fill="#04342C" font-size="12" font-weight="500" font-family="system-ui, sans-serif">培养基基本成分</text>
+  <text x="230" y="355" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">碳源（葡萄糖）、氮源（蛋白胨）</text>
+  <text x="230" y="373" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">水、无机盐、特殊生长因子</text>
+  <text x="230" y="391" text-anchor="middle" fill="#72243E" font-size="10" font-family="system-ui, sans-serif">选择培养基：抑制不需要的微生物</text>
+  
+  <!-- 微生物计数 -->
+  <rect x="440" y="310" width="340" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="610" y="335" text-anchor="middle" fill="#04342C" font-size="12" font-weight="500" font-family="system-ui, sans-serif">微生物计数 ★</text>
+  <text x="610" y="355" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">稀释涂布平板法：30-300菌落有效</text>
+  <text x="610" y="373" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">显微镜直接计数：死活都计，结果偏大</text>
+  <text x="610" y="391" text-anchor="middle" fill="#72243E" font-size="10" font-family="system-ui, sans-serif">公式：菌落数/涂布体积×稀释倍数</text>
+  
+  <!-- 划线分离法 -->
+  <rect x="60" y="430" width="340" height="60" rx="8" fill="#FFF8E1" stroke="#FFC107" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="230" y="455" text-anchor="middle" fill="#F57C00" font-size="12" font-weight="500" font-family="system-ui, sans-serif">平板划线分离法</text>
+  <text x="230" y="475" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">关键：前后不重叠，逐步稀释得单菌落</text>
+  <text x="230" y="493" text-anchor="middle" fill="#F57C00" font-size="10" font-family="system-ui, sans-serif">操作全程在酒精灯火焰旁（无菌区）</text>
+  
+  <!-- 发酵工程应用 -->
+  <rect x="440" y="430" width="340" height="60" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="1"/>
+  <text x="610" y="455" text-anchor="middle" fill="#042C53" font-size="12" font-weight="500" font-family="system-ui, sans-serif">发酵工程的应用</text>
+  <text x="610" y="475" text-anchor="middle" fill="#042C53" font-size="11" font-family="system-ui, sans-serif">食品工业（酿酒、酸奶）</text>
+  <text x="610" y="493" text-anchor="middle" fill="#042C53" font-size="11" font-family="system-ui, sans-serif">医药工业（抗生素、疫苗、胰岛素）</text>
+  
+  <!-- 易错提醒 -->
+  <rect x="100" y="520" width="700" height="50" rx="8" fill="#FFF8E1" stroke="#FFC107" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="450" y="542" text-anchor="middle" fill="#F57C00" font-size="12" font-weight="500" font-family="system-ui, sans-serif">🔴 易错提醒（必看！）</text>
+  <text x="450" y="562" text-anchor="middle" fill="#F57C00" font-size="11" font-family="system-ui, sans-serif">培养基先调pH再灭菌；只有30-300个菌落的平板才有效</text>
+</svg>

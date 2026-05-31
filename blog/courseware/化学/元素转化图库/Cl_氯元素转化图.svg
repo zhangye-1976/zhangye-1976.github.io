@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 800" font-family="SimSun, 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="R" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#D32F2F"/></marker>
+    <marker id="D" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#333"/></marker>
+    <marker id="B" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#1565C0"/></marker>
+    <marker id="G" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#2E7D32"/></marker>
+  </defs>
+
+  <rect width="960" height="800" fill="#FAFAFA" rx="8"/>
+  <rect x="0" y="0" width="960" height="56" fill="#558B2F" rx="8"/>
+  <rect x="0" y="28" width="960" height="28" fill="#558B2F"/>
+  <text x="480" y="37" text-anchor="middle" fill="white" font-size="21" font-weight="bold">Cl 氯元素及其化合物转化图</text>
+
+  <!-- Legend -->
+  <rect x="730" y="70" width="210" height="95" fill="white" stroke="#CCC" rx="4"/>
+  <text x="740" y="90" font-size="12" font-weight="bold" fill="#333">图例</text>
+  <rect x="740" y="100" width="18" height="18" rx="3" fill="#E3F2FD" stroke="#1565C0"/>
+  <text x="765" y="114" font-size="11" fill="#333">普通节点</text>
+  <rect x="740" y="123" width="18" height="18" rx="3" fill="#FFEBEE" stroke="#D32F2F"/>
+  <text x="765" y="137" font-size="11" fill="#D32F2F">🔴 高频考点</text>
+  <rect x="740" y="145" width="18" height="18" rx="3" fill="#FFF9C4" stroke="#F9A825"/>
+  <text x="765" y="159" font-size="11" fill="#F9A825">单质</text>
+
+  <!-- ==================== NODES ==================== -->
+  <!-- Cl2 (center) -->
+  <rect x="380" y="100" width="100" height="44" rx="8" fill="#FFF9C4" stroke="#F9A825" stroke-width="2.5"/>
+  <text x="430" y="119" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Cl₂</text>
+  <text x="430" y="136" text-anchor="middle" font-size="10" fill="#666">氯气</text>
+
+  <!-- HCl (top right) -->
+  <rect x="640" y="100" width="90" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="685" y="119" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">HCl</text>
+  <text x="685" y="136" text-anchor="middle" font-size="10" fill="#666">氯化氢</text>
+
+  <!-- HClO (top center) 🔴 -->
+  <rect x="370" y="230" width="100" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="420" y="249" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">HClO</text>
+  <text x="420" y="266" text-anchor="middle" font-size="10" fill="#C62828">次氯酸 🔴</text>
+
+  <!-- NaCl (bottom left) -->
+  <rect x="100" y="390" width="90" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="145" y="409" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">NaCl</text>
+  <text x="145" y="426" text-anchor="middle" font-size="10" fill="#666">氯化钠</text>
+
+  <!-- NaClO (bottom center) 🔴 -->
+  <rect x="350" y="460" width="110" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="405" y="479" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">NaClO</text>
+  <text x="405" y="496" text-anchor="middle" font-size="10" fill="#C62828">次氯酸钠 🔴</text>
+
+  <!-- Ca(ClO)2 (bottom right) 🔴 -->
+  <rect x="620" y="460" width="130" height="44" rx="8" fill="#FFEBEE" stroke="#D32F2F" stroke-width="2.5"/>
+  <text x="685" y="479" text-anchor="middle" font-size="16" font-weight="bold" fill="#D32F2F">Ca(ClO)₂</text>
+  <text x="685" y="496" text-anchor="middle" font-size="10" fill="#C62828">次氯酸钙 🔴</text>
+
+  <!-- MnO2 (left) -->
+  <rect x="100" y="240" width="90" height="44" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="145" y="259" text-anchor="middle" font-size="14" font-weight="bold" fill="#7B1FA2">MnO₂</text>
+  <text x="145" y="276" text-anchor="middle" font-size="10" fill="#666">二氧化锰</text>
+
+  <!-- AgCl (left bottom) -->
+  <rect x="100" y="550" width="90" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="145" y="569" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">AgCl</text>
+  <text x="145" y="586" text-anchor="middle" font-size="10" fill="#666">氯化银↓</text>
+
+  <!-- FeCl3 (right bottom) -->
+  <rect x="640" y="390" width="90" height="44" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+  <text x="685" y="409" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">FeCl₃</text>
+  <text x="685" y="426" text-anchor="middle" font-size="10" fill="#666">氯化铁</text>
+
+  <!-- ==================== ARROWS ==================== -->
+  <!-- Cl2 → HCl -->
+  <line x1="480" y1="115" x2="635" y2="115" stroke="#333" stroke-width="2" marker-end="url(#D)"/>
+  <text x="555" y="107" font-size="11" fill="#333">+H₂(点燃/光照)</text>
+
+  <!-- Cl2 → HClO 🔴 -->
+  <line x1="425" y1="148" x2="420" y2="225" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#R)"/>
+  <text x="440" y="190" font-size="11" fill="#D32F2F" font-weight="bold">+H₂O ⇌ HCl+HClO 🔴</text>
+
+  <!-- Cl2 → NaCl -->
+  <line x1="380" y1="115" x2="150" y2="380" stroke="#333" stroke-width="2" marker-end="url(#D)"/>
+  <text x="220" y="250" font-size="11" fill="#333">+Na(点燃)</text>
+
+  <!-- Cl2 → NaClO 🔴 -->
+  <line x1="405" y1="148" x2="395" y2="455" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#R)"/>
+  <text x="360" y="305" font-size="11" fill="#D32F2F" font-weight="bold">+NaOH(冷) 🔴</text>
+
+  <!-- Cl2 → Ca(ClO)2 🔴 -->
+  <line x1="470" y1="148" x2="670" y2="455" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#R)"/>
+  <text x="600" y="305" font-size="11" fill="#D32F2F" font-weight="bold">+Ca(OH)₂ 🔴</text>
+
+  <!-- Cl2 → FeCl3 -->
+  <line x1="480" y1="135" x2="635" y2="390" stroke="#333" stroke-width="2" marker-end="url(#D)"/>
+  <text x="585" y="260" font-size="11" fill="#333">+Fe(点燃)</text>
+
+  <!-- MnO2 → Cl2 🔴 (lab prep) -->
+  <line x1="195" y1="260" x2="375" y2="125" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#R)"/>
+  <text x="240" y="195" font-size="11" fill="#D32F2F" font-weight="bold">+HCl(浓)△ 🔴 实验室</text>
+
+  <!-- HCl → Cl2 (reverse, MnO2) -->
+  <line x1="640" y1="130" x2="375" y2="120" stroke="#666" stroke-width="1.5" marker-end="url(#D)" stroke-dasharray="6,3"/>
+  <text x="500" y="135" font-size="10" fill="#666">+MnO₂△</text>
+
+  <!-- HClO → HCl -->
+  <line x1="470" y1="250" x2="635" y2="125" stroke="#333" stroke-width="2" marker-end="url(#D)"/>
+  <text x="570" y="185" font-size="11" fill="#333">光照 2HClO=2HCl+O₂↑</text>
+
+  <!-- HClO → NaClO -->
+  <line x1="405" y1="278" x2="395" y2="455" stroke="#666" stroke-width="1.5" marker-end="url(#D)"/>
+  <text x="370" y="370" font-size="10" fill="#666">+NaOH</text>
+
+  <!-- HClO → Ca(ClO)2 -->
+  <line x1="450" y1="278" x2="670" y2="455" stroke="#666" stroke-width="1.5" marker-end="url(#D)"/>
+  <text x="580" y="370" font-size="10" fill="#666">+Ca(OH)₂</text>
+
+  <!-- HCl → NaCl -->
+  <line x1="640" y1="144" x2="195" y2="400" stroke="#666" stroke-width="1.5" marker-end="url(#D)"/>
+  <text x="380" y="280" font-size="10" fill="#666">+NaOH</text>
+
+  <!-- Na/Ca(ClO) → HClO 🔴 (bleaching principle) -->
+  <line x1="405" y1="505" x2="420" y2="280" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#R)" stroke-dasharray="8,4"/>
+  <text x="415" y="395" font-size="11" fill="#D32F2F" font-weight="bold">+CO₂+H₂O/+HCl 🔴</text>
+
+  <line x1="685" y1="505" x2="685" y2="395" stroke="#D32F2F" stroke-width="2.5" marker-end="url(#R)" stroke-dasharray="8,4"/>
+  <text x="695" y="450" font-size="11" fill="#D32F2F" font-weight="bold">+CO₂+H₂O 🔴</text>
+
+  <!-- NaCl → AgCl -->
+  <line x1="145" y1="438" x2="145" y2="545" stroke="#333" stroke-width="2" marker-end="url(#D)"/>
+  <text x="155" y="495" font-size="11" fill="#333">+AgNO₃ → AgCl↓</text>
+
+  <!-- ==================== EXAM TIPS ==================== -->
+  <rect x="15" y="620" width="930" height="165" fill="white" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="35" y="645" font-size="14" font-weight="bold" fill="#D32F2F">🔴 近十年高考高频考点</text>
+
+  <text x="35" y="670" font-size="11" fill="#333">① Cl₂实验室制法：MnO₂+4HCl(浓) △ MnCl₂+Cl₂↑+2H₂O；也可用KMnO₄+HCl(浓)（不需加热）</text>
+  <text x="35" y="688" font-size="11" fill="#333">② 氯水成分：三分子(Cl₂、HClO、H₂O) + 四离子(H⁺、Cl⁻、ClO⁻、OH⁻)；新制氯水浅黄绿色，久置=稀盐酸</text>
+  <text x="35" y="706" font-size="11" fill="#333">③ 漂白粉/漂白液原理：Ca(ClO)₂+CO₂+H₂O=CaCO₃↓+2HClO；NaClO+CO₂+H₂O=NaHCO₃+HClO</text>
+  <text x="35" y="724" font-size="11" fill="#333">④ 漂白性比较：Cl₂（潮湿→HClO漂白/永久）、SO₂（化合漂白/可逆）、Na₂O₂/H₂O₂（氧化漂白/永久）、活性炭（吸附）</text>
+  <text x="35" y="742" font-size="11" fill="#333">⑤ Cl⁻检验：加AgNO₃溶液→白色沉淀，加稀HNO₃不溶解</text>
+  <text x="35" y="760" font-size="11" fill="#333">⑥ 卤族元素递变：F₂&gt;Cl₂&gt;Br₂&gt;I₂ 氧化性递减；Cl₂可置换Br⁻和I⁻；Cl₂黄绿色气体，有毒</text>
+  <text x="35" y="778" font-size="11" fill="#333">⑦ 新制氯水滴加NaOH→先褪色（HClO+NaOH）；石蕊试纸→先变红后褪色</text>
+
+</svg>

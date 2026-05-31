@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 620" width="100%" role="img">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .t { font-family: var(--font-sans, sans-serif); font-size: 14px; fill: var(--color-text-primary, #18191C); }
+      .ts { font-family: var(--font-sans, sans-serif); font-size: 12px; fill: var(--color-text-secondary, #5F5E5A); }
+      .th { font-family: var(--font-sans, sans-serif); font-size: 13px; font-weight: 500; fill: var(--color-text-primary, #18191C); }
+      .tm { font-family: var(--font-sans, sans-serif); font-size: 13px; fill: var(--color-text-primary, #18191C); }
+      .tc { font-family: var(--font-sans, sans-serif); font-size: 11px; fill: var(--color-text-secondary, #5F5E5A); }
+      .node:hover rect { stroke-width: 1.5px; }
+    </style>
+  </defs>
+
+  <title>第一章 物质及其变化 - 详细知识导图</title>
+  <desc>涵盖物质的分类及转化、离子反应、氧化还原反应三大节</desc>
+
+  <rect x="230" y="10" width="220" height="44" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.5"/>
+  <text class="th" x="340" y="32" text-anchor="middle" dominant-baseline="central" fill="#534AB7">第一章 物质及其变化</text>
+
+  <!-- ===== 第一节：物质的分类及转化 ===== -->
+  <line x1="340" y1="54" x2="580" y2="74" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+  <rect x="510" y="76" width="150" height="36" rx="7" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text class="th" x="585" y="94" text-anchor="middle" dominant-baseline="central" fill="#534AB7">第一节 分类及转化</text>
+
+  <!-- 同素异形体 -->
+  <rect x="520" y="122" width="130" height="30" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="585" y="137" text-anchor="middle" dominant-baseline="central">同素异形体</text>
+  <text class="tc" x="585" y="158" text-anchor="middle" dominant-baseline="hanging">O₂/O₃ · 金刚石/石墨</text>
+
+  <!-- 分散系 -->
+  <rect x="520" y="168" width="130" height="30" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="585" y="183" text-anchor="middle" dominant-baseline="central">分散系</text>
+  <text class="tc" x="585" y="204" text-anchor="middle" dominant-baseline="hanging">溶液 · 胶体 · 浊液</text>
+
+  <!-- 胶体 -->
+  <rect x="520" y="214" width="130" height="44" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="585" y="228" text-anchor="middle" dominant-baseline="central">胶体性质</text>
+  <text class="tc" x="585" y="242" text-anchor="middle" dominant-baseline="central">丁达尔效应</text>
+  <text class="tc" x="585" y="254" text-anchor="middle" dominant-baseline="central">胶体粒子 1~100 nm</text>
+
+  <!-- ===== 第二节：离子反应 ===== -->
+  <line x1="340" y1="54" x2="340" y2="74" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+  <rect x="250" y="76" width="180" height="36" rx="7" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text class="th" x="340" y="94" text-anchor="middle" dominant-baseline="central" fill="#534AB7">第二节 离子反应</text>
+
+  <!-- 电解质 -->
+  <rect x="250" y="122" width="180" height="44" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="340" y="136" text-anchor="middle" dominant-baseline="central">电解质与非电解质</text>
+  <text class="tc" x="340" y="152" text-anchor="middle" dominant-baseline="central">电解质：水溶液/熔融态能导电</text>
+  <text class="tc" x="340" y="164" text-anchor="middle" dominant-baseline="central">强电解质：完全电离（强酸/强碱/盐）</text>
+
+  <!-- 电离 -->
+  <rect x="250" y="176" width="180" height="30" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="340" y="191" text-anchor="middle" dominant-baseline="central">电离方程式</text>
+  <text class="tc" x="340" y="212" text-anchor="middle" dominant-baseline="hanging">NaCl = Na⁺ + Cl⁻</text>
+
+  <!-- 离子反应 -->
+  <rect x="250" y="220" width="180" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="340" y="234" text-anchor="middle" dominant-baseline="central">离子反应条件</text>
+  <text class="tc" x="340" y="249" text-anchor="middle" dominant-baseline="central">① 沉淀</text>
+  <text class="tc" x="340" y="261" text-anchor="middle" dominant-baseline="central">② 气体</text>
+  <text class="tc" x="340" y="273" text-anchor="middle" dominant-baseline="central">③ 水（弱电解质）</text>
+
+  <!-- 离子方程式 -->
+  <rect x="250" y="286" width="180" height="44" rx="5" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text class="tm" x="340" y="300" text-anchor="middle" dominant-baseline="central">离子方程式书写</text>
+  <text class="tc" x="340" y="316" text-anchor="middle" dominant-baseline="central">写 → 拆 → 删 → 查</text>
+  <text class="tc" x="340" y="328" text-anchor="middle" dominant-baseline="central">不可拆：沉淀/气体/弱电解质/氧化物</text>
+
+  <!-- ===== 第三节：氧化还原反应 ===== -->
+  <line x1="340" y1="54" x2="100" y2="74" stroke="#888780" stroke-width="0.5" marker-end="url(#arrow)"/>
+  <rect x="20" y="76" width="160" height="36" rx="7" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text class="th" x="100" y="94" text-anchor="middle" dominant-baseline="central" fill="#534AB7">第三节 氧化还原反应</text>
+
+  <!-- 基本概念 -->
+  <rect x="20" y="122" width="160" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="100" y="136" text-anchor="middle" dominant-baseline="central">核心概念对应</text>
+  <text class="tc" x="100" y="151" text-anchor="middle" dominant-baseline="central">升（化合价升高）</text>
+  <text class="tc" x="100" y="163" text-anchor="middle" dominant-baseline="central">→ 失电子 → 被氧化</text>
+  <text class="tc" x="100" y="175" text-anchor="middle" dominant-baseline="central">→ 还原剂（自身被氧化）</text>
+
+  <rect x="20" y="188" width="160" height="30" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="100" y="203" text-anchor="middle" dominant-baseline="central">降 → 得电子 → 被还原</text>
+  <text class="tc" x="100" y="223" text-anchor="middle" dominant-baseline="hanging">→ 氧化剂（自身被还原）</text>
+
+  <!-- 记忆口诀 -->
+  <rect x="20" y="238" width="160" height="44" rx="5" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text class="tm" x="100" y="252" text-anchor="middle" dominant-baseline="central">口诀</text>
+  <text class="tc" x="100" y="267" text-anchor="middle" dominant-baseline="central">"升失氧还，降得还氧"</text>
+  <text class="tc" x="100" y="279" text-anchor="middle" dominant-baseline="central">化合价升高=失电子=被氧化=还原剂</text>
+
+  <!-- 电子转移 -->
+  <rect x="20" y="294" width="160" height="30" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="100" y="309" text-anchor="middle" dominant-baseline="central">电子转移表示</text>
+  <text class="tc" x="100" y="330" text-anchor="middle" dominant-baseline="hanging">双线桥法 · 单线桥法</text>
+
+  <!-- 常见氧化剂/还原剂 -->
+  <rect x="20" y="340" width="160" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="100" y="355" text-anchor="middle" dominant-baseline="central">常见氧化剂</text>
+  <text class="tc" x="100" y="370" text-anchor="middle" dominant-baseline="central">O₂ · Cl₂ · KMnO₄</text>
+  <text class="tc" x="100" y="382" text-anchor="middle" dominant-baseline="central">HNO₃ · 浓H₂SO₄ · Fe³⁺</text>
+  <text class="tc" x="100" y="394" text-anchor="middle" dominant-baseline="central">常见还原剂：Na · Al · Zn · C · CO · Fe²⁺</text>
+
+  <!-- 配平 -->
+  <rect x="20" y="406" width="160" height="44" rx="5" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text class="tm" x="100" y="420" text-anchor="middle" dominant-baseline="central">氧化还原配平</text>
+  <text class="tc" x="100" y="435" text-anchor="middle" dominant-baseline="central">化合价升降法</text>
+  <text class="tc" x="100" y="447" text-anchor="middle" dominant-baseline="central">得失电子守恒</text>
+
+  <!-- 化学变化分类总览 -->
+  <rect x="220" y="380" width="240" height="56" rx="7" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text class="th" x="340" y="398" text-anchor="middle" dominant-baseline="central" fill="#534AB7">化学变化分类</text>
+  <text class="tc" x="340" y="413" text-anchor="middle" dominant-baseline="central">按是否有化合价变化</text>
+  <text class="tc" x="340" y="425" text-anchor="middle" dominant-baseline="central">氧化还原反应 ← → 非氧化还原反应</text>
+  <text class="tc" x="340" y="437" text-anchor="middle" dominant-baseline="central">四大基本反应与氧化还原的交叉关系</text>
+
+  <!-- 底部四大基本反应 -->
+  <text class="th" x="340" y="475" text-anchor="middle" dominant-baseline="central">四大基本反应 vs 氧化还原反应</text>
+
+  <rect x="40" y="490" width="130" height="36" rx="5" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+  <text class="tm" x="105" y="505" text-anchor="middle" dominant-baseline="central">化合反应</text>
+  <text class="tc" x="105" y="520" text-anchor="middle" dominant-baseline="central">部分属于</text>
+
+  <rect x="185" y="490" width="130" height="36" rx="5" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="tm" x="250" y="505" text-anchor="middle" dominant-baseline="central">分解反应</text>
+  <text class="tc" x="250" y="520" text-anchor="middle" dominant-baseline="central">部分属于</text>
+
+  <rect x="330" y="490" width="130" height="36" rx="5" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+  <text class="tm" x="395" y="505" text-anchor="middle" dominant-baseline="central">置换反应</text>
+  <text class="tc" x="395" y="520" text-anchor="middle" dominant-baseline="central">全部属于！</text>
+
+  <rect x="475" y="490" width="130" height="36" rx="5" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text class="tm" x="540" y="505" text-anchor="middle" dominant-baseline="central">复分解反应</text>
+  <text class="tc" x="540" y="520" text-anchor="middle" dominant-baseline="central">全部不属于！</text>
+
+  <!-- 连接线 -->
+  <line x1="340" y1="112" x2="585" y2="122" stroke="#CECBF6" stroke-width="0.5"/>
+  <line x1="340" y1="112" x2="340" y2="122" stroke="#CECBF6" stroke-width="0.5"/>
+  <line x1="340" y1="112" x2="100" y2="122" stroke="#CECBF6" stroke-width="0.5"/>
+  <line x1="100" y1="188" x2="100" y2="238" stroke="#D3D1C7" stroke-width="0.5"/>
+  <line x1="100" y1="406" x2="100" y2="340" stroke="#D3D1C7" stroke-width="0.5"/>
+
+  <!-- 进阶标注 -->
+  <rect x="450" y="340" width="160" height="36" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="530" y="358" text-anchor="middle" dominant-baseline="central">氧化性/还原性比较</text>
+  <text class="tc" x="530" y="380" text-anchor="middle" dominant-baseline="hanging">"强制弱"原则</text>
+
+  <rect x="450" y="290" width="160" height="36" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tc" x="530" y="308" text-anchor="middle" dominant-baseline="central">物质分类：混合物/纯净物</text>
+  <text class="tc" x="530" y="322" text-anchor="middle" dominant-baseline="central">单质/化合物 · 酸/碱/盐/氧化物</text>
+
+  <!-- 酸/碱/盐/氧化物分类 -->
+  <rect x="450" y="400" width="160" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="530" y="415" text-anchor="middle" dominant-baseline="central">化合物分类</text>
+  <text class="tc" x="530" y="430" text-anchor="middle" dominant-baseline="central">酸（HCl, H₂SO₄, HNO₃）</text>
+  <text class="tc" x="530" y="442" text-anchor="middle" dominant-baseline="central">碱（NaOH, Ca(OH)₂）</text>
+  <text class="tc" x="530" y="454" text-anchor="middle" dominant-baseline="central">盐 · 氧化物（酸性/碱性/两性）</text>
+
+  <!-- 滴定 --><rect x="450" y="466" width="160" height="24" rx="5" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+  <text class="tm" x="530" y="478" text-anchor="middle" dominant-baseline="central">离子共存判断</text>
+
+  <text class="tc" x="340" y="610" text-anchor="middle" dominant-baseline="central">★ 第一章是全册的方法论根基，氧化还原贯穿后续全部元素化合物学习</text>
+</svg>

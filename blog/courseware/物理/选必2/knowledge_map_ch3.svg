@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460">
+  <rect width="680" height="460" fill="#E1F5EE" rx="12"/>
+  <text x="340" y="35" text-anchor="middle" font-size="20" font-weight="700" fill="#00796b">第3章 交变电流</text>
+
+  <!-- 正弦交变电流 -->
+  <rect x="30" y="55" width="300" height="170" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="55" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="180" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">正弦交变电流</text>
+  <text x="45" y="105" font-size="12" font-weight="600" fill="#333">电动势：e = E_m·sin ωt</text>
+  <text x="45" y="125" font-size="11" fill="#555">电压：u = U_m·sin ωt</text>
+  <text x="45" y="145" font-size="11" fill="#555">电流：i = I_m·sin ωt</text>
+  <text x="45" y="170" font-size="11" font-weight="600" fill="#333">瞬时值/最大值/有效值/平均值</text>
+  <text x="45" y="195" font-size="11" fill="#555">有效值 = 最大值/√2（正弦波）</text>
+  <text x="45" y="218" font-size="11" fill="#72243E">⚠ 平均功率/热效应计算用有效值！</text>
+
+  <!-- 变压器 -->
+  <rect x="350" y="55" width="300" height="170" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="350" y="55" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="500" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">理想变压器 ⭐⭐⭐</text>
+  <text x="365" y="105" font-size="12" font-weight="600" fill="#72243E">电压比：U₁/U₂ = n₁/n₂</text>
+  <text x="365" y="130" font-size="11" fill="#555">I₁/I₂ = n₂/n₁（理想：P₁=P₂）</text>
+  <text x="365" y="155" font-size="11" fill="#555">P₁=U₁I₁，P₂=U₂I₂</text>
+  <text x="365" y="180" font-size="11" font-weight="600" fill="#333">决定关系（超级易错！）</text>
+  <text x="365" y="200" font-size="11" fill="#555">U₂由U₁和匝数比决定</text>
+  <text x="365" y="220" font-size="11" fill="#555">I₁由I₂和匝数比决定 → 功率反向传递</text>
+
+  <!-- 远距离输电 -->
+  <rect x="30" y="245" width="620" height="200" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="245" width="620" height="28" fill="#72243E" rx="8"/>
+  <text x="340" y="264" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">🔴 远距离输电计算模型</text>
+
+  <text x="55" y="300" font-size="12" font-weight="600" fill="#333">线路功率损失：P损 = I²R（电流平方×线路电阻）</text>
+  <text x="55" y="325" font-size="11" fill="#555">减小P损方法：① 升压（减小I）← 最有效！② 减小R（加粗导线/用铜）</text>
+
+  <text x="55" y="355" font-size="12" font-weight="600" fill="#333">标准流程：发电→升压变压器→高压输电→降压变压器→用户</text>
+  <text x="55" y="380" font-size="11" fill="#555">升压后：U高、I低 → P损小 → 降压后恢复低压供电</text>
+
+  <text x="55" y="410" font-size="11" font-weight="600" fill="#333">P总 = P用户 + P损 = U₁I₁ = U₂I₂</text>
+  <text x="55" y="435" font-size="11" fill="#72243E">⚠ 计算P损时用输电线路上的I和R，不要混淆变压器两侧参数！</text>
+</svg>

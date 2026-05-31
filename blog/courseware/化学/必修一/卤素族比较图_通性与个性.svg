@@ -1,0 +1,82 @@
+<svg viewBox="0 0 680 820" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#E24B4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  
+  <style>
+    .t { font: 14px/1.6 sans-serif; fill: #444441; text-anchor: middle; dominant-baseline: central; }
+    .th { font: 500 14px/1.6 sans-serif; fill: #0C447C; text-anchor: middle; dominant-baseline: central; }
+    .ts { font: 400 12px/1.6 sans-serif; fill: #888780; text-anchor: middle; dominant-baseline: central; }
+    .box { fill: #F1EFE8; stroke: #5F5E5A; stroke-width: 0.5; rx: 8; }
+    .box-red { fill: #FCEBEB; stroke: #A32D2D; stroke-width: 0.5; rx: 8; }
+    .arr { stroke: #5F5E5A; stroke-width: 1; fill: none; marker-end: url(#arrow); }
+    .arr-red { stroke: #E24B4A; stroke-width: 1.2; fill: none; marker-end: url(#arrow-red); }
+    .cond { font: 400 11px/1.4 sans-serif; fill: #712B13; text-anchor: middle; dominant-baseline: central; }
+  </style>
+  
+  <text class="th" x="340" y="30" font-size="16px">卤素族比较图（ⅦA族）· 通性与个性</text>
+  <text class="ts" x="340" y="50">F₂ — Cl₂ — Br₂ — I₂ | 红色标注 = 近十年高考高频考点 ★</text>
+  
+  <g><rect class="box" x="40" y="70" width="130" height="56"/><text class="th" x="105" y="95">F₂</text><text class="ts" x="105" y="115">淡黄绿气体</text></g>
+  <g><rect class="box" x="195" y="70" width="130" height="56"/><text class="th" x="260" y="95">Cl₂</text><text class="ts" x="260" y="115">黄绿色气体</text></g>
+  <g><rect class="box" x="350" y="70" width="130" height="56"/><text class="th" x="415" y="95">Br₂</text><text class="ts" x="415" y="115">深红棕色液体</text></g>
+  <g><rect class="box" x="505" y="70" width="130" height="56"/><text class="th" x="570" y="95">I₂</text><text class="ts" x="570" y="115">紫黑色固体</text></g>
+  
+  <rect class="box" x="40" y="150" width="600" height="260" rx="12" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+  <text class="th" x="340" y="175" fill="#0C447C" font-size="15px">卤素族的通性（共性）</text>
+  
+  <g><rect class="box" x="60" y="195" width="130" height="44"/><text class="th" x="125" y="222">最外层 7e⁻</text></g>
+  <g><rect class="box" x="210" y="195" width="130" height="44"/><text class="th" x="275" y="222">主要化合价 -1</text></g>
+  <g><rect class="box-red" x="360" y="195" width="130" height="44"/><text class="th" x="425" y="222" fill="#791F1F">H₂ + X₂ → 2HX</text></g>
+  <g><rect class="box" x="510" y="195" width="110" height="44"/><text class="th" x="565" y="222">M + X₂ → MXn</text></g>
+  
+  <g><rect class="box-red" x="60" y="255" width="270" height="44"/><text class="th" x="195" y="275" fill="#791F1F">活性顺序 F₂ > Cl₂ > Br₂ > I₂</text><text class="ts" x="195" y="290" fill="#A32D2D">★ 前置后原理：Cl₂ + 2NaBr → 2NaCl + Br₂</text></g>
+  <g><rect class="box" x="350" y="255" width="270" height="44"/><text class="th" x="485" y="275">X₂ + 2NaOH → NaX + NaXO + H₂O</text></g>
+  
+  <g><rect class="box-red" x="60" y="315" width="270" height="44"/><text class="th" x="195" y="335" fill="#791F1F">Ag⁺ + X⁻ → AgX↓</text><text class="ts" x="195" y="350" fill="#A32D2D">★ 白色(Cl)→淡黄(Br)→黄色(I)↓</text></g>
+  <g><rect class="box" x="350" y="315" width="270" height="44"/><text class="th" x="485" y="335">离子均有还原性</text><text class="ts" x="485" y="350">I⁻ > Br⁻ > Cl⁻ > F⁻</text></g>
+  
+  <rect class="box" x="40" y="430" width="600" height="260" rx="12" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+  <text class="th" x="340" y="455" fill="#993C1D" font-size="15px">卤素族的个性（差异）— 递变规律</text>
+  
+  <g><rect class="box" x="60" y="475" width="160" height="36"/><text class="th" x="140" y="498">比较维度</text></g>
+  <g><rect class="box" x="230" y="475" width="100" height="36"/><text class="th" x="280" y="498">F    ↑</text></g>
+  <g><rect class="box" x="340" y="475" width="100" height="36"/><text class="th" x="390" y="498">Cl   |</text></g>
+  <g><rect class="box" x="450" y="475" width="100" height="36"/><text class="th" x="500" y="498">Br   |</text></g>
+  <g><rect class="box" x="560" y="475" width="70" height="36"/><text class="th" x="595" y="498">I  ↓</text></g>
+  
+  <g><rect class="box" x="60" y="520" width="160" height="28"/><text class="ts" x="140" y="538">颜色 浅→深</text></g>
+  <g><rect class="box" x="230" y="520" width="100" height="28"/><text class="ts" x="280" y="538">淡黄</text></g>
+  <g><rect class="box" x="340" y="520" width="100" height="28"/><text class="ts" x="390" y="538">黄绿</text></g>
+  <g><rect class="box" x="450" y="520" width="100" height="28"/><text class="ts" x="500" y="538">深红棕</text></g>
+  <g><rect class="box" x="560" y="520" width="70" height="28"/><text class="ts" x="595" y="538">紫黑</text></g>
+  
+  <g><rect class="box" x="60" y="555" width="160" height="28"/><text class="ts" x="140" y="573">状态</text></g>
+  <g><rect class="box" x="230" y="555" width="100" height="28"/><text class="ts" x="280" y="573">气体</text></g>
+  <g><rect class="box" x="340" y="555" width="100" height="28"/><text class="ts" x="390" y="573">气体</text></g>
+  <g><rect class="box" x="450" y="555" width="100" height="28"/><text class="ts" x="500" y="573">液体</text></g>
+  <g><rect class="box" x="560" y="555" width="70" height="28"/><text class="ts" x="595" y="573">固体</text></g>
+  
+  <g><rect class="box-red" x="60" y="590" width="160" height="28"/><text class="ts" x="140" y="608" fill="#A32D2D">X₂+H₂ 反应难度↑</text></g>
+  <g><rect class="box" x="230" y="590" width="100" height="28"/><text class="ts" x="280" y="608">爆炸</text></g>
+  <g><rect class="box" x="340" y="590" width="100" height="28"/><text class="ts" x="390" y="608">光照/燃</text></g>
+  <g><rect class="box" x="450" y="590" width="100" height="28"/><text class="ts" x="500" y="608">加热</text></g>
+  <g><rect class="box" x="560" y="590" width="70" height="28"/><text class="ts" x="595" y="608">加热（可逆）</text></g>
+  
+  <g><rect class="box-red" x="60" y="625" width="160" height="28"/><text class="ts" x="140" y="643" fill="#A32D2D">★ HX酸性↑</text></g>
+  <g><rect class="box" x="230" y="625" width="100" height="28"/><text class="ts" x="280" y="643">弱酸</text></g>
+  <g><rect class="box" x="340" y="625" width="100" height="28"/><text class="ts" x="390" y="643">强酸</text></g>
+  <g><rect class="box" x="450" y="625" width="100" height="28"/><text class="ts" x="500" y="643">强酸</text></g>
+  <g><rect class="box" x="560" y="625" width="70" height="28"/><text class="ts" x="595" y="643">强酸</text></g>
+  
+  <rect class="box" x="40" y="710" width="600" height="90" rx="12" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text class="th" x="340" y="735" fill="#0C447C">卤素高考高频考点汇总（红色标注）</text>
+  <text class="ts" x="60" y="760" text-anchor="start">① 卤素置换反应：Cl₂ + 2NaBr → Br₂ + 2NaCl ★ 全国卷2018/2020/2022</text>
+  <text class="ts" x="60" y="780" text-anchor="start">② F₂的特殊性：HF弱酸、AgF可溶、F₂+H₂O置换O₂ ★ 高考易错</text>
+  <text class="ts" x="60" y="800" text-anchor="start">③ 递变规律：颜色加深、反应难度↑、HX酸性↑、还原性↓</text>
+</svg>

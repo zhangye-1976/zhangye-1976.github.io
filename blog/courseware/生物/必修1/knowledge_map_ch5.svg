@@ -1,0 +1,71 @@
+<svg viewBox="0 0 680 720" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第5章 细胞的能量供应和利用</title>
+  <desc>酶、ATP、细胞呼吸、光合作用四大模块</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="180" y="8" width="320" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">第5章 细胞的能量供应和利用 ★★★</text>
+
+  <line x1="340" y1="48" x2="340" y2="68" stroke="#00796b" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="72" width="140" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="110" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第1节 酶</text>
+
+  <rect x="220" y="72" width="140" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="290" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第2节 ATP</text>
+
+  <rect x="400" y="72" width="140" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="470" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第3节 细胞呼吸</text>
+
+  <rect x="500" y="72" width="140" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="570" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第4节 光合作用 ★</text>
+
+  <rect x="40" y="148" width="600" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="168" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">酶的本质：绝大多数是蛋白质，少数是RNA | 作用机理：降低活化能</text>
+  <text x="340" y="188" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">三大特性：高效性、专一性、温和性（最适温度/pH）| 低温抑制，高温/强酸强碱→失活</text>
+
+  <rect x="40" y="220" width="600" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="240" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">ATP = A-P～P～P | 高能磷酸键 | ADP+Pi+能量 ⇌ ATP（酶不同，不可逆！）</text>
+  <text x="340" y="260" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">ATP来源：呼吸作用（动植物）+ 光合作用（植物）| 直接供能，含量少但转化极快</text>
+
+  <rect x="40" y="300" width="280" height="160" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="180" y="320" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">有氧呼吸三阶段</text>
+  <text x="180" y="342" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">I. 细胞质基质：葡萄糖→丙酮酸+[H] (ATP×2)</text>
+  <text x="180" y="362" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">II. 线粒体基质：丙酮酸+H₂O→CO₂+[H] (ATP×2)</text>
+  <text x="180" y="382" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">III. 线粒体内膜：[H]+O₂→H₂O (ATP×34)</text>
+  <text x="180" y="402" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">总计：1葡萄糖→38ATP（原核36）</text>
+  <text x="180" y="425" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ H₂O消耗在II阶段，O₂消耗在III阶段</text>
+  <text x="180" y="445" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 线粒体不能直接分解葡萄糖！</text>
+
+  <rect x="360" y="300" width="280" height="160" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="500" y="320" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">无氧呼吸两种类型</text>
+  <text x="500" y="345" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">酒精发酵：酵母菌、大多数植物</text>
+  <text x="500" y="365" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">C₆H₁₂O₆→2C₂H₅OH+2CO₂+少量(ATP×2)</text>
+  <text x="500" y="390" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">乳酸发酵：动物、乳酸菌、马铃薯块茎</text>
+  <text x="500" y="410" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">C₆H₁₂O₆→2C₃H₆O₃+少量(ATP×2)</text>
+  <text x="500" y="435" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 无氧呼吸第一阶段也产生[H]</text>
+  <text x="500" y="455" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 场所只有细胞质基质！</text>
+
+  <rect x="40" y="488" width="600" height="200" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="510" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">光合作用 光反应 vs 暗反应</text>
+
+  <rect x="60" y="528" width="265" height="80" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="192" y="548" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">光反应（类囊体薄膜）</text>
+  <text x="192" y="568" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">H₂O→O₂+[H] | ADP+Pi→ATP</text>
+  <text x="192" y="588" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">光能→活跃化学能 | 需光、色素、酶</text>
+  <text x="192" y="603" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">★ O₂来自H₂O的光解，不是CO₂！</text>
+
+  <rect x="355" y="528" width="265" height="80" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="487" y="548" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">暗反应/卡尔文循环（叶绿体基质）</text>
+  <text x="487" y="568" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">CO₂固定→C₃还原→(CH₂O)+C₅再生</text>
+  <text x="487" y="588" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">活跃化学能→稳定化学能 | 需酶（不需光）</text>
+  <text x="487" y="603" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#72243E" font-family="system-ui, sans-serif">★ 暗反应有光也能进行！需光反应供[H]ATP</text>
+
+  <text x="340" y="638" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">光合色素分离（纸上层析，从上到下）：胡萝卜素→叶黄素→叶绿素a→叶绿素b</text>
+  <text x="340" y="658" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">限制因素：光照强度、CO₂浓度、温度 | 总光合=净光合+呼吸 | 光补偿点/光饱和点</text>
+</svg>

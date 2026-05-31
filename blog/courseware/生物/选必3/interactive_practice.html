@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选必3 生物技术与工程 · 互动练习</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, sans-serif; background: #F0F7F5; color: #04342C; padding: 20px; }
+  h1 { text-align: center; color: #00796b; margin-bottom: 8px; }
+  .subtitle { text-align: center; color: #085041; margin-bottom: 24px; font-size: 14px; }
+  .tabs { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; justify-content: center; }
+  .tab { padding: 8px 18px; border-radius: 20px; border: 1.5px solid #0F6E56; background: #fff; color: #0F6E56; cursor: pointer; font-size: 14px; font-weight: 500; }
+  .tab.active { background: #00796b; color: #fff; border-color: #00796b; }
+  .card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); max-width: 720px; margin: 0 auto 20px; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 10px; font-size: 12px; font-weight: 600; margin-bottom: 12px; }
+  .badge-basic { background: #E1F5EE; color: #0F6E56; }
+  .badge-mid { background: #FFF8E1; color: #E65100; }
+  .badge-hard { background: #FBEAF0; color: #C2185B; }
+  .q-title { font-size: 15px; font-weight: 600; margin-bottom: 14px; line-height: 1.6; }
+  .options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+  .opt { display: flex; align-items: flex-start; gap: 10px; padding: 10px 14px; border-radius: 8px; border: 1.5px solid #CFD8DC; background: #FAFFFE; cursor: pointer; font-size: 14px; transition: 0.15s; }
+  .opt:hover { border-color: #0F6E56; background: #E1F5EE; }
+  .opt.selected { border-color: #00796b; background: #E1F5EE; }
+  .opt.correct { border-color: #2E7D32; background: #E8F5E9; }
+  .opt.wrong { border-color: #C62828; background: #FFEBEE; }
+  .opt input { margin-top: 3px; accent-color: #00796b; }
+  .btn { padding: 8px 22px; border-radius: 8px; border: none; font-size: 14px; font-weight: 500; cursor: pointer; }
+  .btn-primary { background: #00796b; color: #fff; }
+  .btn-primary:hover { background: #0F6E56; }
+  .btn-secondary { background: #E1F5EE; color: #0F6E56; }
+  .btn-secondary:hover { background: #B2DFDB; }
+  .feedback { padding: 12px 16px; border-radius: 8px; margin-top: 14px; font-size: 13px; line-height: 1.7; display: none; }
+  .feedback.show { display: block; }
+  .feedback.correct { background: #E8F5E9; color: #2E7D32; border: 1px solid #A5D6A7; }
+  .feedback.wrong { background: #FFEBEE; color: #C62828; border: 1px solid #EF9A9A; }
+  .feedback.hint { background: #FFF8E1; color: #E65100; border: 1px solid #FFE082; }
+  .progress { text-align: center; color: #085041; font-size: 13px; margin-bottom: 16px; }
+  .score-bar { height: 8px; background: #E1F5EE; border-radius: 4px; margin: 10px auto 16px; max-width: 400px; overflow: hidden; }
+  .score-fill { height: 100%; background: #00796b; border-radius: 4px; transition: width 0.4s; }
+  .nav-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .explanation { margin-top: 10px; padding: 10px 14px; background: #F5F5F5; border-radius: 8px; font-size: 13px; color: #424242; line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<h1>🧬 选必3 生物技术与工程 · 互动练习</h1>
+<p class="subtitle">发酵工程 · 细胞工程 · 基因工程 · 生物技术安全</p>
+
+<div class="tabs">
+  <button class="tab active" onclick="switchTab('basic')">📘 基础巩固</button>
+  <button class="tab" onclick="switchTab('mid')">📙 进阶提升</button>
+  <button class="tab" onclick="switchTab('hard')">📕 综合应用</button>
+</div>
+
+<!-- ===== 基础巩固 ===== -->
+<div id="tab-basic">
+  <div class="progress" id="prog-basic"></div>
+  <div class="score-bar"><div class="score-fill" id="fill-basic"></div></div>
+  <div id="quiz-basic"></div>
+  <div class="nav-btns" id="nav-basic"></div>
+</div>
+
+<!-- ===== 进阶提升 ===== -->
+<div id="tab-mid" style="display:none">
+  <div class="progress" id="prog-mid"></div>
+  <div class="score-bar"><div class="score-fill" id="fill-mid"></div></div>
+  <div id="quiz-mid"></div>
+  <div class="nav-btns" id="nav-mid"></div>
+</div>
+
+<!-- ===== 综合应用 ===== -->
+<div id="tab-hard" style="display:none">
+  <div class="progress" id="prog-hard"></div>
+  <div class="score-bar"><div class="score-fill" id="fill-hard"></div></div>
+  <div id="quiz-hard"></div>
+  <div class="nav-btns" id="nav-hard"></div>
+</div>
+
+<script>
+const quizData = {
+basic: [
+  {
+    badge: "基础1",
+    badgeClass: "badge-basic",
+    question: "发酵工程中，培养基灭菌的正确步骤是？",
+    options: [
+      "A. 先灭菌，再调pH",
+      "B. 先调pH，再灭菌",
+      "C. 先分装，再调pH，再灭菌",
+      "D. 先灭菌，再分装"
+    ],
+    answer: 1,
+    explanation: "解析：B正确。培养基应在灭菌前调好pH，因为灭菌过程中pH可能发生变化，若先灭菌再调pH会引入杂菌。这是发酵工程的基本操作规范。"
+  },
+  {
+    badge: "基础2",
+    badgeClass: "badge-basic",
+    question: "下列无菌技术中，适用于玻璃器皿灭菌的是？",
+    options: [
+      "A. 灼烧灭菌",
+      "B. 干热灭菌",
+      "C. 高压蒸汽灭菌",
+      "D. 过滤除菌"
+    ],
+    answer: 1,
+    explanation: "解析：B正确。玻璃器皿（如培养皿、移液管）耐高温，适合用干热灭菌（160-170℃，1-2h）。灼烧灭菌适用于接种环；高压蒸汽灭菌适用于培养基；过滤除菌适用于不耐高温的液体。"
+  }
+],
+
+mid: [
+  {
+    badge: "进阶1",
+    badgeClass: "badge-mid",
+    question: "基因工程中，下列步骤的正确顺序是？①用限制酶切割目的基因和载体 ②将重组DNA导入受体细胞 ③用DNA连接酶连接目的基因和载体 ④筛选含有重组DNA的受体细胞",
+    options: [
+      "A. ①→②→③→④",
+      "B. ①→③→②→④",
+      "C. ③→①→②→④",
+      "D. ①→③→④→②"
+    ],
+    answer: 1,
+    explanation: "解析：B正确。基因工程四步操作程序：①获取目的基因（用限制酶切割）→③构建表达载体（用DNA连接酶连接目的基因和载体）→②将目的基因导入受体细胞→④目的基因的检测与鉴定（筛选）。"
+  },
+  {
+    badge: "进阶2",
+    badgeClass: "badge-mid",
+    question: "PCR技术中，下列温度处理步骤的正确顺序是？①72℃延伸 ②95℃变性 ③55℃复性（退火）",
+    options: [
+      "A. ①→②→③",
+      "B. ②→③→①",
+      "C. ③→②→①",
+      "D. ②→①→③"
+    ],
+    answer: 1,
+    explanation: "解析：B正确。PCR一个循环的三步：②95℃变性（双链DNA解旋为单链）→③55℃复性（引物与模板DNA单链结合）→①72℃延伸（Taq酶催化新链合成）。"
+  },
+  {
+    badge: "进阶3",
+    badgeClass: "badge-mid",
+    question: "植物组织培养中，对外植体进行消毒所用的常用试剂是？",
+    options: [
+      "A. 75%酒精 + 次氯酸钠",
+      "B. 100%酒精 + 盐酸",
+      "C. 高压蒸汽",
+      "D. 紫外线照射"
+    ],
+    answer: 0,
+    explanation: "解析：A正确。植物组织培养中外植体消毒步骤：先用75%酒精浸泡30s（表面杀菌），再用次氯酸钠溶液处理（深度杀菌），最后用无菌水冲洗多次。100%酒精会使蛋白质迅速变性形成保护膜，反而降低杀菌效果。"
+  }
+],
+
+hard: [
+  {
+    badge: "综合1",
+    badgeClass: "badge-hard",
+    question: "单克隆抗体制备过程中，需要经过几次筛选？分别筛选什么？",
+    options: [
+      "A. 1次筛选：筛选能产生特定抗体的杂交瘤细胞",
+      "B. 2次筛选：①筛选融合细胞（选择培养基）；②筛选能产生特定抗体的杂交瘤细胞",
+      "C. 2次筛选：①筛选骨髓瘤细胞；②筛选B淋巴细胞",
+      "D. 3次筛选：①筛选融合细胞；②筛选产生抗体的细胞；③筛选能无限增殖的细胞"
+    ],
+    answer: 1,
+    explanation: "解析：B正确。单克隆抗体制备的两次筛选：第一次用选择培养基（含HAT），只有杂交瘤细胞能存活（骨髓瘤细胞不能合成DNA，B细胞不能无限增殖）；第二次用抗原-抗体检测，筛选出能产生特定抗体的杂交瘤细胞。这是高考高频考点！"
+  },
+  {
+    badge: "综合2",
+    badgeClass: "badge-hard",
+    question: "农杆菌转化法将目的基因导入植物细胞时，目的基因应插入Ti质粒的哪个区域？",
+    options: [
+      "A. 复制原点",
+      "B. T-DNA区域",
+      "C. 抗性基因区域",
+      "D. 启动子区域"
+    ],
+    answer: 1,
+    explanation: "解析：B正确。农杆菌Ti质粒上的T-DNA（可转移DNA）可以整合到植物细胞的染色体DNA上。因此目的基因必须插入T-DNA区域内，才能在农杆菌感染植物时随T-DNA一起整合到植物基因组中。这是基因工程植物转基因的核心原理。"
+  },
+  {
+    badge: "综合3",
+    badgeClass: "badge-hard",
+    question: "下列关于克隆人的说法，正确的是？",
+    options: [
+      "A. 生殖性克隆人伦理上可接受，技术上也已完全成熟",
+      "B. 治疗性克隆可以利用胚胎干细胞培育器官，用于移植治疗",
+      "C. 克隆人技术与转基因技术原理相同",
+      "D. 我国允许生殖性克隆人研究，但禁止治疗性克隆"
+    ],
+    answer: 1,
+    explanation: "解析：B正确。治疗性克隆是指利用克隆技术获得胚胎干细胞，诱导分化为特定器官/组织用于移植治疗，不发育为完整个体，伦理争议较小。我国禁止生殖性克隆人，但允许治疗性克隆研究。A错误（我国禁止生殖性克隆）；C错误（原理不同）；D错误（表述相反）。"
+  }
+]
+};
+
+let state = { basic: {idx:0, score:0, done:[]}, mid: {idx:0, score:0, done:[]}, hard: {idx:0, score:0, done:[]} };
+
+function switchTab(tab) {
+  document.querySelectorAll('.tabs .tab').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('tab-basic').style.display = tab==='basic' ? 'block' : 'none';
+  document.getElementById('tab-mid').style.display = tab==='mid' ? 'block' : 'none';
+  document.getElementById('tab-hard').style.display = tab==='hard' ? 'block' : 'none';
+}
+
+function renderQuiz(type) {
+  const s = state[type];
+  const data = quizData[type];
+  const q = data[s.idx];
+  const container = document.getElementById('quiz-'+type);
+  
+  document.getElementById('prog-'+type).textContent = `第 ${s.idx+1}/${data.length} 题 · 已答对 ${s.score}/${s.done.length} 题`;
+  document.getElementById('fill-'+type).style.width = (s.done.length ? s.score/s.done.length*100 : 0) + '%';
+  
+  if (s.done.length >= data.length) {
+    container.innerHTML = `
+      <div class="card" style="text-align:center;padding:40px;">
+        <div style="font-size:48px;margin-bottom:16px;">${s.score>=data.length*0.8 ? '🎉' : s.score>=data.length*0.6 ? '👍' : '💪'}</div>
+        <div style="font-size:18px;font-weight:600;color:#00796b;margin-bottom:8px;">${type==='basic'?'基础巩固':type==='mid'?'进阶提升':'综合应用'} — 完成！</div>
+        <div style="font-size:15px;color:#085041;">答对 ${s.score} / ${data.length} 题（${Math.round(s.score/data.length*100)}分）</div>
+        <div style="margin-top:16px;">
+          <button class="btn btn-primary" onclick="resetQuiz('${type}')">重新练习</button>
+        </div>
+      </div>`;
+    document.getElementById('nav-'+type).innerHTML = '';
+    return;
+  }
+  
+  container.innerHTML = `
+    <div class="card">
+      <div class="badge ${q.badgeClass}">${q.badge}</div>
+      <div class="q-title">${q.question}</div>
+      <div class="options" id="opts-${type}">
+        ${q.options.map((opt, i) => `
+          <label class="opt" id="opt-${type}-${i}" onclick="selectOpt('${type}',${i})">
+            <input type="radio" name="q-${type}" value="${i}" style="display:none;">
+            <span>${opt}</span>
+          </label>
+        `).join('')}
+      </div>
+      <div class="feedback" id="fb-${type}"></div>
+    </div>`;
+  
+  document.getElementById('nav-'+type).innerHTML = `<button class="btn btn-secondary" onclick="nextQuiz('${type}')" ${s.done.includes(s.idx)?'':'disabled'} id="next-${type}">下一题 →</button>`;
+}
+
+function selectOpt(type, idx) {
+  const s = state[type];
+  if (s.done.includes(s.idx)) return;
+  
+  const q = quizData[type][s.idx];
+  const optEl = document.getElementById(`opt-${type}-${idx}`);
+  const fb = document.getElementById('fb-'+type);
+  
+  // 移除之前的选择
+  document.querySelectorAll(`#opts-${type} .opt`).forEach(o => { o.classList.remove('selected'); });
+  optEl.classList.add('selected');
+  
+  if (idx === q.answer) {
+    optEl.classList.add('correct');
+    fb.className = 'feedback show correct';
+    fb.innerHTML = '✅ <b>回答正确！</b><br>' + q.explanation;
+    s.score++;
+  } else {
+    optEl.classList.add('wrong');
+    document.getElementById(`opt-${type}-${q.answer}`).classList.add('correct');
+    fb.className = 'feedback show wrong';
+    fb.innerHTML = '❌ <b>回答错误。</b><br>' + q.explanation;
+  }
+  s.done.push(s.idx);
+  document.getElementById('next-'+type).disabled = false;
+}
+
+function nextQuiz(type) {
+  state[type].idx++;
+  renderQuiz(type);
+}
+
+function resetQuiz(type) {
+  state[type] = {idx:0, score:0, done:[]};
+  renderQuiz(type);
+}
+
+// 初始化
+renderQuiz('basic');
+renderQuiz('mid');
+renderQuiz('hard');
+</script>
+</body>
+</html>

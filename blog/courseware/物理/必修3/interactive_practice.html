@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>物理必修3 互动练习</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Microsoft YaHei','PingFang SC',sans-serif; background:#E1F5EE; min-height:100vh; display:flex; justify-content:center; align-items:center; padding:20px; }
+  .container { max-width:720px; width:100%; background:#fff; border-radius:16px; box-shadow:0 4px 20px rgba(0,0,0,0.1); overflow:hidden; }
+  .header { background:linear-gradient(135deg,#00695C,#00796B); padding:24px 32px; text-align:center; color:#fff; }
+  .header h1 { font-size:22px; margin-bottom:6px; }
+  .header p { font-size:13px; opacity:0.85; }
+  .quiz-area { padding:24px 32px; }
+  .question { margin-bottom:24px; padding:16px; background:#f9fdfb; border-radius:10px; border-left:4px solid #00796B; }
+  .question h4 { font-size:15px; color:#00695C; margin-bottom:10px; }
+  .question p { font-size:14px; color:#333; margin-bottom:12px; line-height:1.6; }
+  .options { display:flex; flex-direction:column; gap:6px; }
+  .option { display:flex; align-items:center; padding:8px 12px; border-radius:6px; cursor:pointer; transition:background 0.2s; font-size:13px; color:#444; }
+  .option:hover { background:#E8F5E9; }
+  .option input { margin-right:10px; accent-color:#00796B; }
+  .btn-submit { display:block; width:100%; max-width:200px; margin:20px auto; padding:12px; background:linear-gradient(135deg,#00695C,#00796B); color:#fff; border:none; border-radius:8px; font-size:16px; cursor:pointer; transition:transform 0.2s; }
+  .btn-submit:hover { transform:scale(1.03); }
+  .result { display:none; padding:20px 32px; background:#E8F5E9; border-top:2px solid #00796B; }
+  .result h3 { text-align:center; color:#00695C; margin-bottom:12px; font-size:18px; }
+  .result .score { text-align:center; font-size:32px; font-weight:700; color:#00796B; margin-bottom:16px; }
+  .result .detail { font-size:13px; color:#555; line-height:1.8; }
+  .correct { color:#2E7D32; font-weight:600; }
+  .wrong { color:#C62828; font-weight:600; }
+  .explanation { background:#fff; padding:8px 12px; border-radius:6px; margin:4px 0; font-size:12px; border-left:3px solid #FF8F00; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>物理必修第三册 · 互动练习</h1>
+    <p>8题（基础×3 + 进阶×3 + 综合×2）| 覆盖静电场/电路/电能</p>
+  </div>
+
+  <div class="quiz-area" id="quizArea">
+    <!-- Q1 基础 -->
+    <div class="question">
+      <h4>Q1 · 基础</h4>
+      <p>两个相同的金属小球，带电量分别为 +2Q 和 -4Q，相距 r 时库仑力大小为 F。现将两球接触后放回原处，库仑力大小变为：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q1" value="A"> A. F</label>
+        <label class="option"><input type="radio" name="q1" value="B"> B. F/2</label>
+        <label class="option"><input type="radio" name="q1" value="C"> C. F/4</label>
+        <label class="option"><input type="radio" name="q1" value="D"> D. F/8</label>
+      </div>
+    </div>
+
+    <!-- Q2 基础 -->
+    <div class="question">
+      <h4>Q2 · 基础</h4>
+      <p>关于电场强度和电势，下列说法正确的是：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q2" value="A"> A. 电场强度大的地方电势一定高</label>
+        <label class="option"><input type="radio" name="q2" value="B"> B. 电势为零的地方电场强度一定为零</label>
+        <label class="option"><input type="radio" name="q2" value="C"> C. 沿电场线方向电势一定降低</label>
+        <label class="option"><input type="radio" name="q2" value="D"> D. 等势面上各点电场强度大小一定相等</label>
+      </div>
+    </div>
+
+    <!-- Q3 基础 -->
+    <div class="question">
+      <h4>Q3 · 基础</h4>
+      <p>平行板电容器充电后断开电源，将两板间距 d 增大，则以下判断正确的是：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q3" value="A"> A. 电容增大，电压减小，电场强度减小</label>
+        <label class="option"><input type="radio" name="q3" value="B"> B. 电容减小，电压增大，电场强度不变</label>
+        <label class="option"><input type="radio" name="q3" value="C"> C. 电容减小，电压增大，电场强度减小</label>
+        <label class="option"><input type="radio" name="q3" value="D"> D. 电容增大，电压增大，电场强度增大</label>
+      </div>
+    </div>
+
+    <!-- Q4 进阶 -->
+    <div class="question">
+      <h4>Q4 · 进阶</h4>
+      <p>一负电荷在电场中从 A 点移到 B 点，电场力做正功。下列说法正确的是：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q4" value="A"> A. A点电势高于B点电势</label>
+        <label class="option"><input type="radio" name="q4" value="B"> B. A点电势低于B点电势</label>
+        <label class="option"><input type="radio" name="q4" value="C"> C. 电荷在A点电势能大于在B点电势能</label>
+        <label class="option"><input type="radio" name="q4" value="D"> D. 电荷在A点电势能小于在B点电势能</label>
+      </div>
+    </div>
+
+    <!-- Q5 进阶 -->
+    <div class="question">
+      <h4>Q5 · 进阶</h4>
+      <p>一台电动机，额定电压 U=220V，线圈电阻 r=2Ω，正常工作时电流 I=5A。该电动机的输出功率为：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q5" value="A"> A. 1100 W</label>
+        <label class="option"><input type="radio" name="q5" value="B"> B. 1050 W</label>
+        <label class="option"><input type="radio" name="q5" value="C"> C. 50 W</label>
+        <label class="option"><input type="radio" name="q5" value="D"> D. 24200 W</label>
+      </div>
+    </div>
+
+    <!-- Q6 进阶 -->
+    <div class="question">
+      <h4>Q6 · 进阶</h4>
+      <p>在闭合电路中，当外电阻 R 增大时（电源电动势 E 和内阻 r 不变），以下说法正确的是：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q6" value="A"> A. 路端电压减小</label>
+        <label class="option"><input type="radio" name="q6" value="B"> B. 电源输出功率一定增大</label>
+        <label class="option"><input type="radio" name="q6" value="C"> C. 电流 I 减小，路端电压 U 增大</label>
+        <label class="option"><input type="radio" name="q6" value="D"> D. 电流 I 增大，电源内耗功率增大</label>
+      </div>
+    </div>
+
+    <!-- Q7 综合 -->
+    <div class="question">
+      <h4>Q7 · 综合</h4>
+      <p>如图所示，电源电动势 E=12V，内阻 r=1Ω，外接电阻 R₁=3Ω, R₂=6Ω 并联。求通过 R₁ 的电流和电源输出功率：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q7" value="A"> A. I₁=2A, P=20W</label>
+        <label class="option"><input type="radio" name="q7" value="B"> B. I₁=8/3A, P=32W</label>
+        <label class="option"><input type="radio" name="q7" value="C"> C. I₁=4A, P=48W</label>
+        <label class="option"><input type="radio" name="q7" value="D"> D. I₁=8/3A, P=24W</label>
+      </div>
+    </div>
+
+    <!-- Q8 综合 -->
+    <div class="question">
+      <h4>Q8 · 综合</h4>
+      <p>等量同种正电荷连线的中垂线上，从连线中点 O 沿中垂线向外移动时，关于电场强度 E 和电势 φ 的变化，正确的是：</p>
+      <div class="options">
+        <label class="option"><input type="radio" name="q8" value="A"> A. E 一直减小，φ 一直减小</label>
+        <label class="option"><input type="radio" name="q8" value="B"> B. E 先增大后减小，φ 一直减小</label>
+        <label class="option"><input type="radio" name="q8" value="C"> C. E 一直减小，φ 一直增大</label>
+        <label class="option"><input type="radio" name="q8" value="D"> D. E 先增大后减小，φ 先增大后减小</label>
+      </div>
+    </div>
+
+    <button class="btn-submit" onclick="checkAnswers()">提交答案</button>
+  </div>
+
+  <div class="result" id="resultArea"></div>
+</div>
+
+<script>
+function checkAnswers() {
+  const answers = { q1:'D', q2:'C', q3:'B', q4:'C', q5:'B', q6:'C', q7:'D', q8:'B' };
+  let score=0, total=8, details='';
+  for(let q in answers) {
+    const selected = document.querySelector(`input[name="${q}"]:checked`);
+    if(!selected){ details+=`<div class="explanation"><b>${q.toUpperCase()}</b>：未作答 → 正确答案 <span class="correct">${answers[q]}</span></div>`; continue; }
+    const userAns = selected.value;
+    if(userAns===answers[q]){ score++; details+=`<div class="explanation"><b>${q.toUpperCase()}</b>：<span class="correct">✅ ${userAns}</span> 正确！</div>`; }
+    else { details+=`<div class="explanation"><b>${q.toUpperCase()}</b>：<span class="wrong">❌ 你选${userAns}</span> → 正确答案 <span class="correct">${answers[q]}</span></div>`; }
+  }
+
+  const explanations = {
+    q1: '接触后总电量 +2Q+(-4Q)=-2Q，均分各 -Q。F∝|q₁q₂|，原来 F∝|2Q×(-4Q)|=8Q²，现在 F\'∝|-Q×(-Q)|=Q² → F\'=F/8',
+    q2: 'E和φ没有直接大小关系！E大的地方φ可高可低（如匀强电场中电场线方向φ降低但E不变）。唯一确定关系：沿电场线方向电势一定降低。',
+    q3: '断开电源→Q不变。d↑时 C=εS/(4πkd)↓ → U=Q/C↑ → E=U/d=Q/(Cd)，代入C得E=4πkQ/(εS)，与d无关→E不变！',
+    q4: '负电荷电场力做正功→电势能减少（W=-ΔEp，W>0 → ΔEp<0）。负电荷电势能减少→从低电势移到高电势。即φA<φB，但EpA>EpB。',
+    q5: 'P总=UI=220×5=1100W，P热=I²r=25×2=50W，P出=P总-P热=1100-50=1050W。⚠ 不能用P=U²/r，电动机非纯电阻！',
+    q6: 'R↑ → I=E/(R+r)↓ → U=E-Ir↑。P出是否增大要看R与r大小关系（R=r时P出最大），不一定增大。',
+    q7: '并联：R外=3×6/(3+6)=2Ω。I总=12/(2+1)=4A。R₁分得电流 I₁=I总×R₂/(R₁+R₂)=4×6/9=8/3A。P出=I总²R外=16×2=32W。⚠ 注意"输出功率"是I²R外，不是EI！',
+    q8: '等量同种正电荷：中垂线上O点E=0（对称抵消），向外先E增大到一个极值，然后→0。φ沿电场线方向降低→中垂线上O点最高，向外φ一直降低。'
+  };
+  for(let q in explanations){
+    const sel = document.querySelector(`input[name="${q}"]:checked`);
+    if(!sel || sel.value!==answers[q]){
+      details = details.replace(`<b>${q.toUpperCase()}</b>`, `</div><div class="explanation"><b>${q.toUpperCase()}</b>`);
+      details += `<div class="explanation">💡 ${explanations[q]}</div>`;
+    }
+  }
+
+  const pct = Math.round(score/total*100);
+  const msg = pct>=80?'优秀！必修3基础扎实！🎉':pct>=60?'不错！再练练电容器和闭合电路 💪':'加油！重点复习电势能和闭合电路欧姆定律 📚';
+  document.getElementById('resultArea').innerHTML = `<h3>${msg}</h3><div class="score">${score}/${total} (${pct}%)</div><div class="detail">${details}</div>`;
+  document.getElementById('resultArea').style.display = 'block';
+  document.getElementById('resultArea').scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>

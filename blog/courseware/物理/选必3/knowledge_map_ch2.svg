@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480">
+  <rect width="680" height="480" fill="#E1F5EE" rx="12"/>
+  <text x="340" y="35" text-anchor="middle" font-size="20" font-weight="700" fill="#00796b">第2章 气体、固体和液体</text>
+
+  <!-- 气体三定律 -->
+  <rect x="30" y="55" width="300" height="190" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="55" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="180" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">气体实验三定律 + 状态方程</text>
+  <text x="45" y="105" font-size="11" font-weight="600" fill="#333">玻意耳（等温T不变）：pV=C</text>
+  <text x="45" y="128" font-size="11" font-weight="600" fill="#333">查理（等容V不变）：p/T=C</text>
+  <text x="45" y="151" font-size="11" font-weight="600" fill="#333">盖-吕萨克（等压p不变）：V/T=C</text>
+  <text x="45" y="178" font-size="12" font-weight="600" fill="#72243E">理想气体状态方程：pV/T=C</text>
+  <text x="45" y="198" font-size="11" fill="#555">一定质量：p₁V₁/T₁ = p₂V₂/T₂</text>
+  <text x="45" y="225" font-size="11" fill="#72243E">⚠ T必须是开尔文K（t+273）</text>
+
+  <!-- 固体液体 -->
+  <rect x="350" y="55" width="300" height="190" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="350" y="55" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="500" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">固体与液体</text>
+  <text x="365" y="105" font-size="11" font-weight="600" fill="#333">晶体：确定熔点 · 单晶各向异性</text>
+  <text x="365" y="125" font-size="11" fill="#555">非晶体：无确定熔点 · 各向同性</text>
+  <text x="365" y="150" font-size="11" font-weight="600" fill="#333">液体表面张力：使液面收缩</text>
+  <text x="365" y="170" font-size="11" fill="#555">浸润/不浸润 · 毛细现象</text>
+  <text x="365" y="195" font-size="11" fill="#333">液晶：流动性+光学各向异性</text>
+  <text x="365" y="225" font-size="11" fill="#555">应用：液晶显示器（LCD）</text>
+
+  <!-- 微观解释 -->
+  <rect x="30" y="265" width="620" height="200" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="265" width="620" height="28" fill="#00796b" rx="8"/>
+  <text x="340" y="284" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">气体压强的微观解释 + 理想气体模型</text>
+
+  <text x="55" y="318" font-size="12" font-weight="600" fill="#333">气体压强微观本质：大量分子频繁撞击器壁的平均效果</text>
+  <text x="55" y="345" font-size="11" fill="#555">从微观角度看：p ∝ n（分子数密度）· p ∝ T（分子平均动能）</text>
+
+  <text x="55" y="378" font-size="12" font-weight="600" fill="#333">理想气体微观模型（三个假设）：</text>
+  <text x="55" y="400" font-size="11" fill="#555">① 分子为质点（无体积） ② 除碰撞外无分子力 ③ 完全弹性碰撞</text>
+  <text x="55" y="425" font-size="11" fill="#72243E">⚠ 结论：理想气体内能只取决于温度（无分子势能）→ 等温变化ΔU=0</text>
+  <text x="55" y="450" font-size="11" fill="#555">→ 由热一律ΔU=W+Q=0，得W=-Q（等温时做功与吸热等量反号）</text>
+</svg>

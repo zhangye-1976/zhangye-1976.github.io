@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 660" width="100%" role="img">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .t { font-family: var(--font-sans, sans-serif); font-size: 14px; fill: var(--color-text-primary, #18191C); }
+      .ts { font-family: var(--font-sans, sans-serif); font-size: 12px; fill: var(--color-text-secondary, #5F5E5A); }
+      .th { font-family: var(--font-sans, sans-serif); font-size: 13px; font-weight: 500; fill: var(--color-text-primary, #18191C); }
+      .tm { font-family: var(--font-sans, sans-serif); font-size: 12px; fill: var(--color-text-primary, #18191C); }
+      .tc { font-family: var(--font-sans, sans-serif); font-size: 11px; fill: var(--color-text-secondary, #5F5E5A); }
+    </style>
+  </defs>
+
+  <title>第四章 物质结构 元素周期律 - 详细知识导图</title>
+  <desc>涵盖原子结构与元素周期表、元素周期律、化学键三大节</desc>
+
+  <rect x="200" y="10" width="280" height="44" rx="10" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+  <text class="th" x="340" y="32" text-anchor="middle" dominant-baseline="central" fill="#185FA5">第四章 物质结构 元素周期律</text>
+
+  <!-- 三节标题 -->
+  <rect x="20" y="72" width="200" height="34" rx="7" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+  <text class="th" x="120" y="89" text-anchor="middle" dominant-baseline="central" fill="#185FA5">第一节 原子结构与周期表</text>
+
+  <rect x="240" y="72" width="200" height="34" rx="7" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+  <text class="th" x="340" y="89" text-anchor="middle" dominant-baseline="central" fill="#185FA5">第二节 元素周期律</text>
+
+  <rect x="460" y="72" width="200" height="34" rx="7" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+  <text class="th" x="560" y="89" text-anchor="middle" dominant-baseline="central" fill="#185FA5">第三节 化学键</text>
+
+  <!-- ==================== 第一节 ==================== -->
+  <rect x="20" y="118" width="200" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="120" y="133" text-anchor="middle" dominant-baseline="central">原子结构</text>
+  <text class="tc" x="120" y="148" text-anchor="middle" dominant-baseline="central">原子序数 = 质子数 = 核电荷数 = 核外电子数</text>
+  <text class="tc" x="120" y="160" text-anchor="middle" dominant-baseline="central">质量数(A) = 质子数(Z) + 中子数(N)</text>
+  <text class="tc" x="120" y="172" text-anchor="middle" dominant-baseline="central">核素 · 同位素（¹H, ²H, ³H; ¹²C, ¹³C, ¹⁴C）</text>
+
+  <rect x="20" y="186" width="200" height="100" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="120" y="201" text-anchor="middle" dominant-baseline="central">核外电子排布</text>
+  <text class="tc" x="120" y="216" text-anchor="middle" dominant-baseline="central">电子层：K L M N O P Q（n=1~7）</text>
+  <text class="tc" x="120" y="232" text-anchor="middle" dominant-baseline="central">每层最多容纳 2n² 个电子</text>
+  <text class="tc" x="120" y="248" text-anchor="middle" dominant-baseline="central">最外层不超过 8 个（K层不超过2个）</text>
+  <text class="tc" x="120" y="264" text-anchor="middle" dominant-baseline="central">排布顺序：能量最低 → 逐层填满</text>
+  <text class="tc" x="120" y="280" text-anchor="middle" dominant-baseline="central">例：Na（2-8-1）Cl（2-8-7）Al（2-8-3）</text>
+
+  <rect x="20" y="298" width="200" height="80" rx="5" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="tm" x="120" y="313" text-anchor="middle" dominant-baseline="central">元素周期表结构</text>
+  <text class="tc" x="120" y="330" text-anchor="middle" dominant-baseline="central">7个周期（横行）：短周期(1-3)，长周期(4-7)</text>
+  <text class="tc" x="120" y="346" text-anchor="middle" dominant-baseline="central">16个族（纵行）：7主族(A) + 7副族(B) + 0族 + VIII族</text>
+  <text class="tc" x="120" y="362" text-anchor="middle" dominant-baseline="central">主族序数 = 最外层电子数</text>
+  <text class="tc" x="120" y="376" text-anchor="middle" dominant-baseline="central">周期序数 = 电子层数</text>
+
+  <!-- ==================== 第二节 ==================== -->
+  <rect x="240" y="118" width="200" height="56" rx="5" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="tm" x="340" y="133" text-anchor="middle" dominant-baseline="central">同周期递变规律（左→右）</text>
+  <text class="tc" x="340" y="148" text-anchor="middle" dominant-baseline="central">原子半径 → 逐渐减小</text>
+  <text class="tc" x="340" y="160" text-anchor="middle" dominant-baseline="central">金属性 → 逐渐减弱</text>
+  <text class="tc" x="340" y="172" text-anchor="middle" dominant-baseline="central">非金属性 → 逐渐增强</text>
+
+  <rect x="240" y="186" width="200" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="340" y="201" text-anchor="middle" dominant-baseline="central">同主族递变规律（上→下）</text>
+  <text class="tc" x="340" y="216" text-anchor="middle" dominant-baseline="central">原子半径 → 逐渐增大</text>
+  <text class="tc" x="340" y="228" text-anchor="middle" dominant-baseline="central">金属性 → 逐渐增强</text>
+  <text class="tc" x="340" y="240" text-anchor="middle" dominant-baseline="central">非金属性 → 逐渐减弱</text>
+
+  <rect x="240" y="256" width="200" height="100" rx="5" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="tm" x="340" y="271" text-anchor="middle" dominant-baseline="central">元素性质周期性变化</text>
+  <text class="tc" x="340" y="288" text-anchor="middle" dominant-baseline="central">原子半径 → 周期性（同周期：大→小）</text>
+  <text class="tc" x="340" y="304" text-anchor="middle" dominant-baseline="central">化合价：+1→+7，-4→-1</text>
+  <text class="tc" x="340" y="320" text-anchor="middle" dominant-baseline="central">第一电离能：同周期增（有波动）</text>
+  <text class="tc" x="340" y="336" text-anchor="middle" dominant-baseline="central">电负性：F最大，同周期左→右增大</text>
+  <text class="tc" x="340" y="352" text-anchor="middle" dominant-baseline="central">金属性最强的元素：Cs（铯）</text>
+
+  <rect x="240" y="370" width="200" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="340" y="385" text-anchor="middle" dominant-baseline="central">"位-构-性"三角关系</text>
+  <text class="tc" x="340" y="400" text-anchor="middle" dominant-baseline="central">位置（周期表位置）</text>
+  <text class="tc" x="340" y="414" text-anchor="middle" dominant-baseline="central">↕ 结构（原子结构） ↔ 性质（元素性质）↕</text>
+  <text class="tc" x="340" y="426" text-anchor="middle" dominant-baseline="central">三者互相推断：知一推二</text>
+
+  <!-- ==================== 第三节 ==================== -->
+  <rect x="460" y="118" width="200" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="560" y="133" text-anchor="middle" dominant-baseline="central">离子键</text>
+  <text class="tc" x="560" y="148" text-anchor="middle" dominant-baseline="central">阴阳离子间静电作用</text>
+  <text class="tc" x="560" y="160" text-anchor="middle" dominant-baseline="central">活泼金属 + 活泼非金属</text>
+  <text class="tc" x="560" y="172" text-anchor="middle" dominant-baseline="central">例：NaCl, MgO, CaCl₂</text>
+
+  <rect x="460" y="188" width="200" height="56" rx="5" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text class="tm" x="560" y="203" text-anchor="middle" dominant-baseline="central">共价键</text>
+  <text class="tc" x="560" y="218" text-anchor="middle" dominant-baseline="central">原子间通过共用电子对形成</text>
+  <text class="tc" x="560" y="232" text-anchor="middle" dominant-baseline="central">非极性键：同种原子（H-H, Cl-Cl, O=O）</text>
+  <text class="tc" x="560" y="244" text-anchor="middle" dominant-baseline="central">极性键：不同原子（H-Cl, C-O, N-H）</text>
+
+  <rect x="460" y="258" width="200" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="560" y="273" text-anchor="middle" dominant-baseline="central">离子化合物 vs 共价化合物</text>
+  <text class="tc" x="560" y="288" text-anchor="middle" dominant-baseline="central">离子化合物：含离子键，熔沸点高</text>
+  <text class="tc" x="560" y="300" text-anchor="middle" dominant-baseline="central">共价化合物：只含共价键</text>
+  <text class="tc" x="560" y="312" text-anchor="middle" dominant-baseline="central">注意：NH₄Cl 含离子键和共价键</text>
+
+  <rect x="460" y="328" width="200" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="560" y="343" text-anchor="middle" dominant-baseline="central">电子式书写（重点）</text>
+  <text class="tc" x="560" y="358" text-anchor="middle" dominant-baseline="central">原子电子式：标出最外层电子 · </text>
+  <text class="tc" x="560" y="370" text-anchor="middle" dominant-baseline="central">离子电子式：Na⁺, [∶Cl∶]⁻</text>
+  <text class="tc" x="560" y="382" text-anchor="middle" dominant-baseline="central">共价分子电子式：H∶Cl∶</text>
+
+  <rect x="460" y="400" width="200" height="44" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="560" y="414" text-anchor="middle" dominant-baseline="central">分子间作用力与氢键</text>
+  <text class="tc" x="560" y="428" text-anchor="middle" dominant-baseline="central">分子间作用力（范德华力）→ 影响熔沸点</text>
+  <text class="tc" x="560" y="440" text-anchor="middle" dominant-baseline="central">氢键：H₂O, HF, NH₃ → 异常高的沸点</text>
+
+  <!-- 连接线 -->
+  <line x1="120" y1="106" x2="120" y2="118" stroke="#B5D4F4" stroke-width="0.5"/>
+  <line x1="340" y1="106" x2="340" y2="118" stroke="#B5D4F4" stroke-width="0.5"/>
+  <line x1="560" y1="106" x2="560" y2="118" stroke="#B5D4F4" stroke-width="0.5"/>
+
+  <!-- 核心对比表 -->
+  <rect x="60" y="462" width="560" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+  <text class="th" x="340" y="478" text-anchor="middle" dominant-baseline="central" fill="#185FA5">元素金属性与非金属性强弱判断依据</text>
+  <text class="tc" x="340" y="495" text-anchor="middle" dominant-baseline="central">金属性强：①与水/酸反应剧烈 ②最高价氧化物对应水化物碱性强 ③置换反应</text>
+  <text class="tc" x="340" y="510" text-anchor="middle" dominant-baseline="central">非金属性强：①与H₂反应条件 ②氢化物稳定性 ③最高价含氧酸酸性 ④置换反应</text>
+
+  <!-- 口诀 -->
+  <rect x="140" y="534" width="400" height="48" rx="8" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="340" y="551" text-anchor="middle" dominant-baseline="central">口诀："五同"概念对比</text>
+  <text class="tc" x="340" y="568" text-anchor="middle" dominant-baseline="central">同位素（质子同中子异）| 同素异形体（元素同结构异）| 同系物 | 同分异构体 | 同一物质</text>
+
+  <text class="ts" x="340" y="615" text-anchor="middle" dominant-baseline="central">核外电子排布 → 元素周期表位置 → 元素性质 → 化学键类型，形成完整的"结构决定性质"逻辑链</text>
+  <text class="ts" x="340" y="638" text-anchor="middle" dominant-baseline="central">★ 第四章是整个高中化学的理论基石，"位-构-性"是高考必考的核心推理模型</text>
+</svg>

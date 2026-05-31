@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480">
+  <rect width="680" height="480" fill="#E1F5EE" rx="12"/>
+  <text x="340" y="35" text-anchor="middle" font-size="20" font-weight="700" fill="#00796b">第1章 安培力与洛伦兹力</text>
+
+  <!-- 安培力 -->
+  <rect x="30" y="55" width="300" height="190" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="55" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="180" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">安培力（电流在磁场中受力）</text>
+  <text x="45" y="105" font-size="12" font-weight="600" fill="#333">公式：F = BIL sinθ</text>
+  <text x="45" y="125" font-size="11" fill="#555">B：磁感应强度(特T) · I：电流(安A)</text>
+  <text x="45" y="145" font-size="11" fill="#555">L：有效长度 · θ：B与I的夹角</text>
+  <text x="45" y="170" font-size="11" font-weight="600" fill="#333">方向：左手定则</text>
+  <text x="45" y="190" font-size="11" fill="#555">磁感线穿掌心 → 四指指向电流</text>
+  <text x="45" y="210" font-size="11" fill="#555">→ 拇指指向安培力方向</text>
+  <text x="45" y="235" font-size="11" fill="#72243E">⚠ 有效长度取垂直于B方向投影</text>
+
+  <!-- 洛伦兹力 -->
+  <rect x="350" y="55" width="300" height="190" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="350" y="55" width="300" height="28" fill="#00796b" rx="8"/>
+  <text x="500" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">洛伦兹力（运动电荷在磁场中受力）</text>
+  <text x="365" y="105" font-size="12" font-weight="600" fill="#333">公式：F = qvB sinθ</text>
+  <text x="365" y="125" font-size="11" fill="#555">q：电荷量 v：速度 B：磁感应强度</text>
+  <text x="365" y="150" font-size="11" font-weight="600" fill="#333">方向：左手定则（负电荷反向）</text>
+  <text x="365" y="175" font-size="11" font-weight="600" fill="#333">特点：永不做功（F⊥v）</text>
+  <text x="365" y="200" font-size="11" fill="#555">只改变速度方向，不改变速度大小</text>
+  <text x="365" y="235" font-size="11" fill="#72243E">⚠ v∥B时F=0，v⊥B时F最大</text>
+
+  <!-- 带电粒子圆周运动 -->
+  <rect x="30" y="265" width="620" height="190" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="265" width="620" height="28" fill="#72243E" rx="8"/>
+  <text x="340" y="284" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">🔴 核心考点：带电粒子在匀强磁场中的圆周运动</text>
+
+  <text x="55" y="320" font-size="12" font-weight="600" fill="#333">基本关系：qvB = mv²/r</text>
+  <text x="55" y="345" font-size="11" fill="#555">轨道半径：r = mv/(qB)  ·  r ∝ v，r ∝ 1/B</text>
+  <text x="55" y="370" font-size="11" fill="#555">周期：T = 2πm/(qB)  ·  T与v无关！</text>
+
+  <text x="55" y="400" font-size="12" font-weight="600" fill="#333">洛伦兹力提供向心力 → 匀速圆周运动</text>
+  <text x="55" y="425" font-size="11" fill="#555">运动时间：t = (θ/2π)·T（θ为圆心角）</text>
+  <text x="55" y="445" font-size="11" fill="#72243E">⚠ 速度选择器：qvB=qE → v=E/B</text>
+</svg>

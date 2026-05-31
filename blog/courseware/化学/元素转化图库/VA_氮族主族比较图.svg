@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 740" font-family="SimSun, 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="adN" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#333"/></marker>
+  </defs>
+
+  <rect width="960" height="740" fill="#FAFAFA" rx="8"/>
+  <rect x="0" y="0" width="960" height="56" fill="#283593" rx="8"/>
+  <rect x="0" y="28" width="960" height="28" fill="#283593"/>
+  <text x="480" y="37" text-anchor="middle" fill="white" font-size="21" font-weight="bold">氮族(VA族) 比较 —— 通性与个性</text>
+
+  <!-- Header -->
+  <rect x="40" y="75" width="140" height="30" rx="4" fill="#283593"/>
+  <text x="110" y="95" text-anchor="middle" fill="white" font-size="13" font-weight="bold">比较内容</text>
+  <rect x="190" y="75" width="280" height="30" rx="4" fill="#E3F2FD"/>
+  <text x="330" y="95" text-anchor="middle" fill="#283593" font-size="13" font-weight="bold">N（氮）🔴 重点</text>
+  <rect x="480" y="75" width="250" height="30" rx="4" fill="#E8F5E9"/>
+  <text x="605" y="95" text-anchor="middle" fill="#2E7D32" font-size="13" font-weight="bold">P（磷）</text>
+  <rect x="740" y="75" width="180" height="30" rx="4" fill="#E8EAF6"/>
+  <text x="830" y="95" text-anchor="middle" fill="#1A237E" font-size="13" font-weight="bold">递变规律</text>
+
+  <!-- Data Rows -->
+  <rect x="40" y="110" width="140" height="36" fill="#F5F5F5" rx="2"/>
+  <text x="110" y="133" text-anchor="middle" fill="#333" font-size="11">原子半径</text>
+  <text x="330" y="133" text-anchor="middle" fill="#333" font-size="12">75 pm（小）</text>
+  <text x="605" y="133" text-anchor="middle" fill="#333" font-size="12">110 pm</text>
+  <text x="830" y="133" text-anchor="middle" fill="#1A237E" font-size="11">↓ 增大</text>
+
+  <rect x="40" y="151" width="140" height="36" fill="#FFF" rx="2"/>
+  <text x="110" y="174" text-anchor="middle" fill="#333" font-size="11">非金属性</text>
+  <text x="330" y="174" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">强 🔴</text>
+  <text x="605" y="174" text-anchor="middle" fill="#333" font-size="12">较弱</text>
+  <text x="830" y="174" text-anchor="middle" fill="#1A237E" font-size="11">↓ 减弱</text>
+
+  <rect x="40" y="192" width="140" height="36" fill="#F5F5F5" rx="2"/>
+  <text x="110" y="215" text-anchor="middle" fill="#333" font-size="11">电负性</text>
+  <text x="330" y="215" text-anchor="middle" fill="#333" font-size="12">3.04（最高之一）</text>
+  <text x="605" y="215" text-anchor="middle" fill="#333" font-size="12">2.19</text>
+  <text x="830" y="215" text-anchor="middle" fill="#1A237E" font-size="11">↓ 减弱</text>
+
+  <rect x="40" y="233" width="140" height="36" fill="#FFF" rx="2"/>
+  <text x="110" y="256" text-anchor="middle" fill="#333" font-size="11">氢化物</text>
+  <text x="330" y="256" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">NH₃（氨）🔴</text>
+  <text x="605" y="256" text-anchor="middle" fill="#333" font-size="12">PH₃（磷化氢）</text>
+  <text x="830" y="256" text-anchor="middle" fill="#1A237E" font-size="11">稳定性↓</text>
+
+  <rect x="40" y="274" width="140" height="36" fill="#F5F5F5" rx="2"/>
+  <text x="110" y="297" text-anchor="middle" fill="#333" font-size="11">氢化物稳定性</text>
+  <text x="330" y="297" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">稳定 🔴</text>
+  <text x="605" y="297" text-anchor="middle" fill="#333" font-size="12">不稳定（易分解）</text>
+  <text x="830" y="297" text-anchor="middle" fill="#1A237E" font-size="11">↓ 减弱</text>
+
+  <rect x="40" y="315" width="140" height="55" fill="#FFF" rx="2"/>
+  <text x="110" y="338" text-anchor="middle" fill="#333" font-size="11">最高价</text>
+  <text x="110" y="353" text-anchor="middle" fill="#333" font-size="11">氧化物</text>
+  <text x="330" y="346" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">N₂O₅🔴</text>
+  <text x="605" y="346" text-anchor="middle" fill="#333" font-size="12">P₂O₅（P₄O₁₀）</text>
+  <text x="830" y="346" text-anchor="middle" fill="#1A237E" font-size="11">均为酸性氧化物</text>
+
+  <rect x="40" y="375" width="140" height="55" fill="#F5F5F5" rx="2"/>
+  <text x="110" y="398" text-anchor="middle" fill="#333" font-size="11">最高价</text>
+  <text x="110" y="413" text-anchor="middle" fill="#333" font-size="11">含氧酸</text>
+  <text x="330" y="406" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">HNO₃（强酸）🔴</text>
+  <text x="605" y="406" text-anchor="middle" fill="#333" font-size="12">H₃PO₄（中强酸）</text>
+  <text x="830" y="406" text-anchor="middle" fill="#1A237E" font-size="11">酸性↓</text>
+
+  <rect x="40" y="435" width="140" height="36" fill="#FFF" rx="2"/>
+  <text x="110" y="458" text-anchor="middle" fill="#333" font-size="11">氢化物碱性</text>
+  <text x="330" y="458" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">NH₃·H₂O弱碱🔴</text>
+  <text x="605" y="458" text-anchor="middle" fill="#333" font-size="12">PH₃极弱碱性</text>
+  <text x="830" y="458" text-anchor="middle" fill="#1A237E" font-size="11">↓ 减弱</text>
+
+  <rect x="40" y="476" width="140" height="36" fill="#F5F5F5" rx="2"/>
+  <text x="110" y="499" text-anchor="middle" fill="#333" font-size="11">单质结构</text>
+  <text x="330" y="499" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">N≡N三键 🔴</text>
+  <text x="605" y="499" text-anchor="middle" fill="#333" font-size="12">P₄正四面体</text>
+  <text x="830" y="499" text-anchor="middle" fill="#1A237E" font-size="11">化学键减弱</text>
+
+  <!-- ==================== COMMON BOX ==================== -->
+  <rect x="40" y="530" width="440" height="120" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5" rx="6"/>
+  <text x="260" y="555" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">通性（共性）</text>
+  <text x="55" y="578" font-size="11" fill="#333">① 最外层均为5电子，最高正价+5，最低负价-3</text>
+  <text x="55" y="596" font-size="11" fill="#333">② 最高价氧化物对应水化物均为酸（HNO₃→H₃PO₄→H₃AsO₄酸性递减）</text>
+  <text x="55" y="614" font-size="11" fill="#333">③ 氢化物RH₃稳定性：NH₃&gt;PH₃&gt;AsH₃；碱性：NH₃&gt;PH₃</text>
+  <text x="55" y="632" font-size="11" fill="#333">④ 非金属性：N&gt;P&gt;As&gt;Sb&gt;Bi（从上到下减弱）</text>
+  <text x="55" y="650" font-size="11" fill="#333">⑤ N和P都是典型的非金属元素（Bi已具有金属性）</text>
+
+  <!-- ==================== INDIVIDUAL BOX ==================== -->
+  <rect x="500" y="530" width="440" height="120" fill="#FFEBEE" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="720" y="555" text-anchor="middle" font-size="14" font-weight="bold" fill="#D32F2F">个性（特性）🔴</text>
+  <text x="515" y="578" font-size="11" fill="#D32F2F" font-weight="bold">N的特殊性：</text>
+  <text x="525" y="596" font-size="11" fill="#333">• N≡N三键键能极大→N₂非常稳定（惰性气氛）</text>
+  <text x="525" y="614" font-size="11" fill="#333">• HNO₃不论浓稀均有强氧化性（与金属反应不生成H₂）</text>
+  <text x="515" y="632" font-size="11" fill="#D32F2F" font-weight="bold">P的特殊性：</text>
+  <text x="525" y="650" font-size="11" fill="#333">• 白磷在空气中自燃→保存于水中；红磷相对稳定</text>
+  <text x="525" y="668" font-size="11" fill="#333">• P₂O₅是极强干燥剂（吸水生成偏磷酸HPO₃）</text>
+
+  <!-- Exam Tips -->
+  <rect x="40" y="665" width="900" height="60" fill="#FFF3E0" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="490" y="688" text-anchor="middle" font-size="13" font-weight="bold" fill="#D32F2F">🔴 高考易错点</text>
+  <text x="55" y="710" font-size="11" fill="#333">① HNO₃不稳定性：4HNO₃ 光照/△ 4NO₂↑+O₂↑+2H₂O | ② 红磷转白磷需隔绝空气加热 | ③ 浓HNO₃保存在棕色瓶 | ④ 铵盐与碱反应加热放出NH₃</text>
+
+</svg>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选必2 电磁学进阶 — 互动练习</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Microsoft YaHei', sans-serif; background: #E1F5EE; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; }
+  .container { max-width: 720px; width: 100%; background: #fff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); padding: 30px; }
+  h1 { color: #00796b; text-align: center; margin-bottom: 6px; font-size: 22px; }
+  .subtitle { text-align: center; color: #888; font-size: 13px; margin-bottom: 24px; }
+  .progress { background: #eee; border-radius: 10px; height: 8px; margin-bottom: 20px; overflow: hidden; }
+  .progress-bar { background: #00796b; height: 100%; width: 0%; transition: width 0.3s; border-radius: 10px; }
+  .q-card { display: none; }
+  .q-card.active { display: block; }
+  .q-num { font-size: 12px; color: #00796b; font-weight: 700; margin-bottom: 4px; }
+  .q-title { font-size: 16px; color: #333; margin-bottom: 16px; line-height: 1.6; }
+  .options { list-style: none; }
+  .option { padding: 12px 16px; margin-bottom: 8px; border: 2px solid #e0e0e0; border-radius: 10px; cursor: pointer; transition: all 0.2s; font-size: 14px; }
+  .option:hover { border-color: #00796b; background: #f0faf6; }
+  .option.selected { border-color: #00796b; background: #B2DFDB; }
+  .option.correct { border-color: #2e7d32; background: #C8E6C9; }
+  .option.wrong { border-color: #c62828; background: #FFCDD2; }
+  .feedback { display: none; padding: 14px; margin-top: 12px; border-radius: 8px; font-size: 13px; line-height: 1.6; }
+  .feedback.show { display: block; }
+  .feedback.correct-fb { background: #E8F5E9; border-left: 4px solid #2e7d32; color: #1b5e20; }
+  .feedback.wrong-fb { background: #FFEBEE; border-left: 4px solid #c62828; color: #b71c1c; }
+  .btn { display: inline-block; padding: 10px 28px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+  .btn-submit { background: #00796b; color: #fff; }
+  .btn-submit:hover { background: #00695c; }
+  .btn-submit:disabled { background: #ccc; cursor: not-allowed; }
+  .btn-next { background: #00796b; color: #fff; display: none; }
+  .btn-next:hover { background: #00695c; }
+  .btn-nav { display: flex; justify-content: space-between; margin-top: 20px; }
+  .result { display: none; text-align: center; padding: 30px; }
+  .result.show { display: block; }
+  .score { font-size: 48px; font-weight: 700; color: #00796b; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+  .tag { font-size: 11px; padding: 2px 8px; border-radius: 12px; }
+  .tag-basic { background: #E8F5E9; color: #2e7d32; }
+  .tag-adv { background: #FFF3E0; color: #e65100; }
+  .tag-comp { background: #FBEAF0; color: #72243E; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>选必2 电磁学进阶 互动练习</h1>
+  <p class="subtitle">安培力 · 洛伦兹力 · 电磁感应 · 交变电流 | 共6题</p>
+  <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+
+  <div id="quizArea"></div>
+  <div class="result" id="resultArea">
+    <div class="score" id="scoreDisplay">0</div>
+    <p style="color:#888;margin-top:8px;">/ 6 分</p>
+    <p id="scoreMsg" style="font-size:15px;margin-top:16px;"></p>
+    <button class="btn btn-submit" onclick="restartQuiz()" style="margin-top:20px;">重新练习</button>
+  </div>
+</div>
+
+<script>
+const questions = [
+  { id:1, title:"如图，导线ab长L=0.5m，通有I=2A电流，放在B=0.4T的匀强磁场中，B⊥I。导线受到的安培力大小为？", options:["0.4N","0.8N","0.2N","1.6N"], answer:0, tags:["基础","安培力"], diff:"basic",
+    explain:"F=BIL=0.4×2×0.5=0.4N。条件B⊥I直接用公式，注意单位统一。" },
+  { id:2, title:"一个带正电粒子以速度v垂直进入匀强磁场B中做匀速圆周运动。若速度变为2v，则轨道半径变为原来的？", options:["1倍（不变）","2倍","4倍","1/2倍"], answer:1, tags:["基础","洛伦兹力"], diff:"basic",
+    explain:"r=mv/(qB)，r∝v。v变为2v，r变为2r。周期T=2πm/(qB)不变（与v无关）。" },
+  { id:3, title:"关于楞次定律，下列说法正确的是？", options:["感应电流的磁场总与原磁场方向相反","感应电流的磁场总与原磁场方向相同","感应电流的磁场总阻碍引起感应电流的磁通量变化","感应电流的磁场总增强原磁通量"], answer:2, tags:["进阶","楞次定律"], diff:"adv",
+    explain:"楞次定律核心：感应电流的磁场总阻碍原磁通量的变化。'增反减同'——磁通量增大时反向，减小时同向。A/B都太绝对，D说反了。" },
+  { id:4, title:"一个100匝线圈中磁通量在0.1s内从0.02Wb均匀减小到0，感应电动势大小为？", options:["0.2V","2V","20V","200V"], answer:2, tags:["进阶","法拉第定律"], diff:"adv",
+    explain:"E=n·ΔΦ/Δt=100×(0.02/0.1)=100×0.2=20V。注意E是平均值，用电势差表示。" },
+  { id:5, title:"理想变压器原线圈n₁=1000匝，副线圈n₂=100匝，原线圈接220V交流电。副线圈电压为？", options:["2200V","22V","220V","2.2V"], answer:1, tags:["综合","变压器"], diff:"comp",
+    explain:"U₁/U₂=n₁/n₂→220/U₂=1000/100→U₂=22V。降压变压器：匝数比10:1，电压比也是10:1。" },
+  { id:6, title:"远距离输电中，输电功率P一定，输电电压提高为原来的10倍，则线路功率损失变为原来的？", options:["1/10","1/100","10倍","不变"], answer:1, tags:["综合","远距离输电"], diff:"comp",
+    explain:"P=UI，U提高10倍→I减小为1/10。P损=I²R，I变为1/10→P损变为(1/10)²=1/100。这就是高压输电的核心理由！" }
+];
+
+let currentQ = 0;
+let answers = new Array(questions.length).fill(-1);
+let submitted = new Array(questions.length).fill(false);
+
+function initQuiz() {
+  currentQ = 0; answers.fill(-1); submitted.fill(false);
+  document.getElementById('resultArea').classList.remove('show');
+  renderQuestion();
+  updateProgress();
+}
+
+function renderQuestion() {
+  const area = document.getElementById('quizArea');
+  const q = questions[currentQ];
+  const tagsHtml = q.tags.map(t => {
+    let cls = 'tag-basic';
+    if (q.diff==='adv') cls='tag-adv';
+    if (q.diff==='comp') cls='tag-comp';
+    return `<span class="tag ${cls}">${t}</span>`;
+  }).join('');
+
+  const optsHtml = q.options.map((opt, i) => {
+    let cls = 'option';
+    if (submitted[currentQ]) {
+      if (i === q.answer) cls += ' correct';
+      else if (i === answers[currentQ]) cls += ' wrong';
+    } else if (answers[currentQ] === i) {
+      cls += ' selected';
+    }
+    const onclick = submitted[currentQ] ? '' : `onclick="selectAnswer(${i})"`;
+    return `<li class="${cls}" ${onclick}>${String.fromCharCode(65+i)}. ${opt}</li>`;
+  }).join('');
+
+  let fbHtml = '';
+  if (submitted[currentQ]) {
+    const isCorrect = answers[currentQ] === q.answer;
+    fbHtml = `<div class="feedback ${isCorrect?'correct-fb':'wrong-fb'} show">${isCorrect?'✅ 回答正确！':'❌ 回答错误。'} ${q.explain}</div>`;
+  }
+
+  area.innerHTML = `
+    <div class="q-card active">
+      <div class="tags">${tagsHtml}</div>
+      <div class="q-num">第 ${currentQ+1}/${questions.length} 题</div>
+      <div class="q-title">${q.title}</div>
+      <ul class="options">${optsHtml}</ul>
+      ${fbHtml}
+      <div class="btn-nav">
+        <button class="btn btn-submit" ${submitted[currentQ]?'disabled':''} onclick="submitAnswer()">提交答案</button>
+        <button class="btn btn-next" style="display:${submitted[currentQ]?'inline-block':'none'}" onclick="nextQuestion()">
+          ${currentQ < questions.length-1 ? '下一题 →' : '查看成绩'}
+        </button>
+      </div>
+    </div>`;
+    updateProgress();
+}
+
+function selectAnswer(idx) {
+  if (submitted[currentQ]) return;
+  answers[currentQ] = idx;
+  renderQuestion();
+}
+
+function submitAnswer() {
+  if (answers[currentQ] === -1) return alert('请先选择一个选项');
+  submitted[currentQ] = true;
+  renderQuestion();
+}
+
+function nextQuestion() {
+  if (currentQ < questions.length - 1) { currentQ++; renderQuestion(); }
+  else showResult();
+}
+
+function showResult() {
+  const score = answers.reduce((s, a, i) => s + (a === questions[i].answer ? 1 : 0), 0);
+  document.getElementById('quizArea').innerHTML = '';
+  document.getElementById('resultArea').classList.add('show');
+  document.getElementById('scoreDisplay').textContent = score;
+  const pct = score / questions.length;
+  let msg = pct >= 0.8 ? '👍 很棒！电磁感应掌握得很好，大题多练练步骤。'
+    : pct >= 0.5 ? '📖 还不错，楞次定律和变压器计算再巩固一下。'
+    : '📚 需要系统复习电磁学基础，特别是法拉第定律和右手定则。';
+  document.getElementById('scoreMsg').textContent = msg;
+  document.getElementById('progressBar').style.width = '100%';
+}
+
+function restartQuiz() {
+  initQuiz();
+  document.getElementById('progressBar').style.width = '0%';
+}
+
+function updateProgress() {
+  document.getElementById('progressBar').style.width = ((currentQ+1)/questions.length*100) + '%';
+}
+
+initQuiz();
+</script>
+</body>
+</html>

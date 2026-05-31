@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520">
+  <defs>
+    <style>
+      .box { fill:#E1F5EE; stroke:#00796b; stroke-width:1.5; rx:8; }
+      .box2 { fill:#E8F5E9; stroke:#388E3C; stroke-width:1.5; rx:6; }
+      .box3 { fill:#FFF9C4; stroke:#F9A825; stroke-width:1.5; rx:6; }
+      .boxt { fill:#B2DFDB; stroke:#00796b; stroke-width:2; rx:8; }
+      .line { stroke:#00796b; stroke-width:1.2; fill:none; }
+      .arw { fill:#00796b; }
+      .tit { font:bold 15px sans-serif; fill:#00796b; }
+      .nm { font:13px sans-serif; fill:#1a1a1a; }
+      .sm { font:11px sans-serif; fill:#333; }
+      .red { font:11px sans-serif; fill:#c0392b; }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="220" y="8" width="240" height="34" class="boxt"/>
+  <text x="340" y="31" text-anchor="middle" class="tit">第1章 集合与常用逻辑用语</text>
+
+  <!-- 左：集合 -->
+  <rect x="20" y="54" width="130" height="28" class="box"/>
+  <text x="85" y="72" text-anchor="middle" class="nm">集合的概念</text>
+  <rect x="20" y="92" width="130" height="90" class="box"/>
+  <text x="85" y="110" text-anchor="middle" class="sm">元素特性：确定性、互异性、无序性</text>
+  <text x="85" y="128" text-anchor="middle" class="sm">常用数集：N N* Z Q R</text>
+  <text x="85" y="146" text-anchor="middle" class="red">易错：互异性！必须回代检验</text>
+
+  <!-- 集合关系 -->
+  <rect x="20" y="196" width="130" height="28" class="box"/>
+  <text x="85" y="214" text-anchor="middle" class="nm">集合间的基本关系</text>
+  <rect x="20" y="234" width="130" height="80" class="box"/>
+  <text x="85" y="252" text-anchor="middle" class="sm">子集 A⊆B（含自身和∅）</text>
+  <text x="85" y="270" text-anchor="middle" class="sm">真子集 A⊊B（不含相等）</text>
+  <text x="85" y="288" text-anchor="middle" class="red">n元素→子集2ⁿ个</text>
+
+  <!-- 集合运算 -->
+  <rect x="20" y="328" width="130" height="28" class="box"/>
+  <text x="85" y="346" text-anchor="middle" class="nm">集合的基本运算</text>
+  <rect x="20" y="366" width="130" height="78" class="box"/>
+  <text x="85" y="384" text-anchor="middle" class="sm">并集 A∪B：全都要</text>
+  <text x="85" y="402" text-anchor="middle" class="sm">交集 A∩B：共同点</text>
+  <text x="85" y="420" text-anchor="middle" class="sm">补集 ∁UA：不在A里</text>
+
+  <!-- 逻辑用语 -->
+  <rect x="200" y="54" width="140" height="28" class="box"/>
+  <text x="270" y="72" text-anchor="middle" class="nm">常用逻辑用语</text>
+  <rect x="200" y="92" width="140" height="108" class="box"/>
+  <text x="270" y="112" text-anchor="middle" class="sm">充分条件 p⇒q</text>
+  <text x="270" y="130" text-anchor="middle" class="sm">必要条件 p←q</text>
+  <text x="270" y="148" text-anchor="middle" class="sm">充要条件 p⇔q</text>
+  <text x="270" y="166" text-anchor="middle" class="red">小范围⇒大范围</text>
+  <text x="270" y="184" text-anchor="middle" class="sm">小推大，大不推小</text>
+
+  <!-- 量词 -->
+  <rect x="200" y="212" width="140" height="28" class="box"/>
+  <text x="270" y="230" text-anchor="middle" class="nm">全称量词与存在量词</text>
+  <rect x="200" y="250" width="140" height="80" class="box"/>
+  <text x="270" y="270" text-anchor="middle" class="sm">∀：否定变 ∃</text>
+  <text x="270" y="288" text-anchor="middle" class="sm">∃：否定变 ∀</text>
+  <text x="270" y="306" text-anchor="middle" class="sm">¬(∀x P) ≡ ∃x ¬P</text>
+
+  <!-- Venn图示例 -->
+  <rect x="400" y="54" width="260" height="180" class="box2"/>
+  <text x="530" y="76" text-anchor="middle" class="nm">Venn图解题要点</text>
+  <ellipse cx="475" cy="140" rx="55" ry="45" fill="none" stroke="#00796b" stroke-width="1.5"/>
+  <ellipse cx="565" cy="140" rx="55" ry="45" fill="none" stroke="#00796b" stroke-width="1.5"/>
+  <text x="475" y="144" text-anchor="middle" class="sm">A</text>
+  <text x="565" y="144" text-anchor="middle" class="sm">B</text>
+  <text x="520" y="196" text-anchor="middle" class="sm">A∩B=两圈重叠部分</text>
+  <text x="520" y="214" text-anchor="middle" class="sm">A∪B=两圈总覆盖</text>
+
+  <!-- 参数问题 -->
+  <rect x="400" y="250" width="260" height="148" class="box3"/>
+  <text x="530" y="272" text-anchor="middle" class="nm">集合含参问题解题模板</text>
+  <text x="410" y="296" class="sm">① 化简集合A、B（解出不等式/方程）</text>
+  <text x="410" y="316" class="sm">② 将A⊆B / A∩B=∅等条件翻译</text>
+  <text x="410" y="336" class="sm">③ 端点值单独检验（等号能否取到）</text>
+  <text x="410" y="356" class="sm">④ 画数轴验证，注意不要漏解！</text>
+  <text x="410" y="376" class="red">易错：端点值回代！互异性检验！</text>
+
+  <!-- 充要条俩判断 -->
+  <rect x="20" y="458" width="300" height="50" class="box2"/>
+  <text x="170" y="478" text-anchor="middle" class="nm">充要条件判断口诀</text>
+  <text x="30" y="498" class="sm">① 看箭头方向：p⇒q 则p是q的充分；q⇒p 则p是q的必要</text>
+  <text x="30" y="514" class="sm">② 看集合包含：p对应集合P，q对应Q；P⊆Q则p是q的充分</text>
+</svg>

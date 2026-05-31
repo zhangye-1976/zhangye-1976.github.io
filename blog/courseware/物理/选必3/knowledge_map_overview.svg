@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 510">
+  <rect width="680" height="510" fill="#E1F5EE" rx="12"/>
+  <text x="340" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#00796b">选必3《热学与近代物理》全书总览</text>
+  <text x="340" y="60" text-anchor="middle" font-size="12" fill="#555">分子动理论 → 气体 → 热力学 → 原子结构 → 原子核</text>
+
+  <!-- Ch1 -->
+  <rect x="30" y="80" width="290" height="115" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="80" width="290" height="30" fill="#00796b" rx="8"/>
+  <text x="175" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">第1章 分子动理论 ⭐⭐⭐</text>
+  <text x="48" y="130" font-size="11" fill="#333">阿伏加德罗常数 · 扩散与布朗运动</text>
+  <text x="48" y="150" font-size="11" fill="#333">分子力曲线（r₀分界）· 内能=动能+势能</text>
+  <text x="48" y="170" font-size="11" fill="#72243E">⚠ 布朗运动不是分子运动！</text>
+
+  <!-- Ch2 -->
+  <rect x="360" y="80" width="290" height="115" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="360" y="80" width="290" height="30" fill="#00796b" rx="8"/>
+  <text x="505" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">第2章 气体固体液体 ⭐⭐⭐⭐</text>
+  <text x="378" y="130" font-size="11" fill="#333">气体三定律 · pV/T=C（状态方程）</text>
+  <text x="378" y="150" font-size="11" fill="#333">晶体vs非晶体 · 表面张力 · 毛细现象</text>
+  <text x="378" y="170" font-size="11" fill="#72243E">⚠ T必须用开尔文！</text>
+
+  <!-- Ch3 -->
+  <rect x="30" y="215" width="290" height="115" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="215" width="290" height="30" fill="#00796b" rx="8"/>
+  <text x="175" y="235" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">第3章 热力学定律 ⭐⭐⭐⭐</text>
+  <text x="48" y="265" font-size="11" fill="#333">热一律 ΔU=W+Q · 符号规定</text>
+  <text x="48" y="285" font-size="11" fill="#333">热二律（克劳修斯/开尔文表述）</text>
+  <text x="48" y="305" font-size="11" fill="#72243E">⚠ 两类永动机都不可能！</text>
+
+  <!-- Ch4 -->
+  <rect x="360" y="215" width="290" height="115" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="360" y="215" width="290" height="30" fill="#72243E" rx="8"/>
+  <text x="505" y="235" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">第4章 原子结构 ⭐⭐⭐⭐⭐</text>
+  <text x="378" y="265" font-size="11" fill="#333">光电效应 E_k=hν-W₀ · 核式结构</text>
+  <text x="378" y="285" font-size="11" fill="#333">玻尔模型 E_n=E₁/n² · 能级跃迁</text>
+  <text x="378" y="305" font-size="11" fill="#72243E">🔴 选必3最高频考点！</text>
+
+  <!-- Ch5 -->
+  <rect x="30" y="350" width="620" height="80" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="350" width="620" height="30" fill="#00796b" rx="8"/>
+  <text x="340" y="370" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">第5章 原子核 ⭐⭐⭐⭐</text>
+  <text x="55" y="400" font-size="11" fill="#333">α/β/γ三种射线 · 衰变定律 N=N₀(1/2)^(t/τ) · 核反应方程 · 质能方程 ΔE=Δm·c²</text>
+  <text x="55" y="420" font-size="11" fill="#72243E">🔴 必考：半衰期计算 + 核反应方程配平 + 质量亏损→能量</text>
+
+  <!-- 底部 -->
+  <text x="340" y="480" text-anchor="middle" font-size="12" fill="#00796b">热学（Ch1-3）+ 近代物理（Ch4-5）= 两大板块独立考，全国乙卷通常各出一道选择题</text>
+</svg>

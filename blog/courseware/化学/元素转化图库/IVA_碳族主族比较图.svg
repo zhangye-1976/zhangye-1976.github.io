@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 780" width="100%" height="100%">
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- ===== 底层背景块 ===== -->
+  <rect x="0" y="0" width="960" height="60" fill="#37474F" rx="8"/>
+  <rect x="0" y="30" width="960" height="30" fill="#37474F"/>
+
+  <!-- 表头 -->
+  <rect x="30" y="80" width="140" height="32" rx="4" fill="#37474F"/>
+  <rect x="178" y="80" width="260" height="32" rx="4" fill="#E3F2FD" stroke="#1E88E5" stroke-width="1"/>
+  <rect x="446" y="80" width="260" height="32" rx="4" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1"/>
+  <rect x="714" y="80" width="210" height="32" rx="4" fill="#E8EAF6" stroke="#3949AB" stroke-width="1"/>
+
+  <!-- 数据行 -->
+  <rect x="30" y="118" width="140" height="34" fill="#F5F5F5" rx="2"/>
+  <text x="100" y="140" text-anchor="middle" fill="#333" font-size="12">原子半径</text>
+  <text x="308" y="140" text-anchor="middle" fill="#333" font-size="12">77 pm</text>
+  <text x="576" y="140" text-anchor="middle" fill="#333" font-size="12">117 pm</text>
+  <text x="819" y="140" text-anchor="middle" fill="#1A237E" font-size="11">↓ 增大</text>
+
+  <rect x="30" y="158" width="140" height="34" fill="#FFF" rx="2"/>
+  <text x="100" y="180" text-anchor="middle" fill="#333" font-size="12">非金属性</text>
+  <text x="308" y="180" text-anchor="middle" fill="#333" font-size="12">非金属（较强）</text>
+  <text x="576" y="180" text-anchor="middle" fill="#333" font-size="12">非金属（较弱 → 类金属）</text>
+  <text x="819" y="180" text-anchor="middle" fill="#1A237E" font-size="11">↓ 减弱</text>
+
+  <rect x="30" y="198" width="140" height="34" fill="#F5F5F5" rx="2"/>
+  <text x="100" y="220" text-anchor="middle" fill="#333" font-size="12">电负性</text>
+  <text x="308" y="220" text-anchor="middle" fill="#333" font-size="12">2.55</text>
+  <text x="576" y="220" text-anchor="middle" fill="#333" font-size="12">1.90</text>
+  <text x="819" y="220" text-anchor="middle" fill="#1A237E" font-size="11">↓ 减弱</text>
+
+  <rect x="30" y="238" width="140" height="34" fill="#FFF" rx="2"/>
+  <text x="100" y="260" text-anchor="middle" fill="#333" font-size="12">常见价态</text>
+  <text x="308" y="260" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">+2, +4, -4  (高频)</text>
+  <text x="576" y="260" text-anchor="middle" fill="#333" font-size="12">+2, +4</text>
+  <text x="819" y="260" text-anchor="middle" fill="#1A237E" font-size="11">--</text>
+
+  <rect x="30" y="278" width="140" height="52" fill="#F5F5F5" rx="2"/>
+  <text x="100" y="299" text-anchor="middle" fill="#333" font-size="12">氧化物</text>
+  <text x="100" y="316" text-anchor="middle" fill="#333" font-size="11">(最高价)</text>
+  <text x="308" y="308" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">CO2  (高频)</text>
+  <text x="576" y="308" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">SiO2  (高频)</text>
+  <text x="819" y="308" text-anchor="middle" fill="#1A237E" font-size="11">酸性↓</text>
+
+  <rect x="30" y="336" width="140" height="34" fill="#FFF" rx="2"/>
+  <text x="100" y="358" text-anchor="middle" fill="#333" font-size="12">晶体类型</text>
+  <text x="308" y="358" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">分子晶体  (高频)</text>
+  <text x="576" y="358" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">原子晶体  (高频)</text>
+  <text x="819" y="358" text-anchor="middle" fill="#D32F2F" font-size="11">巨大差异!</text>
+
+  <rect x="30" y="376" width="140" height="34" fill="#F5F5F5" rx="2"/>
+  <text x="100" y="398" text-anchor="middle" fill="#333" font-size="12">熔沸点</text>
+  <text x="308" y="398" text-anchor="middle" fill="#333" font-size="12">CO2: -78.5℃ 升华</text>
+  <text x="576" y="398" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">SiO2: 1713℃  (高频)</text>
+  <text x="819" y="398" text-anchor="middle" fill="#1A237E" font-size="11">差距巨大</text>
+
+  <rect x="30" y="416" width="140" height="48" fill="#FFF" rx="2"/>
+  <text x="100" y="436" text-anchor="middle" fill="#333" font-size="12">最高价</text>
+  <text x="100" y="452" text-anchor="middle" fill="#333" font-size="11">含氧酸</text>
+  <text x="308" y="442" text-anchor="middle" fill="#333" font-size="12">H2CO3（弱酸）</text>
+  <text x="576" y="442" text-anchor="middle" fill="#333" font-size="12">H2SiO3（更弱酸）</text>
+  <text x="819" y="442" text-anchor="middle" fill="#1A237E" font-size="11">酸性↓</text>
+
+  <rect x="30" y="470" width="140" height="34" fill="#F5F5F5" rx="2"/>
+  <text x="100" y="492" text-anchor="middle" fill="#333" font-size="12">与HF反应</text>
+  <text x="308" y="492" text-anchor="middle" fill="#333" font-size="12">不反应</text>
+  <text x="576" y="492" text-anchor="middle" fill="#D32F2F" font-size="12" font-weight="bold">SiO2+4HF→SiF4↑+2H2O  (高频)</text>
+  <text x="819" y="492" text-anchor="middle" fill="#1A237E" font-size="11">仅SiO2可与HF</text>
+
+  <!-- 通性框 -->
+  <rect x="30" y="520" width="440" height="110" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5" rx="6"/>
+  <text x="250" y="544" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">通性（共性）</text>
+  <text x="42" y="566" font-size="11" fill="#333">(1) 最外层均为4电子，主要化合价+2、+4（C有-4价）</text>
+  <text x="42" y="584" font-size="11" fill="#333">(2) 最高价氧化物RO2均为酸性氧化物，能与碱反应</text>
+  <text x="42" y="602" font-size="11" fill="#333">(3) 从上到下非金属性减弱、金属性增强（Sn、Pb已具金属性）</text>
+  <text x="42" y="620" font-size="11" fill="#333">(4) 氢化物RH4稳定性：CH4 ≫ SiH4（SiH4在空气中自燃）</text>
+
+  <!-- 个性框 -->
+  <rect x="490" y="520" width="440" height="110" fill="#FFEBEE" stroke="#D32F2F" stroke-width="1.5" rx="6"/>
+  <text x="710" y="544" text-anchor="middle" font-size="14" font-weight="bold" fill="#D32F2F">个性（特性） 高频</text>
+  <text x="502" y="566" font-size="11" fill="#D32F2F" font-weight="bold">C 的特殊性：</text>
+  <text x="512" y="584" font-size="11" fill="#333">- 有机物骨架元素（链状、环状、官能团多样）</text>
+  <text x="512" y="602" font-size="11" fill="#333">- 同素异形体（金刚石/石墨/C60）物理性质差异巨大</text>
+  <text x="502" y="618" font-size="11" fill="#D32F2F" font-weight="bold">Si 的特殊性：</text>
+  <text x="512" y="636" font-size="11" fill="#333">- SiO2为原子晶体 → 高熔点；与HF反应是唯一特例</text>
+
+  <!-- 底部考点 -->
+  <rect x="30" y="648" width="900" height="36" fill="#FFF3E0" stroke="#D32F2F" stroke-width="1" rx="4"/>
+
+  <!-- ===== 所有文字（最上层） ===== -->
+  <text x="480" y="40" text-anchor="middle" fill="white" font-size="20" font-weight="bold" font-family="Microsoft YaHei, SimHei, sans-serif">碳族(IVA族) 比较 -- 通性与个性</text>
+
+  <text x="100" y="102" text-anchor="middle" fill="white" font-size="13" font-weight="bold" font-family="Microsoft YaHei, SimHei, sans-serif">比较内容</text>
+  <text x="308" y="102" text-anchor="middle" fill="#1A237E" font-size="13" font-weight="bold" font-family="Microsoft YaHei, SimHei, sans-serif">C（碳） 重点</text>
+  <text x="576" y="102" text-anchor="middle" fill="#1B5E20" font-size="13" font-weight="bold" font-family="Microsoft YaHei, SimHei, sans-serif">Si（硅） 重点</text>
+  <text x="819" y="102" text-anchor="middle" fill="#283593" font-size="13" font-weight="bold" font-family="Microsoft YaHei, SimHei, sans-serif">递变规律</text>
+
+  <text x="490" y="671" text-anchor="middle" font-size="13" font-weight="bold" fill="#D32F2F" font-family="Microsoft YaHei, SimHei, sans-serif">CO2(分子晶体) &lt;&lt; SiO2(原子晶体) 熔沸点差异是高考常考点，根源在于晶体类型不同！</text>
+
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 620">
+  <defs>
+    <style>
+      .box { fill:#E1F5EE; stroke:#00796b; stroke-width:1.5; rx:8; }
+      .box2 { fill:#E8F5E9; stroke:#388E3C; stroke-width:1.5; rx:6; }
+      .box3 { fill:#FFF9C4; stroke:#F9A825; stroke-width:1.5; rx:6; }
+      .boxt { fill:#B2DFDB; stroke:#00796b; stroke-width:2; rx:8; }
+      .tit { font:bold 15px sans-serif; fill:#00796b; }
+      .nm { font:13px sans-serif; fill:#1a1a1a; }
+      .sm { font:11px sans-serif; fill:#333; }
+      .red { font:11px sans-serif; fill:#c0392b; }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="180" y="8" width="320" height="34" class="boxt"/>
+  <text x="340" y="31" text-anchor="middle" class="tit">第1章 空间向量与立体几何</text>
+
+  <!-- 空间直角坐标系 -->
+  <rect x="20" y="52" width="180" height="28" class="box"/>
+  <text x="110" y="70" text-anchor="middle" class="nm">空间直角坐标系</text>
+  <rect x="20" y="88" width="180" height="80" class="box"/>
+  <text x="30" y="110" class="sm">原点O：三轴交点</text>
+  <text x="30" y="128" class="sm">x轴(横)，y轴(纵)，z轴(竖)</text>
+  <text x="30" y="146" class="sm">右手系：右手四指x→y，拇指z+</text>
+  <text x="30" y="162" class="red">建系前提：三线两两垂直</text>
+
+  <!-- 空间向量运算 -->
+  <rect x="220" y="52" width="200" height="28" class="box"/>
+  <text x="320" y="70" text-anchor="middle" class="nm">空间向量运算</text>
+  <rect x="220" y="88" width="200" height="130" class="box2"/>
+  <text x="320" y="112" text-anchor="middle" class="sm">加法：a+b=(x₁+x₂,y₁+y₂,z₁+z₂)</text>
+  <text x="320" y="132" text-anchor="middle" class="sm">减法：a−b=(x₁−x₂,...)</text>
+  <text x="320" y="152" text-anchor="middle" class="sm">数乘：λa=(λx₁,λy₁,λz₁)</text>
+  <text x="320" y="172" text-anchor="middle" class="sm">数量积：a·b=x₁x₂+y₁y₂+z₁z₂</text>
+  <text x="320" y="190" text-anchor="middle" class="sm">模：|a|=√(x₁²+y₁²+z₁²)</text>
+  <text x="320" y="208" text-anchor="middle" class="sm">垂直：a·b=0</text>
+
+  <!-- 法向量 -->
+  <rect x="440" y="52" width="220" height="28" class="box"/>
+  <text x="550" y="70" text-anchor="middle" class="nm">平面的法向量（核心！）</text>
+  <rect x="440" y="88" width="220" height="130" class="box3"/>
+  <text x="450" y="112" class="sm">法向量n⊥平面α</text>
+  <text x="450" y="132" class="sm">求法向量步骤：</text>
+  <text x="450" y="152" class="sm">① 在平面内取两不共线向量a,b</text>
+  <text x="450" y="172" class="sm">② 设n=(x,y,z)</text>
+  <text x="450" y="190" class="sm">③ 解 n·a=0, n·b=0</text>
+  <text x="450" y="208" class="sm">④ 取一组简单解（令某变量=1）</text>
+  <text x="450" y="224" class="red">⚠ 法向量方向决定二面角方向！</text>
+
+  <!-- 空间角计算 -->
+  <rect x="20" y="232" width="320" height="34" class="boxt"/>
+  <text x="180" y="254" text-anchor="middle" class="tit">空间角与距离计算（高考重点）</text>
+  <rect x="20" y="274" width="320" height="130" class="box2"/>
+  <text x="30" y="298" class="sm">【线线角】cosθ=|s₁·s₂|/(|s₁||s₂|)  （取锐角的余弦）</text>
+  <text x="30" y="318" class="sm">【线面角】sinθ=|s·n|/(|s||n|)</text>
+  <text x="30" y="338" class="sm">【面面角/二面角】cosθ=|n₁·n₂|/(|n₁||n₂|)</text>
+  <text x="30" y="356" class="sm">  ⚠ 需判断是θ还是π−θ（观察法向量方向）</text>
+  <text x="30" y="374" class="sm">【点面距】d=|n·AP|/|n|  （A为平面上一点）</text>
+  <text x="30" y="392" class="sm">【线线距（异面）】用向量法：公垂向量</text>
+
+  <!-- 立体几何向量法模板 -->
+  <rect x="360" y="232" width="300" height="34" class="boxt"/>
+  <text x="510" y="254" text-anchor="middle" class="tit">立体几何向量法解题模板</text>
+  <rect x="360" y="274" width="300" height="130" class="box3"/>
+  <text x="370" y="298" class="sm">① 建系：选原点，确定x,y,z轴方向</text>
+  <text x="370" y="318" class="sm">  （需有三线两两垂直的条件）</text>
+  <text x="370" y="338" class="sm">② 求坐标：写出所有关键点的坐标</text>
+  <text x="370" y="356" class="sm">③ 求向量：用"终点−起点"</text>
+  <text x="370" y="374" class="sm">④ 求法向量（如需证垂直/求角）</text>
+  <text x="370" y="392" class="sm">⑤ 计算：数量积/模/夹角公式</text>
+  <text x="370" y="408" class="sm">⑥ 回归几何意义，作答</text>
+
+  <!-- 空间向量 vs 综合法 -->
+  <rect x="20" y="424" width="640" height="28" class="box"/>
+  <text x="340" y="442" text-anchor="middle" class="nm">空间向量法 vs 综合法（对比选择）</text>
+  <rect x="20" y="460" width="640" height="140" class="box"/>
+  <text x="30" y="484" class="sm">【综合法】用公理和判定定理进行逻辑推理</text>
+  <text x="30" y="502" class="sm">  优点：步骤少，计算量小</text>
+  <text x="30" y="520" class="sm">  缺点：需要较强的空间想象力</text>
+  <text x="30" y="538" class="sm">  适用：简单的平行/垂直证明</text>
+  <text x="340" y="484" class="sm">【向量法】建系→坐标→向量运算</text>
+  <text x="340" y="502" class="sm">  优点：程序化，不易漏步，适合求角/距</text>
+  <text x="340" y="520" class="sm">  缺点：计算量大，建系有时困难</text>
+  <text x="340" y="538" class="sm">  适用：二面角、线面角、点面距</text>
+  <text x="30" y="556" class="sm">口诀：能建系优先向量法；建系困难用综合法；高考大题两问通常一综一向量</text>
+  <text x="30" y="574" class="red">⚠ 向量法求二面角一定要注意法向量的方向（可能取补角）！</text>
+</svg>

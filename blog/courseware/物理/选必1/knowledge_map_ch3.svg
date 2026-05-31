@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 390">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E1F5EE"/>
+      <stop offset="100%" stop-color="#B2DFDB"/>
+    </linearGradient>
+  </defs>
+  <rect width="680" height="390" rx="12" fill="url(#bg)"/>
+  <rect x="20" y="15" width="640" height="42" rx="8" fill="#00796B"/>
+  <text x="340" y="43" text-anchor="middle" fill="#fff" font-size="19" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">第3章 机械波</text>
+
+  <!-- 波的描述 -->
+  <rect x="25" y="70" width="310" height="130" rx="6" fill="#fff" stroke="#00796B" stroke-width="1.2"/>
+  <text x="180" y="95" text-anchor="middle" fill="#00796B" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">波的描述</text>
+  <line x1="40" y1="103" x2="320" y2="103" stroke="#B2DFDB" stroke-width="1"/>
+  <text x="40" y="122" fill="#C62828" font-size="12" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">v = λf = λ/T</text>
+  <text x="40" y="142" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">波源决定频率 f → f 不变</text>
+  <text x="40" y="160" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">介质决定波速 v → 介质变 v 变</text>
+  <text x="40" y="178" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">v不变→f不变→λ也不变</text>
+  <text x="40" y="195" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">介质变→v变,f不变→λ变</text>
+
+  <!-- 图像对比 -->
+  <rect x="350" y="70" width="310" height="130" rx="6" fill="#FFF8E1" stroke="#FF8F00" stroke-width="1.5"/>
+  <text x="505" y="95" text-anchor="middle" fill="#E65100" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">y-t图  vs  y-x图 ⭐必考</text>
+  <line x1="365" y1="103" x2="645" y2="103" stroke="#FFECB3" stroke-width="1"/>
+  <text x="365" y="125" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">y-t（振动图）：一个质点随时间</text>
+  <text x="365" y="145" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">y-x（波形图）：某时刻所有质点</text>
+  <text x="365" y="165" fill="#E65100" font-size="10" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">上下坡法判断质点振动方向：</text>
+  <text x="365" y="183" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">上坡→向下振 · 下坡→向上振</text>
+  <text x="365" y="198" fill="#555" font-size="9" font-family="Microsoft YaHei, SimHei, sans-serif">⚠ T=λ/v（两图联系的桥梁）</text>
+
+  <!-- 干涉衍射 -->
+  <rect x="25" y="215" width="310" height="105" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.2"/>
+  <text x="180" y="240" text-anchor="middle" fill="#2E7D32" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">波的干涉 · 衍射</text>
+  <line x1="40" y1="248" x2="320" y2="248" stroke="#C8E6C9" stroke-width="1"/>
+  <text x="40" y="268" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">干涉条件：频率相同 · 相位差恒定</text>
+  <text x="40" y="288" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">加强：Δr=nλ ；减弱：Δr=(2n+1)λ/2</text>
+  <text x="40" y="308" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">衍射明显条件：λ与障碍物尺寸可比拟</text>
+  <text x="40" y="320" fill="#555" font-size="9" font-family="Microsoft YaHei, SimHei, sans-serif">干涉和衍射是波特有的现象</text>
+
+  <!-- 多普勒 -->
+  <rect x="350" y="215" width="310" height="105" rx="6" fill="#E8EAF6" stroke="#7986CB" stroke-width="1"/>
+  <text x="505" y="240" text-anchor="middle" fill="#3949AB" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">多普勒效应</text>
+  <line x1="365" y1="248" x2="645" y2="248" stroke="#C5CAE9" stroke-width="1"/>
+  <text x="365" y="270" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">波源靠近→接收频率大于波源频率</text>
+  <text x="365" y="290" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">波源远离→接收频率小于波源频率</text>
+  <text x="365" y="308" fill="#E53935" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">⚠ 波源频率本身不变！变的是接收频率</text>
+  <text x="365" y="322" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">应用：测速仪 · 医用超声诊断</text>
+
+  <text x="340" y="350" text-anchor="middle" fill="#777" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">全国乙卷：波形图与振动图的相互转化每年必考</text>
+  <text x="340" y="375" text-anchor="middle" fill="#999" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">物理选必1 · 第3章 机械波</text>
+</svg>

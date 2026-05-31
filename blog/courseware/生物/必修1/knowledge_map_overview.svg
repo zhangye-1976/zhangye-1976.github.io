@@ -1,0 +1,69 @@
+<svg viewBox="0 0 680 620" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>必修1 分子与细胞 全书总览</title>
+  <desc>六大章节知识框架</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke"
+        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="200" y="8" width="280" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">必修1 分子与细胞 · 全书总览</text>
+
+  <line x1="340" y1="48" x2="340" y2="68" stroke="#00796b" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <g class="c-teal">
+    <rect x="40" y="72" width="120" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+    <text x="100" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第1章 走近细胞</text>
+  </g>
+
+  <g class="c-teal">
+    <rect x="200" y="72" width="120" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+    <text x="260" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第2章 细胞的分子</text>
+  </g>
+
+  <g class="c-teal">
+    <rect x="360" y="72" width="120" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+    <text x="420" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第3章 细胞结构</text>
+  </g>
+
+  <g class="c-teal">
+    <rect x="520" y="72" width="120" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+    <text x="580" y="99" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第4章 物质运输</text>
+  </g>
+
+  <g class="c-teal">
+    <rect x="140" y="148" width="180" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+    <text x="230" y="175" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第5章 能量供应和利用 ★</text>
+  </g>
+
+  <g class="c-teal">
+    <rect x="380" y="148" width="160" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+    <text x="460" y="175" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第6章 细胞生命历程</text>
+  </g>
+
+  <line x1="160" y1="116" x2="160" y2="148" stroke="#0F6E56" stroke-width="0.5" marker-end="url(#arrow)"/>
+  <line x1="260" y1="116" x2="260" y2="148" stroke="#0F6E56" stroke-width="0.5" marker-end="url(#arrow)"/>
+  <line x1="420" y1="116" x2="420" y2="148" stroke="#0F6E56" stroke-width="0.5" marker-end="url(#arrow)"/>
+  <line x1="580" y1="116" x2="580" y2="148" stroke="#0F6E56" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="230" width="600" height="80" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="252" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第5章 核心展开</text>
+  <text x="340" y="275" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">酶 → ATP → 细胞呼吸（有氧/无氧）→ 光合作用（光反应/暗反应）</text>
+  <text x="340" y="295" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">每年高考大题必考，全书最核心章节</text>
+
+  <rect x="40" y="330" width="600" height="80" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="352" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">第6章 核心展开</text>
+  <text x="340" y="375" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">细胞增殖（有丝分裂★）→ 细胞分化（基因选择性表达）→ 衰老与凋亡</text>
+  <text x="340" y="395" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">染色体/DNA数量变化曲线是必考难点</text>
+
+  <rect x="80" y="440" width="520" height="72" rx="10" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="340" y="462" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">Top 3 高频考点</text>
+  <text x="340" y="482" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">1. 光合作用与呼吸作用综合  2. 有丝分裂DNA/染色体变化  3. 蛋白质与核酸</text>
+  <text x="340" y="500" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">跨膜运输方式判断 | 酶的特性 | 细胞器功能 | 细胞分化与全能性</text>
+
+  <rect x="200" y="540" width="280" height="36" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+  <text x="340" y="563" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#042C53" font-family="system-ui, sans-serif">本书是后续必修2、选必1的基础</text>
+</svg>

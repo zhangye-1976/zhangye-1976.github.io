@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E1F5EE"/>
+      <stop offset="100%" stop-color="#B2DFDB"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="680" height="480" rx="12" fill="url(#bg)"/>
+
+  <rect x="20" y="15" width="640" height="42" rx="8" fill="#00796B"/>
+  <text x="340" y="43" text-anchor="middle" fill="#fff" font-size="19" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">第10章 静电场中的能量 —— 电场能的性质</text>
+
+  <!-- 电势能与做功 -->
+  <rect x="25" y="70" width="310" height="125" rx="6" fill="#fff" stroke="#00796B" stroke-width="1.2"/>
+  <text x="180" y="92" text-anchor="middle" fill="#00796B" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">电势能 &amp; 电场力做功</text>
+  <line x1="40" y1="100" x2="320" y2="100" stroke="#B2DFDB" stroke-width="1"/>
+  <text x="40" y="120" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">W_AB = q·U_AB = q(φ_A-φ_B)</text>
+  <text x="40" y="140" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">ΔE_p = -W_电场力</text>
+  <text x="40" y="160" fill="#E53935" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">⬆ 电场力做正功 → 电势能减少</text>
+  <text x="40" y="180" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">与路径无关（保守力）</text>
+
+  <!-- 电势与电势差 -->
+  <rect x="350" y="70" width="310" height="125" rx="6" fill="#fff" stroke="#E53935" stroke-width="1.5"/>
+  <text x="505" y="92" text-anchor="middle" fill="#E53935" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">电势 φ · 电势差 U ⭐</text>
+  <line x1="365" y1="100" x2="645" y2="100" stroke="#FFCDD2" stroke-width="1"/>
+  <text x="365" y="120" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">φ = E_p/q（标量！有正负）</text>
+  <text x="365" y="140" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">U_AB = φ_A - φ_B</text>
+  <text x="365" y="158" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">沿电场线方向：电势降低</text>
+  <text x="365" y="178" fill="#E53935" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">⚠ 电势高 ≠ 电势能大！</text>
+  <text x="365" y="193" fill="#555" font-size="9" font-family="Microsoft YaHei, SimHei, sans-serif">正电荷高电势=高势能；负电荷相反</text>
+
+  <!-- E=U/d -->
+  <rect x="25" y="210" width="210" height="100" rx="6" fill="#fff" stroke="#00796B" stroke-width="1.2"/>
+  <text x="130" y="235" text-anchor="middle" fill="#00796B" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">E 与 U 的关系</text>
+  <line x1="40" y1="243" x2="220" y2="243" stroke="#B2DFDB" stroke-width="1"/>
+  <text x="40" y="268" fill="#333" font-size="13" font-family="Microsoft YaHei, SimHei, sans-serif">E = U/d</text>
+  <text x="40" y="290" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">d=沿电场线方向距离</text>
+  <text x="40" y="305" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">匀强：U=Ed（比例关系）</text>
+
+  <!-- 等势面 -->
+  <rect x="250" y="210" width="200" height="100" rx="6" fill="#fff" stroke="#00796B" stroke-width="1.2"/>
+  <text x="350" y="235" text-anchor="middle" fill="#00796B" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">等势面</text>
+  <line x1="265" y1="243" x2="435" y2="243" stroke="#B2DFDB" stroke-width="1"/>
+  <text x="265" y="265" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">E 线 ⟂ 等势面</text>
+  <text x="265" y="285" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">等势面上 W=0</text>
+  <text x="265" y="303" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">密=E大</text>
+
+  <!-- 电容器 -->
+  <rect x="465" y="210" width="195" height="100" rx="6" fill="#fff" stroke="#E53935" stroke-width="1.5"/>
+  <text x="562" y="235" text-anchor="middle" fill="#E53935" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">电容器 ⭐</text>
+  <line x1="480" y1="243" x2="645" y2="243" stroke="#FFCDD2" stroke-width="1"/>
+  <text x="480" y="265" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">C = Q/U（定义）</text>
+  <text x="480" y="285" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">C = ε_rS/(4πkd)</text>
+  <text x="480" y="303" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">E = U/d = Q/(Cd)</text>
+
+  <!-- 电容器动态分析 -->
+  <rect x="25" y="325" width="635" height="140" rx="6" fill="#FFF8E1" stroke="#FF8F00" stroke-width="1.5"/>
+  <text x="340" y="350" text-anchor="middle" fill="#E65100" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">🔥 电容器动态分析（高考必考）</text>
+
+  <!-- Q不变 -->
+  <rect x="40" y="360" width="300" height="90" rx="4" fill="#fff" stroke="#FFB74D" stroke-width="1"/>
+  <text x="190" y="382" text-anchor="middle" fill="#E65100" font-size="12" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">Q不变（充电后断开电源）</text>
+  <text x="55" y="402" fill="#333" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">d↑ → C↓ → U↑ → E不变</text>
+  <text x="55" y="420" fill="#333" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">S↑ → C↑ → U↓ → E↓</text>
+  <text x="55" y="438" fill="#333" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">ε_r↑ → C↑ → U↓ → E↓</text>
+  <text x="55" y="452" fill="#E53935" font-size="9" font-family="Microsoft YaHei, SimHei, sans-serif">🔑 E = 4πkQ/(ε_rS) — 与d无关！</text>
+
+  <!-- U不变 -->
+  <rect x="350" y="360" width="300" height="90" rx="4" fill="#fff" stroke="#FFB74D" stroke-width="1"/>
+  <text x="500" y="382" text-anchor="middle" fill="#E65100" font-size="12" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">U不变（始终连接电源）</text>
+  <text x="365" y="402" fill="#333" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">d↑ → C↓ → Q↓ → E↓</text>
+  <text x="365" y="420" fill="#333" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">S↑ → C↑ → Q↑ → E不变</text>
+  <text x="365" y="438" fill="#333" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">ε_r↑ → C↑ → Q↑ → E不变</text>
+  <text x="365" y="452" fill="#E53935" font-size="9" font-family="Microsoft YaHei, SimHei, sans-serif">🔑 E=U/d — d越大 E越小</text>
+
+  <text x="340" y="475" text-anchor="middle" fill="#999" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">物理必修第三册 · 第10章 静电场中的能量</text>
+</svg>

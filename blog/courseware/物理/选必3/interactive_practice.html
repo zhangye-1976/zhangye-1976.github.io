@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选必3 热学与近代物理 — 互动练习</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Microsoft YaHei', sans-serif; background: #E1F5EE; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; }
+  .container { max-width: 720px; width: 100%; background: #fff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); padding: 30px; }
+  h1 { color: #00796b; text-align: center; margin-bottom: 6px; font-size: 22px; }
+  .subtitle { text-align: center; color: #888; font-size: 13px; margin-bottom: 24px; }
+  .progress { background: #eee; border-radius: 10px; height: 8px; margin-bottom: 20px; overflow: hidden; }
+  .progress-bar { background: #00796b; height: 100%; width: 0%; transition: width 0.3s; border-radius: 10px; }
+  .q-card { display: none; }
+  .q-card.active { display: block; }
+  .q-num { font-size: 12px; color: #00796b; font-weight: 700; margin-bottom: 4px; }
+  .q-title { font-size: 16px; color: #333; margin-bottom: 16px; line-height: 1.6; }
+  .options { list-style: none; }
+  .option { padding: 12px 16px; margin-bottom: 8px; border: 2px solid #e0e0e0; border-radius: 10px; cursor: pointer; transition: all 0.2s; font-size: 14px; }
+  .option:hover { border-color: #00796b; background: #f0faf6; }
+  .option.selected { border-color: #00796b; background: #B2DFDB; }
+  .option.correct { border-color: #2e7d32; background: #C8E6C9; }
+  .option.wrong { border-color: #c62828; background: #FFCDD2; }
+  .feedback { display: none; padding: 14px; margin-top: 12px; border-radius: 8px; font-size: 13px; line-height: 1.6; }
+  .feedback.show { display: block; }
+  .feedback.correct-fb { background: #E8F5E9; border-left: 4px solid #2e7d32; color: #1b5e20; }
+  .feedback.wrong-fb { background: #FFEBEE; border-left: 4px solid #c62828; color: #b71c1c; }
+  .btn { display: inline-block; padding: 10px 28px; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+  .btn-submit { background: #00796b; color: #fff; }
+  .btn-submit:hover { background: #00695c; }
+  .btn-submit:disabled { background: #ccc; cursor: not-allowed; }
+  .btn-next { background: #00796b; color: #fff; display: none; }
+  .btn-next:hover { background: #00695c; }
+  .btn-nav { display: flex; justify-content: space-between; margin-top: 20px; }
+  .result { display: none; text-align: center; padding: 30px; }
+  .result.show { display: block; }
+  .score { font-size: 48px; font-weight: 700; color: #00796b; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+  .tag { font-size: 11px; padding: 2px 8px; border-radius: 12px; }
+  .tag-basic { background: #E8F5E9; color: #2e7d32; }
+  .tag-adv { background: #FFF3E0; color: #e65100; }
+  .tag-comp { background: #FBEAF0; color: #72243E; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>选必3 热学与近代物理 互动练习</h1>
+  <p class="subtitle">分子动理论 · 气体定律 · 热力学 · 光电效应 · 原子核 | 共8题</p>
+  <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+  <div id="quizArea"></div>
+  <div class="result" id="resultArea">
+    <div class="score" id="scoreDisplay">0</div>
+    <p style="color:#888;margin-top:8px;">/ 8 分</p>
+    <p id="scoreMsg" style="font-size:15px;margin-top:16px;"></p>
+    <button class="btn btn-submit" onclick="restartQuiz()" style="margin-top:20px;">重新练习</button>
+  </div>
+</div>
+
+<script>
+const questions = [
+  { id:1, title:"关于布朗运动，下列说法正确的是？", options:["布朗运动是液体分子的无规则运动","布朗运动反映了液体分子的无规则运动","温度越低布朗运动越明显","布朗运动与微粒大小无关"], answer:1, tags:["基础","布朗运动"], diff:"basic",
+    explain:"布朗运动是悬浮微粒的运动（不是分子本身），间接反映了液体分子的无规则运动。微粒越小、温度越高越明显。" },
+  { id:2, title:"一定质量理想气体在等温膨胀过程中：", options:["内能增加，吸热","内能减小，放热","内能不变，吸热","内能不变，放热"], answer:2, tags:["基础","热力学"], diff:"basic",
+    explain:"理想气体等温→ΔT=0→ΔU=0。膨胀→对外做功W<0。热一律ΔU=W+Q→0=-W+Q→Q>0（吸热）。" },
+  { id:3, title:"某单色光照射某金属恰好能发生光电效应。若改用频率更大的光照射，则：", options:["逸出功增大","光电子最大初动能不变","一定能发生光电效应","饱和电流一定增大"], answer:2, tags:["进阶","光电效应"], diff:"adv",
+    explain:"ν>ν₀就能发生光电效应。频率更大→光子能量更大→E_k更大。逸出功W₀是金属特性不变。饱和电流由光强决定（不是频率）。" },
+  { id:4, title:"容器中气体温度从27℃升到127℃时，压强变为原来的多少倍？（体积不变）", options:["127/27 倍","400/300 倍","约 1.33 倍","约 4.7 倍"], answer:1, tags:["进阶","查理定律"], diff:"adv",
+    explain:"查理定律p/T=C。T₁=27+273=300K，T₂=127+273=400K。p₂/p₁=T₂/T₁=400/300=4/3。关键：必须用开尔文温标！用摄氏温度就错了。" },
+  { id:5, title:"氢原子从n=3能级跃迁到n=2能级辐射光子，从n=2跃迁到n=1也辐射光子。两者频率关系？", options:["ν₃₂>ν₂₁","ν₃₂=ν₂₁","ν₃₂<ν₂₁","无法比较"], answer:2, tags:["进阶","玻尔模型"], diff:"adv",
+    explain:"hν=|E_n-E_m|。E₃=-1.51eV，E₂=-3.4eV，E₁=-13.6eV。ν₃₂对应1.89eV跃迁，ν₂₁对应10.2eV → ν₃₂<ν₂₁。" },
+  { id:6, title:"某放射性元素半衰期为5天，经过15天后剩下原来的？", options:["1/3","1/6","1/8","1/16"], answer:2, tags:["综合","半衰期"], diff:"comp",
+    explain:"15天=3个半衰期。每次衰减为原来一半：N=N₀(1/2)³=N₀/8。" },
+  { id:7, title:"核反应方程 ᴬᶻX→ᴮ_{Z-2}Y+⁴₂He 属于：", options:["β衰变","α衰变","核裂变","核聚变"], answer:1, tags:["综合","核反应"], diff:"comp",
+    explain:"产物有⁴₂He（α粒子），质量数-4、质子数-2→这是α衰变。β衰变放出⁰₋₁e（电子），质量数不变。" },
+  { id:8, title:"某核反应质量亏损为0.1u，释放能量约为？（1u=931.5MeV）", options:["0.1 MeV","9.315 MeV","93.15 MeV","931.5 MeV"], answer:2, tags:["综合","质能方程"], diff:"comp",
+    explain:"ΔE=Δm·c²=0.1×931.5=93.15 MeV。注意单位换算：1u对应931.5MeV，不是93.15或9.315。" }
+];
+
+let currentQ = 0;
+let answers = new Array(questions.length).fill(-1);
+let submitted = new Array(questions.length).fill(false);
+
+function initQuiz() {
+  currentQ = 0; answers.fill(-1); submitted.fill(false);
+  document.getElementById('resultArea').classList.remove('show');
+  renderQuestion();
+  updateProgress();
+}
+
+function renderQuestion() {
+  const area = document.getElementById('quizArea');
+  const q = questions[currentQ];
+  const tagsHtml = q.tags.map(t => {
+    let cls = 'tag-basic';
+    if (q.diff==='adv') cls='tag-adv';
+    if (q.diff==='comp') cls='tag-comp';
+    return `<span class="tag ${cls}">${t}</span>`;
+  }).join('');
+
+  const optsHtml = q.options.map((opt, i) => {
+    let cls = 'option';
+    if (submitted[currentQ]) {
+      if (i === q.answer) cls += ' correct';
+      else if (i === answers[currentQ]) cls += ' wrong';
+    } else if (answers[currentQ] === i) {
+      cls += ' selected';
+    }
+    const onclick = submitted[currentQ] ? '' : `onclick="selectAnswer(${i})"`;
+    return `<li class="${cls}" ${onclick}>${String.fromCharCode(65+i)}. ${opt}</li>`;
+  }).join('');
+
+  let fbHtml = '';
+  if (submitted[currentQ]) {
+    const isCorrect = answers[currentQ] === q.answer;
+    fbHtml = `<div class="feedback ${isCorrect?'correct-fb':'wrong-fb'} show">${isCorrect?'✅ 回答正确！':'❌ 回答错误。'} ${q.explain}</div>`;
+  }
+
+  area.innerHTML = `
+    <div class="q-card active">
+      <div class="tags">${tagsHtml}</div>
+      <div class="q-num">第 ${currentQ+1}/${questions.length} 题</div>
+      <div class="q-title">${q.title}</div>
+      <ul class="options">${optsHtml}</ul>
+      ${fbHtml}
+      <div class="btn-nav">
+        <button class="btn btn-submit" ${submitted[currentQ]?'disabled':''} onclick="submitAnswer()">提交答案</button>
+        <button class="btn btn-next" style="display:${submitted[currentQ]?'inline-block':'none'}" onclick="nextQuestion()">
+          ${currentQ < questions.length-1 ? '下一题 →' : '查看成绩'}
+        </button>
+      </div>
+    </div>`;
+    updateProgress();
+}
+
+function selectAnswer(idx) {
+  if (submitted[currentQ]) return;
+  answers[currentQ] = idx;
+  renderQuestion();
+}
+
+function submitAnswer() {
+  if (answers[currentQ] === -1) return alert('请先选择一个选项');
+  submitted[currentQ] = true;
+  renderQuestion();
+}
+
+function nextQuestion() {
+  if (currentQ < questions.length - 1) { currentQ++; renderQuestion(); }
+  else showResult();
+}
+
+function showResult() {
+  const score = answers.reduce((s, a, i) => s + (a === questions[i].answer ? 1 : 0), 0);
+  document.getElementById('quizArea').innerHTML = '';
+  document.getElementById('resultArea').classList.add('show');
+  document.getElementById('scoreDisplay').textContent = score;
+  const pct = score / questions.length;
+  let msg = pct >= 0.8 ? '👍 选必3掌握得很好！光电效应和质能方程是高考必考题。'
+    : pct >= 0.5 ? '📖 还不错，重点巩固光电效应方程和理想气体状态方程。'
+    : '📚 需要系统复习选必3，特别注意热一律的符号规定和能级跃迁计算。';
+  document.getElementById('scoreMsg').textContent = msg;
+  document.getElementById('progressBar').style.width = '100%';
+}
+
+function restartQuiz() {
+  initQuiz();
+  document.getElementById('progressBar').style.width = '0%';
+}
+
+function updateProgress() {
+  document.getElementById('progressBar').style.width = ((currentQ+1)/questions.length*100) + '%';
+}
+
+initQuiz();
+</script>
+</body>
+</html>

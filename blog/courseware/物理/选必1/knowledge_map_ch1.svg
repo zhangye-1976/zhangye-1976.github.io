@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFEBEE"/>
+      <stop offset="100%" stop-color="#FCE4EC"/>
+    </linearGradient>
+  </defs>
+  <rect width="680" height="450" rx="12" fill="url(#bg)"/>
+  <rect x="20" y="15" width="640" height="42" rx="8" fill="#C62828"/>
+  <text x="340" y="43" text-anchor="middle" fill="#fff" font-size="19" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">第1章 动量守恒定律 ⭐力学压轴核心</text>
+
+  <!-- 动量和冲量 -->
+  <rect x="25" y="72" width="310" height="100" rx="6" fill="#fff" stroke="#C62828" stroke-width="1.2"/>
+  <text x="180" y="95" text-anchor="middle" fill="#C62828" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">动量 · 冲量 · 动量定理</text>
+  <line x1="40" y1="103" x2="320" y2="103" stroke="#FFCDD2" stroke-width="1"/>
+  <text x="40" y="122" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">p = mv（矢量！与v同向）</text>
+  <text x="40" y="142" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">I = Ft（冲量也是矢量）</text>
+  <text x="40" y="162" fill="#C62828" font-size="11" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">F_合·t = Δp = mv' − mv</text>
+  <text x="40" y="175" fill="#555" font-size="9" font-family="Microsoft YaHei, SimHei, sans-serif">⚠ F是合外力！碰撞时间极短忽略重力</text>
+
+  <!-- 动量守恒 -->
+  <rect x="350" y="72" width="310" height="100" rx="6" fill="#fff" stroke="#C62828" stroke-width="1.5"/>
+  <text x="505" y="95" text-anchor="middle" fill="#C62828" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">动量守恒定律</text>
+  <line x1="365" y1="103" x2="645" y2="103" stroke="#FFCDD2" stroke-width="1"/>
+  <text x="365" y="122" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">m₁v₁+m₂v₂=m₁v₁'+m₂v₂'</text>
+  <text x="365" y="142" fill="#C62828" font-size="10" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">条件：F_合外=0 或某方向F_合外=0</text>
+  <text x="365" y="160" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">碰撞/爆炸/反冲：内力远大于外力</text>
+  <text x="365" y="176" fill="#555" font-size="9" font-family="Microsoft YaHei, SimHei, sans-serif">⚠ 必须选正方向！v有正负号！</text>
+
+  <!-- 碰撞类型 -->
+  <rect x="25" y="187" width="310" height="115" rx="6" fill="#FFF8E1" stroke="#FF8F00" stroke-width="1.5"/>
+  <text x="180" y="212" text-anchor="middle" fill="#E65100" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">碰撞模型 ⭐高考必考</text>
+  <line x1="40" y1="220" x2="320" y2="220" stroke="#FFECB3" stroke-width="1"/>
+  <text x="40" y="240" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">弹性碰撞：动量+动能双守恒</text>
+  <text x="40" y="258" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">完全非弹性：碰后粘在一起·动能损失最大</text>
+  <text x="40" y="278" fill="#E65100" font-size="10" font-weight="600" font-family="Microsoft YaHei, SimHei, sans-serif">m₁=m₂弹性碰（v₂=0）→ 交换速度！</text>
+  <text x="40" y="296" fill="#555" font-size="9" font-family="Microsoft YaHei, SimHei, sans-serif">大碰小：v₁'≈v₁, v₂'≈2v₁ ｜ 小碰大：v₁'≈−v₁, v₂'≈0</text>
+
+  <!-- 反冲火箭 -->
+  <rect x="350" y="187" width="310" height="115" rx="6" fill="#E8F5E9" stroke="#4CAF50" stroke-width="1.2"/>
+  <text x="505" y="212" text-anchor="middle" fill="#2E7D32" font-size="14" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">反冲 · 火箭 · 人船模型</text>
+  <line x1="365" y1="220" x2="645" y2="220" stroke="#C8E6C9" stroke-width="1"/>
+  <text x="365" y="240" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">反冲：0=m₁v₁+m₂v₂</text>
+  <text x="365" y="260" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">人船模型：m₁x₁=m₂x₂</text>
+  <text x="365" y="280" fill="#555" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">x为对地位移，方向相反</text>
+  <text x="365" y="298" fill="#2E7D32" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">火箭：动量守恒+反冲原理</text>
+
+  <!-- 解题步骤 -->
+  <rect x="25" y="315" width="635" height="75" rx="6" fill="#FFF8E1" stroke="#FF8F00" stroke-width="1.5"/>
+  <text x="340" y="340" text-anchor="middle" fill="#E65100" font-size="13" font-weight="700" font-family="Microsoft YaHei, SimHei, sans-serif">动量守恒大题解题四步法</text>
+  <text x="40" y="362" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">① 选系统（哪些物体）→ ② 判条件（合外力=0？某方向=0？）→ ③ 定正向（取初速度方向为正）</text>
+  <text x="40" y="382" fill="#333" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">④ 列方程（m₁v₁+m₂v₂=m₁v₁'+m₂v₂'，v带正负号）</text>
+
+  <text x="340" y="418" text-anchor="middle" fill="#777" font-size="11" font-family="Microsoft YaHei, SimHei, sans-serif">全国乙卷：动量守恒与能量守恒联立是力学压轴题标准考法</text>
+  <text x="340" y="438" text-anchor="middle" fill="#999" font-size="10" font-family="Microsoft YaHei, SimHei, sans-serif">物理选必1 · 第1章 动量守恒定律</text>
+</svg>

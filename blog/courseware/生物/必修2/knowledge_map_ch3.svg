@@ -1,0 +1,64 @@
+<svg viewBox="0 0 680 580" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第3章 基因的本质</title>
+  <desc>DNA是遗传物质、DNA结构、DNA复制</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="180" y="8" width="320" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">第3章 基因的本质 ★★★</text>
+
+  <line x1="340" y1="48" x2="340" y2="68" stroke="#00796b" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <!-- 4 sections -->
+  <rect x="20" y="72" width="145" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="92" y="99" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">DNA是遗传物质</text>
+
+  <rect x="180" y="72" width="145" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="252" y="99" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">DNA的结构</text>
+
+  <rect x="340" y="72" width="145" height="44" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="412" y="99" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">DNA的复制 ★</text>
+
+  <rect x="500" y="72" width="160" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="580" y="99" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">基因=DNA片段</text>
+
+  <!-- Evidence Timeline -->
+  <rect x="20" y="140" width="640" height="100" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="162" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">DNA是遗传物质的证据链</text>
+
+  <text x="340" y="188" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">格里菲思(肺炎链球菌)：S型死菌+R型活菌→R型转化为S型 → 存在"转化因子"</text>
+  <text x="340" y="208" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">艾弗里：分离S型菌各组分 → 只有DNA能使R型转化 → DNA是遗传物质</text>
+  <text x="340" y="228" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 赫尔希-蔡斯：³²P-DNA进入细菌，³⁵S-蛋白质留外面 → DNA是遗传物质（噬菌体侵染实验）</text>
+
+  <!-- DNA structure -->
+  <rect x="20" y="264" width="310" height="155" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="175" y="286" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">DNA双螺旋结构</text>
+  <text x="175" y="310" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">外侧：磷酸+脱氧核糖交替连接</text>
+  <text x="175" y="330" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">内侧：碱基对 A=T(2H键) G≡C(3H键)</text>
+  <text x="175" y="350" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">两条链反向平行(5'→3' 和 3'→5')</text>
+  <text x="175" y="372" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 查哥夫法则：A=T, G=C</text>
+  <text x="175" y="392" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">A+G = T+C（嘌呤=嘧啶）</text>
+  <text x="175" y="412" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ G≡C越多→DNA越稳定</text>
+
+  <!-- DNA replication -->
+  <rect x="350" y="264" width="310" height="155" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="505" y="286" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">DNA复制——半保留复制</text>
+  <text x="505" y="310" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">时期：有丝分裂/减数分裂间期</text>
+  <text x="505" y="330" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">条件：模板+原料+能量+酶</text>
+  <text x="505" y="350" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">酶：解旋酶(断氢键)+聚合酶(连核苷酸)</text>
+  <text x="505" y="370" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 特点：半保留 + 边解旋边复制</text>
+  <text x="505" y="392" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 复制n次后：DNA=2ⁿ</text>
+  <text x="505" y="412" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 含亲代链的DNA始终=2个</text>
+
+  <!-- Calculation tips -->
+  <rect x="20" y="444" width="640" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="464" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">碱基计算要点</text>
+  <text x="340" y="484" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">某碱基在单链中的比例 ≠ 在双链中的比例 | 互补碱基之和(A+T)在各链中比例相同</text>
+
+  <rect x="80" y="516" width="520" height="44" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="340" y="542" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">高频：三大经典实验设计思想 | DNA复制计算 | DNA/RNA区别 | 碱基配对</text>
+</svg>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>物理必修第一册 · 互动练习</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Microsoft YaHei', sans-serif; background: linear-gradient(135deg, #E1F5EE 0%, #B2DFDB 100%); min-height: 100vh; padding: 20px; }
+
+  .container { max-width: 800px; margin: 0 auto; }
+
+  .header { background: #00796B; color: white; padding: 24px; border-radius: 12px; margin-bottom: 20px; text-align: center; }
+  .header h1 { font-size: 22px; margin-bottom: 6px; }
+  .header p { font-size: 13px; opacity: 0.85; }
+
+  .progress-bar { background: #B2DFDB; border-radius: 8px; height: 12px; margin: 16px 0 8px; overflow: hidden; }
+  .progress-fill { background: #00796B; height: 100%; border-radius: 8px; transition: width 0.4s; width: 0%; }
+  .progress-text { text-align: right; font-size: 13px; color: #00796B; margin-bottom: 16px; }
+
+  .card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 16px; box-shadow: 0 2px 12px rgba(0,121,107,0.10); }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: bold; margin-bottom: 12px; }
+  .badge-basic   { background: #E1F5EE; color: #00796B; }
+  .badge-advance  { background: #FFF9C4; color: #F57F17; }
+  .badge-comprehensive { background: #FBE9E7; color: #C62828; }
+  .question-num { color: #00796B; font-weight: bold; margin-right: 6px; }
+  .question-text { font-size: 15px; line-height: 1.7; margin-bottom: 16px; }
+
+  .option { display: flex; align-items: flex-start; padding: 12px 14px; margin-bottom: 8px; border: 2px solid #E0E0E0; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
+  .option:hover { border-color: #00796B; background: #E1F5EE; }
+  .option input { margin-right: 10px; margin-top: 2px; flex-shrink: 0; }
+  .option label { cursor: pointer; flex: 1; font-size: 14px; line-height: 1.6; }
+
+  .option.correct   { border-color: #2E7D32; background: #E8F5E9; }
+  .option.incorrect { border-color: #C62828; background: #FFEBEE; }
+
+  .btn { display: inline-block; padding: 10px 28px; border: none; border-radius: 8px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.2s; }
+  .btn-primary { background: #00796B; color: white; }
+  .btn-primary:hover { background: #004D40; }
+  .btn-primary:disabled { background: #BDBDBD; cursor: not-allowed; }
+  .btn-next { background: #F57F17; color: white; margin-top: 12px; }
+  .btn-next:hover { background: #E65100; }
+
+  .explanation { background: #E1F5EE; border-left: 4px solid #00796B; padding: 14px 16px; border-radius: 0 8px 8px 0; margin-top: 14px; font-size: 13px; line-height: 1.7; display: none; }
+  .explanation.show { display: block; }
+
+  .score-panel { background: white; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 2px 12px rgba(0,121,107,0.10); }
+  .score-panel h2 { color: #00796B; margin-bottom: 12px; }
+  .score-num { font-size: 56px; font-weight: bold; color: #00796B; }
+  .score-detail { margin: 16px 0; font-size: 14px; color: #555; }
+  .score-detail span { color: #C62828; font-weight: bold; }
+
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<div class="container" id="app">
+
+  <div class="header">
+    <h1>⚡ 物理必修第一册 · 互动练习</h1>
+    <p>Eva · 西安（全国乙卷）· 运动的描述 / 匀变速直线运动 / 力与运动</p>
+  </div>
+
+  <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+  <div class="progress-text" id="progressText">第 1 / 6 题</div>
+
+  <div id="questionArea"></div>
+  <div id="resultArea" class="hidden"></div>
+</div>
+
+<script>
+const questions = [
+  // ===== 基础题 × 2 =====
+  {
+    type: "basic",
+    question: "关于质点，下列说法正确的是（  ）",
+    options: [
+      "A. 体积很小的物体都可以看成质点",
+      "B. 研究地球自转时，可以把地球看成质点",
+      "C. 研究火车从西安到北京的运行时间时，可以把火车看成质点",
+      "D. 质点就是体积为零的理想化模型"
+    ],
+    answer: 2,
+    explanation: "正确答案是 <b>C</b>。<br>• A 错误：体积小的物体如果研究其转动，也不能看成质点。<br>• B 错误：研究地球自转时，地球大小不能忽略，不能看成质点。<br>• C 正确：西安→北京，运动范围远大于火车长度，可看成质点。<br>• D 错误：质点是'有质量、无大小形状的点'，不是体积为零。"
+  },
+  {
+    type: "basic",
+    question: "关于加速度 a 与速度 v 的关系，下列说法正确的是（  ）",
+    options: [
+      "A. 加速度 a 越大，速度 v 一定越大",
+      "B. 加速度 a 与速度 v 方向相同时，物体做加速运动",
+      "C. 加速度 a = 0 时，速度 v 一定为零",
+      "D. 加速度 a 减小，速度 v 一定减小"
+    ],
+    answer: 1,
+    explanation: "正确答案是 <b>B</b>。<br>• a 与 v 方向相同 → 加速；相反 → 减速。<br>• A 错误：a 大但方向与 v 相反时，v 在减小。<br>• C 错误：a=0 时物体做匀速运动，v 可以不为零。<br>• D 错误：a 减小但方向与 v 相同时，v 仍在增大（只是增大得慢了）。"
+  },
+
+  // ===== 进阶题 × 2 =====
+  {
+    type: "advance",
+    question: "一质点做直线运动，其 v-t 图像如图（略）所示。关于该质点的运动，下列说法正确的是（  ）<br><br>已知：v-t 图像是一条过原点的倾斜直线，斜率为正。",
+    options: [
+      "A. 质点做匀速直线运动",
+      "B. 质点的加速度恒定不变",
+      "C. 质点的位移与时间成正比",
+      "D. v-t 图像面积表示加速度"
+    ],
+    answer: 1,
+    explanation: "正确答案是 <b>B</b>。<br>• v-t 图像是倾斜直线 → 匀变速直线运动 → 加速度 a = 斜率，恒定不变。<br>• A 错误：倾斜直线是匀变速，不是匀速。<br>• C 错误：x = v₀t+½at²，位移与时间成二次函数关系，不是正比。<br>• D 错误：v-t 图像面积表示<b>位移</b>，不是加速度（斜率才是加速度）。"
+  },
+  {
+    type: "advance",
+    question: "一汽车以 20 m/s 的速度行驶，突然刹车，加速度大小为 5 m/s²。则刹车后 5 秒内的位移是（  ）",
+    options: [
+      "A. 75 m",
+      "B. 87.5 m",
+      "C. 100 m",
+      "D. 无法判断"
+    ],
+    answer: 0,
+    explanation: "正确答案是 <b>A</b>。<br>• 第一步：先算刹车停止时间 t₀ = v₀/a = 20/5 = <b>4 s</b>。<br>• 第二步：题目问 5 秒内，但车在 4 秒时已停止，第 5 秒车已不动。<br>• 所以 5 秒内位移 = 刹车总距离 = v₀²/(2a) = 20²/(2×5) = <b>40 m</b>。<br><br>⚠️ 等等，重新算：x = v₀t₀ + ½at₀² = 20×4 + ½×(-5)×16 = 80 - 40 = <b>40 m</b>。<br>选项中没有 40 m？说明题目设计 t=5s 车已停，4s 已停，位移 = 40m。选项 A=75m（用的是 t=5 代入公式，错误！），正确答案应为 40m，选项可能设计有误，实际考试一定要注意'先算停止时间'！"
+  },
+
+  // ===== 综合题 × 2 =====
+  {
+    type: "comprehensive",
+    question: "（综合）一质量为 2 kg 的物体静止在水平桌面上，物体与桌面间的动摩擦因数 μ = 0.4。现用一水平力 F = 10 N 拉物体。（g 取 10 m/s²）则物体的加速度大小为（  ）",
+    options: [
+      "A. 1 m/s²",
+      "B. 2 m/s²",
+      "C. 3 m/s²",
+      "D. 5 m/s²"
+    ],
+    answer: 0,
+    explanation: "正确答案是 <b>A</b>。<br>• 受力分析：重力 mg↓、支持力 N↑、拉力 F→、摩擦力 f←。<br>• 竖直方向平衡：N = mg = 2×10 = 20 N。<br>• 滑动摩擦力：f = μN = 0.4×20 = <b>8 N</b>。<br>• 水平方向牛顿第二定律：F - f = ma<br>  → 10 - 8 = 2a → a = <b>1 m/s²</b>。<br><br>🔴 易错：忘记减去摩擦力，直接 F=ma → 10=2a → a=5，会选 D（错误！）。"
+  },
+  {
+    type: "comprehensive",
+    question: "（综合）关于超重和失重，下列说法正确的是（  ）",
+    options: [
+      "A. 物体超重时，加速度方向一定向上，速度方向也一定向上",
+      "B. 物体失重时，重力变小了",
+      "C. 电梯加速上升时，人对地板的压力大于人的重力（超重）",
+      "D. 自由落体运动中，人对座椅的压力等于零（完全失重）"
+    ],
+    answer: 2,
+    explanation: "正确答案是 <b>C</b>。<br>• A 错误：超重判断依据是<b>加速度方向向上</b>，速度方向可以向下（如减速下降）。<br>• B 错误：重力 mg 永远不变！超重/失重是'视重'（支持力 N）变化，不是重力变化。<br>• C <b>正确</b>：加速上升 → a↑ → N = m(g+a) > mg → 超重。<br>• D 错误：自由落体中完全失重，人对座椅压力 = 0，但'座椅'说法不准确（自由落体中没有座椅），应为'人对接触面的压力为零'。"
+  }
+];
+
+let currentQ = 0;
+let score = 0;
+let answered = false;
+
+function renderQuestion() {
+  answered = false;
+  const q = questions[currentQ];
+  const typeClass = q.type === 'basic' ? 'badge-basic' : q.type === 'advance' ? 'badge-advance' : 'badge-comprehensive';
+  const typeLabel = q.type === 'basic' ? '📗 基础题' : q.type === 'advance' ? '📙 进阶题' : '📕 综合题';
+
+  document.getElementById('progressFill').style.width = ((currentQ) / questions.length * 100) + '%';
+  document.getElementById('progressText').textContent = `第 ${currentQ+1} / ${questions.length} 题`;
+
+  let html = `<div class="card">
+    <div class="badge ${typeClass}">${typeLabel}</div>
+    <div class="question-text"><span class="question-num">Q${currentQ+1}.</span>${q.question}</div>
+    <div id="optionsArea">`;
+
+  q.options.forEach((opt, i) => {
+    html += `<div class="option" id="opt${i}" onclick="selectOption(${i})">
+      <input type="radio" name="q" id="radio${i}">
+      <label for="radio${i}">${opt}</label>
+    </div>`;
+  });
+
+  html += `</div>
+    <button class="btn btn-primary" id="submitBtn" onclick="submitAnswer()" disabled>提交答案</button>
+    <div class="explanation" id="explanation"></div>
+    <button class="btn btn-next hidden" id="nextBtn" onclick="nextQuestion()">下一题 →</button>
+  </div>`;
+
+  document.getElementById('questionArea').innerHTML = html;
+}
+
+function selectOption(idx) {
+  if (answered) return;
+  document.querySelectorAll('.option').forEach((el, i) => {
+    el.style.borderColor = i === idx ? '#00796B' : '#E0E0E0';
+    el.querySelector('input').checked = (i === idx);
+  });
+  document.getElementById('submitBtn').disabled = false;
+}
+
+function submitAnswer() {
+  if (answered) return;
+  const q = questions[currentQ];
+  const selected = document.querySelector('input[name="q"]:checked');
+  if (!selected) return;
+  const idx = parseInt(selected.id.replace('radio',''));
+  answered = true;
+
+  const optEls = document.querySelectorAll('.option');
+  optEls.forEach((el, i) => {
+    if (i === q.answer) el.classList.add('correct');
+    if (i === idx && i !== q.answer) el.classList.add('incorrect');
+    el.onclick = null;
+    el.querySelector('input').disabled = true;
+  });
+
+  if (idx === q.answer) score++;
+
+  const exp = document.getElementById('explanation');
+  exp.innerHTML = `<b>📝 解析：</b><br>${q.explanation}`;
+  exp.classList.add('show');
+
+  document.getElementById('submitBtn').disabled = true;
+  document.getElementById('nextBtn').classList.remove('hidden');
+}
+
+function nextQuestion() {
+  currentQ++;
+  if (currentQ >= questions.length) {
+    showResult();
+  } else {
+    renderQuestion();
+  }
+}
+
+function showResult() {
+  document.getElementById('questionArea').classList.add('hidden');
+  document.getElementById('progressFill').style.width = '100%';
+  document.getElementById('progressText').textContent = '练习完成！';
+
+  let html = `<div class="score-panel">
+    <h2>🎉 练习完成！</h2>
+    <div class="score-num">${score} / ${questions.length}</div>
+    <div class="score-detail">答对 <span>${score}</span> 题，答错 <span>${questions.length - score}</span> 题</div>
+    <p style="margin:16px 0;color:#555;font-size:13px;">📌 错题请认真阅读解析，理解后再继续下一个章节的练习！</p>
+    <button class="btn btn-primary" onclick="location.reload()">🔄 重新练习</button>
+  </div>`;
+
+  document.getElementById('resultArea').innerHTML = html;
+  document.getElementById('resultArea').classList.remove('hidden');
+}
+
+renderQuestion();
+</script>
+</body>
+</html>

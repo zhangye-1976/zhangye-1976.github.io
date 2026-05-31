@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 660">
+  <defs>
+    <style>
+      .box { fill:#E1F5EE; stroke:#00796b; stroke-width:1.5; rx:8; }
+      .box2 { fill:#E8F5E9; stroke:#388E3C; stroke-width:1.5; rx:6; }
+      .box3 { fill:#FFF9C4; stroke:#F9A825; stroke-width:1.5; rx:6; }
+      .boxt { fill:#B2DFDB; stroke:#00796b; stroke-width:2; rx:8; }
+      .tit { font:bold 15px sans-serif; fill:#00796b; }
+      .nm { font:13px sans-serif; fill:#1a1a1a; }
+      .sm { font:11px sans-serif; fill:#333; }
+      .red { font:11px sans-serif; fill:#c0392b; }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="180" y="8" width="320" height="34" class="boxt"/>
+  <text x="340" y="31" text-anchor="middle" class="tit">第5章 三角函数</text>
+
+  <!-- 任意角 -->
+  <rect x="20" y="52" width="140" height="28" class="box"/>
+  <text x="90" y="70" text-anchor="middle" class="nm">任意角与弧度制</text>
+  <rect x="20" y="88" width="140" height="80" class="box"/>
+  <text x="90" y="108" text-anchor="middle" class="sm">正角：逆时针</text>
+  <text x="90" y="126" text-anchor="middle" class="sm">负角：顺时针</text>
+  <text x="90" y="144" text-anchor="middle" class="sm">180°=π rad</text>
+  <text x="90" y="162" text-anchor="middle" class="red">1°=π/180 rad</text>
+
+  <!-- 三角函数定义 -->
+  <rect x="180" y="52" width="160" height="28" class="box"/>
+  <text x="260" y="70" text-anchor="middle" class="nm">三角函数定义</text>
+  <rect x="180" y="88" width="160" height="100" class="box2"/>
+  <text x="260" y="108" text-anchor="middle" class="sm">sinα = y/r</text>
+  <text x="260" y="126" text-anchor="middle" class="sm">cosα = x/r</text>
+  <text x="260" y="144" text-anchor="middle" class="sm">tanα = y/x</text>
+  <text x="260" y="162" text-anchor="middle" class="sm">同角：sin²+cos²=1</text>
+  <text x="260" y="180" text-anchor="middle" class="sm">tanα=sinα/cosα</text>
+
+  <!-- 三角符号 -->
+  <rect x="360" y="52" width="140" height="28" class="box"/>
+  <text x="430" y="70" text-anchor="middle" class="nm">符号分布（口诀）</text>
+  <rect x="360" y="88" width="140" height="100" class="box3"/>
+  <text x="430" y="110" text-anchor="middle" class="sm">一全正</text>
+  <text x="430" y="128" text-anchor="middle" class="sm">二正弦（sin+）</text>
+  <text x="430" y="146" text-anchor="middle" class="sm">三正切（tan+）</text>
+  <text x="430" y="164" text-anchor="middle" class="sm">四余弦（cos+）</text>
+  <text x="430" y="182" text-anchor="middle" class="red">看终边所在象限</text>
+
+  <!-- 诱导公式 -->
+  <rect x="520" y="52" width="140" height="28" class="box"/>
+  <text x="590" y="70" text-anchor="middle" class="nm">诱导公式</text>
+  <rect x="520" y="88" width="140" height="120" class="box"/>
+  <text x="590" y="110" text-anchor="middle" class="sm">口诀：奇变偶不变</text>
+  <text x="590" y="128" text-anchor="middle" class="sm">符号看象限</text>
+  <text x="590" y="146" text-anchor="middle" class="sm">−α：sin变−sin</text>
+  <text x="590" y="164" text-anchor="middle" class="sm">π±α：...</text>
+  <text x="590" y="182" text-anchor="middle" class="sm">π/2±α：sin↔cos</text>
+  <text x="590" y="200" text-anchor="middle" class="red">奇偶指π/2的倍数</text>
+
+  <!-- 正弦函数 -->
+  <rect x="20" y="220" width="200" height="28" class="box"/>
+  <text x="120" y="238" text-anchor="middle" class="nm">y=sin x 性质</text>
+  <rect x="20" y="256" width="200" height="110" class="box2"/>
+  <text x="120" y="278" text-anchor="middle" class="sm">定义域：R</text>
+  <text x="120" y="296" text-anchor="middle" class="sm">值域：[−1,1]</text>
+  <text x="120" y="314" text-anchor="middle" class="sm">周期：2π</text>
+  <text x="120" y="332" text-anchor="middle" class="sm">奇函数</text>
+  <text x="120" y="350" text-anchor="middle" class="sm">增：[−π/2+2kπ,π/2+2kπ]</text>
+  <text x="120" y="368" text-anchor="middle" class="sm">对称轴：x=π/2+kπ</text>
+
+  <!-- 余弦函数 -->
+  <rect x="240" y="220" width="200" height="28" class="box"/>
+  <text x="340" y="238" text-anchor="middle" class="nm">y=cos x 性质</text>
+  <rect x="240" y="256" width="200" height="110" class="box2"/>
+  <text x="340" y="278" text-anchor="middle" class="sm">定义域：R</text>
+  <text x="340" y="296" text-anchor="middle" class="sm">值域：[−1,1]</text>
+  <text x="340" y="314" text-anchor="middle" class="sm">周期：2π</text>
+  <text x="340" y="332" text-anchor="middle" class="sm">偶函数</text>
+  <text x="340" y="350" text-anchor="middle" class="sm">增：[−π+2kπ,2kπ]</text>
+  <text x="340" y="368" text-anchor="middle" class="sm">对称轴：x=kπ</text>
+
+  <!-- 正切函数 -->
+  <rect x="460" y="220" width="200" height="28" class="box"/>
+  <text x="560" y="238" text-anchor="middle" class="nm">y=tan x 性质</text>
+  <rect x="460" y="256" width="200" height="110" class="box2"/>
+  <text x="560" y="278" text-anchor="middle" class="sm">定义域：x≠π/2+kπ</text>
+  <text x="560" y="296" text-anchor="middle" class="sm">值域：R</text>
+  <text x="560" y="314" text-anchor="middle" class="sm">周期：π</text>
+  <text x="560" y="332" text-anchor="middle" class="sm">奇函数</text>
+  <text x="560" y="350" text-anchor="middle" class="sm">增区间：(−π/2+kπ,π/2+kπ)</text>
+  <text x="560" y="368" text-anchor="middle" class="sm">无对称轴！</text>
+
+  <!-- y=Asin(ωx+φ) -->
+  <rect x="20" y="382" width="320" height="34" class="boxt"/>
+  <text x="180" y="404" text-anchor="middle" class="tit">y=Asin(ωx+φ) 图象变换</text>
+  <rect x="20" y="424" width="320" height="140" class="box3"/>
+  <text x="30" y="448" class="sm">A：振幅（纵向伸缩A倍）</text>
+  <text x="30" y="466" class="sm">ω：角频率（周期T=2π/|ω|）</text>
+  <text x="30" y="484" class="sm">φ：初相（左加右减移|φ|）</text>
+  <text x="30" y="502" class="sm">路径①：先平移后伸缩（平移|φ|）</text>
+  <text x="30" y="520" class="sm">路径②：先伸缩后平移（平移|φ/ω|）</text>
+  <text x="30" y="538" class="sm">⚠ 先伸缩则平移量变为|φ/ω|！</text>
+  <text x="30" y="556" class="red">⚠ 平移方向：φ&gt;0左移，φ&lt;0右移</text>
+
+  <!-- 三角恒等变换 -->
+  <rect x="360" y="382" width="300" height="34" class="boxt"/>
+  <text x="510" y="404" text-anchor="middle" class="tit">三角恒等变换（重点！）</text>
+  <rect x="360" y="424" width="300" height="140" class="box"/>
+  <text x="370" y="448" class="sm">两角和：sin(α+β)=sinαcosβ+cosαsinβ</text>
+  <text x="370" y="466" class="sm">两角差：cos(α−β)=cosαcosβ+sinαsinβ</text>
+  <text x="370" y="484" class="sm">二倍角：sin2α=2sinαcosα</text>
+  <text x="370" y="502" class="sm">二倍角：cos2α=cos²α−sin²α</text>
+  <text x="370" y="520" class="sm">降幂：sin²α=(1−cos2α)/2</text>
+  <text x="370" y="538" class="sm">辅助角：asin x+bcos x=√(a²+b²)sin(x+φ)</text>
+  <text x="370" y="556" class="red">tan φ=b/a（辅助角公式）</text>
+
+  <!-- 解三角形 -->
+  <rect x="20" y="582" width="640" height="68" class="box"/>
+  <text x="340" y="604" text-anchor="middle" class="nm">解三角形（本章延伸/高考重点）</text>
+  <text x="30" y="626" class="sm">正弦定理：a/sinA = b/sinB = c/sinC = 2R</text>
+  <text x="30" y="644" class="sm">余弦定理：a²=b²+c²−2bc cosA（已知三边/两边夹角）</text>
+  <text x="30" y="662" class="sm">面积公式：S=½ab sinC（两边一夹角）</text>
+</svg>

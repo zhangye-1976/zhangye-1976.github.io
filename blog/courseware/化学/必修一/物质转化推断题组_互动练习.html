@@ -1,0 +1,219 @@
+<style>
+.quiz-wrap{font-family:var(--font-sans);max-width:660px;margin:0 auto}
+.q-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1rem 1.25rem;margin-bottom:12px}
+.q-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.badge{font-size:11px;font-weight:500;padding:2px 8px;border-radius:20px;white-space:nowrap}
+.b-easy{background:#EAF3DE;color:#3B6D11}
+.b-mid{background:#FAEEDA;color:#854F0B}
+.b-hard{background:#FCEBEB;color:#A32D2D}
+.q-num{font-size:14px;font-weight:500;color:var(--color-text-primary)}
+.q-body{font-size:13px;color:var(--color-text-primary);line-height:1.7;margin-bottom:10px}
+.q-chain{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:10px 0;padding:10px;background:var(--color-background-secondary);border-radius:8px}
+.box-node{background:var(--color-background-primary);border:0.5px solid var(--color-border-secondary);border-radius:6px;padding:4px 12px;font-size:13px;font-weight:500;color:var(--color-text-primary)}
+.unknown{background:#EEEDFE;border:0.5px solid #534AB7;border-radius:6px;padding:4px 12px;font-size:13px;font-weight:500;color:#3C3489;min-width:32px;text-align:center}
+.arrow-txt{font-size:12px;color:var(--color-text-secondary)}
+.ans-btn{font-size:12px;padding:4px 14px;border-radius:6px;cursor:pointer;margin-right:8px;margin-top:6px}
+.ans-box{display:none;margin-top:10px;padding:10px 12px;background:#EAF3DE;border:0.5px solid #9FE1CB;border-radius:8px;font-size:13px;color:#085041;line-height:1.7}
+.ans-box.shown{display:block}
+.eq{font-family:var(--font-mono);font-size:12px;background:var(--color-background-secondary);padding:2px 6px;border-radius:4px;display:inline-block;margin:2px 0}
+.sep{width:100%;height:0.5px;background:var(--color-border-tertiary);margin:4px 0}
+.hint{font-size:12px;color:var(--color-text-secondary);margin-top:6px}
+.progress{font-size:12px;color:var(--color-text-secondary);text-align:right;margin-bottom:8px}
+#prog-bar{height:4px;background:var(--color-border-tertiary);border-radius:2px;margin-bottom:14px}
+#prog-fill{height:100%;background:#1D9E75;border-radius:2px;transition:width 0.4s;width:0%}
+</style>
+<div class="quiz-wrap">
+<h2 class="sr-only">物质转化推断题互动练习，共6题，点击显示答案</h2>
+<div id="prog-bar"><div id="prog-fill"></div></div>
+<div class="progress" id="prog-text">已揭示：0 / 6</div>
+
+<div class="q-card">
+  <div class="q-head">
+    <span class="q-num">第 1 题</span>
+    <span class="badge b-easy">基础</span>
+  </div>
+  <div class="q-body">A、B、C 是三种常见物质。A 是自然界中含量最多的金属单质，B 是 A 的氧化物，C 是 A 与水反应的产物。</div>
+  <div class="q-chain">
+    <span class="box-node">A（单质）</span>
+    <span class="arrow-txt">+O₂→</span>
+    <span class="unknown">B</span>
+    <span class="arrow-txt">+H₂O→</span>
+    <span class="unknown">C</span>
+    <span class="arrow-txt">△→</span>
+    <span class="unknown">?</span>
+  </div>
+  <div class="hint">提示：地壳中含量最多的金属元素是铝</div>
+  <button class="ans-btn" onclick="reveal(0,this)">显示答案 ↓</button>
+  <div class="ans-box" id="ans0">
+    <b>A = Al，B = Al₂O₃，C = Al(OH)₃，加热产物 = Al₂O₃</b><br>
+    <div class="sep"></div>
+    <span class="eq">4Al + 3O₂ → 2Al₂O₃</span><br>
+    <span class="eq">Al₂O₃ + 3H₂O → 2Al(OH)₃（反应较缓慢，实际Al₂O₃难溶于水，此处指氢氧化铝的来源）</span><br>
+    <span class="eq">2Al(OH)₃ →(△) Al₂O₃ + 3H₂O</span><br>
+    <b>关键：</b>Al(OH)₃ 既能与酸反应，又能与强碱反应，体现两性。加热分解为氧化物，是Al(OH)₃的特征反应。
+  </div>
+</div>
+
+<div class="q-card">
+  <div class="q-head">
+    <span class="q-num">第 2 题</span>
+    <span class="badge b-easy">基础</span>
+  </div>
+  <div class="q-body">物质 A 是常见的活泼金属，与水剧烈反应生成 B（气体）和 C（溶液）。C 与过量 CO₂ 反应得到 D，D 加热得到 E，E 与 C 反应重新得到 C。</div>
+  <div class="q-chain">
+    <span class="box-node">A</span>
+    <span class="arrow-txt">+H₂O→</span>
+    <span class="unknown">B↑</span>
+    <span class="arrow-txt">+</span>
+    <span class="unknown">C</span>
+    <span class="arrow-txt">+CO₂(过量)→</span>
+    <span class="unknown">D</span>
+    <span class="arrow-txt">△→</span>
+    <span class="unknown">E</span>
+    <span class="arrow-txt">+C→</span>
+    <span class="box-node">C</span>
+  </div>
+  <button class="ans-btn" onclick="reveal(1,this)">显示答案 ↓</button>
+  <div class="ans-box" id="ans1">
+    <b>A=Na，B=H₂，C=NaOH，D=NaHCO₃，E=Na₂CO₃</b><br>
+    <div class="sep"></div>
+    <span class="eq">2Na + 2H₂O → 2NaOH + H₂↑</span><br>
+    <span class="eq">NaOH + CO₂(过量) → NaHCO₃</span><br>
+    <span class="eq">2NaHCO₃ →(△) Na₂CO₃ + H₂O + CO₂↑</span><br>
+    <span class="eq">Na₂CO₃ + CO₂ + H₂O → 2NaHCO₃（不对，这里E+C→C应为：Na₂CO₃ + H₂O + CO₂ → 2NaHCO₃）</span><br>
+    <b>陷阱：</b>NaOH与CO₂的比例决定产物！少量CO₂→Na₂CO₃；过量CO₂→NaHCO₃
+  </div>
+</div>
+
+<div class="q-card">
+  <div class="q-head">
+    <span class="q-num">第 3 题</span>
+    <span class="badge b-mid">中等</span>
+  </div>
+  <div class="q-body">A 是黄绿色气体，B 是 A 溶于水的溶液，C 是强碱，A 与 C 反应得到 D 和 E 的混合液，D 加入盐酸得到 A，E 加热分解得到 C 和 A 以及 F（液体）。</div>
+  <div class="q-chain">
+    <span class="box-node">A（黄绿气）</span>
+    <span class="arrow-txt">+C(NaOH)→</span>
+    <span class="unknown">D</span>
+    <span class="arrow-txt">+</span>
+    <span class="unknown">E</span>
+    <span class="arrow-txt">△→</span>
+    <span class="unknown">C+A+F</span>
+  </div>
+  <button class="ans-btn" onclick="reveal(2,this)">显示答案 ↓</button>
+  <div class="ans-box" id="ans2">
+    <b>A=Cl₂，B=盐酸/氯水，C=NaOH，D=NaCl，E=NaClO，F=H₂O</b><br>
+    <div class="sep"></div>
+    <span class="eq">Cl₂ + 2NaOH → NaCl + NaClO + H₂O</span><br>
+    <span class="eq">NaClO + 2HCl → NaCl + Cl₂↑ + H₂O</span><br>
+    <span class="eq">2NaClO →(△) 2NaCl + O₂↑（注意：加热NaClO分解生成O₂，不是Cl₂）</span><br>
+    <b>纠错提醒：</b>NaClO加热分解为NaCl和O₂，不会还原出Cl₂。题目中"E加热得到A（Cl₂）"表述有误——实际是NaClO与酸反应才能得到Cl₂。加热只得O₂。
+  </div>
+</div>
+
+<div class="q-card">
+  <div class="q-head">
+    <span class="q-num">第 4 题</span>
+    <span class="badge b-mid">中等</span>
+  </div>
+  <div class="q-body">铁三角推断：单质 A 与 B（非氧化性酸）反应得到 C，C 加入 D（氧化性试剂）得到 E，E 加入 F（过量）得到 G（红褐色沉淀）。G 加热分解得 H（红棕色粉末）。</div>
+  <div class="q-chain">
+    <span class="box-node">Fe</span>
+    <span class="arrow-txt">+HCl→</span>
+    <span class="unknown">C</span>
+    <span class="arrow-txt">+Cl₂→</span>
+    <span class="unknown">E</span>
+    <span class="arrow-txt">+NaOH→</span>
+    <span class="unknown">G↓</span>
+    <span class="arrow-txt">△→</span>
+    <span class="unknown">H</span>
+  </div>
+  <button class="ans-btn" onclick="reveal(3,this)">显示答案 ↓</button>
+  <div class="ans-box" id="ans3">
+    <b>C=FeCl₂，E=FeCl₃，G=Fe(OH)₃（红褐色），H=Fe₂O₃（红棕色）</b><br>
+    <div class="sep"></div>
+    <span class="eq">Fe + 2HCl → FeCl₂ + H₂↑</span><br>
+    <span class="eq">2FeCl₂ + Cl₂ → 2FeCl₃</span><br>
+    <span class="eq">FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl</span><br>
+    <span class="eq">2Fe(OH)₃ →(△) Fe₂O₃ + 3H₂O</span><br>
+    <b>记忆口诀：</b>Fe遇非氧化性酸→+2价；遇强氧化剂（Cl₂、HNO₃稀）→+3价；Fe(OH)₂白色→Fe(OH)₃红褐色→Fe₂O₃红棕色
+  </div>
+</div>
+
+<div class="q-card">
+  <div class="q-head">
+    <span class="q-num">第 5 题</span>
+    <span class="badge b-hard">综合</span>
+  </div>
+  <div class="q-body">A、B、C、D、E 均含同一种元素，A 是单质，B 是 A 在空气中燃烧的产物（不同于直接氧化），C 是 B 与水反应的产物，D 是 C 与 CO₂ 反应的产物，E 是另一种含该元素的盐。B 还可与 D 反应。</div>
+  <div class="q-chain">
+    <span class="box-node">Na</span>
+    <span class="arrow-txt">点燃→</span>
+    <span class="unknown">B</span>
+    <span class="arrow-txt">+H₂O→</span>
+    <span class="unknown">C+O₂</span>
+    <span class="arrow-txt">+CO₂→</span>
+    <span class="unknown">D+O₂</span>
+  </div>
+  <div class="hint">关键：Na在空气中点燃生成Na₂O₂，不是Na₂O</div>
+  <button class="ans-btn" onclick="reveal(4,this)">显示答案 ↓</button>
+  <div class="ans-box" id="ans4">
+    <b>B=Na₂O₂，C=NaOH，D=Na₂CO₃</b><br>
+    <div class="sep"></div>
+    <span class="eq">2Na + O₂ →(点燃) Na₂O₂</span><br>
+    <span class="eq">2Na₂O₂ + 2H₂O → 4NaOH + O₂↑</span><br>
+    <span class="eq">2Na₂O₂ + 2CO₂ → 2Na₂CO₃ + O₂↑</span><br>
+    <b>高考高频考点：</b>Na₂O₂与水、CO₂反应均放O₂，Na₂O₂是强氧化剂（可漂白）。Na₂O₂中O为-1价，属于过氧化物。<br>
+    <b>易错：</b>Na在常温下氧化生成Na₂O；点燃才生成Na₂O₂！
+  </div>
+</div>
+
+<div class="q-card">
+  <div class="q-head">
+    <span class="q-num">第 6 题</span>
+    <span class="badge b-hard">综合·综合推断</span>
+  </div>
+  <div class="q-body">物质 A、B、C、D、E 满足以下条件：A 为常见非金属单质，B 是 A 与 Fe 反应的产物（与 A+HCl 不同），C 是 B 溶液中加 KSCN 出现血红色的物质，D 是 B 加入足量 Fe 后的产物，E 是 D 与 NaOH 生成的白色沉淀，E 在空气中变色。</div>
+  <div class="q-chain">
+    <span class="box-node">Cl₂</span>
+    <span class="arrow-txt">+Fe→</span>
+    <span class="unknown">B</span>
+    <span class="arrow-txt">KSCN检验</span>
+    <span class="unknown">血红</span>
+    <span class="arrow-txt">+Fe(足量)→</span>
+    <span class="unknown">D</span>
+    <span class="arrow-txt">+NaOH→</span>
+    <span class="unknown">E(白)→氧化→</span>
+    <span class="unknown">红褐</span>
+  </div>
+  <button class="ans-btn" onclick="reveal(5,this)">显示答案 ↓</button>
+  <div class="ans-box" id="ans5">
+    <b>B=FeCl₃，D=FeCl₂，E=Fe(OH)₂（白色）→ 氧化为 Fe(OH)₃（红褐色）</b><br>
+    <div class="sep"></div>
+    <span class="eq">2Fe + 3Cl₂ →(点燃) 2FeCl₃</span><br>
+    <span class="eq">2FeCl₃ + Fe → 3FeCl₂（足量Fe把Fe³⁺还原为Fe²⁺）</span><br>
+    <span class="eq">FeCl₂ + 2NaOH → Fe(OH)₂↓(白) + 2NaCl</span><br>
+    <span class="eq">4Fe(OH)₂ + O₂ + 2H₂O → 4Fe(OH)₃（白→灰绿→红褐）</span><br>
+    <b>检验区分：</b>Fe²⁺加KSCN无颜色变化（再加氧化剂变红），Fe³⁺加KSCN立即血红。<br>
+    <b>综合考点：</b>Cl₂氧化性强，Fe只能被氧化成+3价；足量Fe能把FeCl₃还原为FeCl₂。
+  </div>
+</div>
+
+</div>
+<script>
+var revealed=0;
+function reveal(n,btn){
+  var box=document.getElementById('ans'+n);
+  if(!box.classList.contains('shown')){
+    box.classList.add('shown');
+    btn.textContent='隐藏答案 ↑';
+    revealed++;
+  } else {
+    box.classList.remove('shown');
+    btn.textContent='显示答案 ↓';
+    revealed--;
+  }
+  document.getElementById('prog-fill').style.width=(revealed/6*100)+'%';
+  document.getElementById('prog-text').textContent='已揭示：'+revealed+' / 6';
+}
+</script>

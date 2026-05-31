@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>数学必修第一册 · 互动练习</title>
+<style>
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;background:#f5faf8;margin:0;padding:20px;max-width:800px;margin:0 auto;}
+h1{text-align:center;color:#00796b;margin-bottom:30px;}
+.card{background:white;border-radius:12px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+.chapter{font-size:14px;color:#00796b;font-weight:bold;margin-bottom:8px;}
+.q{font-size:16px;margin-bottom:12px;line-height:1.6;}
+.opts{display:flex;flex-direction:column;gap:8px;margin-bottom:12px;}
+.opt{padding:10px 14px;border:2px solid #ddd;border-radius:8px;cursor:pointer;transition:all 0.2s;font-size:15px;}
+.opt:hover{border-color:#00796b;background:#e1f5ee;}
+.opt.correct{border-color:#2e7d32;background:#e8f5e9;}
+.opt.wrong{border-color:#c62828;background:#ffebee;}
+.explain{background:#fffde7;padding:12px;border-radius:8px;font-size:14px;line-height:1.6;display:none;margin-top:8px;}
+.btn{padding:8px 20px;background:#00796b;color:white;border:none;border-radius:6px;cursor:pointer;font-size:14px;}
+.btn:hover{background:#004d40;}
+#score{text-align:center;font-size:18px;color:#00796b;margin:20px 0;font-weight:bold;}
+.section-title{font-size:18px;color:#00796b;margin:30px 0 15px;border-left:4px solid #00796b;padding-left:10px;}
+</style>
+</head>
+<body>
+
+<h1>📐 数学必修第一册 · 互动练习</h1>
+<div id="score"></div>
+
+<div class="section-title">第一章 集合与逻辑用语（基础题）</div>
+
+<div class="card" id="q1">
+  <div class="chapter">第1章 · 集合概念</div>
+  <div class="q">1. 已知集合 A={1,2,3}，则满足条件 A∪B=A 的集合 B 的个数是？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. 3个</div>
+    <div class="opt" onclick="check(this,true)">B. 8个</div>
+    <div class="opt" onclick="check(this,false)">C. 6个</div>
+    <div class="opt" onclick="check(this,false)">D. 无数个</div>
+  </div>
+  <div class="explain">解析：A∪B=A ⇒ B⊆A。A有3个元素，子集共2³=8个，所以B有8个可能。注意：B是A的子集，包括空集和A本身。</div>
+</div>
+
+<div class="card" id="q2">
+  <div class="chapter">第1章 · 集合运算</div>
+  <div class="q">2. 设集合 A={x|−1&lt;x&lt;2}，B={x|1&lt;x&lt;3}，则 A∩B=？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. (−1,3)</div>
+    <div class="opt" onclick="check(this,true)">B. (1,2)</div>
+    <div class="opt" onclick="check(this,false)">C. [1,2]</div>
+    <div class="opt" onclick="check(this,false)">D. {1,2}</div>
+  </div>
+  <div class="explain">解析：交集是"共同点"，即同时满足−1&lt;x&lt;2 和 1&lt;x&lt;3，取交集得 1&lt;x&lt;2，即(1,2)。注意：题目是开区间，交集也是开区间。</div>
+</div>
+
+<div class="card" id="q3">
+  <div class="chapter">第1章 · 逻辑用语</div>
+  <div class="q">3. "x&gt;2" 是 "x&gt;1" 的什么条件？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,true)">A. 充分不必要条件</div>
+    <div class="opt" onclick="check(this,false)">B. 必要不充分条件</div>
+    <div class="opt" onclick="check(this,false)">C. 充要条件</div>
+    <div class="opt" onclick="check(this,false)">D. 既不充分也不必要</div>
+  </div>
+  <div class="explain">解析：x&gt;2 ⇒ x&gt;1（充分）；但 x&gt;1 ⇏ x&gt;2（不必要）。也可用集合法：P={x|x&gt;2}，Q={x|x&gt;1}，P⊆Q，所以P是Q的充分条件。</div>
+</div>
+
+<div class="section-title">第二章 不等式（基础题）</div>
+
+<div class="card" id="q4">
+  <div class="chapter">第2章 · 基本不等式</div>
+  <div class="q">4. 若 x&gt;0，则 x + 4/x 的最小值是？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. 2</div>
+    <div class="opt" onclick="check(this,true)">B. 4</div>
+    <div class="opt" onclick="check(this,false)">C. 8</div>
+    <div class="opt" onclick="check(this,false)">D. 不存在</div>
+  </div>
+  <div class="explain">解析：用基本不等式：x+4/x ≥ 2√(x·4/x) = 2√4 = 4。等号成立当且仅当 x=4/x，即 x²=4，x=2（x&gt;0）。口诀：一正（x&gt;0满足）二定（积为定值4）三相等（x=2可取到）。</div>
+</div>
+
+<div class="card" id="q5">
+  <div class="chapter">第2章 · 一元二次不等式</div>
+  <div class="q">5. 不等式 x²−3x+2&lt;0 的解集是？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. (−∞,1)∪(2,+∞)</div>
+    <div class="opt" onclick="check(this,true)">B. (1,2)</div>
+    <div class="opt" onclick="check(this,false)">C. (−∞,1)</div>
+    <div class="opt" onclick="check(this,false)">D. (2,+∞)</div>
+  </div>
+  <div class="explain">解析：方程 x²−3x+2=0 的两根为 x₁=1，x₂=2。a=1&gt;0，抛物线开口向上，小于0取中间，即(1,2)。步骤：①化正（已正）→②求根→③"小于取中间"。</div>
+</div>
+
+<div class="section-title">第三章 函数概念与性质（进阶题）</div>
+
+<div class="card" id="q6">
+  <div class="chapter">第3章 · 函数定义域</div>
+  <div class="q">6. 函数 f(x)=√(x−1) + 1/(x−2) 的定义域是？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. [1,+∞)</div>
+    <div class="opt" onclick="check(this,true)">B. [1,2)∪(2,+∞)</div>
+    <div class="opt" onclick="check(this,false)">C. (1,+∞)</div>
+    <div class="opt" onclick="check(this,false)">D. [1,2]</div>
+  </div>
+  <div class="explain">解析：根号要求 x−1≥0 ⇒ x≥1；分母要求 x−2≠0 ⇒ x≠2。取交集得 [1,2)∪(2,+∞)。注意：定义域是各限制条件的交集！</div>
+</div>
+
+<div class="card" id="q7">
+  <div class="chapter">第3章 · 函数奇偶性</div>
+  <div class="q">7. 判断 f(x)=x³+sinx 的奇偶性？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,true)">A. 奇函数</div>
+    <div class="opt" onclick="check(this,false)">B. 偶函数</div>
+    <div class="opt" onclick="check(this,false)">C. 非奇非偶</div>
+    <div class="opt" onclick="check(this,false)">D. 既是奇又是偶</div>
+  </div>
+  <div class="explain">解析：f(−x)=(−x)³+sin(−x)=−x³−sinx=−(x³+sinx)=−f(x)，所以是奇函数。结论：奇±奇=奇；偶±偶=偶；奇×奇=偶。多项式只看次数：只有奇次项为奇函数。</div>
+</div>
+
+<div class="card" id="q8">
+  <div class="chapter">第3章 · 复合函数单调性</div>
+  <div class="q">8. 已知 f(x)=e^x 是增函数，g(x)=x²−2x 在 (−∞,1) 上递减，则 f(g(x)) 在 (−∞,1) 上？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. 递增</div>
+    <div class="opt" onclick="check(this,true)">B. 递减</div>
+    <div class="opt" onclick="check(this,false)">C. 先增后减</div>
+    <div class="opt" onclick="check(this,false)">D. 先减后增</div>
+  </div>
+  <div class="explain">解析：外函数f（增），内函数g（在(−∞,1)上减），"异减"→复合函数递减。口诀：同增异减。内外单调性相同则复合为增，相异则减。</div>
+</div>
+
+<div class="section-title">第四章 指数与对数函数（进阶题）</div>
+
+<div class="card" id="q9">
+  <div class="chapter">第4章 · 指数对数函数性质</div>
+  <div class="q">9. 若 a=log₃2，b=log₅2，c=2^{0.5}，则 a,b,c 的大小关系是？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. a&lt;b&lt;c</div>
+    <div class="opt" onclick="check(this,false)">B. b&lt;a&lt;c</div>
+    <div class="opt" onclick="check(this,true)">C. b&lt;a&lt;c（正确）</div>
+    <div class="opt" onclick="check(this,false)">D. c&lt;a&lt;b</div>
+  </div>
+  <div class="explain">解析：log₃2=ln2/ln3≈0.63，log₅2=ln2/ln5≈0.43，所以 b&lt;a&lt;1。c=2^{0.5}=√2≈1.41&gt;1。综上 b&lt;a&lt;c。技巧：对数换底后比较分母大小；指数式与1比较。</div>
+</div>
+
+<div class="card" id="q10">
+  <div class="chapter">第4章 · 反函数</div>
+  <div class="q">10. 函数 y=log₂(x+1) 的反函数是？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. y=2^x+1</div>
+    <div class="opt" onclick="check(this,true)">B. y=2^x−1</div>
+    <div class="opt" onclick="check(this,false)">C. y=2^{x+1}</div>
+    <div class="opt" onclick="check(this,false)">D. y=log₂(x)−1</div>
+  </div>
+  <div class="explain">解析：求反函数：① y=log₂(x+1)；② 化指数：x+1=2^y；③ 解x：x=2^y−1；④ 互换：y=2^x−1。答案：B。注意：反函数与原函数关于y=x对称，可用来检验。</div>
+</div>
+
+<div class="section-title">第五章 三角函数（综合题）</div>
+
+<div class="card" id="q11">
+  <div class="chapter">第5章 · 三角函数符号</div>
+  <div class="q">11. 若角 α 的终边在第二象限，则 sinα·cosα 的符号是？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. 正</div>
+    <div class="opt" onclick="check(this,true)">B. 负</div>
+    <div class="opt" onclick="check(this,false)">C. 零</div>
+    <div class="opt" onclick="check(this,false)">D. 无法确定</div>
+  </div>
+  <div class="explain">解析：第二象限：sinα&gt;0，cosα&lt;0，所以 sinα·cosα&lt;0（负）。口诀：一全正，二正弦，三正切，四余弦。第二象限只有sin为正，cos为负。</div>
+</div>
+
+<div class="card" id="q12">
+  <div class="chapter">第5章 · 诱导公式</div>
+  <div class="q">12. sin(π/2+α) 等于？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. sinα</div>
+    <div class="opt" onclick="check(this,false)">B. −sinα</div>
+    <div class="opt" onclick="check(this,true)">C. cosα</div>
+    <div class="opt" onclick="check(this,false)">D. −cosα</div>
+  </div>
+  <div class="explain">解析：π/2+α 是"奇数倍π/2"（1倍），所以函数名变（sin变cos）；把α看成锐角，π/2+α在第二象限，sin为正，cos为正，所以 sin(π/2+α)=cosα。口诀：奇变偶不变，符号看象限。</div>
+</div>
+
+<div class="card" id="q13">
+  <div class="chapter">第5章 · 三角函数图象变换</div>
+  <div class="q">13. 将 y=sinx 图象上所有点横坐标缩短为原来的1/2（ω=2），再向左平移π/6个单位，得到的函数是？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. y=sin(2x+π/6)</div>
+    <div class="opt" onclick="check(this,true)">B. y=sin(2x+π/3)</div>
+    <div class="opt" onclick="check(this,false)">C. y=sin(2x−π/3)</div>
+    <div class="opt" onclick="check(this,false)">D. y=sin(x/2+π/6)</div>
+  </div>
+  <div class="explain">解析：先伸缩：y=sinx→y=sin2x；再平移：左移π/6→y=sin2(x+π/6)=sin(2x+π/3)。注意：先伸缩后平移时，平移量是|φ/ω|=π/6÷2=π/12？不对！这里是先伸缩再平移，平移直接加在x上：sin2x→sin2(x+π/6)。</div>
+</div>
+
+<div class="card" id="q14">
+  <div class="chapter">第5章 · 三角恒等变换</div>
+  <div class="q">14. 化简 sin15°cos15° 的值等于？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. 1/2</div>
+    <div class="opt" onclick="check(this,true)">B. 1/4</div>
+    <div class="opt" onclick="check(this,false)">C. √3/4</div>
+    <div class="opt" onclick="check(this,false)">D. √2/4</div>
+  </div>
+  <div class="explain">解析：用二倍角公式：sin2α=2sinαcosα，所以 sinαcosα=(1/2)sin2α。代入：sin15°cos15°=(1/2)sin30°=(1/2)·(1/2)=1/4。也可以直接用 sin15°=(√6−√2)/4，cos15°=(√6+√2)/4 相乘验证。</div>
+</div>
+
+<div class="card" id="q15">
+  <div class="chapter">第5章 · 三角函数性质综合</div>
+  <div class="q">15. 函数 f(x)=2sin(ωx+π/3)（ω&gt;0）的最小正周期为 π，则 ω=？</div>
+  <div class="opts">
+    <div class="opt" onclick="check(this,false)">A. 1</div>
+    <div class="opt" onclick="check(this,true)">B. 2</div>
+    <div class="opt" onclick="check(this,false)">C. π</div>
+    <div class="opt" onclick="check(this,false)">D. 2π</div>
+  </div>
+  <div class="explain">解析：y=Asin(ωx+φ)的周期 T=2π/|ω|。已知T=π，ω>0，所以 π=2π/ω，解得 ω=2。注意：周期公式 T=2π/|ω|，不要和f(x)=sin(x+φ)的周期（2π）混淆。</div>
+</div>
+
+<div style="text-align:center;margin:30px 0;">
+  <button class="btn" onclick="showScore()">查看成绩</button>
+</div>
+
+<script>
+let score=0,total=15,answered=0;
+function check(el,correct){
+  if(el.parentNode.dataset.done)return;
+  el.parentNode.dataset.done=1;
+  answered++;
+  let opts=el.parentNode.children;
+  for(let o of opts){
+    let isCorrect=o.getAttribute('onclick').includes('true');
+    if(isCorrect)o.classList.add('correct');
+  }
+  if(correct){el.classList.add('correct');score++;}
+  else el.classList.add('wrong');
+  el.parentNode.nextElementSibling.style.display='block';
+}
+function showScore(){
+  let pct=Math.round(score/total*100);
+  let grade=pct>=90?'优秀！':pct>=70?'不错！':pct>=60?'及格':'需要加油！';
+  document.getElementById('score').innerHTML=
+    '完成 '+answered+'/'+total+' 题 | 正确 '+score+' 题 | 得分 '+pct+'% | '+grade+
+    '<br><span style="font-size:14px;color:#666">'+(
+      pct>=90?'概念扎实，继续保持！':
+      pct>=70?'核心概念掌握较好，查漏补缺即可。':
+      pct>=60?'基础有一定掌握，建议重读知识图谱中标⚠的内容。':
+      '建议先通读知识图谱，再来做题。重点理解函数三要素、指数对数运算、三角函数诱导公式。'
+    )+'</span>';
+}
+</script>
+</body>
+</html>

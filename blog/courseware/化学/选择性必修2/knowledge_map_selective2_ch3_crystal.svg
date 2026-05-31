@@ -1,0 +1,72 @@
+<svg viewBox="0 0 680 540" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第三章 晶体结构与性质 思维导图</title>
+  <desc>四种晶体对比、晶胞计算、配合物、超分子</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="540" fill="white" rx="4"/>
+
+  <text x="340" y="26" text-anchor="middle" font-family="sans-serif" font-size="14px" font-weight="500" fill="#2C2C2A">第三章 晶体结构与性质 · 思维导图</text>
+  <text x="340" y="44" text-anchor="middle" font-family="sans-serif" font-size="12px" fill="#5F5E5A">四种晶体对比 → 晶胞计算 → 配合物 → 超分子 → 结构决定性质</text>
+
+  <text x="340" y="72" text-anchor="middle" font-family="sans-serif" font-size="13px" font-weight="500" fill="#2C2C2A">四种晶体对比（高考必考）</text>
+
+  <rect x="20" y="84" width="150" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="95" y="105" text-anchor="middle" font-family="sans-serif" font-size="12px" font-weight="500" fill="#0C447C">分子晶体</text>
+  <text x="95" y="121" text-anchor="middle" font-family="sans-serif" font-size="10px" fill="#378ADD">粒子：分子 力：范德华/氢键</text>
+  <text x="95" y="135" text-anchor="middle" font-family="sans-serif" font-size="10px" fill="#378ADD">低熔沸点 CO₂ I₂ H₂O</text>
+
+  <rect x="185" y="84" width="150" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+  <text x="260" y="105" text-anchor="middle" font-family="sans-serif" font-size="12px" font-weight="500" fill="#3C3489">共价晶体</text>
+  <text x="260" y="121" text-anchor="middle" font-family="sans-serif" font-size="10px" fill="#7F77DD">粒子：原子 力：共价键</text>
+  <text x="260" y="135" text-anchor="middle" font-family="sans-serif" font-size="10px" fill="#7F77DD">高熔沸点 金刚石 SiC SiO₂</text>
+
+  <rect x="350" y="84" width="150" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="425" y="105" text-anchor="middle" font-family="sans-serif" font-size="12px" font-weight="500" fill="#085041">离子晶体</text>
+  <text x="425" y="121" text-anchor="middle" font-family="sans-serif" font-size="10px" fill="#1D9E75">粒子：离子 力：离子键</text>
+  <text x="425" y="135" text-anchor="middle" font-family="sans-serif" font-size="10px" fill="#1D9E75">较高熔沸点 NaCl CsCl</text>
+
+  <rect x="515" y="84" width="150" height="56" rx="8" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
+  <text x="590" y="105" text-anchor="middle" font-family="sans-serif" font-size="12px" font-weight="500" fill="#633806">金属晶体</text>
+  <text x="590" y="121" text-anchor="middle" font-family="sans-serif" font-size="10px" fill="#BA7517">粒子：阳离子+e⁻ 力：金属键</text>
+  <text x="590" y="135" text-anchor="middle" font-family="sans-serif" font-size="10px" fill="#BA7517">导电导热 延展性</text>
+
+  <line x1="340" y1="140" x2="340" y2="170" stroke="#888780" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="180" y="175" width="320" height="38" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+  <text x="340" y="198" text-anchor="middle" font-family="sans-serif" font-size="13px" font-weight="500" fill="#791F1F" dominant-baseline="central">晶胞计算 ★高考核心</text>
+
+  <line x1="220" y1="213" x2="100" y2="260" stroke="#E24B4A" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="460" y1="213" x2="580" y2="260" stroke="#E24B4A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="20" y="265" width="200" height="54" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+  <text x="120" y="284" text-anchor="middle" font-family="sans-serif" font-size="12px" font-weight="500" fill="#791F1F">均摊法求化学式</text>
+  <text x="120" y="302" text-anchor="middle" font-family="sans-serif" font-size="11px" fill="#A32D2D">顶点=1/8 棱上=1/4</text>
+  <text x="120" y="314" text-anchor="middle" font-family="sans-serif" font-size="11px" fill="#A32D2D">面心=1/2 体心=1</text>
+
+  <rect x="460" y="265" width="200" height="54" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+  <text x="560" y="284" text-anchor="middle" font-family="sans-serif" font-size="12px" font-weight="500" fill="#791F1F">ρ = NM/NA·a³</text>
+  <text x="560" y="302" text-anchor="middle" font-family="sans-serif" font-size="11px" fill="#A32D2D">N:晶胞中粒子数</text>
+  <text x="560" y="314" text-anchor="middle" font-family="sans-serif" font-size="11px" fill="#A32D2D">a:晶胞参数 cm×10⁻⁷</text>
+
+  <rect x="240" y="340" width="200" height="38" rx="8" fill="#FBEAF0" stroke="#993556" stroke-width="0.5"/>
+  <text x="340" y="363" text-anchor="middle" font-family="sans-serif" font-size="13px" font-weight="500" fill="#72243E" dominant-baseline="central">配合物与超分子</text>
+
+  <line x1="200" y1="378" x2="100" y2="420" stroke="#ED93B1" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="480" y1="378" x2="580" y2="420" stroke="#ED93B1" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="20" y="425" width="200" height="48" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+  <text x="120" y="444" text-anchor="middle" font-family="sans-serif" font-size="12px" font-weight="500" fill="#72243E">配位键/配合物</text>
+  <text x="120" y="460" text-anchor="middle" font-family="sans-serif" font-size="11px" fill="#D4537E">中心原子(空轨道) + 配体(孤对e⁻)</text>
+  <text x="120" y="472" text-anchor="middle" font-family="sans-serif" font-size="11px" fill="#D4537E">[Cu(NH₃)₄]²⁺ [Ag(NH₃)₂]⁺</text>
+
+  <rect x="460" y="425" width="200" height="48" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+  <text x="560" y="444" text-anchor="middle" font-family="sans-serif" font-size="12px" font-weight="500" fill="#72243E">超分子</text>
+  <text x="560" y="460" text-anchor="middle" font-family="sans-serif" font-size="11px" fill="#D4537E">分子识别 自组装</text>
+  <text x="560" y="472" text-anchor="middle" font-family="sans-serif" font-size="11px" fill="#D4537E">冠醚/环糊精/酶</text>
+
+  <rect x="150" y="488" width="380" height="38" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+  <text x="340" y="511" text-anchor="middle" font-family="sans-serif" font-size="12px" font-weight="500" fill="#2C2C2A" dominant-baseline="central">从原子→分子→晶体：结构决定性质的完整推理链</text>
+</svg>

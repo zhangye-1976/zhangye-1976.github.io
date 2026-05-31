@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 600">
+  <defs>
+    <style>
+      .box { fill:#E1F5EE; stroke:#00796b; stroke-width:1.5; rx:8; }
+      .box2 { fill:#E8F5E9; stroke:#388E3C; stroke-width:1.5; rx:6; }
+      .box3 { fill:#FFF9C4; stroke:#F9A825; stroke-width:1.5; rx:6; }
+      .boxt { fill:#B2DFDB; stroke:#00796b; stroke-width:2; rx:8; }
+      .tit { font:bold 15px sans-serif; fill:#00796b; }
+      .nm { font:13px sans-serif; fill:#1a1a1a; }
+      .sm { font:11px sans-serif; fill:#333; }
+      .red { font:11px sans-serif; fill:#c0392b; }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="180" y="8" width="320" height="34" class="boxt"/>
+  <text x="340" y="31" text-anchor="middle" class="tit">第6章 平面向量及其应用</text>
+
+  <!-- 向量概念 -->
+  <rect x="20" y="52" width="140" height="28" class="box"/>
+  <text x="90" y="70" text-anchor="middle" class="nm">向量的概念</text>
+  <rect x="20" y="88" width="140" height="80" class="box"/>
+  <text x="90" y="108" text-anchor="middle" class="sm">向量：大小+方向</text>
+  <text x="90" y="126" text-anchor="middle" class="sm">模：|a|（长度）</text>
+  <text x="90" y="144" text-anchor="middle" class="sm">零向量：模为0</text>
+  <text x="90" y="160" text-anchor="middle" class="red">单位向量：模=1</text>
+
+  <!-- 线性运算 -->
+  <rect x="180" y="52" width="140" height="28" class="box"/>
+  <text x="250" y="70" text-anchor="middle" class="nm">线性运算</text>
+  <rect x="180" y="88" width="140" height="110" class="box2"/>
+  <text x="250" y="110" text-anchor="middle" class="sm">加法：三角形/平行四边形</text>
+  <text x="250" y="128" text-anchor="middle" class="sm">减法：终点减起点</text>
+  <text x="250" y="146" text-anchor="middle" class="sm">数乘：λa（模变|λ|倍）</text>
+  <text x="250" y="164" text-anchor="middle" class="sm">坐标：a+b=(x₁+x₂,y₁+y₂)</text>
+  <text x="250" y="182" text-anchor="middle" class="sm">共线：a=λb（b≠0）</text>
+
+  <!-- 数量积 -->
+  <rect x="340" y="52" width="160" height="28" class="box"/>
+  <text x="420" y="70" text-anchor="middle" class="nm">数量积（点积）</text>
+  <rect x="340" y="88" width="160" height="110" class="box2"/>
+  <text x="420" y="110" text-anchor="middle" class="sm">定义：a·b=|a||b|cosθ</text>
+  <text x="420" y="128" text-anchor="middle" class="sm">坐标：a·b=x₁x₂+y₁y₂</text>
+  <text x="420" y="146" text-anchor="middle" class="sm">垂直：a·b=0</text>
+  <text x="420" y="164" text-anchor="middle" class="sm">模：|a|²=a·a</text>
+  <text x="420" y="182" text-anchor="middle" class="sm">夹角：cosθ=(a·b)/(|a||b|)</text>
+
+  <!-- 向量应用 -->
+  <rect x="520" y="52" width="140" height="28" class="box"/>
+  <text x="590" y="70" text-anchor="middle" class="nm">向量的应用</text>
+  <rect x="520" y="88" width="140" height="110" class="box3"/>
+  <text x="590" y="110" text-anchor="middle" class="sm">几何证明：</text>
+  <text x="590" y="128" text-anchor="middle" class="sm">平行、垂直、长度</text>
+  <text x="590" y="146" text-anchor="middle" class="sm">物理：力、速度分解</text>
+  <text x="590" y="164" text-anchor="middle" class="sm">解三角形：</text>
+  <text x="590" y="182" text-anchor="middle" class="sm">余弦定理向量推导</text>
+
+  <!-- 解三角形 -->
+  <rect x="20" y="216" width="300" height="34" class="boxt"/>
+  <text x="170" y="238" text-anchor="middle" class="tit">解三角形（第6章应用+第5章延伸）</text>
+  <rect x="20" y="258" width="300" height="110" class="box3"/>
+  <text x="30" y="280" class="sm">正弦定理：a/sinA = b/sinB = c/sinC = 2R</text>
+  <text x="30" y="300" class="sm">余弦定理：a²=b²+c²−2bc cosA</text>
+  <text x="30" y="320" class="sm">面积公式：S=½ab sinC（两边一夹角）</text>
+  <text x="30" y="338" class="sm">应用：测高、测距、航海问题</text>
+  <text x="30" y="356" class="sm">解题关键：知三求一，判断用正弦还是余弦</text>
+  <text x="30" y="374" class="red">⚠ 解三角形常有多解，注意检验！</text>
+
+  <!-- 坐标运算技巧 -->
+  <rect x="340" y="216" width="320" height="34" class="boxt"/>
+  <text x="500" y="238" text-anchor="middle" class="tit">坐标运算解题模板</text>
+  <rect x="340" y="258" width="320" height="110" class="box"/>
+  <text x="350" y="280" class="sm">① 建系：建立平面直角坐标系</text>
+  <text x="350" y="300" class="sm">② 求坐标：写出各点坐标</text>
+  <text x="350" y="320" class="sm">③ 求向量：用终点−起点</text>
+  <text x="350" y="338" class="sm">④ 运算：利用数量积/共线条件</text>
+  <text x="350" y="356" class="sm">⑤ 回归几何意义</text>
+  <text x="350" y="374" class="sm">平行⇔ 共线；垂直⇔ 数量积=0</text>
+
+  <!-- 经典题型 -->
+  <rect x="20" y="384" width="640" height="28" class="box"/>
+  <text x="340" y="402" text-anchor="middle" class="nm">经典题型解题要点</text>
+  <rect x="20" y="420" width="640" height="160" class="box2"/>
+  <text x="30" y="444" class="sm">【向量加减】几何意义优先——三角形法则：AB+BC=AC；AB−AC=CB</text>
+  <text x="30" y="462" class="sm">【数量积】坐标法最稳——a·b=x₁x₂+y₁y₂；几何法：|a||b|cosθ</text>
+  <text x="30" y="480" class="sm">【垂直/平行】垂直⇔ a·b=0；平行⇔ a=λb（或 x₁y₂=x₂y₁）</text>
+  <text x="30" y="498" class="sm">【模的计算】|a|²=a·a；|a+b|²=|a|²+|b|²+2a·b</text>
+  <text x="30" y="516" class="sm">【解三角形】知三边用余弦；知两角一边用正弦；知两边夹角用余弦</text>
+  <text x="30" y="534" class="sm">【实际应用】画示意图→抽象为三角形→选用正/余弦定理→求解</text>
+  <text x="30" y="552" class="sm">【向量与函数综合】将向量数量积表示为某个角的函数，再求值域/最值</text>
+  <text x="30" y="570" class="red">⚠ 向量加减运算注意方向；数量积结果是一个数（不是向量）！</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 620">
+  <!-- 物理必修2 第7章 机械能守恒定律 SVG -->
+  <defs>
+    <style>
+      .title { font-weight:bold; font-size:18px; font-family:sans-serif; fill: #00363a; }
+      .subtitle { font-size:13px; font-family:sans-serif; fill: #00796b; }
+      .box-title { font-weight:bold; font-size:14px; font-family:sans-serif; fill: #00363a; }
+      .box-text { font-size:12px; font-family:sans-serif; fill: #2c2c2c; }
+      .highlight { font-weight:bold; font-size:12px; font-family:sans-serif; fill: #b71c1c; }
+      .note { font-size:11px; font-family:sans-serif; fill: #555; }
+      .formula { font-size:13px; font-family:sans-serif; fill: #0d47a1; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="680" height="620" fill="#E1F5EE" rx="12"/>
+
+  <!-- 标题 -->
+  <rect x="140" y="10" width="400" height="38" fill="#00796B" rx="8"/>
+  <text x="340" y="32" text-anchor="middle" class="title" fill="#ffffff">第7章 机械能守恒定律 ★★★★★</text>
+  <text x="340" y="48" text-anchor="middle" class="subtitle" fill="#b2dfdb">动能定理 + 机械能守恒 + 功能关系（能量观点核心）</text>
+
+  <!-- 动能和动能定理（最重要！） -->
+  <rect x="20" y="60" width="640" height="130" fill="#ffffff" rx="8" stroke="#b71c1c" stroke-width="2"/>
+  <rect x="20" y="60" width="640" height="26" fill="#b71c1c" rx="8 8 0 0"/>
+  <text x="340" y="78" text-anchor="middle" class="box-title" fill="#ffffff">💨 动能定理 ★★★★★（最重要！）</text>
+  <text x="35" y="105" class="formula">动能：Ek = ½mv²</text>
+  <text x="35" y="125" class="box-text">动能定理：W合 = ΔEk = Ek末 - Ek初</text>
+  <text x="35" y="148" class="box-text">→ W合：所有力对物体做的总功（可正可负）</text>
+  <text x="35" y="168" class="box-text">→ 使用动能定理不需要关心运动过程细节，只关心初末状态！</text>
+  <text x="380" y="105" class="box-text">📌 使用步骤：</text>
+  <text x="380" y="128" class="box-text">① 确定研究对象和一段位移过程</text>
+  <text x="380" y="148" class="box-text">② 分析该过程中所有力做的功 W合</text>
+  <text x="380" y="168" class="box-text">③ 确定初末状态动能 Ek₁ 和 Ek₂</text>
+  <text x="380" y="190" class="box-text">④ 列方程：W合 = Ek₂ - Ek₁</text>
+
+  <!-- 功和功率 -->
+  <rect x="20" y="200" width="310" height="115" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="200" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="175" y="218" text-anchor="middle" class="box-title" fill="#ffffff">🔨 功和功率</text>
+  <text x="30" y="245" class="formula">W = F·s·cosθ</text>
+  <text x="30" y="265" class="box-text">θ = 90°：W = 0（不做功）</text>
+  <text x="30" y="285" class="box-text">0°≤θ&lt;90°：正功（动力）</text>
+  <text x="30" y="305" class="box-text">90°&lt;θ≤180°：负功（阻力）</text>
+  <text x="30" y="325" class="formula">P = W/t，P瞬时 = Fvcosθ</text>
+
+  <!-- 势能 -->
+  <rect x="350" y="200" width="310" height="115" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="350" y="200" width="310" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="505" y="218" text-anchor="middle" class="box-title" fill="#ffffff">📐 势能</text>
+  <text x="360" y="245" class="formula">重力势能：EpG = mgh</text>
+  <text x="360" y="265" class="box-text">下落：EpG↓，动能↑</text>
+  <text x="360" y="285" class="box-text">上升：EpG↑，动能↓</text>
+  <text x="360" y="305" class="formula">弹性势能：EpE = ½kx²</text>
+  <text x="360" y="325" class="box-text">形变量越大，EpE 越大</text>
+
+  <!-- 机械能守恒 -->
+  <rect x="20" y="325" width="640" height="110" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="2"/>
+  <rect x="20" y="325" width="640" height="26" fill="#00796B" rx="8 8 0 0"/>
+  <text x="340" y="343" text-anchor="middle" class="box-title" fill="#ffffff">⚖️ 机械能守恒定律</text>
+  <text x="35" y="370" class="box-text">内容：只有重力或弹力做功时，动能与势能相互转化，机械能总量不变</text>
+  <text x="35" y="392" class="box-text">表达式（三种等价）：</text>
+  <text x="35" y="412" class="formula">① E初 = E末（总量不变）</text>
+  <text x="380" y="370" class="formula">② ΔEk = -ΔEp</text>
+  <text x="380" y="392" class="formula">③ EA增 = EB减</text>
+  <text x="380" y="412" class="box-text">使用条件：只有重力或弹力做功</text>
+  <text x="35" y="432" class="highlight">🔴 易错：有摩擦力做功 → 机械能不守恒！</text>
+
+  <!-- 功能关系（能量观点大题） -->
+  <rect x="20" y="445" height="95" fill="#FFF9C4" width="640" rx="8" stroke="#F9A825" stroke-width="1.5"/>
+  <rect x="20" y="445" width="640" height="24" fill="#F9A825" rx="8 8 0 0"/>
+  <text x="340" y="461" text-anchor="middle" class="box-title" fill="#ffffff">📝 功能关系（能量观点最高境界）</text>
+  <text x="35" y="488" class="box-text">重力做的功 = -ΔEpG（重力势能变化的负值）</text>
+  <text x="35" y="508" class="box-text">合外力做的功 = ΔEk（动能定理）</text>
+  <text x="380" y="488" class="box-text">除重力/弹力外其他力做的总功 = ΔE机</text>
+  <text x="380" y="508" class="box-text">🔑 速记："重力做功→重力势能变；合外力做功→动能变"</text>
+
+  <!-- 高考高频考点 -->
+  <rect x="20" y="550" width="640" height="55" fill="#ffffff" rx="8" stroke="#00796B" stroke-width="1.5"/>
+  <rect x="20" y="550" width="640" height="22" fill="#00796B" rx="8 8 0 0"/>
+  <text x="340" y="566" text-anchor="middle" class="box-title" fill="#ffffff">⭐ 高考高频考点（全国乙卷）</text>
+  <text x="35" y="588" class="box-text">① 动能定理 W合=ΔEk（变力做功/曲线运动优先用！） ② 机械能守恒条件判断（有摩擦力→不守恒）</text>
+  <text x="380" y="588" class="box-text">③ 功能关系（能量观点大题） ④ 汽车启动两模型（vmax=P额/f）</text>
+
+  <!-- 页码 -->
+  <text x="650" y="610" class="note">P3/3</text>
+</svg>

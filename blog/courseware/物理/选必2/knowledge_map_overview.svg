@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520">
+  <rect width="680" height="520" fill="#E1F5EE" rx="12"/>
+  <text x="340" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#00796b">选必2《电磁学进阶》全书总览</text>
+  <text x="340" y="60" text-anchor="middle" font-size="12" fill="#555">安培力 → 电磁感应 → 交变电流 → 电磁波 → 传感器</text>
+
+  <!-- Ch1 -->
+  <rect x="30" y="80" width="290" height="130" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="80" width="290" height="30" fill="#00796b" rx="8"/>
+  <text x="175" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">第1章 安培力与洛伦兹力 ⭐⭐⭐⭐</text>
+  <text x="48" y="130" font-size="12" fill="#333">安培力 F=BILsinθ · 左手定则</text>
+  <text x="48" y="150" font-size="12" fill="#333">洛伦兹力 F=qvB · 圆周运动 r=mv/qB</text>
+  <text x="48" y="170" font-size="12" fill="#333">带电粒子在磁场中的运动 · 半径/周期</text>
+  <text x="48" y="190" font-size="12" fill="#72243E">🔴热点：复合场综合计算</text>
+
+  <!-- Ch2 -->
+  <rect x="360" y="80" width="290" height="130" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="360" y="80" width="290" height="30" fill="#00796b" rx="8"/>
+  <text x="505" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">第2章 电磁感应 ⭐⭐⭐⭐⭐</text>
+  <text x="378" y="130" font-size="12" fill="#333">楞次定律 · "来拒去留"口诀</text>
+  <text x="378" y="150" font-size="12" fill="#333">法拉第定律 E=nΔΦ/Δt</text>
+  <text x="378" y="170" font-size="12" fill="#333">动生/感生电动势 · 自感与互感</text>
+  <text x="378" y="190" font-size="12" fill="#72243E">🔴热点：电磁感应综合大题</text>
+
+  <!-- Ch3 -->
+  <rect x="30" y="230" width="290" height="110" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="230" width="290" height="30" fill="#00796b" rx="8"/>
+  <text x="175" y="250" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">第3章 交变电流 ⭐⭐⭐</text>
+  <text x="48" y="280" font-size="12" fill="#333">e=E_m·sinωt · 有效值/峰值</text>
+  <text x="48" y="300" font-size="12" fill="#333">变压器 U₁/U₂=n₁/n₂ · 功率守恒</text>
+  <text x="48" y="320" font-size="12" fill="#333">远距离输电 · P损=I²R</text>
+
+  <!-- Ch4 -->
+  <rect x="360" y="230" width="290" height="110" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="360" y="230" width="290" height="30" fill="#00796b" rx="8"/>
+  <text x="505" y="250" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">第4章 电磁振荡与电磁波 ⭐⭐</text>
+  <text x="378" y="280" font-size="12" fill="#333">LC振荡 · T=2π√LC</text>
+  <text x="378" y="300" font-size="12" fill="#333">电磁波谱 · 麦克斯韦方程组</text>
+  <text x="378" y="320" font-size="12" fill="#333">电磁波发射与接收</text>
+
+  <!-- Ch5 -->
+  <rect x="30" y="360" width="290" height="80" fill="#fff" stroke="#00796b" stroke-width="2" rx="8"/>
+  <rect x="30" y="360" width="290" height="30" fill="#00796b" rx="8"/>
+  <text x="175" y="380" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">第5章 传感器 ⭐</text>
+  <text x="48" y="410" font-size="12" fill="#333">光敏/热敏电阻 · 霍尔元件</text>
+  <text x="48" y="430" font-size="12" fill="#555">非电学量→电学量的转换</text>
+
+  <!-- 高考权重 -->
+  <rect x="360" y="360" width="290" height="80" fill="#FBEAF0" stroke="#72243E" stroke-width="1.5" rx="8"/>
+  <text x="505" y="380" text-anchor="middle" font-size="13" font-weight="700" fill="#72243E">🔴 全国乙卷高考权重排序</text>
+  <text x="378" y="405" font-size="12" fill="#555">电磁感应 > 安培力/洛伦兹力 > 交变电流</text>
+  <text x="378" y="425" font-size="12" fill="#555">> 电磁振荡 > 传感器</text>
+
+  <!-- 底部箭头 -->
+  <text x="340" y="490" text-anchor="middle" font-size="12" fill="#00796b">核心逻辑：磁→电→电磁波→应用，以"感应"为主线串联全册</text>
+</svg>

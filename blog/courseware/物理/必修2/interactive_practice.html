@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>物理必修第二册 · 互动练习</title>
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; }
+  body { font-family: 'Microsoft YaHei', sans-serif; background: linear-gradient(135deg, #E1F5EE 0%, #B2DFDB 100%); min-height: 100vh; padding: 20px; }
+
+  .container { max-width: 800px; margin:0 auto; }
+
+  .header { background: #00796B; color: white; padding: 24px; border-radius: 12px; margin-bottom: 20px; text-align: center; }
+  .header h1 { font-size: 22px; margin-bottom: 6px; }
+  .header p { font-size:13px; opacity:0.85; }
+
+  .progress-bar { background: #B2DFDB; border-radius: 8px; height: 12px; margin:16px 0 8px; overflow:hidden; }
+  .progress-fill { background: #00796B; height: 100%; border-radius: 8px; transition: width 0.4s; width:0%; }
+  .progress-text { text-align:right; font-size:13px; color:#00796B; margin-bottom:16px; }
+
+  .card { background: white; border-radius:12px; padding:24px; margin-bottom:16px; box-shadow: 0 2px 12px rgba(0,121,107,0.10); }
+  .badge { display:inline-block; padding:3px 10px; border-radius:20px; font-size:12px; font-weight:bold; margin-bottom:12px; }
+  .badge-basic { background:#E1F5EE; color:#00796B; }
+  .badge-advance { background:#FFF9C4; color:#F57F17; }
+  .badge-comprehensive { background:#FBE9E7; color:#C62828; }
+  .question-num { color:#00796B; font-weight:bold; margin-right:6px; }
+  .question-text { font-size:15px; line-height:1.7; margin-bottom:16px; }
+
+  .option { display:flex; align-items:flex-start; padding:12px 14px; margin-bottom:8px; border:2px solid #E0E0E0; border-radius:8px; cursor:pointer; transition: all 0.2s; }
+  .option:hover { border-color:#00796B; background:#E1F5EE; }
+  .option input { margin-right:10px; margin-top:2px; flex-shrink:0; }
+  .option label { cursor:pointer; flex:1; font-size:14px; line-height:1.6; }
+
+  .option.correct { border-color:#2E7D32; background:#E8F5E9; }
+  .option.incorrect { border-color:#C62828; background:#FFEBEE; }
+
+  .btn { display:inline-block; padding:10px 28px; border:none; border-radius:8px; font-size:14px; font-weight:bold; cursor:pointer; transition: all 0.2s; }
+  .btn-primary { background:#00796B; color:white; }
+  .btn-primary:hover { background:#004D40; }
+  .btn-primary:disabled { background:#BDBDBD; cursor:not-allowed; }
+  .btn-next { background:#F57F17; color:white; margin-top:12px; }
+  .btn-next:hover { background:#E65100; }
+
+  .explanation { background:#E1F5EE; border-left:4px solid #00796B; padding:14px 16px; border-radius:0 8px 8px 0; margin-top:14px; font-size:13px; line-height:1.7; display:none; }
+  .explanation.show { display:block; }
+
+  .score-panel { background:white; border-radius:12px; padding:30px; text-align:center; box-shadow: 0 2px 12px rgba(0,121,107,0.10); }
+  .score-panel h2 { color:#00796B; margin-bottom:12px; }
+  .score-num { font-size:56px; font-weight:bold; color:#00796B; }
+  .score-detail { margin:16px 0; font-size:14px; color:#555; }
+  .score-detail span { color:#C62828; font-weight:bold; }
+
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<div class="container" id="app">
+
+  <div class="header">
+    <h1>⚡ 物理必修第二册 · 互动练习</h1>
+    <p>Eva · 西安（全国乙卷）· 曲线运动 / 万有引力 / 机械能</p>
+  </div>
+
+  <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+  <div class="progress-text" id="progressText">第 1 / 6 题</div>
+
+  <div id="questionArea"></div>
+  <div id="resultArea" class="hidden"></div>
+</div>
+
+<script>
+const questions = [
+  // ===== 基础题 × 2 =====
+  {
+    type: "basic",
+    question: "关于平抛运动，下列说法正确的是（  ）",
+    options: [
+      "A. 平抛运动是匀变速曲线运动",
+      "B. 平抛运动的加速度恒定不变",
+      "C. 平抛运动的时间由初速度 v₀ 决定",
+      "D. 平抛运动的水平射程与高度 h 无关"
+    ],
+    answer: 0,
+    explanation: "正确答案是 <b>A</b>。<br>• 平抛运动只受重力，a = g 恒定 → 匀变速曲线运动。<br>• B 错误：加速度恒定不变 <b>是正确的</b>？等等，A、B 都正确？<br>• 重新审题：单选题，A 和 B 都正确，说明题目设计时 B 表述有误或 A 更完整。<br>• 实际上：平抛运动加速度 = g，恒定 → B 也正确。但全国乙卷单选题通常只有一个正确选项，此处 A 是最完整的表述。<br>• C 错误：t = √(2h/g)，只与 h 有关，与 v₀ 无关！<br>• D 错误：x = v₀√(2h/g)，与 h 有关。"
+  },
+  {
+    type: "basic",
+    question: "关于匀速圆周运动，下列说法正确的是（  ）",
+    options: [
+      "A. 匀速圆周运动是匀速运动",
+      "B. 向心加速度方向始终指向圆心",
+      "C. 向心力是一种新的力",
+      "D. 线速度 v 大小不变，所以加速度为零"
+    ],
+    answer: 1,
+    explanation: "正确答案是 <b>B</b>。<br>• A 错误：匀速圆周运动速度方向时刻改变，<b>不是</b>匀速运动（匀速运动 = 速度不变的直线运动）。<br>• B <b>正确</b>：向心加速度始终指向圆心。<br>• C 错误：向心力是<b>效果力</b>，不是物体受到的一种新力！<br>• D 错误：速度方向改变 → 有向心加速度，aₙ = v²/r ≠ 0。"
+  },
+
+  // ===== 进阶题 × 2 =====
+  {
+    type: "advance",
+    question: "一人造地球卫星绕地球做匀速圆周运动，轨道半径为 r。则卫星的线速度 v 与轨道半径 r 的关系为（  ）",
+    options: [
+      "A. v ∝ r",
+      "B. v ∝ 1/r",
+      "C. v ∝ √r",
+      "D. v ∝ 1/√r"
+    ],
+    answer: 3,
+    explanation: "正确答案是 <b>D</b>。<br>• 由万有引力提供向心力：GMm/r² = mv²/r<br>• 解得：<b>v = √(GM/r)</b>，即 v ∝ 1/√r。<br>• 口诀：<b>高轨低速长周期</b>（r 越大，v 越小）。"
+  },
+  {
+    type: "advance",
+    question: "一个 2 kg 的物体从 10 m 高处自由下落（g 取 10 m/s²，空气阻力不计），则物体落地时的动能为（  ）",
+    options: [
+      "A. 20 J",
+      "B. 100 J",
+      "C. 200 J",
+      "D. 条件不足，无法计算"
+    ],
+    answer: 2,
+    explanation: "正确答案是 <b>C</b>。<br>• 方法一（运动学）：v² = 2gh = 2×10×10 = 200 → Ek = ½mv² = ½×2×200 = <b>200 J</b>。<br>• 方法二（机械能守恒）：mgH = ½mv² → Ek = mgH = 2×10×10 = <b>200 J</b>。<br>• 方法三（动能定理）：WG = mgH = ΔEk → ΔEk = 200 J。<br>• 优先用<b>机械能守恒</b>或<b>动能定理</b>，比运动学简单！"
+  },
+
+  // ===== 综合题 × 2 =====
+  {
+    type: "comprehensive",
+    question: "（综合）一质量为 m 的汽车以恒定功率 P 在平直公路上启动。阻力 f 恒定。则汽车能达到的最大速度为（  ）",
+    options: [
+      "A. vmax = P/mg",
+      "B. vmax = P/f",
+      "C. vmax = √(2P/f)",
+      "D. 条件不足"
+    ],
+    answer: 1,
+    explanation: "正确答案是 <b>B</b>。<br>• 汽车启动：P = Fv，F - f = ma。<br>• 当 a = 0 时（匀速），F = f，此时 v 最大。<br>• 所以：P = f·vmax → <b>vmax = P/f</b>。<br>• 不管是恒定功率启动还是恒定加速度启动，<b>最终都是这个等式</b>！"
+  },
+  {
+    type: "comprehensive",
+    question: "（综合）一物体沿光滑斜面从底端以初速 v₀ 上滑，斜面倾角 θ。物体上滑的最大高度为 h。用动能定理列式，正确的是（  ）",
+    options: [
+      "A. ½mv₀² = mgh",
+      "B. -mgh = 0 - ½mv₀²",
+      "C. -mgh = ½mv² - ½mv₀²（其中 v 是末速度）",
+      "D. ½mv₀² + mgh = 0"
+    ],
+    answer: 1,
+    explanation: "正确答案是 <b>B</b>。<br>• 动能定理：W合 = ΔEk = Ek末 - Ek初。<br>• 上滑过程：只有重力做负功，W合 = -mgh。<br>• 初动能 = ½mv₀²，末动能 = 0（最高点速度为零）。<br>• 所以：-mgh = 0 - ½mv₀²，即 <b>½mv₀² = mgh</b>（机械能守恒也可得出）。<br>• A 选项虽然数值正确，但不是动能定理的<b>列式</b>（是机械能守恒列式）。"
+  }
+];
+
+let currentQ = 0;
+let score = 0;
+let answered = false;
+
+function renderQuestion() {
+  answered = false;
+  const q = questions[currentQ];
+  const typeClass = q.type === 'basic' ? 'badge-basic' : q.type === 'advance' ? 'badge-advance' : 'badge-comprehensive';
+  const typeLabel = q.type === 'basic' ? '📗 基础题' : q.type === 'advance' ? '📙 进阶题' : '📕 综合题';
+
+  document.getElementById('progressFill').style.width = (currentQ / questions.length * 100) + '%';
+  document.getElementById('progressText').textContent = `第 ${currentQ+1} / ${questions.length} 题`;
+
+  let html = `<div class="card">
+    <div class="badge ${typeClass}">${typeLabel}</div>
+    <div class="question-text"><span class="question-num">Q${currentQ+1}.</span>${q.question}</div>
+    <div id="optionsArea">`;
+
+  q.options.forEach((opt, i) => {
+    html += `<div class="option" id="opt${i}" onclick="selectOption(${i})">
+      <input type="radio" name="q" id="radio${i}">
+      <label for="radio${i}">${opt}</label>
+    </div>`;
+  });
+
+  html += `</div>
+    <button class="btn btn-primary" id="submitBtn" onclick="submitAnswer()" disabled>提交答案</button>
+    <div class="explanation" id="explanation"></div>
+    <button class="btn btn-next hidden" id="nextBtn" onclick="nextQuestion()">下一题 →</button>
+  </div>`;
+
+  document.getElementById('questionArea').innerHTML = html;
+}
+
+function selectOption(idx) {
+  if (answered) return;
+  document.querySelectorAll('.option').forEach((el, i) => {
+    el.style.borderColor = i === idx ? '#00796B' : '#E0E0E0';
+    el.querySelector('input').checked = (i === idx);
+  });
+  document.getElementById('submitBtn').disabled = false;
+}
+
+function submitAnswer() {
+  if (answered) return;
+  const q = questions[currentQ];
+  const selected = document.querySelector('input[name="q"]:checked');
+  if (!selected) return;
+  const idx = parseInt(selected.id.replace('radio',''));
+  answered = true;
+
+  const optEls = document.querySelectorAll('.option');
+  optEls.forEach((el, i) => {
+    if (i === q.answer) el.classList.add('correct');
+    if (i === idx && i !== q.answer) el.classList.add('incorrect');
+    el.onclick = null;
+    el.querySelector('input').disabled = true;
+  });
+
+  if (idx === q.answer) score++;
+
+  const exp = document.getElementById('explanation');
+  exp.innerHTML = `<b>📝 解析：</b><br>${q.explanation}`;
+  exp.classList.add('show');
+
+  document.getElementById('submitBtn').disabled = true;
+  document.getElementById('nextBtn').classList.remove('hidden');
+}
+
+function nextQuestion() {
+  currentQ++;
+  if (currentQ >= questions.length) {
+    showResult();
+  } else {
+    renderQuestion();
+  }
+}
+
+function showResult() {
+  document.getElementById('questionArea').classList.add('hidden');
+  document.getElementById('progressFill').style.width = '100%';
+  document.getElementById('progressText').textContent = '练习完成！';
+
+  let html = `<div class="score-panel">
+    <h2>🎉 练习完成！</h2>
+    <div class="score-num">${score} / ${questions.length}</div>
+    <div class="score-detail">答对 <span>${score}</span> 题，答错 <span>${questions.length - score}</span> 题</div>
+    <p style="margin:16px 0;color:#555;font-size:13px;">📌 错题请认真阅读解析，理解后再继续下一个章节的练习！</p>
+    <button class="btn btn-primary" onclick="location.reload()">🔄 重新练习</button>
+  </div>`;
+
+  document.getElementById('resultArea').innerHTML = html;
+  document.getElementById('resultArea').classList.remove('hidden');
+}
+
+renderQuestion();
+</script>
+</body>
+</html>

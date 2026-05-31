@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 620" width="100%" role="img">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .t { font-family: var(--font-sans, sans-serif); font-size: 14px; fill: var(--color-text-primary, #18191C); }
+      .ts { font-family: var(--font-sans, sans-serif); font-size: 12px; fill: var(--color-text-secondary, #5F5E5A); }
+      .th { font-family: var(--font-sans, sans-serif); font-size: 13px; font-weight: 500; fill: var(--color-text-primary, #18191C); }
+      .tm { font-family: var(--font-sans, sans-serif); font-size: 12px; fill: var(--color-text-primary, #18191C); }
+      .tc { font-family: var(--font-sans, sans-serif); font-size: 11px; fill: var(--color-text-secondary, #5F5E5A); }
+    </style>
+  </defs>
+
+  <title>第三章 铁 金属材料 - 详细知识导图</title>
+  <desc>涵盖铁及其化合物、金属材料两大节</desc>
+
+  <rect x="230" y="10" width="220" height="44" rx="10" fill="#FAECE7" stroke="#D85A30" stroke-width="1.5"/>
+  <text class="th" x="340" y="32" text-anchor="middle" dominant-baseline="central" fill="#D85A30">第三章 铁 金属材料</text>
+
+  <!-- 两节标题 -->
+  <rect x="60" y="72" width="260" height="34" rx="7" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>
+  <text class="th" x="190" y="89" text-anchor="middle" dominant-baseline="central" fill="#D85A30">第一节 铁及其化合物</text>
+
+  <rect x="360" y="72" width="260" height="34" rx="7" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>
+  <text class="th" x="490" y="89" text-anchor="middle" dominant-baseline="central" fill="#D85A30">第二节 金属材料</text>
+
+  <!-- ==================== 第一节：铁 ==================== -->
+  <!-- 铁单质 -->
+  <rect x="60" y="118" width="260" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="190" y="133" text-anchor="middle" dominant-baseline="central">铁 Fe（银白色，能被磁铁吸引）</text>
+  <text class="tc" x="190" y="148" text-anchor="middle" dominant-baseline="central">3Fe + 2O₂ --点燃→ Fe₃O₄（火星四射，黑色固体）</text>
+  <text class="tc" x="190" y="160" text-anchor="middle" dominant-baseline="central">Fe + 2H⁺ = Fe²⁺ + H₂↑（与非氧化性酸）</text>
+  <text class="tc" x="190" y="172" text-anchor="middle" dominant-baseline="central">常温下浓H₂SO₄/浓HNO₃使铁钝化</text>
+
+  <!-- 铁的氧化物 -->
+  <rect x="60" y="186" width="260" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="190" y="200" text-anchor="middle" dominant-baseline="central">铁的氧化物比较</text>
+  <text class="tc" x="190" y="214" text-anchor="middle" dominant-baseline="central">FeO（黑色粉末）Fe₂O₃（红棕色，铁锈）Fe₃O₄（黑色，磁铁矿）</text>
+  <text class="tc" x="190" y="226" text-anchor="middle" dominant-baseline="central">Fe₂O₃ + 6HCl = 2FeCl₃ + 3H₂O</text>
+  <text class="tc" x="190" y="238" text-anchor="middle" dominant-baseline="central">Fe₃O₄ 含+2和+3价铁，可看作 FeO·Fe₂O₃</text>
+
+  <!-- Fe²⁺ vs Fe³⁺ -->
+  <rect x="60" y="256" width="260" height="100" rx="5" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+  <text class="tm" x="190" y="271" text-anchor="middle" dominant-baseline="central">Fe²⁺ 与 Fe³⁺ 的检验与转化（重点！）</text>
+  <text class="tc" x="190" y="286" text-anchor="middle" dominant-baseline="central">Fe²⁺：浅绿色  |  Fe³⁺：棕黄色</text>
+
+  <line x1="105" y1="294" x2="105" y2="352" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <line x1="275" y1="294" x2="275" y2="352" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <text class="tm" x="190" y="308" text-anchor="middle" dominant-baseline="central">Fe²⁺ → Fe³⁺：加氧化剂（Cl₂, H₂O₂, HNO₃）</text>
+  <text class="tc" x="190" y="322" text-anchor="middle" dominant-baseline="central">2Fe²⁺ + Cl₂ = 2Fe³⁺ + 2Cl⁻</text>
+  <text class="tm" x="190" y="338" text-anchor="middle" dominant-baseline="central">Fe³⁺ → Fe²⁺：加还原剂（Fe粉, Cu, KI）</text>
+  <text class="tc" x="190" y="352" text-anchor="middle" dominant-baseline="central">2Fe³⁺ + Fe = 3Fe²⁺  |  2Fe³⁺ + Cu = 2Fe²⁺ + Cu²⁺</text>
+
+  <!-- Fe³⁺检验 -->
+  <rect x="60" y="370" width="260" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="190" y="384" text-anchor="middle" dominant-baseline="central">Fe³⁺ 的检验方法</text>
+  <text class="tc" x="190" y="398" text-anchor="middle" dominant-baseline="central">① KSCN溶液：Fe³⁺ + 3SCN⁻ ⇌ Fe(SCN)₃（血红色溶液）</text>
+  <text class="tc" x="190" y="410" text-anchor="middle" dominant-baseline="central">② NaOH溶液：Fe³⁺ + 3OH⁻ = Fe(OH)₃↓（红褐色沉淀）</text>
+  <text class="tc" x="190" y="422" text-anchor="middle" dominant-baseline="central">Fe²⁺ + 2OH⁻ = Fe(OH)₂↓（白色→灰绿→红褐色）</text>
+
+  <!-- Fe(OH)₂的氧化 -->
+  <rect x="60" y="438" width="260" height="44" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="190" y="452" text-anchor="middle" dominant-baseline="central">Fe(OH)₂ 的特殊性</text>
+  <text class="tc" x="190" y="466" text-anchor="middle" dominant-baseline="central">4Fe(OH)₂ + O₂ + 2H₂O = 4Fe(OH)₃（白色→红褐色）</text>
+  <text class="tc" x="190" y="478" text-anchor="middle" dominant-baseline="central">制备时需隔绝空气（液封、煮沸驱氧）</text>
+
+  <!-- ==================== 第二节：金属材料 ==================== -->
+  <rect x="360" y="118" width="260" height="44" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="490" y="133" text-anchor="middle" dominant-baseline="central">合金</text>
+  <text class="tc" x="490" y="148" text-anchor="middle" dominant-baseline="central">合金熔点低于各组分金属</text>
+  <text class="tc" x="490" y="160" text-anchor="middle" dominant-baseline="central">合金硬度一般大于各组分金属</text>
+
+  <rect x="360" y="174" width="260" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="490" y="188" text-anchor="middle" dominant-baseline="central">铁的合金</text>
+  <text class="tc" x="490" y="202" text-anchor="middle" dominant-baseline="central">生铁：含C 2%~4.3%  |  钢：含C 0.03%~2%</text>
+  <text class="tc" x="490" y="216" text-anchor="middle" dominant-baseline="central">不锈钢：含Cr（铬）、Ni（镍），耐腐蚀</text>
+  <text class="tc" x="490" y="228" text-anchor="middle" dominant-baseline="central">钢的分类：碳素钢 → 低碳/中碳/高碳钢</text>
+
+  <rect x="360" y="244" width="260" height="44" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="490" y="258" text-anchor="middle" dominant-baseline="central">铝 Al</text>
+  <text class="tc" x="490" y="272" text-anchor="middle" dominant-baseline="central">银白色轻金属，地壳中含量最丰富的金属元素</text>
+  <text class="tc" x="490" y="284" text-anchor="middle" dominant-baseline="central">4Al + 3O₂ --点燃→ 2Al₂O₃（耀眼白光）</text>
+
+  <rect x="360" y="300" width="260" height="56" rx="5" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+  <text class="tm" x="490" y="314" text-anchor="middle" dominant-baseline="central">Al₂O₃（两性氧化物）</text>
+  <text class="tc" x="490" y="328" text-anchor="middle" dominant-baseline="central">与酸：Al₂O₃ + 6H⁺ = 2Al³⁺ + 3H₂O</text>
+  <text class="tc" x="490" y="340" text-anchor="middle" dominant-baseline="central">与碱：Al₂O₃ + 2OH⁻ = 2AlO₂⁻ + H₂O</text>
+  <text class="tc" x="490" y="352" text-anchor="middle" dominant-baseline="central">（新教材：Al₂O₃ + 2OH⁻ + 3H₂O = 2[Al(OH)₄]⁻）</text>
+
+  <rect x="360" y="370" width="260" height="56" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="490" y="384" text-anchor="middle" dominant-baseline="central">Al(OH)₃（两性氢氧化物）</text>
+  <text class="tc" x="490" y="398" text-anchor="middle" dominant-baseline="central">与酸：Al(OH)₃ + 3H⁺ = Al³⁺ + 3H₂O</text>
+  <text class="tc" x="490" y="410" text-anchor="middle" dominant-baseline="central">与碱：Al(OH)₃ + OH⁻ = AlO₂⁻ + 2H₂O</text>
+  <text class="tc" x="490" y="422" text-anchor="middle" dominant-baseline="central">受热分解：2Al(OH)₃ --加热→ Al₂O₃ + 3H₂O</text>
+
+  <rect x="360" y="440" width="260" height="44" rx="5" fill="var(--color-background-secondary, #F1F0EB)" stroke="#D3D1C7" stroke-width="0.5"/>
+  <text class="tm" x="490" y="454" text-anchor="middle" dominant-baseline="central">铝合金 · 新型合金</text>
+  <text class="tc" x="490" y="468" text-anchor="middle" dominant-baseline="central">硬铝（Al-Cu-Mg-Mn合金）→ 航空航天</text>
+  <text class="tc" x="490" y="480" text-anchor="middle" dominant-baseline="central">储氢合金/钛合金/耐热合金</text>
+
+  <!-- 连接线 -->
+  <line x1="190" y1="106" x2="190" y2="118" stroke="#F5C4B3" stroke-width="0.5"/>
+  <line x1="490" y1="106" x2="490" y2="118" stroke="#F5C4B3" stroke-width="0.5"/>
+
+  <!-- 铁三角 -->
+  <rect x="140" y="500" width="400" height="62" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="1"/>
+  <text class="th" x="340" y="518" text-anchor="middle" dominant-baseline="central" fill="#D85A30">铁的"铁三角"转化关系</text>
+  <text class="tc" x="340" y="536" text-anchor="middle" dominant-baseline="central">Fe ←→还原剂/氧化剂→ Fe²⁺ ←→氧化剂/还原剂→ Fe³⁺</text>
+  <text class="tc" x="340" y="552" text-anchor="middle" dominant-baseline="central">Fe→Fe²⁺（弱氧化剂：H⁺, Cu²⁺, S） | Fe→Fe³⁺（强氧化剂：Cl₂, HNO₃, 浓H₂SO₄）</text>
+
+  <text class="ts" x="340" y="605" text-anchor="middle" dominant-baseline="central">★ 铁三角和铝的两性是第三章核心难点，酸碱两性反应经常出现在推断题中</text>
+</svg>

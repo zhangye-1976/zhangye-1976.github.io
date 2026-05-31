@@ -1,0 +1,68 @@
+<svg viewBox="0 0 900 680" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6" fill="#00796b"/>
+    </marker>
+  </defs>
+  <!-- 标题 -->
+  <rect x="250" y="10" width="400" height="44" rx="10" fill="#00796b"/>
+  <text x="450" y="38" text-anchor="middle" fill="#fff" font-size="16" font-weight="600" font-family="system-ui, sans-serif">选必3 生物技术与工程 · 全书总览</text>
+  
+  <!-- 主线框 -->
+  <rect x="320" y="70" width="260" height="44" rx="8" fill="#E1F5EE" stroke="#00796b" stroke-width="1.2"/>
+  <text x="450" y="97" text-anchor="middle" fill="#04342C" font-size="14" font-weight="500" font-family="system-ui, sans-serif">全书4章核心框架</text>
+  
+  <!-- 四大章节 -->
+  <rect x="40" y="150" width="160" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+  <text x="120" y="177" text-anchor="middle" fill="#04342C" font-size="13" font-weight="500" font-family="system-ui, sans-serif">第1章 发酵工程</text>
+  <rect x="240" y="150" width="160" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+  <text x="320" y="177" text-anchor="middle" fill="#04342C" font-size="13" font-weight="500" font-family="system-ui, sans-serif">第2章 细胞工程</text>
+  <rect x="440" y="150" width="160" height="50" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.5"/>
+  <text x="520" y="177" text-anchor="middle" fill="#4B1528" font-size="13" font-weight="500" font-family="system-ui, sans-serif">第3章 基因工程 ★</text>
+  <rect x="640" y="150" width="160" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+  <text x="720" y="177" text-anchor="middle" fill="#04342C" font-size="13" font-weight="500" font-family="system-ui, sans-serif">第4章 安全与伦理</text>
+
+  <!-- 连线 -->
+  <line x1="160" y1="175" x2="240" y2="175" stroke="#00796b" stroke-width="0.8" marker-end="url(#arr)"/>
+  <line x1="400" y1="175" x2="440" y2="175" stroke="#00796b" stroke-width="0.8" marker-end="url(#arr)"/>
+  <line x1="600" y1="175" x2="640" y2="175" stroke="#00796b" stroke-width="0.8" marker-end="url(#arr)"/>
+
+  <!-- 第3章展开（最重要） -->
+  <rect x="370" y="230" width="300" height="54" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.2"/>
+  <text x="520" y="254" text-anchor="middle" fill="#4B1528" font-size="13" font-weight="500" font-family="system-ui, sans-serif">第3章 基因工程（全书核心！）</text>
+  <text x="520" y="274" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">限制酶 + DNA连接酶 + 载体 → 四步操作程序 → PCR + 电泳</text>
+
+  <!-- 四步操作程序 -->
+  <rect x="60" y="320" width="180" height="40" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="150" y="345" text-anchor="middle" fill="#04342C" font-size="12" font-family="system-ui, sans-serif">① 目的基因获取</text>
+  <rect x="260" y="320" width="180" height="40" rx="6" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.4"/>
+  <text x="350" y="345" text-anchor="middle" fill="#4B1528" font-size="12" font-weight="500" font-family="system-ui, sans-serif">② 表达载体构建 ★</text>
+  <rect x="460" y="320" width="180" height="40" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="550" y="345" text-anchor="middle" fill="#04342C" font-size="12" font-family="system-ui, sans-serif">③ 导入受体细胞</text>
+  <rect x="660" y="320" width="180" height="40" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="750" y="345" text-anchor="middle" fill="#04342C" font-size="12" font-family="system-ui, sans-serif">④ 检测与鉴定</text>
+
+  <line x1="240" y1="340" x2="260" y2="340" stroke="#00796b" stroke-width="0.8" marker-end="url(#arr)"/>
+  <line x1="440" y1="340" x2="460" y2="340" stroke="#00796b" stroke-width="0.8" marker-end="url(#arr)"/>
+  <line x1="640" y1="340" x2="660" y2="340" stroke="#00796b" stroke-width="0.8" marker-end="url(#arr)"/>
+
+  <!-- 第2章展开 -->
+  <rect x="180" y="400" width="280" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.2"/>
+  <text x="320" y="424" text-anchor="middle" fill="#04342C" font-size="13" font-weight="500" font-family="system-ui, sans-serif">第2章 细胞工程</text>
+  <text x="320" y="442" text-anchor="middle" fill="#085041" font-size="11" font-family="system-ui, sans-serif">植物组织培养 + 动物细胞培养 + 单克隆抗体 + 胚胎工程</text>
+
+  <!-- 单克隆抗体流程 -->
+  <rect x="500" y="400" width="280" height="50" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="1.2"/>
+  <text x="640" y="424" text-anchor="middle" fill="#4B1528" font-size="13" font-weight="500" font-family="system-ui, sans-serif">单克隆抗体制备（高考必考）</text>
+  <text x="640" y="442" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">免疫→融合→选择→检测→生产</text>
+
+  <!-- Top 考点 -->
+  <rect x="100" y="490" width="700" height="60" rx="10" fill="#FBEAF0" stroke="#D4537E" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="450" y="512" text-anchor="middle" fill="#4B1528" font-size="13" font-weight="500" font-family="system-ui, sans-serif">Top 3 高考必考综合题</text>
+  <text x="450" y="532" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">1. 基因工程四步操作程序（每年必考大题）</text>
+  <text x="450" y="548" text-anchor="middle" fill="#72243E" font-size="11" font-family="system-ui, sans-serif">2. 单克隆抗体制备流程（B淋巴细胞+骨髓瘤细胞融合）</text>
+
+  <!-- 底部说明 -->
+  <rect x="200" y="570" width="500" height="40" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="1"/>
+  <text x="450" y="593" text-anchor="middle" fill="#042C53" font-size="12" font-weight="500" font-family="system-ui, sans-serif">本书是现代农业、医药、生物产业的技术基础</text>
+</svg>

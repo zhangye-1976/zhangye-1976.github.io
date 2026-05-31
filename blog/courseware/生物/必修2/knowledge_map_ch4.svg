@@ -1,0 +1,58 @@
+<svg viewBox="0 0 680 620" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>第4章 基因的表达</title>
+  <desc>转录、翻译、中心法则</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="180" y="8" width="320" height="40" rx="10" fill="#00796b"/>
+  <text x="340" y="33" text-anchor="middle" dominant-baseline="central" fill="#ffffff" font-size="15" font-weight="500" font-family="system-ui, sans-serif">第4章 基因的表达 ★★★★</text>
+
+  <line x1="340" y1="48" x2="340" y2="68" stroke="#00796b" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+  <!-- Central Dogma diagram -->
+  <rect x="100" y="76" width="480" height="80" rx="10" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="98" text-anchor="middle" dominant-baseline="central" font-size="15" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">中心法则</text>
+  <text x="340" y="122" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">DNA →(转录)→ mRNA →(翻译)→ 蛋白质</text>
+  <text x="340" y="142" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ DNA复制(→DNA) | 逆转录(RNA→DNA, 某些病毒) | RNA复制(RNA→RNA)</text>
+
+  <!-- Transcription -->
+  <rect x="30" y="180" width="300" height="195" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="180" y="202" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">转录（DNA → mRNA）</text>
+  <text x="180" y="226" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">场所：细胞核（主要）</text>
+  <text x="180" y="246" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">模板：DNA一条链（模板链）</text>
+  <text x="180" y="266" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">原料：4种核糖核苷酸</text>
+  <text x="180" y="286" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">酶：RNA聚合酶</text>
+  <text x="180" y="308" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 配对：A→U（不是T！）</text>
+  <text x="180" y="328" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">T→A, G→C, C→G</text>
+  <text x="180" y="352" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">产物：mRNA + tRNA + rRNA</text>
+  <text x="180" y="368" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">真核：转录后有加工（剪接）</text>
+
+  <!-- Translation -->
+  <rect x="350" y="180" width="300" height="195" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="500" y="202" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">翻译（mRNA → 蛋白质）</text>
+  <text x="500" y="226" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">场所：核糖体</text>
+  <text x="500" y="246" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">模板：mRNA</text>
+  <text x="500" y="266" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">原料：20种氨基酸</text>
+  <text x="500" y="286" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">搬运工：tRNA（一端反密码子）</text>
+  <text x="500" y="308" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 密码子：mRNA上3碱基→1aa</text>
+  <text x="500" y="328" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">起始：AUG；终止：UAA/UAG/UGA</text>
+  <text x="500" y="352" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">多聚核糖体：1个mRNA+多个核糖体</text>
+  <text x="500" y="368" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56" font-family="system-ui, sans-serif">原核：转录翻译可同时进行</text>
+
+  <!-- Gene-trait connections -->
+  <rect x="30" y="400" width="620" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="422" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">基因控制性状的两条途径</text>
+  <text x="340" y="446" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">途径1：基因→蛋白质结构→直接控制（镰刀型细胞贫血症）</text>
+  <text x="340" y="466" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#085041" font-family="system-ui, sans-serif">途径2：基因→酶→代谢→间接控制（白化病：缺少酪氨酸酶，不能合成黑色素）</text>
+
+  <rect x="30" y="504" width="620" height="52" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="522" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#04342C" font-family="system-ui, sans-serif">表观遗传：DNA序列不变，基因表达可遗传改变（甲基化、组蛋白修饰等）</text>
+  <text x="340" y="542" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#72243E" font-family="system-ui, sans-serif">★ 性状 = 基因型 + 环境 | 密码子简并性增强容错性</text>
+
+  <rect x="100" y="576" width="480" height="32" rx="8" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="340" y="596" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#4B1528" font-family="system-ui, sans-serif">高频：转录vs翻译对比 | 碱基配对A↔U | 中心法则完整版</text>
+</svg>

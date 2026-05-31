@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选必1《稳态与调节》互动练习</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+  h1 { color: #00796b; border-bottom: 3px solid #00796b; padding-bottom: 10px; }
+  h2 { color: #0F6E56; margin-top: 30px; }
+  .question { background: white; border-radius: 8px; padding: 20px; margin: 15px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  .q-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+  .q-type { background: #E1F5EE; color: #0F6E56; padding: 4px 12px; border-radius: 12px; font-size: 14px; font-weight: 500; }
+  .q-difficulty { font-size: 13px; color: #666; }
+  .q-text { font-size: 16px; line-height: 1.6; margin-bottom: 15px; }
+  .options { display: flex; flex-direction: column; gap: 10px; }
+  .option { display: flex; align-items: center; padding: 10px 15px; border: 2px solid #e0e0e0; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
+  .option:hover { background: #f5f5f5; border-color: #00796b; }
+  .option input { margin-right: 10px; }
+  .option.selected { background: #E1F5EE; border-color: #00796b; }
+  .option.correct { background: #E8F5E9; border-color: #4CAF50; }
+  .option.incorrect { background: #FFEBEE; border-color: #f44336; }
+  .explanation { background: #FFF8E1; border-left: 4px solid #FFC107; padding: 15px; margin-top: 15px; border-radius: 4px; display: none; }
+  .explanation.show { display: block; }
+  .explain-title { font-weight: 600; color: #F57C00; margin-bottom: 8px; }
+  button.check-btn { background: #00796b; color: white; border: none; padding: 10px 24px; border-radius: 8px; font-size: 15px; cursor: pointer; margin-top: 10px; }
+  button.check-btn:hover { background: #004D40; }
+  .score-board { background: white; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  .score-num { font-size: 48px; font-weight: 700; color: #00796b; }
+  .progress-bar { background: #e0e0e0; height: 8px; border-radius: 4px; margin: 20px 0; overflow: hidden; }
+  .progress-fill { background: #00796b; height: 100%; transition: width 0.3s; }
+  .section-title { background: #E1F5EE; padding: 10px 15px; border-radius: 8px; margin: 25px 0 15px; font-weight: 600; color: #0F6E56; }
+</style>
+</head>
+<body>
+
+<h1>🧬 选必1《稳态与调节》互动练习</h1>
+<p style="color:#666;">覆盖神经调节、体液调节、免疫调节及三者综合——高考解答题最高频模块</p>
+
+<div class="score-board">
+  <div style="font-size:14px;color:#666;">当前得分</div>
+  <div class="score-num" id="score">0</div>
+  <div style="font-size:14px;color:#666;" id="score-detail">已完成 0 / 8 题</div>
+  <div class="progress-bar"><div class="progress-fill" id="progress" style="width:0%"></div></div>
+</div>
+
+<div class="section-title">📗 基础题（考查核心概念）</div>
+
+<div class="question" id="q1">
+  <div class="q-header">
+    <span class="q-type">基础题</span>
+    <span class="q-difficulty">⭐ 易</span>
+  </div>
+  <div class="q-text"><strong>第1题．</strong>下列关于内环境稳态的叙述，正确的是：</div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q1" value="A"> A. 内环境稳态是指内环境的pH、渗透压、温度等理化性质保持不变</label>
+    <label class="option"><input type="radio" name="q1" value="B"> B. 人体各器官、系统协调一致地正常运行，是维持内环境稳态的基础</label>
+    <label class="option"><input type="radio" name="q1" value="C"> C. 内环境稳态的维持只依赖于神经调节和体液调节</label>
+    <label class="option"><input type="radio" name="q1" value="D"> D. 内环境是机体进行细胞代谢的主要场所</label>
+  </div>
+  <button class="check-btn" onclick="checkAnswer('q1', 'B', this)">检查答案</button>
+  <div class="explanation" id="exp-q1">
+    <div class="explain-title">📝 解析</div>
+    <strong>正确答案：B</strong><br><br>
+    A错误：稳态是指内环境的理化性质<strong>相对稳定</strong>（不是不变），而是在一定范围内波动。<br>
+    B正确：各器官系统协调运行是稳态的基础（教材原话）。<br>
+    C错误：稳态维持依赖<strong>神经-体液-免疫调节网络</strong>，不只是神经和体液调节。<br>
+    D错误：细胞代谢的主要场所是<strong>细胞质基质</strong>，不是内环境。<br><br>
+    <strong>🔴 易错提醒：</strong>稳态是"相对稳定"不是"绝对不变"；稳态调节机制是"神经-体液-免疫调节网络"。
+  </div>
+</div>
+
+<div class="question" id="q2">
+  <div class="q-header">
+    <span class="q-type">基础题</span>
+    <span class="q-difficulty">⭐ 易</span>
+  </div>
+  <div class="q-text"><strong>第2题．</strong>下列关于神经递质的描述，<strong>错误</strong>的是：</div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q2" value="A"> A. 神经递质储存在突触小泡中</label>
+    <label class="option"><input type="radio" name="q2" value="B"> B. 神经递质与突触后膜受体结合后会立即被分解或回收</label>
+    <label class="option"><input type="radio" name="q2" value="C"> C. 神经递质都是蛋白质类物质</label>
+    <label class="option"><input type="radio" name="q2" value="D"> D. 神经递质可以引起突触后膜的兴奋或抑制</label>
+  </div>
+  <button class="check-btn" onclick="checkAnswer('q2', 'C', this)">检查答案</button>
+  <div class="explanation" id="exp-q2">
+    <div class="explain-title">📝 解析</div>
+    <strong>正确答案：C</strong><br><br>
+    A正确：神经递质储存在突触小泡中，防止在释放前被分解。<br>
+    B正确：神经递质作用后会立即被<strong>分解（酶解）或回收（重摄取）</strong>，保证突触传递的精确性。<br>
+    C<strong>错误</strong>：神经递质种类很多，包括<strong>乙酰胆碱、氨基酸类（如谷氨酸）、单胺类（如多巴胺）、肽类</strong>等，不一定是蛋白质。<br>
+    D正确：神经递质可以引起<strong>兴奋（如乙酰胆碱与N型受体结合）或抑制（如GABA）</strong>。<br><br>
+    <strong>🔴 易错提醒：</strong>神经递质≠蛋白质；突触传递具有"单向传递"的特点（因为只有突触前膜有释放递质的囊泡）。
+  </div>
+</div>
+
+<div class="section-title">📘 中等题（考查调节过程分析）</div>
+
+<div class="question" id="q3">
+  <div class="q-header">
+    <span class="q-type">中等题</span>
+    <span class="q-difficulty">⭐⭐ 中</span>
+  </div>
+  <div class="q-text"><strong>第3题．</strong>下图是甲状腺激素分泌的<strong>分级调节</strong>示意图，下列叙述正确的是：<br><br>
+  <div style="background:#f5f5f5;padding:10px;border-radius:8px;font-size:14px;">
+    下丘脑 → (释放TRH) → 垂体 → (释放TSH) → 甲状腺 → (释放甲状腺激素) → 靶细胞<br>
+    ↑__________________________________________________________↓（负反馈）
+  </div></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q3" value="A"> A. 甲状腺激素分泌的分级调节中，下丘脑是内分泌的枢纽</label>
+    <label class="option"><input type="radio" name="q3" value="B"> B. 长期缺碘会导致血液中TRH和TSH含量均低于正常值</label>
+    <label class="option"><input type="radio" name="q3" value="C"> C. 甲状腺激素作用的靶细胞几乎是全身所有细胞</label>
+    <label class="option"><input type="radio" name="q3" value="D"> D. 图示表明甲状腺激素的分泌只受下丘脑-垂体-甲状腺轴的分级调节</label>
+  </div>
+  <button class="check-btn" onclick="checkAnswer('q3', 'C', this)">检查答案</button>
+  <div class="explanation" id="exp-q3">
+    <div class="explain-title">📝 解析</div>
+    <strong>正确答案：C</strong><br><br>
+    A错误：<strong>垂体</strong>是内分泌的枢纽（下丘脑是神经中枢，通过垂体调控其他内分泌腺）。<br>
+    B错误：长期缺碘→甲状腺激素合成不足→对下丘脑和垂体的<strong>负反馈抑制减弱</strong>→TRH和TSH含量<strong>高于</strong>正常值（代偿性增多）。<br>
+    C正确：甲状腺激素作用是<strong>促进新陈代谢</strong>，靶细胞几乎是全身所有细胞。<br>
+    D错误：甲状腺激素分泌还受<strong>负反馈调节</strong>，不只是分级调节。<br><br>
+    <strong>🔴 易错提醒：</strong>分级调节（下丘脑→垂体→靶腺）和负反馈调节（靶腺激素→抑制下丘脑和垂体）是<strong>同时存在的</strong>！
+  </div>
+</div>
+
+<div class="question" id="q4">
+  <div class="q-header">
+    <span class="q-type">中等题</span>
+    <span class="q-difficulty">⭐⭐ 中</span>
+  </div>
+  <div class="q-text"><strong>第4题．</strong>下列关于特异性免疫的叙述，正确的是：</div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q4" value="A"> A. 体液免疫中，浆细胞（效应B细胞）能识别抗原并分泌抗体</label>
+    <label class="option"><input type="radio" name="q4" value="B"> B. 细胞免疫中，效应T细胞能裂解靶细胞（被感染的细胞），使之坏死</label>
+    <label class="option"><input type="radio" name="q4" value="C"> C. 二次免疫应答快而强，主要是因为记忆细胞能快速识别抗原并增殖分化</label>
+    <label class="option"><input type="radio" name="q4" value="D"> D. HIV主要攻击人体的B细胞，导致免疫功能缺陷</label>
+  </div>
+  <button class="check-btn" onclick="checkAnswer('q4', 'C', this)">检查答案</button>
+  <div class="explanation" id="exp-q4">
+    <div class="explain-title">📝 解析</div>
+    <strong>正确答案：C</strong><br><br>
+    A错误：浆细胞<strong>不能识别抗原</strong>（浆细胞唯一功能是分泌抗体），识别抗原的是B细胞、T细胞、记忆细胞等。<br>
+    B错误：效应T细胞裂解靶细胞使之<strong>凋亡</strong>（编程性死亡），不是坏死。<br>
+    C正确：二次免疫中<strong>记忆B细胞</strong>能快速识别相同抗原，迅速增殖分化为浆细胞，产生大量抗体。<br>
+    D错误：HIV主要攻击人体的<strong>T细胞（辅助性T细胞）</strong>，不是B细胞。<br><br>
+    <strong>🔴 易错提醒：</strong>浆细胞不能识别抗原；HIV攻击T细胞→体液免疫和细胞免疫都受损。
+  </div>
+</div>
+
+<div class="section-title">📙 综合题（神经-体液-免疫综合）</div>
+
+<div class="question" id="q5">
+  <div class="q-header">
+    <span class="q-type">综合题</span>
+    <span class="q-difficulty">⭐⭐⭐ 难</span>
+  </div>
+  <div class="q-text"><strong>第5题．（血糖调节综合）</strong>胰岛素是唯一能降低血糖的激素。回答下列问题：<br><br>
+  （1）当血糖浓度升高时，<strong>胰岛B细胞</strong>分泌胰岛素，胰岛素作用的靶细胞主要是<strong>肝脏细胞、肌肉细胞、脂肪细胞</strong>。胰岛素降低血糖的机制是：促进<strong>血糖的氧化分解、合成糖原、转化为非糖物质</strong>，同时抑制<strong>肝糖原的分解和非糖物质转化为葡萄糖</strong>。<br><br>
+  （2）糖尿病患者的血糖浓度持续偏高。Ⅰ型糖尿病是<strong>胰岛B细胞受损</strong>，胰岛素分泌不足；Ⅱ型糖尿病是<strong>靶细胞受体敏感性降低</strong>，对胰岛素反应不敏感。<br><br>
+  下列关于血糖调节的叙述，正确的是：</div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q5" value="A"> A. 血糖调节只受激素调节，与神经调节无关</label>
+    <label class="option"><input type="radio" name="q5" value="B"> B. 胰岛素和胰高血糖素的作用相互拮抗，共同维持血糖稳定</label>
+    <label class="option"><input type="radio" name="q5" value="C"> C. 糖尿病患者都需要注射胰岛素治疗</label>
+    <label class="option"><input type="radio" name="q5" value="D"> D. 血糖浓度升高时，下丘脑通过交感神经作用于胰岛B细胞，促进胰岛素分泌</label>
+  </div>
+  <button class="check-btn" onclick="checkAnswer('q5', 'B', this)">检查答案</button>
+  <div class="explanation" id="exp-q5">
+    <div class="explain-title">📝 解析</div>
+    <strong>正确答案：B</strong><br><br>
+    A错误：血糖调节是<strong>神经-体液调节</strong>（下丘脑血糖调节中枢通过神经作用于胰岛）。<br>
+    B正确：胰岛素降血糖，胰高血糖素升血糖，两者<strong>拮抗作用</strong>维持血糖稳定。<br>
+    C错误：<strong>Ⅰ型糖尿病</strong>需要注射胰岛素；<strong>Ⅱ型糖尿病</strong>可用口服降糖药（如促进胰岛素分泌或提高敏感性）。<br>
+    D错误：血糖升高时，下丘脑通过<strong>副交感神经</strong>作用于胰岛B细胞；血糖降低时，通过<strong>交感神经</strong>作用于胰岛A细胞。<br><br>
+    <strong>🔴 易错提醒：</strong>血糖调节是神经-体液调节；胰岛素是"唯一降血糖激素"，但升血糖激素有多种（胰高血糖素、肾上腺素、糖皮质激素等）。
+  </div>
+</div>
+
+<div class="question" id="q6">
+  <div class="q-header">
+    <span class="q-type">综合题</span>
+    <span class="q-difficulty">⭐⭐⭐ 难</span>
+  </div>
+  <div class="q-text"><strong>第6题．（体温调节综合）</strong>人体在寒冷环境中，通过神经和体液调节维持体温相对稳定。回答下列问题：<br><br>
+  下列关于体温调节的叙述，<strong>错误</strong>的是：</div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q6" value="A"> A. 寒冷刺激使下丘脑体温调节中枢兴奋，通过神经调节引起皮肤血管收缩、立毛肌收缩</label>
+    <label class="option"><input type="radio" name="q6" value="B"> B. 寒冷时，甲状腺激素和肾上腺素的分泌增多，促进新陈代谢，增加产热</label>
+    <label class="option"><input type="radio" name="q6" value="C"> C. 人体在寒冷环境中，产热量大于散热量，使体温升高</label>
+    <label class="option"><input type="radio" name="q6" value="D"> D. 体温调节的方式是神经-体液调节</label>
+  </div>
+  <button class="check-btn" onclick="checkAnswer('q6', 'C', this)">检查答案</button>
+  <div class="explanation" id="exp-q6">
+    <div class="explain-title">📝 解析</div>
+    <strong>正确答案：C</strong><br><br>
+    A正确：寒冷刺激→下丘脑体温调节中枢→<strong>神经调节</strong>→皮肤血管收缩（减少散热）、立毛肌收缩（"起鸡皮疙瘩"）、骨骼肌战栗（增加产热）。<br>
+    B正确：寒冷时，下丘脑→TRH→垂体→TSH→甲状腺（分泌<strong>甲状腺激素</strong>）；同时下丘脑→交感神经→肾上腺髓质（分泌<strong>肾上腺素</strong>）。两者都促进代谢，增加产热。<br>
+    C<strong>错误</strong>：无论在寒冷还是炎热环境，<strong>产热量=散热量</strong>（体温相对稳定时）。寒冷时，产热量<strong>增加</strong>，散热量也<strong>增加</strong>（但产热增幅更大，维持体温恒定）。<br>
+    D正确：体温调节是<strong>神经-体液调节</strong>（神经调节：皮肤血管、立毛肌、骨骼肌；体液调节：甲状腺激素、肾上腺素）。<br><br>
+    <strong>🔴 易错提醒：</strong>体温稳定时，产热=散热；体温升高时，产热>散热；体温降低时，产热<散热。
+  </div>
+</div>
+
+<div class="question" id="q7">
+  <div class="q-header">
+    <span class="q-type">综合题</span>
+    <span class="q-difficulty">⭐⭐⭐ 难</span>
+  </div>
+  <div class="q-text"><strong>第7题．（免疫调节综合）</strong>新冠病毒（SARS-CoV-2）侵入人体后，引起免疫应答。回答下列问题：<br><br>
+  （1）病毒侵入人体后，首先被<strong>吞噬细胞</strong>摄取和处理，暴露出抗原，传递给<strong>T细胞</strong>，T细胞分泌<strong>淋巴因子</strong>，促进B细胞增殖分化为<strong>浆细胞和记忆细胞</strong>。<br>
+  （2）当病毒侵入细胞后，<strong>细胞免疫</strong>发挥作用：效应T细胞与靶细胞密切接触，使靶细胞裂解死亡，释放出病毒，再由<strong>体液免疫</strong>产生的抗体清除。<br><br>
+  下列关于新冠病毒免疫的叙述，正确的是：</div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q7" value="A"> A. 新冠病毒侵入人体后，只引起体液免疫，不引起细胞免疫</label>
+    <label class="option"><input type="radio" name="q7" value="B"> B. 接种新冠疫苗后，人体会产生抗体和记忆细胞，这是主动免疫</label>
+    <label class="option"><input type="radio" name="q7" value="C"> C. 抗体可以进入细胞内部，与病毒结合并清除病毒</label>
+    <label class="option"><input type="radio" name="q7" value="D"> D. 新冠病毒侵入人体后，人体内的T细胞数量不会发生变化</label>
+  </div>
+  <button class="check-btn" onclick="checkAnswer('q7', 'B', this)">检查答案</button>
+  <div class="explanation" id="exp-q7">
+    <div class="explain-title">📝 解析</div>
+    <strong>正确答案：B</strong><br><br>
+    A错误：病毒是<strong>细胞内寄生病原体</strong>，既引起体液免疫（清除细胞外病毒），也引起细胞免疫（清除细胞内病毒）。<br>
+    B正确：接种疫苗是<strong>主动免疫</strong>（让机体自己产生抗体和记忆细胞）；注射康复者血清是<strong>被动免疫</strong>（直接获得抗体）。<br>
+    C错误：抗体<strong>不能进入细胞内部</strong>，只能在细胞外液（内环境）中与抗原结合。<br>
+    D错误：新冠病毒侵入后，T细胞会<strong>增殖分化</strong>（数量增多）；但HIV攻击T细胞，使T细胞数量减少。<br><br>
+    <strong>🔴 易错提醒：</strong>病毒/胞内寄生菌→体液免疫+细胞免疫；抗体不能进入细胞内；主动免疫（疫苗）vs被动免疫（抗血清）。
+  </div>
+</div>
+
+<div class="question" id="q8">
+  <div class="q-header">
+    <span class="q-type">综合题</span>
+    <span class="q-difficulty">⭐⭐⭐ 难</span>
+  </div>
+  <div class="q-text"><strong>第8题．（神经-体液-免疫综合）</strong>人在紧张、焦虑时，交感神经兴奋，肾上腺髓质分泌肾上腺素增多，引起心跳加快、血压升高等反应。同时，长期精神紧张会导致免疫功能下降。回答下列问题：<br><br>
+  下列关于神经-体液-免疫调节综合的叙述，<strong>错误</strong>的是：</div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q8" value="A"> A. 紧张时，下丘脑通过交感神经作用于肾上腺髓质，促进肾上腺素分泌，这属于神经-体液调节</label>
+    <label class="option"><input type="radio" name="q8" value="B"> B. 肾上腺素能升高血糖浓度，与胰高血糖素具有协同作用</label>
+    <label class="option"><input type="radio" name="q8" value="C"> C. 长期精神紧张会导致T细胞数量减少，免疫功能下降，这与激素调节影响免疫系统有关</label>
+    <label class="option"><input type="radio" name="q8" value="D"> D. 神经-体液-免疫调节网络是机体维持稳态的主要机制，三者各自独立发挥作用</label>
+  </div>
+  <button class="check-btn" onclick="checkAnswer('q8', 'D', this)">检查答案</button>
+  <div class="explanation" id="exp-q8">
+    <div class="explain-title">📝 解析</div>
+    <strong>正确答案：D</strong><br><br>
+    A正确：紧张→下丘脑→<strong>交感神经</strong>→肾上腺髓质→分泌肾上腺素，这是<strong>神经-体液调节</strong>（神经调节：下丘脑→交感神经；体液调节：肾上腺素通过体液运输作用于靶细胞）。<br>
+    B正确：肾上腺素和胰高血糖素都能<strong>升血糖</strong>，两者具有协同作用。<br>
+    C正确：长期精神紧张→分泌过多<strong>糖皮质激素</strong>等→抑制T细胞增殖→免疫功能下降。<br>
+    D<strong>错误</strong>：神经-体液-免疫调节网络是<strong>相互联系、相互影响</strong>的，不是各自独立发挥作用（如：神经递质可以作用于免疫细胞；激素可以影响免疫功能；免疫细胞可以分泌细胞因子影响神经和内分泌系统）。<br><br>
+    <strong>🔴 易错提醒：</strong>稳态调节机制是"神经-体液-免疫调节网络"，三者相互联系，不是独立发挥作用！
+  </div>
+</div>
+
+<div style="text-align:center;margin:30px 0;">
+  <button class="check-btn" onclick="showFinalScore()" style="font-size:18px;padding:15px 40px;">查看最终得分</button>
+</div>
+
+<div class="score-board" id="final-score" style="display:none;">
+  <div style="font-size:18px;font-weight:600;color:#00796b;">🎉 练习完成！</div>
+  <div class="score-num" id="final-score-num">0</div>
+  <div style="font-size:14px;color:#666;" id="final-score-text"></div>
+  <div style="margin-top:20px;text-align:left;padding:15px;background:#f5f5f5;border-radius:8px;">
+    <div style="font-weight:600;margin-bottom:10px;">📊 考点覆盖分析</div>
+    <div style="font-size:14px;line-height:1.8;">
+      ✅ <strong>内环境稳态</strong> — 考查稳态概念、调节机制<br>
+      ✅ <strong>神经调节</strong> — 突触传递、神经递质<br>
+      ✅ <strong>体液调节</strong> — 甲状腺激素分级调节、血糖调节、体温调节<br>
+      ✅ <strong>免疫调节</strong> — 特异性免疫、二次免疫、病毒免疫<br>
+      ✅ <strong>神经-体液-免疫综合</strong> — 高考解答题最高频模块
+    </div>
+  </div>
+</div>
+
+<script>
+let score = 0;
+let answered = new Set();
+
+function checkAnswer(qId, correctAnswer, btn) {
+  const question = document.getElementById(qId);
+  const selectedOption = question.querySelector('input[name="' + qId + '"]:checked');
+  
+  if (!selectedOption) {
+    alert('请先选择一个答案！');
+    return;
+  }
+  
+  const options = question.querySelectorAll('.option');
+  options.forEach(opt => {
+    opt.style.pointerEvents = 'none';
+    const input = opt.querySelector('input');
+    if (input.value === correctAnswer) {
+      opt.classList.add('correct');
+    }
+    if (input.checked && input.value !== correctAnswer) {
+      opt.classList.add('incorrect');
+    }
+  });
+  
+  if (selectedOption.value === correctAnswer) {
+    if (!answered.has(qId)) {
+      score++;
+      answered.add(qId);
+    }
+  }
+  
+  document.getElementById('exp-' + qId).classList.add('show');
+  btn.disabled = true;
+  btn.textContent = '已检查';
+  
+  updateScore();
+}
+
+function updateScore() {
+  document.getElementById('score').textContent = score;
+  document.getElementById('score-detail').textContent = '已完成 ' + answered.size + ' / 8 题';
+  document.getElementById('progress').style.width = (answered.size / 8 * 100) + '%';
+}
+
+function showFinalScore() {
+  if (answered.size < 8) {
+    alert('请先完成所有题目再查看最终得分！（已完成 ' + answered.size + ' / 8 题）');
+    return;
+  }
+  
+  document.getElementById('final-score').style.display = 'block';
+  document.getElementById('final-score-num').textContent = score * 12.5 + ' 分';
+  
+  let text = '';
+  if (score >= 7) text = '🎉 优秀！选必1核心考点掌握扎实，高考稳态调节题稳了！';
+  else if (score >= 5) text = '👍 良好！核心概念已掌握，建议重点复习错误题目对应的知识点。';
+  else if (score >= 3) text = '📖 加油！建议重新阅读知识图谱中的对应章节，特别是调节过程分析。';
+  else text = '💪 需要努力！建议系统学习选必1知识图谱，先理解调节机制再做题。';
+  
+  document.getElementById('final-score-text').textContent = text;
+  window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
+}
+</script>
+
+</body>
+</html>

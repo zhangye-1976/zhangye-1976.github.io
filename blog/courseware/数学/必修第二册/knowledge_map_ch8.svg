@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680">
+  <defs>
+    <style>
+      .box { fill:#E1F5EE; stroke:#00796b; stroke-width:1.5; rx:8; }
+      .box2 { fill:#E8F5E9; stroke:#388E3C; stroke-width:1.5; rx:6; }
+      .box3 { fill:#FFF9C4; stroke:#F9A825; stroke-width:1.5; rx:6; }
+      .boxt { fill:#B2DFDB; stroke:#00796b; stroke-width:2; rx:8; }
+      .tit { font:bold 15px sans-serif; fill:#00796b; }
+      .nm { font:13px sans-serif; fill:#1a1a1a; }
+      .sm { font:11px sans-serif; fill:#333; }
+      .red { font:11px sans-serif; fill:#c0392b; }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <rect x="180" y="8" width="320" height="34" class="boxt"/>
+  <text x="340" y="31" text-anchor="middle" class="tit">第8章 立体几何初步</text>
+
+  <!-- 基本立体图形 -->
+  <rect x="20" y="52" width="180" height="28" class="box"/>
+  <text x="110" y="70" text-anchor="middle" class="nm">基本立体图形</text>
+  <rect x="20" y="88" width="180" height="110" class="box"/>
+  <text x="30" y="110" class="sm">多面体：棱柱、棱锥、棱台</text>
+  <text x="30" y="128" class="sm">旋转体：圆柱、圆锥、圆台、球</text>
+  <text x="30" y="146" class="sm">棱柱：两底面全等且平行</text>
+  <text x="30" y="164" class="sm">棱锥：顶点投影在底面内</text>
+  <text x="30" y="182" class="sm">球：半圆绕直径旋转</text>
+
+  <!-- 平面公理 -->
+  <rect x="220" y="52" width="200" height="28" class="box"/>
+  <text x="320" y="70" text-anchor="middle" class="nm">平面基本性质（公理）</text>
+  <rect x="220" y="88" width="200" height="130" class="box2"/>
+  <text x="230" y="112" class="sm">公理1：直线上两点在平面内</text>
+  <text x="230" y="130" class="sm">→ 直线在平面内</text>
+  <text x="230" y="150" class="sm">公理2：不共线三点确定一平面</text>
+  <text x="230" y="168" class="sm">公理3：两平面有一公共点</text>
+  <text x="230" y="186" class="sm">→ 交于过该点的一条直线</text>
+  <text x="230" y="204" class="sm">公理4：平行传递性</text>
+
+  <!-- 点线面位置关系 -->
+  <rect x="440" y="52" width="220" height="28" class="box"/>
+  <text x="550" y="70" text-anchor="middle" class="nm">点、直线、平面位置关系</text>
+  <rect x="440" y="88" width="220" height="150" class="box3"/>
+  <text x="450" y="112" class="sm">线线：平行、相交、异面</text>
+  <text x="450" y="130" class="sm">线面：平行（线平行于面内一线）</text>
+  <text x="450" y="148" class="sm">线面：垂直（线垂直于面内两交线）</text>
+  <text x="450" y="166" class="sm">面面：平行（一平面内两交线平行于另一面）</text>
+  <text x="450" y="184" class="sm">面面：垂直（一面过另一面的垂线）</text>
+  <text x="450" y="202" class="sm">异面判定：不同在任一平面内</text>
+  <text x="450" y="220" class="red">⚠ 异面≠不平行不相交</text>
+
+  <!-- 线面平行/垂直判定 -->
+  <rect x="20" y="216" width="300" height="34" class="boxt"/>
+  <text x="170" y="238" text-anchor="middle" class="tit">线面平行与垂直的判定和性质</text>
+  <rect x="20" y="258" width="300" height="120" class="box2"/>
+  <text x="30" y="282" class="sm">【线面平行判定】平面外一线平行于面内一线 → 线面平行</text>
+  <text x="30" y="300" class="sm">【线面平行性质】线面平行，过线的平面与已知平面相交 → 交线与原线平行</text>
+  <text x="30" y="318" class="sm">【线面垂直判定】线垂直于面内两相交直线 → 线面垂直</text>
+  <text x="30" y="336" class="sm">【线面垂直性质】垂直于同一平面的两直线平行</text>
+  <text x="30" y="354" class="sm">【面面平行判定】一平面内两相交直线分别平行于另一平面</text>
+  <text x="30" y="372" class="sm">【面面垂直判定】一平面过另一平面的垂线</text>
+
+  <!-- 空间向量法 -->
+  <rect x="340" y="216" width="320" height="34" class="boxt"/>
+  <text x="500" y="238" text-anchor="middle" class="tit">空间向量法（第6章延伸）</text>
+  <rect x="340" y="258" width="320" height="120" class="box3"/>
+  <text x="350" y="282" class="sm">步骤：① 建系（选坐标原点和坐标轴）</text>
+  <text x="350" y="300" class="sm">② 求各点坐标 → 写出向量坐标</text>
+  <text x="350" y="318" class="sm">③ 线面平行：方向向量与法向量垂直（数量积=0）</text>
+  <text x="350" y="336" class="sm">④ 线面垂直：方向向量与法向量平行</text>
+  <text x="350" y="354" class="sm">⑤ 二面角：两平面法向量夹角（注意方向）</text>
+  <text x="350" y="372" class="sm">法向量求法：设n=(x,y,z)，与面内两向量数量积=0，解方程组</text>
+
+  <!-- 空间几何量计算 -->
+  <rect x="20" y="394" width="310" height="28" class="box"/>
+  <text x="175" y="412" text-anchor="middle" class="nm">空间几何量计算</text>
+  <rect x="20" y="430" width="310" height="130" class="box"/>
+  <text x="30" y="454" class="sm">表面积：</text>
+  <text x="30" y="472" class="sm">  棱柱：S=2S底+S侧；圆柱：S=2πr²+2πrh</text>
+  <text x="30" y="490" class="sm">  球：S=4πR²</text>
+  <text x="30" y="508" class="sm">体积：</text>
+  <text x="30" y="526" class="sm">  棱柱/圆柱：V=Sh；锥体：V=Sh/3</text>
+  <text x="30" y="544" class="sm">  球：V=4πR³/3</text>
+  <text x="30" y="562" class="sm">点面距：|Ax₀+By₀+Cz₀+D|/√(A²+B²+C²)</text>
+
+  <!-- 综合法 vs 向量法 -->
+  <rect x="350" y="394" width="310" height="28" class="box"/>
+  <text x="505" y="412" text-anchor="middle" class="nm">综合法 vs 向量法（对比）</text>
+  <rect x="350" y="430" width="310" height="130" class="box2"/>
+  <text x="360" y="454" class="sm">【综合法】逻辑推理，需较强的空间想象力</text>
+  <text x="360" y="472" class="sm">  适用：简单的平行/垂直证明</text>
+  <text x="360" y="490" class="sm">【向量法】坐标运算，程序化，不易漏步</text>
+  <text x="360" y="508" class="sm">  适用：二面角、线面角、点面距</text>
+  <text x="360" y="526" class="sm">  建系前提：需有三线两两垂直的条件</text>
+  <text x="360" y="544" class="sm">口诀：能建系优先向量法；不能建系用综合法</text>
+  <text x="360" y="562" class="red">⚠ 向量法求二面角注意方向（锐角/钝角）</text>
+
+  <!-- 解题模板 -->
+  <rect x="20" y="580" width="640" height="88" class="box"/>
+  <text x="340" y="602" text-anchor="middle" class="nm">立体几何解答题解题模板（高考19分大题）</text>
+  <text x="30" y="626" class="sm">第(1)问：证明平行/垂直 → 综合法（判定定理）或向量法（数量积=0/平行）</text>
+  <text x="30" y="644" class="sm">第(2)问：求角/距离/体积 → 向量法建系；注意法向量方向</text>
+  <text x="30" y="662" class="sm">第(3)问（若有）：探究存在性问题 → 设未知数，列方程求解，检验合理性</text>
+  <text x="30" y="680" class="red">易错：二面角可能是钝角！用向量法时需判断是取夹角还是其补角。</text>
+</svg>
